@@ -1,0 +1,68 @@
+# HTCondor submit file -- hic-bayes uncertainty correlation scan
+#
+# Runs Grad_1 and Grad_2 baseline, exponential-correlation-length, and
+# equicorrelation-rho tasks.
+#
+# Usage:
+#   config/AtlasPbPb2760/uncertainty_correlation/submit_uncertainty_correlation.sh
+#
+# Submit only selected jobs:
+#   config/AtlasPbPb2760/uncertainty_correlation/submit_uncertainty_correlation.sh --only ro_2.0_Grad_1
+#   config/AtlasPbPb2760/uncertainty_correlation/submit_uncertainty_correlation.sh --only rho_0.6_Grad_2
+#
+# ============================================================================
+
+universe     = vanilla
+getenv       = True
+
+initialdir   = $(HIC_BAYES_ROOT)
+
+TASK_DIR     = $(ANALYSIS_DIR)/sims
+
+executable   = $(PYTHON)
+
+request_cpus   = 3
+request_memory = 1500
+request_disk   = 20000
+
+requirements = !regexp("qgp2", TARGET.Machine) && !regexp("usphydro", TARGET.Machine)
+
+environment  = "HIC_BAYES_NTHREADS=3 HIC_BAYES_RUN_ID=$(RUN_ID) HIC_BAYES_RESULTS_ROOT=$(HIC_BAYES_RESULTS) HIC_BAYES_RUN_ROOT=$(RUN_ROOT) HIC_BAYES_RESULTS_DIR=$(RESULTS_DIR)/$(RUN_ID) HIC_BAYES_LOG_DIR=$(LOG_DIR)/$(RUN_ID) HIC_BAYES_PLOTS_DIR=$(PLOTS_DIR)/$(RUN_ID)"
+
++WantFlocking = True
+
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/$(TASK)
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).$(JOB).out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).$(JOB).err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).$(JOB).log
+
+queue JOB,TASK from (
+baseline_Grad_1 uncertainty_correlation_baseline_PbPb2760_Grad_1.yaml
+baseline_Grad_2 uncertainty_correlation_baseline_PbPb2760_Grad_2.yaml
+baseline_zeroexp_Grad_1 uncertainty_correlation_zeroexp_baseline_PbPb2760_Grad_1.yaml
+baseline_zeroexp_Grad_2 uncertainty_correlation_zeroexp_baseline_PbPb2760_Grad_2.yaml
+ro_0.0_Grad_1 uncertainty_correlation_rbf_correlation_ro=0.0_PbPb2760_Grad_1.yaml
+ro_0.0_Grad_2 uncertainty_correlation_rbf_correlation_ro=0.0_PbPb2760_Grad_2.yaml
+ro_2.0_Grad_1 uncertainty_correlation_rbf_correlation_ro=2.0_PbPb2760_Grad_1.yaml
+ro_2.0_Grad_2 uncertainty_correlation_rbf_correlation_ro=2.0_PbPb2760_Grad_2.yaml
+ro_4.0_Grad_1 uncertainty_correlation_rbf_correlation_ro=4.0_PbPb2760_Grad_1.yaml
+ro_4.0_Grad_2 uncertainty_correlation_rbf_correlation_ro=4.0_PbPb2760_Grad_2.yaml
+ro_6.0_Grad_1 uncertainty_correlation_rbf_correlation_ro=6.0_PbPb2760_Grad_1.yaml
+ro_6.0_Grad_2 uncertainty_correlation_rbf_correlation_ro=6.0_PbPb2760_Grad_2.yaml
+ro_8.0_Grad_1 uncertainty_correlation_rbf_correlation_ro=8.0_PbPb2760_Grad_1.yaml
+ro_8.0_Grad_2 uncertainty_correlation_rbf_correlation_ro=8.0_PbPb2760_Grad_2.yaml
+ro_10.0_Grad_1 uncertainty_correlation_rbf_correlation_ro=10.0_PbPb2760_Grad_1.yaml
+ro_10.0_Grad_2 uncertainty_correlation_rbf_correlation_ro=10.0_PbPb2760_Grad_2.yaml
+rho_0.1_Grad_1 uncertainty_correlation_equicorr_rho=0.1_PbPb2760_Grad_1.yaml
+rho_0.1_Grad_2 uncertainty_correlation_equicorr_rho=0.1_PbPb2760_Grad_2.yaml
+rho_0.2_Grad_1 uncertainty_correlation_equicorr_rho=0.2_PbPb2760_Grad_1.yaml
+rho_0.2_Grad_2 uncertainty_correlation_equicorr_rho=0.2_PbPb2760_Grad_2.yaml
+rho_0.4_Grad_1 uncertainty_correlation_equicorr_rho=0.4_PbPb2760_Grad_1.yaml
+rho_0.4_Grad_2 uncertainty_correlation_equicorr_rho=0.4_PbPb2760_Grad_2.yaml
+rho_0.6_Grad_1 uncertainty_correlation_equicorr_rho=0.6_PbPb2760_Grad_1.yaml
+rho_0.6_Grad_2 uncertainty_correlation_equicorr_rho=0.6_PbPb2760_Grad_2.yaml
+rho_0.8_Grad_1 uncertainty_correlation_equicorr_rho=0.8_PbPb2760_Grad_1.yaml
+rho_0.8_Grad_2 uncertainty_correlation_equicorr_rho=0.8_PbPb2760_Grad_2.yaml
+rho_0.9_Grad_1 uncertainty_correlation_equicorr_rho=0.9_PbPb2760_Grad_1.yaml
+rho_0.9_Grad_2 uncertainty_correlation_equicorr_rho=0.9_PbPb2760_Grad_2.yaml
+)

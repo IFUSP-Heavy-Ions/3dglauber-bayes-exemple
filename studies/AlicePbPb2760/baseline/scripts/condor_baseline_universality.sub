@@ -1,0 +1,124 @@
+# HTCondor submit file — hic-bayes Universality baseline reproduction
+#
+# Runs 8 experiments: 2 variants (baseline + scaled) × 4 viscous models (Grad, CE, PTM, PTB)
+#
+# MCMC Parameters (matching Universality_Github exactly):
+#   - 200 walkers
+#   - 20 temperatures (ptemcee)
+#   - 100 burnin steps + 75 production steps = 175 total
+#   - thin = 10
+#   - 3 threads per job (6 total per task if HTCondor allows)
+#
+# Usage:
+#   config/AtlasPbPb2760/baseline/submit_baseline_universality.sh
+#
+# Force a specific run directory when rerunning missing jobs:
+#   config/AtlasPbPb2760/baseline/submit_baseline_universality.sh --run-id run_004 --only scaled_PTM
+#
+# Or, if submitting manually, pass a run id and create the log directory first:
+#   mkdir -p config/AtlasPbPb2760/baseline/logs/run_001
+#   condor_submit HIC_BAYES_ROOT=/storage/avilamrs/code-space/my-work/hic-bayes \
+#       PYTHON=/path/to/python RUN_ID=run_001 \
+#       config/AtlasPbPb2760/baseline/condor_baseline_universality.sub
+#
+# Monitor jobs:
+#   condor_q
+#   condor_tail -f <job_id>
+#
+# Expected runtime: ~8-12 hours per job (ptemcee is computationally intensive)
+#
+# After all jobs finish, generate comparison plots:
+#   python -m scripts.compare_corner_universality \
+#       --chain1 results/run_001/universality_baseline/baseline_Grad_diag/chain.hdf5 \
+#       --chain2 results/run_001/universality_baseline_scaled/baseline_Grad_scaled_diag/chain.hdf5 \
+#       --labels "Baseline (Grad)" "ScaledSpectra (Grad)" \
+#       --output results/corner_comparison_Grad_baseline_vs_scaled.pdf
+#
+# ============================================================================
+
+universe     = vanilla
+getenv       = True          # inherit PATH, PYTHONPATH, VIRTUAL_ENV, etc.
+
+# Working directory — must be the hic-bayes root on the cluster
+initialdir   = $(HIC_BAYES_ROOT)
+
+# Analysis-local paths. Change ANALYSIS_DIR once when moving/copying this setup.
+ANALYSIS_DIR = config/AtlasPbPb2760/baseline
+TASK_DIR     = $(ANALYSIS_DIR)/tasks
+LOG_DIR      = $(ANALYSIS_DIR)/logs
+
+# Executable: the Python interpreter that has hic-bayes installed
+# Override with: condor_submit HIC_BAYES_ROOT=/storage/avilamrs/code-space/my-work/hic-bayes PYTHON=/usr/bin/python3 ...
+executable   = $(PYTHON)
+request_cpus = 3
+request_memory = 1000
+
+# Do not schedule on qgp2 because the shared workspace is not available there.
+requirements = !regexp("qgp2", TARGET.Machine) && !regexp("usphydro", TARGET.Machine)
+
+# Set thread environment variable for ptemcee and share the same run folder
+# between Condor logs and Python analysis products.
+environment  = "HIC_BAYES_NTHREADS=3 HIC_BAYES_RUN_ID=$(RUN_ID)"
+
+# Ensure jobs don't run on the same node if possible
++WantFlocking = True
+
+# ========== BASELINE VARIANT (normal observables, 4 jobs) ==========
+
+# Job 1: Grad (baseline diag)
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/baseline_PbPb2760_Grad.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).baseline_Grad.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).baseline_Grad.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).baseline_Grad.log
+queue 1
+
+# Job 2: CE (baseline diag)
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/baseline_PbPb2760_CE.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).baseline_CE.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).baseline_CE.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).baseline_CE.log
+queue 1
+
+# Job 3: PTM (baseline diag)
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/baseline_PbPb2760_PTM.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).baseline_PTM.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).baseline_PTM.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).baseline_PTM.log
+queue 1
+
+# Job 4: PTB (baseline diag)
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/baseline_PbPb2760_PTB.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).baseline_PTB.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).baseline_PTB.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).baseline_PTB.log
+queue 1
+
+# ========== SCALED SPECTRA VARIANT (StandardScaler normalized, 4 jobs) ==========
+
+# Job 5: Grad (scaled diag)
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/baseline_PbPb2760_ScaledSpectra_Grad.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scaled_Grad.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scaled_Grad.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scaled_Grad.log
+queue 1
+
+# Job 6: CE (scaled diag)
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/baseline_PbPb2760_ScaledSpectra_CE.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scaled_CE.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scaled_CE.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scaled_CE.log
+queue 1
+
+# Job 7: PTM (scaled diag)
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/baseline_PbPb2760_ScaledSpectra_PTM.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scaled_PTM.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scaled_PTM.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scaled_PTM.log
+queue 1
+
+# Job 8: PTB (scaled diag)
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/baseline_PbPb2760_ScaledSpectra_PTB.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scaled_PTB.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scaled_PTB.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scaled_PTB.log
+queue 1

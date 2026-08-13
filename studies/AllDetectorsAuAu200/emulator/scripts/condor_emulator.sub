@@ -1,0 +1,21 @@
+universe     = vanilla
+getenv       = True
+initialdir   = $(HIC_BAYES_ROOT)
+TASK_DIR     = $(ANALYSIS_DIR)/sims
+executable   = $(PYTHON)
+request_cpus   = 3
+request_memory = 2500
+request_disk   = 20000
+requirements = !regexp("qgp2", TARGET.Machine) && !regexp("usphydro", TARGET.Machine)
+environment  = "HIC_BAYES_NTHREADS=3 HIC_BAYES_RUN_ID=$(RUN_ID) HIC_BAYES_RESULTS_ROOT=$(HIC_BAYES_RESULTS) HIC_BAYES_RUN_ROOT=$(RUN_ROOT) HIC_BAYES_RESULTS_DIR=$(RESULTS_DIR)/$(RUN_ID) HIC_BAYES_LOG_DIR=$(LOG_DIR)/$(RUN_ID) HIC_BAYES_PLOTS_DIR=$(PLOTS_DIR)/$(RUN_ID)"
++WantFlocking = True
+arguments    = -m $(PIPELINE) $(TASK_DIR)/$(TASK)
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).$(JOB).out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).$(JOB).err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).$(JOB).log
+queue JOB,PIPELINE,TASK from (
+AuAu200_jetscape pipelines.run_jetscape_lhc_analysis emulator_compare_AuAu200_jetscape.yaml
+AuAu200_hicbayes pipelines.run_jetscape_lhc_analysis emulator_compare_AuAu200_hicbayes.yaml
+dAu200_jetscape pipelines.run_jetscape_lhc_analysis emulator_compare_dAu200_jetscape.yaml
+dAu200_hicbayes pipelines.run_jetscape_lhc_analysis emulator_compare_dAu200_hicbayes.yaml
+)

@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.88397.v2/t6
+#: name: 2/NPART*<DN/DETA>_VS_SCALED<NPART>InPbPb
+#: description: Values of $2/\langle N_\mathrm{part} \rangle \langle \mathrm{d}N_\mathrm{ch}/\mathrm{d}\eta\rangle$ and $2/\langle N_\mathrm{part} \rangle N^\mathrm{tot}_\mathrm{ch}$ as a function of $(\langle N_\mathrm{part} \rangle -2)/(2A)$ in Pb--Pb collisions at $\sqrt{s_{_{\mathrm{NN}}}} = 5.02\,\mathrm{TeV}$. 
+
+#: data_file: Table6.yaml
+#: keyword reactions: PB PB --> CHARGED X
+#: keyword observables: 2/NPART*<DN/DETA>
+#: keyword cmenergies: 5020.0
+($\langle N_{\mathrm{part}}\rangle$-2)/(2A),($\langle N_{\mathrm{part}}\rangle$-2)/(2A) LOW,($\langle N_{\mathrm{part}}\rangle$-2)/(2A) HIGH,$ \frac{2}{\langle N_\mathrm{part} \rangle} \langle \mathrm{d}N_\mathrm{ch}/\mathrm{d}\eta\rangle$,stat +,stat -,sys +,sys -
+0.9615,0.957,0.966,10.8,0.0,-0.0,0.1,-0.1
+0.9425,0.935,0.95,10.2,0.0,-0.0,0.2,-0.2
+0.918,0.911,0.925,10.0,0.0,-0.0,0.2,-0.2
+0.894,0.887,0.901,9.84,0.0,-0.0,0.21,-0.21
+0.868,0.861,0.875,9.71,0.0,-0.0,0.21,-0.21
+
+($\langle N_{\mathrm{part}}\rangle$-2)/(2A),($\langle N_{\mathrm{part}}\rangle$-2)/(2A) LOW,($\langle N_{\mathrm{part}}\rangle$-2)/(2A) HIGH,$\frac{2}{\langle N_\mathrm{part} \rangle} N^\mathrm{tot}_\mathrm{ch}$,stat +,stat -,sys +,sys -
+0.9615,0.957,0.966,117.1,0.0,-0.0,2.1,-2.1
+0.9425,0.935,0.95,114.1,0.0,-0.0,2.3,-2.3
+0.918,0.911,0.925,112.2,0.0,-0.0,2.4,-2.4
+0.894,0.887,0.901,110.7,0.0,-0.0,2.7,-2.7
+0.868,0.861,0.875,109.7,0.0,-0.0,2.9,-2.9
+

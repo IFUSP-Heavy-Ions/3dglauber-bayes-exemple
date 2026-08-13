@@ -1,0 +1,196 @@
+{
+  "global": {
+    "analysis_root": "config/AtlasPbPb2760/mcmc_params",
+    "results_root": "results",
+    "output_root": "plots",
+    "n_samples": 1400,
+    "prune": 1,
+    "seed": 42,
+    "format": "pdf",
+    "dpi": 300,
+    "tick_rotation": 45,
+    "font_scale": 1.15,
+    "axis_label_fontsize": 8,
+    "tick_label_fontsize": 6,
+    "title_fontsize": 11,
+    "legend_fontsize": 9
+  },
+  "parameter_labels": [
+    "$N$[2.76 TeV]",
+    "$p$",
+    "$\\sigma_k$",
+    "$w$ [fm]",
+    "$d_{\\rm min}$ [fm]",
+    "$\\tau_R$ [fm/$c$]",
+    "$\\alpha$",
+    "$T_{\\eta,\\rm kink}$ [GeV]",
+    "$a_{\\eta,\\rm low}$ [GeV$^{-1}$]",
+    "$a_{\\eta,\\rm high}$ [GeV$^{-1}$]",
+    "$(\\eta/s)_{\\rm kink}$",
+    "$(\\zeta/s)_{\\rm max}$",
+    "$T_{\\zeta,c}$ [GeV]",
+    "$w_{\\zeta}$ [GeV]",
+    "$\\lambda_{\\zeta}$",
+    "$b_{\\pi}$",
+    "$T_{\\rm sw}$ [GeV]"
+  ],
+  "parameter_groups": {
+    "group1": [0, 1, 2, 3, 4, 5, 6, 15, 16],
+    "group2": [7, 8, 9, 10, 11, 12, 13, 14]
+  },
+  "experiments": {
+    "scan01_minimal": {
+      "path": "results/mcmc_params/mcmc_Grad_scan01_minimal",
+      "label": "scan01 minimal"
+    },
+    "scan02_short": {
+      "path": "results/mcmc_params/mcmc_Grad_scan02_short",
+      "label": "scan02 short"
+    },
+    "scan03_warmup": {
+      "path": "results/mcmc_params/mcmc_Grad_scan03_warmup",
+      "label": "scan03 warmup"
+    },
+    "scan04_medium": {
+      "path": "results/mcmc_params/mcmc_Grad_scan04_medium",
+      "label": "scan04 medium"
+    },
+    "scan05_long": {
+      "path": "results/mcmc_params/mcmc_Grad_scan05_long",
+      "label": "scan05 long"
+    },
+    "scan06_production_light": {
+      "path": "results/mcmc_params/mcmc_Grad_scan06_production_light",
+      "label": "scan06 production-light"
+    },
+    "scan07_production": {
+      "path": "results/mcmc_params/mcmc_Grad_scan07_production",
+      "label": "scan07 production"
+    },
+    "scan08_precision": {
+      "path": "results/mcmc_params/mcmc_Grad_scan08_precision",
+      "label": "scan08 precision"
+    }
+  },
+  "individual_plots": {
+    "output_subdir": "individual",
+    "jobs": [
+      {
+        "experiment": "scan01_minimal",
+        "output_prefix": "corner_scan01_minimal",
+        "title_prefix": "MCMC scan01 minimal",
+        "legend_label": "scan01 minimal",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "scan02_short",
+        "output_prefix": "corner_scan02_short",
+        "title_prefix": "MCMC scan02 short",
+        "legend_label": "scan02 short",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "scan03_warmup",
+        "output_prefix": "corner_scan03_warmup",
+        "title_prefix": "MCMC scan03 warmup",
+        "legend_label": "scan03 warmup",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "scan04_medium",
+        "output_prefix": "corner_scan04_medium",
+        "title_prefix": "MCMC scan04 medium",
+        "legend_label": "scan04 medium",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "scan05_long",
+        "output_prefix": "corner_scan05_long",
+        "title_prefix": "MCMC scan05 long",
+        "legend_label": "scan05 long",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "scan06_production_light",
+        "output_prefix": "corner_scan06_production_light",
+        "title_prefix": "MCMC scan06 production-light",
+        "legend_label": "scan06 production-light",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "scan07_production",
+        "output_prefix": "corner_scan07_production",
+        "title_prefix": "MCMC scan07 production",
+        "legend_label": "scan07 production",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "scan08_precision",
+        "output_prefix": "corner_scan08_precision",
+        "title_prefix": "MCMC scan08 precision",
+        "legend_label": "scan08 precision",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      }
+    ]
+  },
+  "comparison_plots": {
+    "output_subdir": "comparisons",
+    "jobs": [
+      {
+        "experiments": [
+          {
+            "experiment": "scan01_minimal",
+            "label": "scan01 minimal",
+            "color": "#4c78a8"
+          },
+          {
+            "experiment": "scan02_short",
+            "label": "scan02 short",
+            "color": "#f58518"
+          },
+          {
+            "experiment": "scan03_warmup",
+            "label": "scan03 warmup",
+            "color": "#e45756"
+          },
+          {
+            "experiment": "scan04_medium",
+            "label": "scan04 medium",
+            "color": "#72b7b2"
+          },
+          {
+            "experiment": "scan05_long",
+            "label": "scan05 long",
+            "color": "#54a24b"
+          },
+          {
+            "experiment": "scan06_production_light",
+            "label": "scan06 production-light",
+            "color": "#b279a2"
+          },
+          {
+            "experiment": "scan07_production",
+            "label": "scan07 production",
+            "color": "#ff9da6"
+          },
+          {
+            "experiment": "scan08_precision",
+            "label": "scan08 precision",
+            "color": "#9d755d"
+          }
+        ],
+        "output_prefix": "corner_all_mcmc_scans",
+        "title_prefix": "MCMC parameter scan: all tasks",
+        "groups": ["group1", "group2"]
+      }
+    ]
+  }
+}

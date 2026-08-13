@@ -1,0 +1,105 @@
+{
+  "global": {
+    "analysis_root": ".",
+    "results_root": "results",
+    "output_root": "plots",
+    "formats": ["pdf"],
+    "n_samples": 3000,
+    "prune": 1,
+    "seed": 42,
+    "plot_backend": "seaborn",
+    "font_scale": 1.0,
+    "axis_label_fontsize": 9,
+    "tick_label_fontsize": 7,
+    "title_fontsize": 11,
+    "legend_fontsize": 9,
+    "legend_title": "Chain"
+  },
+  "parameter_labels": [
+    "$y_2$",
+    "$y_4$",
+    "$y_6$",
+    "$\\sigma_y$",
+    "$f_{\\rm rem}$",
+    "$S_{\\rm shad}$",
+    "$\\tau_{\\rm form}$",
+    "$B_G$",
+    "$\\sigma_x$",
+    "$\\sigma_\\eta$",
+    "$f_{\\rm shift}$",
+    "$T_{\\eta,\\rm kink}$",
+    "$a_{\\eta,\\rm low}$",
+    "$a_{\\eta,\\rm high}$",
+    "$(\\eta/s)_{\\rm kink}$",
+    "$(\\zeta/s)_{\\max}$",
+    "$T_{\\zeta,\\rm peak}$",
+    "$w_\\zeta$",
+    "$\\lambda_\\zeta$",
+    "$\\epsilon_{\\rm sw}$"
+  ],
+  "parameter_groups": {
+    "initial_state": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "transport": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+  },
+  "experiments": {
+    "AuAu200_jetscape": {
+      "path": "results/AuAu200_jetscape",
+      "label": "Au+Au 200 JETSCAPE chain"
+    },
+    "AuAu200_hicbayes": {
+      "path": "results/AuAu200_hicbayes",
+      "label": "Au+Au 200 hic-bayes chain"
+    },
+    "dAu200_jetscape": {
+      "path": "results/dAu200_jetscape",
+      "label": "d+Au 200 JETSCAPE chain"
+    },
+    "dAu200_hicbayes": {
+      "path": "results/dAu200_hicbayes",
+      "label": "d+Au 200 hic-bayes chain"
+    }
+  },
+  "individual_plots": {
+    "output_subdir": "individual",
+    "jobs": []
+  },
+  "comparison_plots": {
+    "output_subdir": "comparisons",
+    "jobs": [
+      {
+        "experiments": [
+          {
+            "experiment": "AuAu200_jetscape",
+            "label": "JETSCAPE HDF chain",
+            "color": "#4c78a8"
+          },
+          {
+            "experiment": "AuAu200_hicbayes",
+            "label": "hic-bayes HDF chain",
+            "color": "#f58518"
+          }
+        ],
+        "output_prefix": "compare_AuAu200_jetscape_vs_hicbayes",
+        "title_prefix": "Au+Au 200 posterior comparison",
+        "groups": ["initial_state", "transport"]
+      },
+      {
+        "experiments": [
+          {
+            "experiment": "dAu200_jetscape",
+            "label": "JETSCAPE HDF chain",
+            "color": "#4c78a8"
+          },
+          {
+            "experiment": "dAu200_hicbayes",
+            "label": "hic-bayes HDF chain",
+            "color": "#f58518"
+          }
+        ],
+        "output_prefix": "compare_dAu200_jetscape_vs_hicbayes",
+        "title_prefix": "d+Au 200 posterior comparison",
+        "groups": ["initial_state", "transport"]
+      }
+    ]
+  }
+}

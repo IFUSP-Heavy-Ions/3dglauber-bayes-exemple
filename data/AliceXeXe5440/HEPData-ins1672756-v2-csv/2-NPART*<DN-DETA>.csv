@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.88397.v2/t2
+#: name: 2/NPART*<DN/DETA>
+#: description: Values of $2/\langle N_\mathrm{part} \rangle \langle \mathrm{d}N_\mathrm{ch}/\mathrm{d}\eta\rangle$ and $2/\langle N_\mathrm{part} \rangle N^\mathrm{tot}_\mathrm{ch}$ in Xe--Xe collisions at $\sqrt{s_{_{\mathrm{NN}}}} = 5.44\,\mathrm{TeV}$ for the top 5$\%$ central collisions. 
+
+#: data_file: Table2.yaml
+#: keyword reactions: XE XE --> CHARGED X
+#: keyword observables: 2/NPART*<DN/DETA>
+#: keyword cmenergies: 5440.0
+#: CENTRALITY [PCT],0-5
+$\sqrt{s_\mathrm{NN}}$,$ \frac{2}{\langle N_\mathrm{part} \rangle} \langle \mathrm{d}N_\mathrm{ch}/\mathrm{d}\eta\rangle$,sys +,sys -
+5440,9.89,0.24,-0.24
+
+#: CENTRALITY [PCT],0-5
+$\sqrt{s_\mathrm{NN}}$,$\frac{2}{\langle N_\mathrm{part}} \rangle N^\mathrm{tot}_\mathrm{ch}$,sys +,sys -
+5440,112.1,2.6,-2.6
+

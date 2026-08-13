@@ -1,0 +1,482 @@
+{
+  "global": {
+    "analysis_root": ".",
+    "results_root": "chains",
+    "output_root": "plots",
+    "n_samples": 1400,
+    "prune": 1,
+    "seed": 42,
+    "plot_backend": "seaborn",
+    "formats": [
+      "png"
+    ],
+    "dpi": 300,
+    "tick_rotation": 45,
+    "font_scale": 1.15,
+    "axis_label_fontsize": 8,
+    "tick_label_fontsize": 6,
+    "title_fontsize": 11,
+    "legend_fontsize": 9,
+    "legend_title": "AllDetectors AuAu/dAu 200 GeV (Grad)"
+  },
+  "experiments": {
+    "AuAu200_baseline_Grad": {
+      "path": "results/AuAu200_baseline_Grad",
+      "label": "AuAu200_baseline_Grad"
+    },
+    "AuAu200_baseline_zeroexp_Grad": {
+      "path": "results/AuAu200_baseline_zeroexp_Grad",
+      "label": "AuAu200_baseline_zeroexp_Grad"
+    },
+    "AuAu200_rho_0.1_Grad": {
+      "path": "results/AuAu200_rho_0.1_Grad",
+      "label": "AuAu200_rho_0.1_Grad"
+    },
+    "AuAu200_rho_0.2_Grad": {
+      "path": "results/AuAu200_rho_0.2_Grad",
+      "label": "AuAu200_rho_0.2_Grad"
+    },
+    "AuAu200_rho_0.3_Grad": {
+      "path": "results/AuAu200_rho_0.3_Grad",
+      "label": "AuAu200_rho_0.3_Grad"
+    },
+    "AuAu200_rho_0.4_Grad": {
+      "path": "results/AuAu200_rho_0.4_Grad",
+      "label": "AuAu200_rho_0.4_Grad"
+    },
+    "AuAu200_rho_0.5_Grad": {
+      "path": "results/AuAu200_rho_0.5_Grad",
+      "label": "AuAu200_rho_0.5_Grad"
+    },
+    "AuAu200_rho_0.6_Grad": {
+      "path": "results/AuAu200_rho_0.6_Grad",
+      "label": "AuAu200_rho_0.6_Grad"
+    },
+    "AuAu200_rho_0.7_Grad": {
+      "path": "results/AuAu200_rho_0.7_Grad",
+      "label": "AuAu200_rho_0.7_Grad"
+    },
+    "AuAu200_rho_0.8_Grad": {
+      "path": "results/AuAu200_rho_0.8_Grad",
+      "label": "AuAu200_rho_0.8_Grad"
+    },
+    "AuAu200_rho_0.9_Grad": {
+      "path": "results/AuAu200_rho_0.9_Grad",
+      "label": "AuAu200_rho_0.9_Grad"
+    },
+    "AuAu200_ro_0.0_Grad": {
+      "path": "results/AuAu200_ro_0.0_Grad",
+      "label": "AuAu200_ro_0.0_Grad"
+    },
+    "AuAu200_ro_0.1_Grad": {
+      "path": "results/AuAu200_ro_0.1_Grad",
+      "label": "AuAu200_ro_0.1_Grad"
+    },
+    "AuAu200_ro_0.5_Grad": {
+      "path": "results/AuAu200_ro_0.5_Grad",
+      "label": "AuAu200_ro_0.5_Grad"
+    },
+    "AuAu200_ro_0.9_Grad": {
+      "path": "results/AuAu200_ro_0.9_Grad",
+      "label": "AuAu200_ro_0.9_Grad"
+    },
+    "AuAu200_ro_1.3_Grad": {
+      "path": "results/AuAu200_ro_1.3_Grad",
+      "label": "AuAu200_ro_1.3_Grad"
+    },
+    "AuAu200_ro_1.7_Grad": {
+      "path": "results/AuAu200_ro_1.7_Grad",
+      "label": "AuAu200_ro_1.7_Grad"
+    },
+    "AuAu200_ro_2.0_Grad": {
+      "path": "results/AuAu200_ro_2.0_Grad",
+      "label": "AuAu200_ro_2.0_Grad"
+    },
+    "AuAu200_ro_4.0_Grad": {
+      "path": "results/AuAu200_ro_4.0_Grad",
+      "label": "AuAu200_ro_4.0_Grad"
+    },
+    "AuAu200_ro_6.0_Grad": {
+      "path": "results/AuAu200_ro_6.0_Grad",
+      "label": "AuAu200_ro_6.0_Grad"
+    },
+    "AuAu200_ro_8.0_Grad": {
+      "path": "results/AuAu200_ro_8.0_Grad",
+      "label": "AuAu200_ro_8.0_Grad"
+    },
+    "AuAu200_ro_10.0_Grad": {
+      "path": "results/AuAu200_ro_10.0_Grad",
+      "label": "AuAu200_ro_10.0_Grad"
+    },
+    "dAu200_baseline_Grad": {
+      "path": "results/dAu200_baseline_Grad",
+      "label": "dAu200_baseline_Grad"
+    },
+    "dAu200_baseline_zeroexp_Grad": {
+      "path": "results/dAu200_baseline_zeroexp_Grad",
+      "label": "dAu200_baseline_zeroexp_Grad"
+    },
+    "dAu200_rho_0.1_Grad": {
+      "path": "results/dAu200_rho_0.1_Grad",
+      "label": "dAu200_rho_0.1_Grad"
+    },
+    "dAu200_rho_0.2_Grad": {
+      "path": "results/dAu200_rho_0.2_Grad",
+      "label": "dAu200_rho_0.2_Grad"
+    },
+    "dAu200_rho_0.3_Grad": {
+      "path": "results/dAu200_rho_0.3_Grad",
+      "label": "dAu200_rho_0.3_Grad"
+    },
+    "dAu200_rho_0.4_Grad": {
+      "path": "results/dAu200_rho_0.4_Grad",
+      "label": "dAu200_rho_0.4_Grad"
+    },
+    "dAu200_rho_0.5_Grad": {
+      "path": "results/dAu200_rho_0.5_Grad",
+      "label": "dAu200_rho_0.5_Grad"
+    },
+    "dAu200_rho_0.6_Grad": {
+      "path": "results/dAu200_rho_0.6_Grad",
+      "label": "dAu200_rho_0.6_Grad"
+    },
+    "dAu200_rho_0.7_Grad": {
+      "path": "results/dAu200_rho_0.7_Grad",
+      "label": "dAu200_rho_0.7_Grad"
+    },
+    "dAu200_rho_0.8_Grad": {
+      "path": "results/dAu200_rho_0.8_Grad",
+      "label": "dAu200_rho_0.8_Grad"
+    },
+    "dAu200_rho_0.9_Grad": {
+      "path": "results/dAu200_rho_0.9_Grad",
+      "label": "dAu200_rho_0.9_Grad"
+    },
+    "dAu200_ro_0.0_Grad": {
+      "path": "results/dAu200_ro_0.0_Grad",
+      "label": "dAu200_ro_0.0_Grad"
+    },
+    "dAu200_ro_0.1_Grad": {
+      "path": "results/dAu200_ro_0.1_Grad",
+      "label": "dAu200_ro_0.1_Grad"
+    },
+    "dAu200_ro_0.5_Grad": {
+      "path": "results/dAu200_ro_0.5_Grad",
+      "label": "dAu200_ro_0.5_Grad"
+    },
+    "dAu200_ro_0.9_Grad": {
+      "path": "results/dAu200_ro_0.9_Grad",
+      "label": "dAu200_ro_0.9_Grad"
+    },
+    "dAu200_ro_1.3_Grad": {
+      "path": "results/dAu200_ro_1.3_Grad",
+      "label": "dAu200_ro_1.3_Grad"
+    },
+    "dAu200_ro_1.7_Grad": {
+      "path": "results/dAu200_ro_1.7_Grad",
+      "label": "dAu200_ro_1.7_Grad"
+    },
+    "dAu200_ro_2.0_Grad": {
+      "path": "results/dAu200_ro_2.0_Grad",
+      "label": "dAu200_ro_2.0_Grad"
+    },
+    "dAu200_ro_4.0_Grad": {
+      "path": "results/dAu200_ro_4.0_Grad",
+      "label": "dAu200_ro_4.0_Grad"
+    },
+    "dAu200_ro_6.0_Grad": {
+      "path": "results/dAu200_ro_6.0_Grad",
+      "label": "dAu200_ro_6.0_Grad"
+    },
+    "dAu200_ro_8.0_Grad": {
+      "path": "results/dAu200_ro_8.0_Grad",
+      "label": "dAu200_ro_8.0_Grad"
+    },
+    "dAu200_ro_10.0_Grad": {
+      "path": "results/dAu200_ro_10.0_Grad",
+      "label": "dAu200_ro_10.0_Grad"
+    }
+  },
+  "individual_plots": {
+    "output_subdir": "individual",
+    "jobs": [
+      {
+        "experiment": "AuAu200_baseline_Grad",
+        "output_prefix": "corner_AuAu200_baseline_Grad",
+        "title": "AuAu200_baseline_Grad"
+      },
+      {
+        "experiment": "AuAu200_baseline_zeroexp_Grad",
+        "output_prefix": "corner_AuAu200_baseline_zeroexp_Grad",
+        "title": "AuAu200_baseline_zeroexp_Grad"
+      },
+      {
+        "experiment": "AuAu200_rho_0.1_Grad",
+        "output_prefix": "corner_AuAu200_rho_0.1_Grad",
+        "title": "AuAu200_rho_0.1_Grad"
+      },
+      {
+        "experiment": "AuAu200_rho_0.2_Grad",
+        "output_prefix": "corner_AuAu200_rho_0.2_Grad",
+        "title": "AuAu200_rho_0.2_Grad"
+      },
+      {
+        "experiment": "AuAu200_rho_0.3_Grad",
+        "output_prefix": "corner_AuAu200_rho_0.3_Grad",
+        "title": "AuAu200_rho_0.3_Grad"
+      },
+      {
+        "experiment": "AuAu200_rho_0.4_Grad",
+        "output_prefix": "corner_AuAu200_rho_0.4_Grad",
+        "title": "AuAu200_rho_0.4_Grad"
+      },
+      {
+        "experiment": "AuAu200_rho_0.5_Grad",
+        "output_prefix": "corner_AuAu200_rho_0.5_Grad",
+        "title": "AuAu200_rho_0.5_Grad"
+      },
+      {
+        "experiment": "AuAu200_rho_0.6_Grad",
+        "output_prefix": "corner_AuAu200_rho_0.6_Grad",
+        "title": "AuAu200_rho_0.6_Grad"
+      },
+      {
+        "experiment": "AuAu200_rho_0.7_Grad",
+        "output_prefix": "corner_AuAu200_rho_0.7_Grad",
+        "title": "AuAu200_rho_0.7_Grad"
+      },
+      {
+        "experiment": "AuAu200_rho_0.8_Grad",
+        "output_prefix": "corner_AuAu200_rho_0.8_Grad",
+        "title": "AuAu200_rho_0.8_Grad"
+      },
+      {
+        "experiment": "AuAu200_rho_0.9_Grad",
+        "output_prefix": "corner_AuAu200_rho_0.9_Grad",
+        "title": "AuAu200_rho_0.9_Grad"
+      },
+      {
+        "experiment": "AuAu200_ro_0.0_Grad",
+        "output_prefix": "corner_AuAu200_ro_0.0_Grad",
+        "title": "AuAu200_ro_0.0_Grad"
+      },
+      {
+        "experiment": "AuAu200_ro_0.1_Grad",
+        "output_prefix": "corner_AuAu200_ro_0.1_Grad",
+        "title": "AuAu200_ro_0.1_Grad"
+      },
+      {
+        "experiment": "AuAu200_ro_0.5_Grad",
+        "output_prefix": "corner_AuAu200_ro_0.5_Grad",
+        "title": "AuAu200_ro_0.5_Grad"
+      },
+      {
+        "experiment": "AuAu200_ro_0.9_Grad",
+        "output_prefix": "corner_AuAu200_ro_0.9_Grad",
+        "title": "AuAu200_ro_0.9_Grad"
+      },
+      {
+        "experiment": "AuAu200_ro_1.3_Grad",
+        "output_prefix": "corner_AuAu200_ro_1.3_Grad",
+        "title": "AuAu200_ro_1.3_Grad"
+      },
+      {
+        "experiment": "AuAu200_ro_1.7_Grad",
+        "output_prefix": "corner_AuAu200_ro_1.7_Grad",
+        "title": "AuAu200_ro_1.7_Grad"
+      },
+      {
+        "experiment": "AuAu200_ro_2.0_Grad",
+        "output_prefix": "corner_AuAu200_ro_2.0_Grad",
+        "title": "AuAu200_ro_2.0_Grad"
+      },
+      {
+        "experiment": "AuAu200_ro_4.0_Grad",
+        "output_prefix": "corner_AuAu200_ro_4.0_Grad",
+        "title": "AuAu200_ro_4.0_Grad"
+      },
+      {
+        "experiment": "AuAu200_ro_6.0_Grad",
+        "output_prefix": "corner_AuAu200_ro_6.0_Grad",
+        "title": "AuAu200_ro_6.0_Grad"
+      },
+      {
+        "experiment": "AuAu200_ro_8.0_Grad",
+        "output_prefix": "corner_AuAu200_ro_8.0_Grad",
+        "title": "AuAu200_ro_8.0_Grad"
+      },
+      {
+        "experiment": "AuAu200_ro_10.0_Grad",
+        "output_prefix": "corner_AuAu200_ro_10.0_Grad",
+        "title": "AuAu200_ro_10.0_Grad"
+      },
+      {
+        "experiment": "dAu200_baseline_Grad",
+        "output_prefix": "corner_dAu200_baseline_Grad",
+        "title": "dAu200_baseline_Grad"
+      },
+      {
+        "experiment": "dAu200_baseline_zeroexp_Grad",
+        "output_prefix": "corner_dAu200_baseline_zeroexp_Grad",
+        "title": "dAu200_baseline_zeroexp_Grad"
+      },
+      {
+        "experiment": "dAu200_rho_0.1_Grad",
+        "output_prefix": "corner_dAu200_rho_0.1_Grad",
+        "title": "dAu200_rho_0.1_Grad"
+      },
+      {
+        "experiment": "dAu200_rho_0.2_Grad",
+        "output_prefix": "corner_dAu200_rho_0.2_Grad",
+        "title": "dAu200_rho_0.2_Grad"
+      },
+      {
+        "experiment": "dAu200_rho_0.3_Grad",
+        "output_prefix": "corner_dAu200_rho_0.3_Grad",
+        "title": "dAu200_rho_0.3_Grad"
+      },
+      {
+        "experiment": "dAu200_rho_0.4_Grad",
+        "output_prefix": "corner_dAu200_rho_0.4_Grad",
+        "title": "dAu200_rho_0.4_Grad"
+      },
+      {
+        "experiment": "dAu200_rho_0.5_Grad",
+        "output_prefix": "corner_dAu200_rho_0.5_Grad",
+        "title": "dAu200_rho_0.5_Grad"
+      },
+      {
+        "experiment": "dAu200_rho_0.6_Grad",
+        "output_prefix": "corner_dAu200_rho_0.6_Grad",
+        "title": "dAu200_rho_0.6_Grad"
+      },
+      {
+        "experiment": "dAu200_rho_0.7_Grad",
+        "output_prefix": "corner_dAu200_rho_0.7_Grad",
+        "title": "dAu200_rho_0.7_Grad"
+      },
+      {
+        "experiment": "dAu200_rho_0.8_Grad",
+        "output_prefix": "corner_dAu200_rho_0.8_Grad",
+        "title": "dAu200_rho_0.8_Grad"
+      },
+      {
+        "experiment": "dAu200_rho_0.9_Grad",
+        "output_prefix": "corner_dAu200_rho_0.9_Grad",
+        "title": "dAu200_rho_0.9_Grad"
+      },
+      {
+        "experiment": "dAu200_ro_0.0_Grad",
+        "output_prefix": "corner_dAu200_ro_0.0_Grad",
+        "title": "dAu200_ro_0.0_Grad"
+      },
+      {
+        "experiment": "dAu200_ro_0.1_Grad",
+        "output_prefix": "corner_dAu200_ro_0.1_Grad",
+        "title": "dAu200_ro_0.1_Grad"
+      },
+      {
+        "experiment": "dAu200_ro_0.5_Grad",
+        "output_prefix": "corner_dAu200_ro_0.5_Grad",
+        "title": "dAu200_ro_0.5_Grad"
+      },
+      {
+        "experiment": "dAu200_ro_0.9_Grad",
+        "output_prefix": "corner_dAu200_ro_0.9_Grad",
+        "title": "dAu200_ro_0.9_Grad"
+      },
+      {
+        "experiment": "dAu200_ro_1.3_Grad",
+        "output_prefix": "corner_dAu200_ro_1.3_Grad",
+        "title": "dAu200_ro_1.3_Grad"
+      },
+      {
+        "experiment": "dAu200_ro_1.7_Grad",
+        "output_prefix": "corner_dAu200_ro_1.7_Grad",
+        "title": "dAu200_ro_1.7_Grad"
+      },
+      {
+        "experiment": "dAu200_ro_2.0_Grad",
+        "output_prefix": "corner_dAu200_ro_2.0_Grad",
+        "title": "dAu200_ro_2.0_Grad"
+      },
+      {
+        "experiment": "dAu200_ro_4.0_Grad",
+        "output_prefix": "corner_dAu200_ro_4.0_Grad",
+        "title": "dAu200_ro_4.0_Grad"
+      },
+      {
+        "experiment": "dAu200_ro_6.0_Grad",
+        "output_prefix": "corner_dAu200_ro_6.0_Grad",
+        "title": "dAu200_ro_6.0_Grad"
+      },
+      {
+        "experiment": "dAu200_ro_8.0_Grad",
+        "output_prefix": "corner_dAu200_ro_8.0_Grad",
+        "title": "dAu200_ro_8.0_Grad"
+      },
+      {
+        "experiment": "dAu200_ro_10.0_Grad",
+        "output_prefix": "corner_dAu200_ro_10.0_Grad",
+        "title": "dAu200_ro_10.0_Grad"
+      }
+    ]
+  },
+  "comparison_plots": {
+    "output_subdir": "comparisons",
+    "jobs": [
+      {
+        "experiments": [
+          "AuAu200_baseline_zeroexp_Grad",
+          "AuAu200_baseline_Grad",
+          "AuAu200_rho_0.9_Grad",
+          "AuAu200_ro_10.0_Grad"
+        ],
+        "output_prefix": "corner_AuAu200_zeroexp_vs_baseline_vs_rho_0.9_vs_ro_10.0_Grad",
+        "title_prefix": "AuAu200 zeroexp vs baseline vs rho 0.9 vs ro 10.0"
+      },
+      {
+        "experiments": [
+          "AuAu200_baseline_zeroexp_Grad",
+          "AuAu200_baseline_Grad"
+        ],
+        "output_prefix": "corner_AuAu200_zeroexp_vs_baseline_Grad",
+        "title_prefix": "AuAu200 zeroexp vs baseline"
+      },
+      {
+        "experiments": [
+          "AuAu200_baseline_Grad",
+          "AuAu200_rho_0.9_Grad"
+        ],
+        "output_prefix": "corner_AuAu200_baseline_vs_rho_0.9",
+        "title_prefix": "AuAu200 baseline vs rho 0.9"
+      },
+            {
+        "experiments": [
+          "AuAu200_baseline_Grad",
+          "AuAu200_ro_10.0_Grad"
+        ],
+        "output_prefix": "corner_AuAu200_baseline_vs_ro_10.0_Grad",
+        "title_prefix": "AuAu200 baseline vs ro 10.0"
+      },
+      {
+        "experiments": [
+          "AuAu200_rho_0.9_Grad",
+          "AuAu200_ro_10.0_Grad"
+        ],
+        "output_prefix": "corner_AuAu200_rho_0.9_vs_ro_10.0_Grad",
+        "title_prefix": "AuAu200 rho 0.9 vs ro 10.0"
+      },
+      {
+        "experiments": [
+          "dAu200_baseline_zeroexp_Grad",
+          "dAu200_baseline_Grad",
+          "dAu200_rho_0.9_Grad",
+          "dAu200_ro_10.0_Grad"
+        ],
+        "output_prefix": "corner_dAu200_zeroexp_vs_baseline_vs_rho_0.9_vs_ro_10.0_Grad",
+        "title_prefix": "dAu200 zeroexp vs baseline vs rho 0.9 vs ro 10.0"
+      }
+    ]
+  }
+}

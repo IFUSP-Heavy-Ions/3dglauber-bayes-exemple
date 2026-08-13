@@ -1,0 +1,777 @@
+{
+  "global": {
+    "analysis_root": "studies/AlicePbPb2760/uncertainty_correlation",
+    "results_root": "chains",
+    "output_root": "plots",
+    "n_samples": 1400,
+    "prune": 1,
+    "seed": 42,
+    "plot_backend": "seaborn",
+    "formats": ["png"],
+    "dpi": 300,
+    "tick_rotation": 45,
+    "font_scale": 1.15,
+    "axis_label_fontsize": 8,
+    "tick_label_fontsize": 6,
+    "title_fontsize": 11,
+    "legend_fontsize": 9,
+    "legend_title": "Alice PbPb 2.76 TeV (Grad δf)"
+  },
+  "parameter_labels": [
+    "$N$[2.76 TeV]",
+    "$p$",
+    "$\\sigma_k$",
+    "$w$ [fm]",
+    "$d_{\\rm min}$ [fm]",
+    "$\\tau_R$ [fm/$c$]",
+    "$\\alpha$",
+    "$T_{\\eta,\\rm kink}$ [GeV]",
+    "$a_{\\eta,\\rm low}$ [GeV$^{-1}$]",
+    "$a_{\\eta,\\rm high}$ [GeV$^{-1}$]",
+    "$(\\eta/s)_{\\rm kink}$",
+    "$(\\zeta/s)_{\\rm max}$",
+    "$T_{\\zeta,c}$ [GeV]",
+    "$w_{\\zeta}$ [GeV]",
+    "$\\lambda_{\\zeta}$",
+    "$b_{\\pi}$",
+    "$T_{\\rm sw}$ [GeV]"
+  ],
+  "parameter_groups": {
+    "group1": [0, 1, 2, 3, 4, 5, 6, 15, 16],
+    "group2": [7, 8, 9, 10, 11, 12, 13, 14]
+  },
+  "experiments": {
+    "baseline_Grad_1": {
+      "path": "results/baseline_Grad_1",
+      "label": "diagonal"
+    },
+    "baseline_Grad_2": {
+      "path": "results/baseline_Grad_2",
+      "label": "diagonal"
+    },
+    "baseline_zeroexp_Grad_1": {
+      "path": "results/baseline_zeroexp_Grad_1",
+      "label": "no experimental covariance"
+    },
+    "baseline_zeroexp_Grad_2": {
+      "path": "results/baseline_zeroexp_Grad_2",
+      "label": "no experimental covariance"
+    },
+    "ro_0.0_Grad_1": {
+      "path": "results/ro_0.0_Grad_1",
+      "label": "RBF $r_0=0.0$"
+    },
+    "ro_0.0_Grad_2": {
+      "path": "results/ro_0.0_Grad_2",
+      "label": "RBF $r_0=0.0$"
+    },
+    "ro_2.0_Grad_1": {
+      "path": "results/ro_2.0_Grad_1",
+      "label": "RBF $r_0=2.0$"
+    },
+    "ro_2.0_Grad_2": {
+      "path": "results/ro_2.0_Grad_2",
+      "label": "RBF $r_0=2.0$"
+    },
+    "ro_4.0_Grad_1": {
+      "path": "results/ro_4.0_Grad_1",
+      "label": "RBF $r_0=4.0$"
+    },
+    "ro_4.0_Grad_2": {
+      "path": "results/ro_4.0_Grad_2",
+      "label": "RBF $r_0=4.0$"
+    },
+    "ro_6.0_Grad_1": {
+      "path": "results/ro_6.0_Grad_1",
+      "label": "RBF $r_0=6.0$"
+    },
+    "ro_6.0_Grad_2": {
+      "path": "results/ro_6.0_Grad_2",
+      "label": "RBF $r_0=6.0$"
+    },
+    "ro_8.0_Grad_1": {
+      "path": "results/ro_8.0_Grad_1",
+      "label": "RBF $r_0=8.0$"
+    },
+    "ro_8.0_Grad_2": {
+      "path": "results/ro_8.0_Grad_2",
+      "label": "RBF $r_0=8.0$"
+    },
+    "ro_10.0_Grad_1": {
+      "path": "results/ro_10.0_Grad_1",
+      "label": "RBF $r_0=10.0$"
+    },
+    "ro_10.0_Grad_2": {
+      "path": "results/ro_10.0_Grad_2",
+      "label": "RBF $r_0=10.0$"
+    },
+    "rho_0.1_Grad_1": {
+      "path": "results/rho_0.1_Grad_1",
+      "label": "CS $\\rho=0.1$"
+    },
+    "rho_0.1_Grad_2": {
+      "path": "results/rho_0.1_Grad_2",
+      "label": "CS $\\rho=0.1$"
+    },
+    "rho_0.2_Grad_1": {
+      "path": "results/rho_0.2_Grad_1",
+      "label": "CS $\\rho=0.2$"
+    },
+    "rho_0.2_Grad_2": {
+      "path": "results/rho_0.2_Grad_2",
+      "label": "CS $\\rho=0.2$"
+    },
+    "rho_0.4_Grad_1": {
+      "path": "results/rho_0.4_Grad_1",
+      "label": "CS $\\rho=0.4$"
+    },
+    "rho_0.4_Grad_2": {
+      "path": "results/rho_0.4_Grad_2",
+      "label": "CS $\\rho=0.4$"
+    },
+    "rho_0.6_Grad_1": {
+      "path": "results/rho_0.6_Grad_1",
+      "label": "CS $\\rho=0.6$"
+    },
+    "rho_0.6_Grad_2": {
+      "path": "results/rho_0.6_Grad_2",
+      "label": "CS $\\rho=0.6$"
+    },
+    "rho_0.8_Grad_1": {
+      "path": "results/rho_0.8_Grad_1",
+      "label": "CS $\\rho=0.8$"
+    },
+    "rho_0.8_Grad_2": {
+      "path": "results/rho_0.8_Grad_2",
+      "label": "CS $\\rho=0.8$"
+    },
+    "rho_0.9_Grad_1": {
+      "path": "results/rho_0.9_Grad_1",
+      "label": "CS $\\rho=0.9$"
+    },
+    "rho_0.9_Grad_2": {
+      "path": "results/rho_0.9_Grad_2",
+      "label": "CS $\\rho=0.9$"
+    }
+  },
+  "individual_plots": {
+    "output_subdir": "individual",
+    "jobs": [
+      {
+        "experiment": "baseline_Grad_1",
+        "output_prefix": "corner_baseline_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: diagonal",
+        "legend_label": "diagonal",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "baseline_Grad_2",
+        "output_prefix": "corner_baseline_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: diagonal",
+        "legend_label": "diagonal",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "baseline_zeroexp_Grad_1",
+        "output_prefix": "corner_baseline_zeroexp_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: no experimental covariance",
+        "legend_label": "no experimental covariance",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "baseline_zeroexp_Grad_2",
+        "output_prefix": "corner_baseline_zeroexp_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: no experimental covariance",
+        "legend_label": "no experimental covariance",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "ro_0.0_Grad_1",
+        "output_prefix": "corner_ro_0.0_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF)",
+        "legend_label": "RBF $r_0=0.0$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "ro_0.0_Grad_2",
+        "output_prefix": "corner_ro_0.0_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF)",
+        "legend_label": "RBF $r_0=0.0$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "ro_2.0_Grad_1",
+        "output_prefix": "corner_ro_2.0_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF)",
+        "legend_label": "RBF $r_0=2.0$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "ro_2.0_Grad_2",
+        "output_prefix": "corner_ro_2.0_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF)",
+        "legend_label": "RBF $r_0=2.0$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "ro_4.0_Grad_1",
+        "output_prefix": "corner_ro_4.0_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF)",
+        "legend_label": "RBF $r_0=4.0$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "ro_4.0_Grad_2",
+        "output_prefix": "corner_ro_4.0_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF)",
+        "legend_label": "RBF $r_0=4.0$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "ro_6.0_Grad_1",
+        "output_prefix": "corner_ro_6.0_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF)",
+        "legend_label": "RBF $r_0=6.0$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "ro_6.0_Grad_2",
+        "output_prefix": "corner_ro_6.0_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF)",
+        "legend_label": "RBF $r_0=6.0$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "ro_8.0_Grad_1",
+        "output_prefix": "corner_ro_8.0_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF)",
+        "legend_label": "RBF $r_0=8.0$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "ro_8.0_Grad_2",
+        "output_prefix": "corner_ro_8.0_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF)",
+        "legend_label": "RBF $r_0=8.0$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "ro_10.0_Grad_1",
+        "output_prefix": "corner_ro_10.0_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF)",
+        "legend_label": "RBF $r_0=10.0$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "ro_10.0_Grad_2",
+        "output_prefix": "corner_ro_10.0_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF)",
+        "legend_label": "RBF $r_0=10.0$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "rho_0.1_Grad_1",
+        "output_prefix": "corner_rho_0.1_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS)",
+        "legend_label": "CS $\\rho=0.1$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "rho_0.1_Grad_2",
+        "output_prefix": "corner_rho_0.1_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS)",
+        "legend_label": "CS $\\rho=0.1$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "rho_0.2_Grad_1",
+        "output_prefix": "corner_rho_0.2_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS)",
+        "legend_label": "CS $\\rho=0.2$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "rho_0.2_Grad_2",
+        "output_prefix": "corner_rho_0.2_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS)",
+        "legend_label": "CS $\\rho=0.2$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "rho_0.4_Grad_1",
+        "output_prefix": "corner_rho_0.4_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS)",
+        "legend_label": "CS $\\rho=0.4$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "rho_0.4_Grad_2",
+        "output_prefix": "corner_rho_0.4_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS)",
+        "legend_label": "CS $\\rho=0.4$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "rho_0.6_Grad_1",
+        "output_prefix": "corner_rho_0.6_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS)",
+        "legend_label": "CS $\\rho=0.6$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "rho_0.6_Grad_2",
+        "output_prefix": "corner_rho_0.6_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS)",
+        "legend_label": "CS $\\rho=0.6$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "rho_0.8_Grad_1",
+        "output_prefix": "corner_rho_0.8_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS)",
+        "legend_label": "CS $\\rho=0.8$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "rho_0.8_Grad_2",
+        "output_prefix": "corner_rho_0.8_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS)",
+        "legend_label": "CS $\\rho=0.8$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "rho_0.9_Grad_1",
+        "output_prefix": "corner_rho_0.9_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS)",
+        "legend_label": "CS $\\rho=0.9$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "rho_0.9_Grad_2",
+        "output_prefix": "corner_rho_0.9_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS)",
+        "legend_label": "CS $\\rho=0.9$",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      }
+    ]
+  },
+  "comparison_plots": {
+    "output_subdir": "comparisons",
+    "jobs": [
+      {
+        "experiments": [
+          { "experiment": "baseline_Grad_1", "label": "diagonal", "color": "#4c78a8" },
+          { "experiment": "ro_0.0_Grad_1", "label": "RBF $r_0=0.0$", "color": "#f58518" },
+          { "experiment": "ro_2.0_Grad_1", "label": "RBF $r_0=2.0$", "color": "#e45756" },
+          { "experiment": "ro_4.0_Grad_1", "label": "RBF $r_0=4.0$", "color": "#72b7b2" },
+          { "experiment": "ro_6.0_Grad_1", "label": "RBF $r_0=6.0$", "color": "#54a24b" },
+          { "experiment": "ro_8.0_Grad_1", "label": "RBF $r_0=8.0$", "color": "#b279a2" },
+          { "experiment": "ro_10.0_Grad_1", "label": "RBF $r_0=10.0$", "color": "#9d755d" }
+        ],
+        "output_prefix": "corner_ro_scan_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF) scan",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "experiments": [
+          { "experiment": "baseline_Grad_2", "label": "diagonal", "color": "#4c78a8" },
+          { "experiment": "ro_0.0_Grad_2", "label": "RBF $r_0=0.0$", "color": "#f58518" },
+          { "experiment": "ro_2.0_Grad_2", "label": "RBF $r_0=2.0$", "color": "#e45756" },
+          { "experiment": "ro_4.0_Grad_2", "label": "RBF $r_0=4.0$", "color": "#72b7b2" },
+          { "experiment": "ro_6.0_Grad_2", "label": "RBF $r_0=6.0$", "color": "#54a24b" },
+          { "experiment": "ro_8.0_Grad_2", "label": "RBF $r_0=8.0$", "color": "#b279a2" },
+          { "experiment": "ro_10.0_Grad_2", "label": "RBF $r_0=10.0$", "color": "#9d755d" }
+        ],
+        "output_prefix": "corner_ro_scan_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF) scan",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "experiments": [
+          { "experiment": "baseline_Grad_1", "label": "diagonal", "color": "#4c78a8" },
+          { "experiment": "rho_0.1_Grad_1", "label": "CS $\\rho=0.1$", "color": "#f58518" },
+          { "experiment": "rho_0.2_Grad_1", "label": "CS $\\rho=0.2$", "color": "#e45756" },
+          { "experiment": "rho_0.4_Grad_1", "label": "CS $\\rho=0.4$", "color": "#72b7b2" },
+          { "experiment": "rho_0.6_Grad_1", "label": "CS $\\rho=0.6$", "color": "#54a24b" },
+          { "experiment": "rho_0.8_Grad_1", "label": "CS $\\rho=0.8$", "color": "#b279a2" },
+          { "experiment": "rho_0.9_Grad_1", "label": "CS $\\rho=0.9$", "color": "#9d755d" }
+        ],
+        "output_prefix": "corner_rho_scan_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS) scan",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "experiments": [
+          { "experiment": "baseline_Grad_2", "label": "diagonal", "color": "#4c78a8" },
+          { "experiment": "rho_0.1_Grad_2", "label": "CS $\\rho=0.1$", "color": "#f58518" },
+          { "experiment": "rho_0.2_Grad_2", "label": "CS $\\rho=0.2$", "color": "#e45756" },
+          { "experiment": "rho_0.4_Grad_2", "label": "CS $\\rho=0.4$", "color": "#72b7b2" },
+          { "experiment": "rho_0.6_Grad_2", "label": "CS $\\rho=0.6$", "color": "#54a24b" },
+          { "experiment": "rho_0.8_Grad_2", "label": "CS $\\rho=0.8$", "color": "#b279a2" },
+          { "experiment": "rho_0.9_Grad_2", "label": "CS $\\rho=0.9$", "color": "#9d755d" }
+        ],
+        "output_prefix": "corner_rho_scan_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS) scan",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "ro_0.0_Grad_1",
+        "right_experiment": "baseline_Grad_1",
+        "left_label": "RBF $r_0=0.0$",
+        "right_label": "diagonal",
+        "left_color": "#f58518",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_ro_0.0_Grad_1_vs_baseline_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "ro_0.0_Grad_2",
+        "right_experiment": "baseline_Grad_2",
+        "left_label": "RBF $r_0=0.0$",
+        "right_label": "diagonal",
+        "left_color": "#f58518",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_ro_0.0_Grad_2_vs_baseline_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "ro_2.0_Grad_1",
+        "right_experiment": "baseline_Grad_1",
+        "left_label": "RBF $r_0=2.0$",
+        "right_label": "diagonal",
+        "left_color": "#e45756",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_ro_2.0_Grad_1_vs_baseline_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "ro_2.0_Grad_2",
+        "right_experiment": "baseline_Grad_2",
+        "left_label": "RBF $r_0=2.0$",
+        "right_label": "diagonal",
+        "left_color": "#e45756",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_ro_2.0_Grad_2_vs_baseline_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "ro_4.0_Grad_1",
+        "right_experiment": "baseline_Grad_1",
+        "left_label": "RBF $r_0=4.0$",
+        "right_label": "diagonal",
+        "left_color": "#72b7b2",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_ro_4.0_Grad_1_vs_baseline_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "ro_4.0_Grad_2",
+        "right_experiment": "baseline_Grad_2",
+        "left_label": "RBF $r_0=4.0$",
+        "right_label": "diagonal",
+        "left_color": "#72b7b2",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_ro_4.0_Grad_2_vs_baseline_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "ro_6.0_Grad_1",
+        "right_experiment": "baseline_Grad_1",
+        "left_label": "RBF $r_0=6.0$",
+        "right_label": "diagonal",
+        "left_color": "#54a24b",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_ro_6.0_Grad_1_vs_baseline_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "ro_6.0_Grad_2",
+        "right_experiment": "baseline_Grad_2",
+        "left_label": "RBF $r_0=6.0$",
+        "right_label": "diagonal",
+        "left_color": "#54a24b",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_ro_6.0_Grad_2_vs_baseline_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "ro_8.0_Grad_1",
+        "right_experiment": "baseline_Grad_1",
+        "left_label": "RBF $r_0=8.0$",
+        "right_label": "diagonal",
+        "left_color": "#b279a2",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_ro_8.0_Grad_1_vs_baseline_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "ro_8.0_Grad_2",
+        "right_experiment": "baseline_Grad_2",
+        "left_label": "RBF $r_0=8.0$",
+        "right_label": "diagonal",
+        "left_color": "#b279a2",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_ro_8.0_Grad_2_vs_baseline_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "ro_10.0_Grad_1",
+        "right_experiment": "baseline_Grad_1",
+        "left_label": "RBF $r_0=10.0$",
+        "right_label": "diagonal",
+        "left_color": "#9d755d",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_ro_10.0_Grad_1_vs_baseline_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "ro_10.0_Grad_2",
+        "right_experiment": "baseline_Grad_2",
+        "left_label": "RBF $r_0=10.0$",
+        "right_label": "diagonal",
+        "left_color": "#9d755d",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_ro_10.0_Grad_2_vs_baseline_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Radial Basis Function (RBF) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "baseline_Grad_1",
+        "right_experiment": "baseline_zeroexp_Grad_1",
+        "left_label": "diagonal",
+        "right_label": "no experimental covariance",
+        "left_color": "#4c78a8",
+        "right_color": "#f58518",
+        "output_prefix": "corner_baseline_Grad_1_vs_zeroexp_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: diagonal vs no experimental covariance",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "baseline_Grad_2",
+        "right_experiment": "baseline_zeroexp_Grad_2",
+        "left_label": "diagonal",
+        "right_label": "no experimental covariance",
+        "left_color": "#4c78a8",
+        "right_color": "#f58518",
+        "output_prefix": "corner_baseline_Grad_2_vs_zeroexp_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: diagonal vs no experimental covariance",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "baseline_zeroexp_Grad_1",
+        "right_experiment": "rho_0.9_Grad_1",
+        "left_label": "no experimental covariance",
+        "right_label": "CS $\\rho=0.9$",
+        "left_color": "#f58518",
+        "right_color": "#9d755d",
+        "output_prefix": "corner_zeroexp_Grad_1_vs_rho_0.9_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: no experimental covariance vs Compound Symmetry (CS)",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "baseline_zeroexp_Grad_2",
+        "right_experiment": "rho_0.9_Grad_2",
+        "left_label": "no experimental covariance",
+        "right_label": "CS $\\rho=0.9$",
+        "left_color": "#f58518",
+        "right_color": "#9d755d",
+        "output_prefix": "corner_zeroexp_Grad_2_vs_rho_0.9_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: no experimental covariance vs Compound Symmetry (CS)",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "baseline_zeroexp_Grad_1",
+        "right_experiment": "ro_10.0_Grad_1",
+        "left_label": "no experimental covariance",
+        "right_label": "RBF $r_0=10.0$",
+        "left_color": "#f58518",
+        "right_color": "#9d755d",
+        "output_prefix": "corner_zeroexp_Grad_1_vs_ro_10.0_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: no experimental covariance vs Radial Basis Function (RBF)",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "baseline_zeroexp_Grad_2",
+        "right_experiment": "ro_10.0_Grad_2",
+        "left_label": "no experimental covariance",
+        "right_label": "RBF $r_0=10.0$",
+        "left_color": "#f58518",
+        "right_color": "#9d755d",
+        "output_prefix": "corner_zeroexp_Grad_2_vs_ro_10.0_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: no experimental covariance vs Radial Basis Function (RBF)",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "rho_0.1_Grad_1",
+        "right_experiment": "baseline_Grad_1",
+        "left_label": "CS $\\rho=0.1$",
+        "right_label": "diagonal",
+        "left_color": "#f58518",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_rho_0.1_Grad_1_vs_baseline_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "rho_0.1_Grad_2",
+        "right_experiment": "baseline_Grad_2",
+        "left_label": "CS $\\rho=0.1$",
+        "right_label": "diagonal",
+        "left_color": "#f58518",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_rho_0.1_Grad_2_vs_baseline_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "rho_0.2_Grad_1",
+        "right_experiment": "baseline_Grad_1",
+        "left_label": "CS $\\rho=0.2$",
+        "right_label": "diagonal",
+        "left_color": "#e45756",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_rho_0.2_Grad_1_vs_baseline_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "rho_0.2_Grad_2",
+        "right_experiment": "baseline_Grad_2",
+        "left_label": "CS $\\rho=0.2$",
+        "right_label": "diagonal",
+        "left_color": "#e45756",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_rho_0.2_Grad_2_vs_baseline_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "rho_0.4_Grad_1",
+        "right_experiment": "baseline_Grad_1",
+        "left_label": "CS $\\rho=0.4$",
+        "right_label": "diagonal",
+        "left_color": "#72b7b2",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_rho_0.4_Grad_1_vs_baseline_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "rho_0.4_Grad_2",
+        "right_experiment": "baseline_Grad_2",
+        "left_label": "CS $\\rho=0.4$",
+        "right_label": "diagonal",
+        "left_color": "#72b7b2",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_rho_0.4_Grad_2_vs_baseline_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "rho_0.6_Grad_1",
+        "right_experiment": "baseline_Grad_1",
+        "left_label": "CS $\\rho=0.6$",
+        "right_label": "diagonal",
+        "left_color": "#54a24b",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_rho_0.6_Grad_1_vs_baseline_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "rho_0.6_Grad_2",
+        "right_experiment": "baseline_Grad_2",
+        "left_label": "CS $\\rho=0.6$",
+        "right_label": "diagonal",
+        "left_color": "#54a24b",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_rho_0.6_Grad_2_vs_baseline_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "rho_0.8_Grad_1",
+        "right_experiment": "baseline_Grad_1",
+        "left_label": "CS $\\rho=0.8$",
+        "right_label": "diagonal",
+        "left_color": "#b279a2",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_rho_0.8_Grad_1_vs_baseline_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "rho_0.8_Grad_2",
+        "right_experiment": "baseline_Grad_2",
+        "left_label": "CS $\\rho=0.8$",
+        "right_label": "diagonal",
+        "left_color": "#b279a2",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_rho_0.8_Grad_2_vs_baseline_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "rho_0.9_Grad_1",
+        "right_experiment": "baseline_Grad_1",
+        "left_label": "CS $\\rho=0.9$",
+        "right_label": "diagonal",
+        "left_color": "#9d755d",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_rho_0.9_Grad_1_vs_baseline_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS) vs diagonal",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "rho_0.9_Grad_2",
+        "right_experiment": "baseline_Grad_2",
+        "left_label": "CS $\\rho=0.9$",
+        "right_label": "diagonal",
+        "left_color": "#9d755d",
+        "right_color": "#4c78a8",
+        "output_prefix": "corner_rho_0.9_Grad_2_vs_baseline_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Compound Symmetry (CS) vs diagonal",
+        "groups": ["group1", "group2"]
+      }
+    ]
+  }
+}

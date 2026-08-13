@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+altair
+scikit-learn
+matplotlib
+ptemcee
+seaborn
+SALib
+pyyaml
+h5py
+corner
+tqdm
+dill

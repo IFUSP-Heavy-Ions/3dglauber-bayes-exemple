@@ -1,0 +1,163 @@
+{
+  "global": {
+    "analysis_root": "studies/AlicePbPb2760/uncertainty_correlation",
+    "results_root": "chains",
+    "output_root": "plots",
+    "n_samples": 1400,
+    "prune": 1,
+    "seed": 42,
+    "plot_backend": "seaborn",
+    "formats": [
+      "png"
+    ],
+    "dpi": 300,
+    "tick_rotation": 45,
+    "font_scale": 1.15,
+    "axis_label_fontsize": 8,
+    "tick_label_fontsize": 6,
+    "title_fontsize": 11,
+    "legend_fontsize": 9,
+    "legend_title": "Alice PbPb 2.76 TeV (Grad \u03b4f)"
+  },
+  "parameter_labels": [
+    "$N$[2.76 TeV]",
+    "$p$",
+    "$\\sigma_k$",
+    "$w$ [fm]",
+    "$d_{\\rm min}$ [fm]",
+    "$\\tau_R$ [fm/$c$]",
+    "$\\alpha$",
+    "$T_{\\eta,\\rm kink}$ [GeV]",
+    "$a_{\\eta,\\rm low}$ [GeV$^{-1}$]",
+    "$a_{\\eta,\\rm high}$ [GeV$^{-1}$]",
+    "$(\\eta/s)_{\\rm kink}$",
+    "$(\\zeta/s)_{\\rm max}$",
+    "$T_{\\zeta,c}$ [GeV]",
+    "$w_{\\zeta}$ [GeV]",
+    "$\\lambda_{\\zeta}$",
+    "$b_{\\pi}$",
+    "$T_{\\rm sw}$ [GeV]"
+  ],
+  "parameter_groups": {
+    "group1": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      15,
+      16
+    ],
+    "group2": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "experiments": {
+    "baseline_Grad_1": {
+      "path": "results/baseline_Grad_1",
+      "label": "diagonal"
+    },
+    "baseline_Grad_2": {
+      "path": "results/baseline_Grad_2",
+      "label": "diagonal"
+    },
+    "baseline_zeroexp_Grad_1": {
+      "path": "results/baseline_zeroexp_Grad_1",
+      "label": "no experimental covariance"
+    },
+    "baseline_zeroexp_Grad_2": {
+      "path": "results/baseline_zeroexp_Grad_2",
+      "label": "no experimental covariance"
+    },
+    "ro_10.0_Grad_1": {
+      "path": "results/ro_10.0_Grad_1",
+      "label": "RBF $r_0=10.0$"
+    },
+    "ro_10.0_Grad_2": {
+      "path": "results/ro_10.0_Grad_2",
+      "label": "RBF $r_0=10.0$"
+    },
+    "rho_0.9_Grad_1": {
+      "path": "results/rho_0.9_Grad_1",
+      "label": "CS $\\rho=0.9$"
+    },
+    "rho_0.9_Grad_2": {
+      "path": "results/rho_0.9_Grad_2",
+      "label": "CS $\\rho=0.9$"
+    }
+  },
+  "comparison_plots": {
+    "output_subdir": "comparison",
+    "jobs": [
+      {
+        "experiments": [
+          {
+            "experiment": "baseline_Grad_1",
+            "label": "baseline",
+            "color": "#4c78a8"
+          },
+          {
+            "experiment": "baseline_zeroexp_Grad_1",
+            "label": "zeroexp",
+            "color": "#f58518"
+          },
+          {
+            "experiment": "ro_10.0_Grad_1",
+            "label": "RBF $r_0=10.0$",
+            "color": "#e45756"
+          },
+          {
+            "experiment": "rho_0.9_Grad_1",
+            "label": "CS $\\rho=0.9$",
+            "color": "#54a24b"
+          }
+        ],
+        "output_prefix": "corner_comparison_all_Grad_1",
+        "title_prefix": "Bayesian uncertainty-correlation study: Grad 1 comparison",
+        "groups": [
+          "group1",
+          "group2"
+        ]
+      },
+      {
+        "experiments": [
+          {
+            "experiment": "baseline_Grad_2",
+            "label": "baseline",
+            "color": "#4c78a8"
+          },
+          {
+            "experiment": "baseline_zeroexp_Grad_2",
+            "label": "zeroexp",
+            "color": "#f58518"
+          },
+          {
+            "experiment": "ro_10.0_Grad_2",
+            "label": "RBF $r_0=10.0$",
+            "color": "#e45756"
+          },
+          {
+            "experiment": "rho_0.9_Grad_2",
+            "label": "CS $\\rho=0.9$",
+            "color": "#54a24b"
+          }
+        ],
+        "output_prefix": "corner_comparison_all_Grad_2",
+        "title_prefix": "Bayesian uncertainty-correlation study: Grad 2 comparison",
+        "groups": [
+          "group1",
+          "group2"
+        ]
+      }
+    ]
+  }
+}

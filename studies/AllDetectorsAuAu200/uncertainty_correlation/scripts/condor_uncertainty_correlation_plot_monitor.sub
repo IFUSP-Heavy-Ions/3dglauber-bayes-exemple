@@ -1,0 +1,15 @@
+universe     = vanilla
+getenv       = True
+initialdir   = $(HIC_BAYES_ROOT)
+executable   = $(HIC_BAYES_ROOT)/$(ANALYSIS_DIR)/scripts/wait_and_plot_uncertainty_correlation.sh
+request_cpus   = 1
+request_memory = 1500
+request_disk   = 20000
+requirements = !regexp("qgp2", TARGET.Machine) && !regexp("usphydro", TARGET.Machine)
+environment  = "HIC_BAYES_ROOT=$(HIC_BAYES_ROOT) PYTHON=$(PYTHON) ANALYSIS_DIR=$(ANALYSIS_DIR) HIC_BAYES_RUN_ID=$(RUN_ID) HIC_BAYES_RESULTS_ROOT=$(HIC_BAYES_RESULTS) HIC_BAYES_RUN_ROOT=$(RUN_ROOT) HIC_BAYES_RESULTS_DIR=$(RESULTS_DIR)/$(RUN_ID) HIC_BAYES_LOG_DIR=$(LOG_DIR)/$(RUN_ID) HIC_BAYES_PLOTS_DIR=$(PLOTS_DIR)/$(RUN_ID) PARENT_SCHEDD=$(PARENT_SCHEDD)"
++WantFlocking = True
+arguments    = $(PARENT_CLUSTER) $(EXPECTED_JOBS)
+output       = $(LOG_DIR)/$(RUN_ID)/plot_monitor_$(ClusterId).$(ProcId).out
+error        = $(LOG_DIR)/$(RUN_ID)/plot_monitor_$(ClusterId).$(ProcId).err
+log          = $(LOG_DIR)/$(RUN_ID)/plot_monitor_$(ClusterId).$(ProcId).log
+queue 1

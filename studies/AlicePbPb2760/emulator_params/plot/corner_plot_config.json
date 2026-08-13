@@ -1,0 +1,273 @@
+{
+  "global": {
+    "analysis_root": "config/AtlasPbPb2760/emulator_params",
+    "results_root": "results",
+    "output_root": "plots",
+    "n_samples": 1400,
+    "prune": 1,
+    "seed": 42,
+    "format": "pdf",
+    "dpi": 300,
+    "tick_rotation": 45,
+    "font_scale": 1.15,
+    "axis_label_fontsize": 8,
+    "tick_label_fontsize": 6,
+    "title_fontsize": 11,
+    "legend_fontsize": 9
+  },
+  "parameter_labels": [
+    "$N$[2.76 TeV]",
+    "$p$",
+    "$\\sigma_k$",
+    "$w$ [fm]",
+    "$d_{\\rm min}$ [fm]",
+    "$\\tau_R$ [fm/$c$]",
+    "$\\alpha$",
+    "$T_{\\eta,\\rm kink}$ [GeV]",
+    "$a_{\\eta,\\rm low}$ [GeV$^{-1}$]",
+    "$a_{\\eta,\\rm high}$ [GeV$^{-1}$]",
+    "$(\\eta/s)_{\\rm kink}$",
+    "$(\\zeta/s)_{\\rm max}$",
+    "$T_{\\zeta,c}$ [GeV]",
+    "$w_{\\zeta}$ [GeV]",
+    "$\\lambda_{\\zeta}$",
+    "$b_{\\pi}$",
+    "$T_{\\rm sw}$ [GeV]"
+  ],
+  "parameter_groups": {
+    "group1": [0, 1, 2, 3, 4, 5, 6, 15, 16],
+    "group2": [7, 8, 9, 10, 11, 12, 13, 14]
+  },
+  "experiments": {
+    "scan01_pc1_restart0": {
+      "path": "results/emulator_params/emulator_Grad_scan01_pc1_restart0",
+      "label": "scan01: 1 PC, 0 restarts"
+    },
+    "scan02_pc2_restart0": {
+      "path": "results/emulator_params/emulator_Grad_scan02_pc2_restart0",
+      "label": "scan02: 2 PCs, 0 restarts"
+    },
+    "scan03_pc3_restart1": {
+      "path": "results/emulator_params/emulator_Grad_scan03_pc3_restart1",
+      "label": "scan03: 3 PCs, 1 restart"
+    },
+    "scan04_pc4_restart1": {
+      "path": "results/emulator_params/emulator_Grad_scan04_pc4_restart1",
+      "label": "scan04: 4 PCs, 1 restart"
+    },
+    "scan05_pc5_restart2": {
+      "path": "results/emulator_params/emulator_Grad_scan05_pc5_restart2",
+      "label": "scan05: 5 PCs, 2 restarts"
+    },
+    "scan06_pc6_restart2": {
+      "path": "results/emulator_params/emulator_Grad_scan06_pc6_restart2",
+      "label": "scan06: 6 PCs, 2 restarts"
+    },
+    "scan07_pc6_restart3": {
+      "path": "results/emulator_params/emulator_Grad_scan07_pc6_restart3",
+      "label": "scan07: 6 PCs, 3 restarts"
+    },
+    "scan08_standard": {
+      "path": "results/emulator_params/emulator_Grad_scan08_standard_pc6_restart4",
+      "label": "scan08: 6 PCs, 4 restarts"
+    }
+  },
+  "individual_plots": {
+    "output_subdir": "individual",
+    "jobs": [
+      {
+        "experiment": "scan01_pc1_restart0",
+        "output_prefix": "corner_scan01_pc1_restart0",
+        "title_prefix": "Emulator scan01: 1 PC, 0 restarts",
+        "legend_label": "scan01",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "scan02_pc2_restart0",
+        "output_prefix": "corner_scan02_pc2_restart0",
+        "title_prefix": "Emulator scan02: 2 PCs, 0 restarts",
+        "legend_label": "scan02",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "scan03_pc3_restart1",
+        "output_prefix": "corner_scan03_pc3_restart1",
+        "title_prefix": "Emulator scan03: 3 PCs, 1 restart",
+        "legend_label": "scan03",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "scan04_pc4_restart1",
+        "output_prefix": "corner_scan04_pc4_restart1",
+        "title_prefix": "Emulator scan04: 4 PCs, 1 restart",
+        "legend_label": "scan04",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "scan05_pc5_restart2",
+        "output_prefix": "corner_scan05_pc5_restart2",
+        "title_prefix": "Emulator scan05: 5 PCs, 2 restarts",
+        "legend_label": "scan05",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "scan06_pc6_restart2",
+        "output_prefix": "corner_scan06_pc6_restart2",
+        "title_prefix": "Emulator scan06: 6 PCs, 2 restarts",
+        "legend_label": "scan06",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "scan07_pc6_restart3",
+        "output_prefix": "corner_scan07_pc6_restart3",
+        "title_prefix": "Emulator scan07: 6 PCs, 3 restarts",
+        "legend_label": "scan07",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      },
+      {
+        "experiment": "scan08_standard",
+        "output_prefix": "corner_scan08_standard",
+        "title_prefix": "Emulator scan08: standard",
+        "legend_label": "scan08 standard",
+        "groups": ["group1", "group2"],
+        "color": "#4c78a8"
+      }
+    ]
+  },
+  "comparison_plots": {
+    "output_subdir": "comparisons",
+    "jobs": [
+      {
+        "left_experiment": "scan02_pc2_restart0",
+        "right_experiment": "scan01_pc1_restart0",
+        "left_label": "scan02",
+        "right_label": "scan01",
+        "left_color": "#4c78a8",
+        "right_color": "#f58518",
+        "output_prefix": "corner_scan02_vs_scan01",
+        "title_prefix": "Emulator scan02 vs scan01",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "scan03_pc3_restart1",
+        "right_experiment": "scan01_pc1_restart0",
+        "left_label": "scan03",
+        "right_label": "scan01",
+        "left_color": "#4c78a8",
+        "right_color": "#f58518",
+        "output_prefix": "corner_scan03_vs_scan01",
+        "title_prefix": "Emulator scan03 vs scan01",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "scan04_pc4_restart1",
+        "right_experiment": "scan01_pc1_restart0",
+        "left_label": "scan04",
+        "right_label": "scan01",
+        "left_color": "#4c78a8",
+        "right_color": "#f58518",
+        "output_prefix": "corner_scan04_vs_scan01",
+        "title_prefix": "Emulator scan04 vs scan01",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "scan05_pc5_restart2",
+        "right_experiment": "scan01_pc1_restart0",
+        "left_label": "scan05",
+        "right_label": "scan01",
+        "left_color": "#4c78a8",
+        "right_color": "#f58518",
+        "output_prefix": "corner_scan05_vs_scan01",
+        "title_prefix": "Emulator scan05 vs scan01",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "scan06_pc6_restart2",
+        "right_experiment": "scan01_pc1_restart0",
+        "left_label": "scan06",
+        "right_label": "scan01",
+        "left_color": "#4c78a8",
+        "right_color": "#f58518",
+        "output_prefix": "corner_scan06_vs_scan01",
+        "title_prefix": "Emulator scan06 vs scan01",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "scan07_pc6_restart3",
+        "right_experiment": "scan01_pc1_restart0",
+        "left_label": "scan07",
+        "right_label": "scan01",
+        "left_color": "#4c78a8",
+        "right_color": "#f58518",
+        "output_prefix": "corner_scan07_vs_scan01",
+        "title_prefix": "Emulator scan07 vs scan01",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "left_experiment": "scan08_standard",
+        "right_experiment": "scan01_pc1_restart0",
+        "left_label": "scan08 standard",
+        "right_label": "scan01",
+        "left_color": "#4c78a8",
+        "right_color": "#f58518",
+        "output_prefix": "corner_scan08_standard_vs_scan01",
+        "title_prefix": "Emulator scan08 standard vs scan01",
+        "groups": ["group1", "group2"]
+      },
+      {
+        "experiments": [
+          {
+            "experiment": "scan01_pc1_restart0",
+            "label": "scan01: 1 PC, 0 restarts",
+            "color": "#4c78a8"
+          },
+          {
+            "experiment": "scan02_pc2_restart0",
+            "label": "scan02: 2 PCs, 0 restarts",
+            "color": "#f58518"
+          },
+          {
+            "experiment": "scan03_pc3_restart1",
+            "label": "scan03: 3 PCs, 1 restart",
+            "color": "#e45756"
+          },
+          {
+            "experiment": "scan04_pc4_restart1",
+            "label": "scan04: 4 PCs, 1 restart",
+            "color": "#72b7b2"
+          },
+          {
+            "experiment": "scan05_pc5_restart2",
+            "label": "scan05: 5 PCs, 2 restarts",
+            "color": "#54a24b"
+          },
+          {
+            "experiment": "scan06_pc6_restart2",
+            "label": "scan06: 6 PCs, 2 restarts",
+            "color": "#b279a2"
+          },
+          {
+            "experiment": "scan07_pc6_restart3",
+            "label": "scan07: 6 PCs, 3 restarts",
+            "color": "#ff9da6"
+          },
+          {
+            "experiment": "scan08_standard",
+            "label": "scan08: 6 PCs, 4 restarts",
+            "color": "#9d755d"
+          }
+        ],
+        "output_prefix": "corner_all_emulator_scans",
+        "title_prefix": "Emulator parameter scan: all tasks",
+        "groups": ["group1", "group2"]
+      }
+    ]
+  }
+}

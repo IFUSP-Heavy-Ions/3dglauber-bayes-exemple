@@ -1,0 +1,297 @@
+{
+  "global": {
+    "analysis_root": "config/AtlasPbPb2760/baseline",
+    "results_root": "results",
+    "output_root": "plots",
+    "n_samples": 1400,
+    "prune": 1,
+    "seed": 42,
+    "format": "pdf",
+    "dpi": 300,
+    "tick_rotation": 45,
+    "font_scale": 1.15,
+    "axis_label_fontsize": 8,
+    "tick_label_fontsize": 6,
+    "title_fontsize": 11,
+    "legend_fontsize": 9
+  },
+  "parameter_labels": [
+    "$N$[2.76 TeV]",
+    "$p$",
+    "$\\sigma_k$",
+    "$w$ [fm]",
+    "$d_{\\rm min}$ [fm]",
+    "$\\tau_R$ [fm/$c$]",
+    "$\\alpha$",
+    "$T_{\\eta,\\rm kink}$ [GeV]",
+    "$a_{\\eta,\\rm low}$ [GeV$^{-1}$]",
+    "$a_{\\eta,\\rm high}$ [GeV$^{-1}$]",
+    "$(\\eta/s)_{\\rm kink}$",
+    "$(\\zeta/s)_{\\rm max}$",
+    "$T_{\\zeta,c}$ [GeV]",
+    "$w_{\\zeta}$ [GeV]",
+    "$\\lambda_{\\zeta}$",
+    "$b_{\\pi}$",
+    "$T_{\\rm sw}$ [GeV]"
+  ],
+  "parameter_groups": {
+    "group1": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      15,
+      16
+    ],
+    "group2": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "experiments": {
+    "baseline_Grad_diag": {
+      "path": "results/universality_baseline/baseline_Grad_diag",
+      "label": "Grad"
+    },
+    "baseline_CE_diag": {
+      "path": "results/universality_baseline/baseline_CE_diag",
+      "label": "CE"
+    },
+    "baseline_PTM_diag": {
+      "path": "results/universality_baseline/baseline_PTM_diag",
+      "label": "PTM"
+    },
+    "baseline_PTB_diag": {
+      "path": "results/universality_baseline/baseline_PTB_diag",
+      "label": "PTB"
+    },
+    "baseline_Grad_scaled_diag": {
+      "path": "results/universality_baseline_scaled/baseline_Grad_scaled_diag",
+      "label": "Grad Scaled"
+    },
+    "baseline_CE_scaled_diag": {
+      "path": "results/universality_baseline_scaled/baseline_CE_scaled_diag",
+      "label": "CE Scaled"
+    },
+    "baseline_PTM_scaled_diag": {
+      "path": "results/universality_baseline_scaled/baseline_PTM_scaled_diag",
+      "label": "PTM Scaled"
+    },
+    "baseline_PTB_scaled_diag": {
+      "path": "results/universality_baseline_scaled/baseline_PTB_scaled_diag",
+      "label": "PTB Scaled"
+    }
+  },
+  "individual_plots": {
+    "output_subdir": "individual",
+    "jobs": [
+      {
+        "experiment": "baseline_Grad_diag",
+        "output_prefix": "corner_baseline_Grad_diag",
+        "title_prefix": "baseline_Grad_diag",
+        "groups": [
+          "group1",
+          "group2"
+        ],
+        "color": "#1f77b4"
+      },
+      {
+        "experiment": "baseline_CE_diag",
+        "output_prefix": "corner_baseline_CE_diag",
+        "title_prefix": "baseline_CE_diag",
+        "groups": [
+          "group1",
+          "group2"
+        ],
+        "color": "#1f77b4"
+      },
+      {
+        "experiment": "baseline_PTM_diag",
+        "output_prefix": "corner_baseline_PTM_diag",
+        "title_prefix": "baseline_PTM_diag",
+        "groups": [
+          "group1",
+          "group2"
+        ],
+        "color": "#1f77b4"
+      },
+      {
+        "experiment": "baseline_PTB_diag",
+        "output_prefix": "corner_baseline_PTB_diag",
+        "title_prefix": "baseline_PTB_diag",
+        "groups": [
+          "group1",
+          "group2"
+        ],
+        "color": "#1f77b4"
+      },
+      {
+        "experiment": "baseline_Grad_scaled_diag",
+        "output_prefix": "corner_baseline_Grad_scaled_diag",
+        "title_prefix": "baseline_Grad_scaled_diag",
+        "groups": [
+          "group1",
+          "group2"
+        ],
+        "color": "#1f77b4"
+      },
+      {
+        "experiment": "baseline_CE_scaled_diag",
+        "output_prefix": "corner_baseline_CE_scaled_diag",
+        "title_prefix": "baseline_CE_scaled_diag",
+        "groups": [
+          "group1",
+          "group2"
+        ],
+        "color": "#1f77b4"
+      },
+      {
+        "experiment": "baseline_PTM_scaled_diag",
+        "output_prefix": "corner_baseline_PTM_scaled_diag",
+        "title_prefix": "baseline_PTM_scaled_diag",
+        "groups": [
+          "group1",
+          "group2"
+        ],
+        "color": "#1f77b4"
+      },
+      {
+        "experiment": "baseline_PTB_scaled_diag",
+        "output_prefix": "corner_baseline_PTB_scaled_diag",
+        "title_prefix": "baseline_PTB_scaled_diag",
+        "groups": [
+          "group1",
+          "group2"
+        ],
+        "color": "#1f77b4"
+      }
+    ]
+  },
+  "comparison_plots": {
+    "output_subdir": "comparisons",
+    "jobs": [
+      {
+        "left_experiment": "baseline_Grad_diag",
+        "right_experiment": "baseline_Grad_scaled_diag",
+        "left_label": "Baseline",
+        "right_label": "ScaledSpectra",
+        "left_color": "#1f77b4",
+        "right_color": "#d62728",
+        "output_prefix": "corner_Grad_baseline_vs_scaled",
+        "title_prefix": "Grad: Baseline vs ScaledSpectra",
+        "groups": [
+          "group1",
+          "group2"
+        ]
+      },
+      {
+        "left_experiment": "baseline_CE_diag",
+        "right_experiment": "baseline_CE_scaled_diag",
+        "left_label": "Baseline",
+        "right_label": "ScaledSpectra",
+        "left_color": "#1f77b4",
+        "right_color": "#d62728",
+        "output_prefix": "corner_CE_baseline_vs_scaled",
+        "title_prefix": "CE: Baseline vs ScaledSpectra",
+        "groups": [
+          "group1",
+          "group2"
+        ]
+      },
+      {
+        "left_experiment": "baseline_PTM_diag",
+        "right_experiment": "baseline_PTM_scaled_diag",
+        "left_label": "Baseline",
+        "right_label": "ScaledSpectra",
+        "left_color": "#1f77b4",
+        "right_color": "#d62728",
+        "output_prefix": "corner_PTM_baseline_vs_scaled",
+        "title_prefix": "PTM: Baseline vs ScaledSpectra",
+        "groups": [
+          "group1",
+          "group2"
+        ]
+      },
+      {
+        "left_experiment": "baseline_PTB_diag",
+        "right_experiment": "baseline_PTB_scaled_diag",
+        "left_label": "Baseline",
+        "right_label": "ScaledSpectra",
+        "left_color": "#1f77b4",
+        "right_color": "#d62728",
+        "output_prefix": "corner_PTB_baseline_vs_scaled",
+        "title_prefix": "PTB: Baseline vs ScaledSpectra",
+        "groups": [
+          "group1",
+          "group2"
+        ]
+      },
+      {
+        "left_experiment": "baseline_Grad_diag",
+        "right_experiment": "baseline_CE_diag",
+        "left_label": "Grad",
+        "right_label": "CE",
+        "left_color": "#1f77b4",
+        "right_color": "#ff7f0e",
+        "output_prefix": "corner_Grad_CE",
+        "title_prefix": "Grad vs CE",
+        "groups": [
+          "group1",
+          "group2"
+        ]
+      },
+      {
+        "left_experiment": "baseline_Grad_diag",
+        "right_experiment": "baseline_PTB_diag",
+        "left_label": "Grad",
+        "right_label": "PTB",
+        "left_color": "#1f77b4",
+        "right_color": "#ff7f0e",
+        "output_prefix": "corner_Grad_PTB",
+        "title_prefix": "Grad vs PTB",
+        "groups": [
+          "group1",
+          "group2"
+        ]
+      },
+      {
+        "left_experiment": "baseline_Grad_diag",
+        "right_experiment": "baseline_PTM_diag",
+        "left_label": "Grad",
+        "right_label": "PTM",
+        "left_color": "#1f77b4",
+        "right_color": "#ff7f0e",
+        "output_prefix": "corner_Grad_PTM",
+        "title_prefix": "Grad vs PTM",
+        "groups": [
+          "group1",
+          "group2"
+        ]
+      }
+    ]
+  },
+  "result_scaffold": {
+    "path_template": "{run}/{collection}/{experiment}",
+    "variants": {
+      "baseline": {
+        "collection": "universality_baseline",
+        "experiment_template": "baseline_{model}_diag",
+        "label_template": "{model}"
+      },
+      "scaled": {
+        "collection": "universality_baseline_scaled",
+        "experiment_template": "baseline_{model}_scaled_diag",
+        "label_template": "{model} Scaled"
+      }
+    }
+  }
+}

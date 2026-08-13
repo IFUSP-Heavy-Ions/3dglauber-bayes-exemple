@@ -1,0 +1,436 @@
+{
+  "global": {
+    "analysis_root": ".",
+    "results_root": "chains",
+    "output_root": "plots"
+  },
+  "parameter_labels": [
+    "$y_{loss}(2)$",
+    "$y_{loss}(4)$",
+    "$y_{loss}(6)$",
+    "$\\sigma_{y loss}$",
+    "$f_{remnant}$",
+    "$S$",
+    "$\\tau_{form}$",
+    "$B_G$",
+    "$\\sigma_x$",
+    "$\\sigma_\\eta$",
+    "$f_{shift}$",
+    "$T_{\\eta,kink}$",
+    "$a_{\\eta,low}$",
+    "$a_{\\eta,high}$",
+    "$(\\eta/s)_{kink}$",
+    "$(\\zeta/s)_{max}$",
+    "$T_{\\zeta,c}$",
+    "$w_{\\zeta}$",
+    "$\\lambda_{\\zeta}$",
+    "$\\epsilon_{sw}$"
+  ],
+  "experiments": {
+    "baseline_Grad_1": {
+      "path": "results/baseline_Grad_1",
+      "label": "baseline_Grad_1"
+    },
+    "baseline_zeroexp_Grad_1": {
+      "path": "results/baseline_zeroexp_Grad_1",
+      "label": "baseline_zeroexp_Grad_1"
+    },
+    "rho_0.1_Grad_1": {
+      "path": "results/rho_0.1_Grad_1",
+      "label": "rho_0.1_Grad_1"
+    },
+    "rho_0.2_Grad_1": {
+      "path": "results/rho_0.2_Grad_1",
+      "label": "rho_0.2_Grad_1"
+    },
+    "rho_0.3_Grad_1": {
+      "path": "results/rho_0.3_Grad_1",
+      "label": "rho_0.3_Grad_1"
+    },
+    "rho_0.4_Grad_1": {
+      "path": "results/rho_0.4_Grad_1",
+      "label": "rho_0.4_Grad_1"
+    },
+    "rho_0.5_Grad_1": {
+      "path": "results/rho_0.5_Grad_1",
+      "label": "rho_0.5_Grad_1"
+    },
+    "rho_0.6_Grad_1": {
+      "path": "results/rho_0.6_Grad_1",
+      "label": "rho_0.6_Grad_1"
+    },
+    "rho_0.7_Grad_1": {
+      "path": "results/rho_0.7_Grad_1",
+      "label": "rho_0.7_Grad_1"
+    },
+    "rho_0.8_Grad_1": {
+      "path": "results/rho_0.8_Grad_1",
+      "label": "rho_0.8_Grad_1"
+    },
+    "rho_0.9_Grad_1": {
+      "path": "results/rho_0.9_Grad_1",
+      "label": "rho_0.9_Grad_1"
+    },
+    "ro_0.0_Grad_1": {
+      "path": "results/ro_0.0_Grad_1",
+      "label": "ro_0.0_Grad_1"
+    },
+    "ro_0.1_Grad_1": {
+      "path": "results/ro_0.1_Grad_1",
+      "label": "ro_0.1_Grad_1"
+    },
+    "ro_0.5_Grad_1": {
+      "path": "results/ro_0.5_Grad_1",
+      "label": "ro_0.5_Grad_1"
+    },
+    "ro_0.9_Grad_1": {
+      "path": "results/ro_0.9_Grad_1",
+      "label": "ro_0.9_Grad_1"
+    },
+    "ro_1.3_Grad_1": {
+      "path": "results/ro_1.3_Grad_1",
+      "label": "ro_1.3_Grad_1"
+    },
+    "ro_1.7_Grad_1": {
+      "path": "results/ro_1.7_Grad_1",
+      "label": "ro_1.7_Grad_1"
+    },
+    "ro_2.0_Grad_1": {
+      "path": "results/ro_2.0_Grad_1",
+      "label": "ro_2.0_Grad_1"
+    },
+    "ro_4.0_Grad_1": {
+      "path": "results/ro_4.0_Grad_1",
+      "label": "ro_4.0_Grad_1"
+    },
+    "ro_6.0_Grad_1": {
+      "path": "results/ro_6.0_Grad_1",
+      "label": "ro_6.0_Grad_1"
+    },
+    "ro_8.0_Grad_1": {
+      "path": "results/ro_8.0_Grad_1",
+      "label": "ro_8.0_Grad_1"
+    },
+    "ro_10.0_Grad_1": {
+      "path": "results/ro_10.0_Grad_1",
+      "label": "ro_10.0_Grad_1"
+    },
+    "baseline_Grad_2": {
+      "path": "results/baseline_Grad_2",
+      "label": "baseline_Grad_2"
+    },
+    "baseline_zeroexp_Grad_2": {
+      "path": "results/baseline_zeroexp_Grad_2",
+      "label": "baseline_zeroexp_Grad_2"
+    },
+    "rho_0.1_Grad_2": {
+      "path": "results/rho_0.1_Grad_2",
+      "label": "rho_0.1_Grad_2"
+    },
+    "rho_0.2_Grad_2": {
+      "path": "results/rho_0.2_Grad_2",
+      "label": "rho_0.2_Grad_2"
+    },
+    "rho_0.3_Grad_2": {
+      "path": "results/rho_0.3_Grad_2",
+      "label": "rho_0.3_Grad_2"
+    },
+    "rho_0.4_Grad_2": {
+      "path": "results/rho_0.4_Grad_2",
+      "label": "rho_0.4_Grad_2"
+    },
+    "rho_0.5_Grad_2": {
+      "path": "results/rho_0.5_Grad_2",
+      "label": "rho_0.5_Grad_2"
+    },
+    "rho_0.6_Grad_2": {
+      "path": "results/rho_0.6_Grad_2",
+      "label": "rho_0.6_Grad_2"
+    },
+    "rho_0.7_Grad_2": {
+      "path": "results/rho_0.7_Grad_2",
+      "label": "rho_0.7_Grad_2"
+    },
+    "rho_0.8_Grad_2": {
+      "path": "results/rho_0.8_Grad_2",
+      "label": "rho_0.8_Grad_2"
+    },
+    "rho_0.9_Grad_2": {
+      "path": "results/rho_0.9_Grad_2",
+      "label": "rho_0.9_Grad_2"
+    },
+    "ro_0.0_Grad_2": {
+      "path": "results/ro_0.0_Grad_2",
+      "label": "ro_0.0_Grad_2"
+    },
+    "ro_0.1_Grad_2": {
+      "path": "results/ro_0.1_Grad_2",
+      "label": "ro_0.1_Grad_2"
+    },
+    "ro_0.5_Grad_2": {
+      "path": "results/ro_0.5_Grad_2",
+      "label": "ro_0.5_Grad_2"
+    },
+    "ro_0.9_Grad_2": {
+      "path": "results/ro_0.9_Grad_2",
+      "label": "ro_0.9_Grad_2"
+    },
+    "ro_1.3_Grad_2": {
+      "path": "results/ro_1.3_Grad_2",
+      "label": "ro_1.3_Grad_2"
+    },
+    "ro_1.7_Grad_2": {
+      "path": "results/ro_1.7_Grad_2",
+      "label": "ro_1.7_Grad_2"
+    },
+    "ro_2.0_Grad_2": {
+      "path": "results/ro_2.0_Grad_2",
+      "label": "ro_2.0_Grad_2"
+    },
+    "ro_4.0_Grad_2": {
+      "path": "results/ro_4.0_Grad_2",
+      "label": "ro_4.0_Grad_2"
+    },
+    "ro_6.0_Grad_2": {
+      "path": "results/ro_6.0_Grad_2",
+      "label": "ro_6.0_Grad_2"
+    },
+    "ro_8.0_Grad_2": {
+      "path": "results/ro_8.0_Grad_2",
+      "label": "ro_8.0_Grad_2"
+    },
+    "ro_10.0_Grad_2": {
+      "path": "results/ro_10.0_Grad_2",
+      "label": "ro_10.0_Grad_2"
+    }
+  },
+  "individual_plots": {
+    "output_subdir": "individual",
+    "jobs": [
+      {
+        "experiment": "baseline_Grad_1",
+        "output_prefix": "corner_baseline_Grad_1",
+        "title": "baseline_Grad_1"
+      },
+      {
+        "experiment": "baseline_zeroexp_Grad_1",
+        "output_prefix": "corner_baseline_zeroexp_Grad_1",
+        "title": "baseline_zeroexp_Grad_1"
+      },
+      {
+        "experiment": "rho_0.1_Grad_1",
+        "output_prefix": "corner_rho_0.1_Grad_1",
+        "title": "rho_0.1_Grad_1"
+      },
+      {
+        "experiment": "rho_0.2_Grad_1",
+        "output_prefix": "corner_rho_0.2_Grad_1",
+        "title": "rho_0.2_Grad_1"
+      },
+      {
+        "experiment": "rho_0.3_Grad_1",
+        "output_prefix": "corner_rho_0.3_Grad_1",
+        "title": "rho_0.3_Grad_1"
+      },
+      {
+        "experiment": "rho_0.4_Grad_1",
+        "output_prefix": "corner_rho_0.4_Grad_1",
+        "title": "rho_0.4_Grad_1"
+      },
+      {
+        "experiment": "rho_0.5_Grad_1",
+        "output_prefix": "corner_rho_0.5_Grad_1",
+        "title": "rho_0.5_Grad_1"
+      },
+      {
+        "experiment": "rho_0.6_Grad_1",
+        "output_prefix": "corner_rho_0.6_Grad_1",
+        "title": "rho_0.6_Grad_1"
+      },
+      {
+        "experiment": "rho_0.7_Grad_1",
+        "output_prefix": "corner_rho_0.7_Grad_1",
+        "title": "rho_0.7_Grad_1"
+      },
+      {
+        "experiment": "rho_0.8_Grad_1",
+        "output_prefix": "corner_rho_0.8_Grad_1",
+        "title": "rho_0.8_Grad_1"
+      },
+      {
+        "experiment": "rho_0.9_Grad_1",
+        "output_prefix": "corner_rho_0.9_Grad_1",
+        "title": "rho_0.9_Grad_1"
+      },
+      {
+        "experiment": "ro_0.0_Grad_1",
+        "output_prefix": "corner_ro_0.0_Grad_1",
+        "title": "ro_0.0_Grad_1"
+      },
+      {
+        "experiment": "ro_0.1_Grad_1",
+        "output_prefix": "corner_ro_0.1_Grad_1",
+        "title": "ro_0.1_Grad_1"
+      },
+      {
+        "experiment": "ro_0.5_Grad_1",
+        "output_prefix": "corner_ro_0.5_Grad_1",
+        "title": "ro_0.5_Grad_1"
+      },
+      {
+        "experiment": "ro_0.9_Grad_1",
+        "output_prefix": "corner_ro_0.9_Grad_1",
+        "title": "ro_0.9_Grad_1"
+      },
+      {
+        "experiment": "ro_1.3_Grad_1",
+        "output_prefix": "corner_ro_1.3_Grad_1",
+        "title": "ro_1.3_Grad_1"
+      },
+      {
+        "experiment": "ro_1.7_Grad_1",
+        "output_prefix": "corner_ro_1.7_Grad_1",
+        "title": "ro_1.7_Grad_1"
+      },
+      {
+        "experiment": "ro_2.0_Grad_1",
+        "output_prefix": "corner_ro_2.0_Grad_1",
+        "title": "ro_2.0_Grad_1"
+      },
+      {
+        "experiment": "ro_4.0_Grad_1",
+        "output_prefix": "corner_ro_4.0_Grad_1",
+        "title": "ro_4.0_Grad_1"
+      },
+      {
+        "experiment": "ro_6.0_Grad_1",
+        "output_prefix": "corner_ro_6.0_Grad_1",
+        "title": "ro_6.0_Grad_1"
+      },
+      {
+        "experiment": "ro_8.0_Grad_1",
+        "output_prefix": "corner_ro_8.0_Grad_1",
+        "title": "ro_8.0_Grad_1"
+      },
+      {
+        "experiment": "ro_10.0_Grad_1",
+        "output_prefix": "corner_ro_10.0_Grad_1",
+        "title": "ro_10.0_Grad_1"
+      },
+      {
+        "experiment": "baseline_Grad_2",
+        "output_prefix": "corner_baseline_Grad_2",
+        "title": "baseline_Grad_2"
+      },
+      {
+        "experiment": "baseline_zeroexp_Grad_2",
+        "output_prefix": "corner_baseline_zeroexp_Grad_2",
+        "title": "baseline_zeroexp_Grad_2"
+      },
+      {
+        "experiment": "rho_0.1_Grad_2",
+        "output_prefix": "corner_rho_0.1_Grad_2",
+        "title": "rho_0.1_Grad_2"
+      },
+      {
+        "experiment": "rho_0.2_Grad_2",
+        "output_prefix": "corner_rho_0.2_Grad_2",
+        "title": "rho_0.2_Grad_2"
+      },
+      {
+        "experiment": "rho_0.3_Grad_2",
+        "output_prefix": "corner_rho_0.3_Grad_2",
+        "title": "rho_0.3_Grad_2"
+      },
+      {
+        "experiment": "rho_0.4_Grad_2",
+        "output_prefix": "corner_rho_0.4_Grad_2",
+        "title": "rho_0.4_Grad_2"
+      },
+      {
+        "experiment": "rho_0.5_Grad_2",
+        "output_prefix": "corner_rho_0.5_Grad_2",
+        "title": "rho_0.5_Grad_2"
+      },
+      {
+        "experiment": "rho_0.6_Grad_2",
+        "output_prefix": "corner_rho_0.6_Grad_2",
+        "title": "rho_0.6_Grad_2"
+      },
+      {
+        "experiment": "rho_0.7_Grad_2",
+        "output_prefix": "corner_rho_0.7_Grad_2",
+        "title": "rho_0.7_Grad_2"
+      },
+      {
+        "experiment": "rho_0.8_Grad_2",
+        "output_prefix": "corner_rho_0.8_Grad_2",
+        "title": "rho_0.8_Grad_2"
+      },
+      {
+        "experiment": "rho_0.9_Grad_2",
+        "output_prefix": "corner_rho_0.9_Grad_2",
+        "title": "rho_0.9_Grad_2"
+      },
+      {
+        "experiment": "ro_0.0_Grad_2",
+        "output_prefix": "corner_ro_0.0_Grad_2",
+        "title": "ro_0.0_Grad_2"
+      },
+      {
+        "experiment": "ro_0.1_Grad_2",
+        "output_prefix": "corner_ro_0.1_Grad_2",
+        "title": "ro_0.1_Grad_2"
+      },
+      {
+        "experiment": "ro_0.5_Grad_2",
+        "output_prefix": "corner_ro_0.5_Grad_2",
+        "title": "ro_0.5_Grad_2"
+      },
+      {
+        "experiment": "ro_0.9_Grad_2",
+        "output_prefix": "corner_ro_0.9_Grad_2",
+        "title": "ro_0.9_Grad_2"
+      },
+      {
+        "experiment": "ro_1.3_Grad_2",
+        "output_prefix": "corner_ro_1.3_Grad_2",
+        "title": "ro_1.3_Grad_2"
+      },
+      {
+        "experiment": "ro_1.7_Grad_2",
+        "output_prefix": "corner_ro_1.7_Grad_2",
+        "title": "ro_1.7_Grad_2"
+      },
+      {
+        "experiment": "ro_2.0_Grad_2",
+        "output_prefix": "corner_ro_2.0_Grad_2",
+        "title": "ro_2.0_Grad_2"
+      },
+      {
+        "experiment": "ro_4.0_Grad_2",
+        "output_prefix": "corner_ro_4.0_Grad_2",
+        "title": "ro_4.0_Grad_2"
+      },
+      {
+        "experiment": "ro_6.0_Grad_2",
+        "output_prefix": "corner_ro_6.0_Grad_2",
+        "title": "ro_6.0_Grad_2"
+      },
+      {
+        "experiment": "ro_8.0_Grad_2",
+        "output_prefix": "corner_ro_8.0_Grad_2",
+        "title": "ro_8.0_Grad_2"
+      },
+      {
+        "experiment": "ro_10.0_Grad_2",
+        "output_prefix": "corner_ro_10.0_Grad_2",
+        "title": "ro_10.0_Grad_2"
+      }
+    ]
+  },
+  "comparison_plots": {
+    "output_subdir": "comparisons",
+    "jobs": []
+  }
+}

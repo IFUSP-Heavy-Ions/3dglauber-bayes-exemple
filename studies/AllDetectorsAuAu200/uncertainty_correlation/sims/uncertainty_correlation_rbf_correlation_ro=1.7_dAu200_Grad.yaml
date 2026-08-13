@@ -1,0 +1,223 @@
+system: 'AllDetectorsAuAu200_dAu200_uncertainty_correlation_Grad_rbf_1.7'
+description: 'RHIC d+Au 200 GeV Grad; exponential experimental covariance with correlation length 1.7'
+
+data:
+  base_dir: "data/AllDetectorsAuAu200/d-Au-200"
+  experiment: "experiment.csv"
+  exp_error: "exp_error.csv"
+
+model:
+  base_dir: "model/AllDetectorsAuAu200/d-Au-200"
+  design: "design_points.csv"
+  design_ranges: "design_ranges.csv"
+  simulation: "simulation.csv"
+  validation_design: "validation_design_points.csv"
+  validation_simulation: "validation_simulation.csv"
+parameters:
+  - { name: "ylossParam4At2", min: 0.002, max: 2.0, label: '$y_2$' }
+  - { name: "ylossParam4At4", min: 0.004, max: 4.0, label: '$y_4$' }
+  - { name: "ylossParam4At6", min: 0.006, max: 6.0, label: '$y_6$' }
+  - { name: "ylossParam4var", min: 0.001, max: 1.0, label: '$\sigma_y$' }
+  - { name: "remnant_energy_loss_fraction", min: 0.001, max: 1.0, label: '$f_{\rm rem}$' }
+  - { name: "shadowing_factor", min: 0.001, max: 1.0, label: '$S_{\rm shad}$' }
+  - { name: "tau_form_mean", min: 0.2, max: 1.0, label: '$\tau_{\rm form}$' }
+  - { name: "BG", min: 2.0, max: 25.0, label: '$BG$' }
+  - { name: "string_source_sigma_x", min: 0.1, max: 0.5, label: '$\sigma_x$' }
+  - { name: "string_source_sigma_eta", min: 0.1, max: 0.8, label: '$\sigma_\eta$' }
+  - { name: "stringTransverseShiftFrac", min: 0.001, max: 1.0, label: '$f_{\rm shift}$' }
+  - { name: "shear_viscosity_3_eta_over_s_T_kink_in_GeV", min: 0.13, max: 0.3, label: '$T_{\eta,\rm kink}$' }
+  - { name: "shear_viscosity_3_eta_over_s_low_T_slope_in_GeV", min: -2.0, max: 1.0, label: '$a_{\eta,\rm low}$' }
+  - { name: "shear_viscosity_3_eta_over_s_high_T_slope_in_GeV", min: -1.0, max: 2.0, label: '$a_{\eta,\rm high}$' }
+  - { name: "shear_viscosity_3_eta_over_s_at_kink", min: 0.01, max: 0.2, label: '$(\eta/s)_{\rm kink}$' }
+  - { name: "bulk_viscosity_3_zeta_over_s_max", min: 0.01, max: 0.2, label: '$(\zeta/s)_{\max}$' }
+  - { name: "bulk_viscosity_3_zeta_over_s_T_peak_in_GeV", min: 0.12, max: 0.3, label: '$T_{\zeta,\rm peak}$' }
+  - { name: "bulk_viscosity_3_zeta_over_s_width_in_GeV", min: 0.025, max: 0.15, label: '$w_\zeta$' }
+  - { name: "bulk_viscosity_3_zeta_over_s_lambda_asymm", min: -0.8, max: 0.6, label: '$\lambda_\zeta$' }
+  - { name: "eps_switch", min: 0.1, max: 0.6, label: '$\epsilon_{\rm sw}$' }
+pca:
+  n_components: 10
+
+emulator:
+  train_in_hic_bayes: true
+  n_restarts: 4
+  n_jobs:     1
+  cache_dir:  "${HIC_BAYES_RESULTS}/AllDetectorsAuAu200/uncertainty_correlation/emulador"
+  cache_file: emulator-d-Au-200-idf-0-npc-10.pkl
+  allow_version_mismatch: true
+
+jetscape:
+  transform_multiplicities: true
+  monotonic_first_three: true
+
+experimental_covariance:
+  mode:     exp
+  corr_length: 1.7
+  corr_rho:    0.0
+
+mcmc:
+  sampler: "emcee"
+  output_root: "${HIC_BAYES_RESULTS}/AllDetectorsAuAu200/uncertainty_correlation/chains"
+  run_tag: "dAu200_ro_1.7_Grad"
+  shared_run_dir: true
+  n_walkers: 200
+  n_steps: 175
+  n_temps: 20
+  n_threads: 3
+  burnin: 100
+  thin: 10
+  seed: 1
+
+conversion:
+  source_root: "../qgp-parameter-inference"
+  source_system: "d-Au-200"
+  raw_design_rows: 414
+  design_remove_idx:
+    - 15
+    - 22
+    - 109
+    - 164
+    - 186
+    - 194
+    - 199
+    - 229
+    - 273
+    - 349
+  transform_multiplicities: true
+  obs_order:
+    - "dNdeta_eta_cen_00_05_PHEN"
+    - "dNdeta_eta_cen_05_10_PHEN"
+    - "dNdeta_eta_cen_10_20_PHEN"
+    - "v22_eta_cen_00_05_PHEN"
+    - "v22_pt_cen_00_05_PHEN"
+    - "v22_pt_cen_00_10_STAR"
+  observable_columns:
+    - "dNdeta_eta_cen_00_05_PHEN__bin00"
+    - "dNdeta_eta_cen_00_05_PHEN__bin01"
+    - "dNdeta_eta_cen_00_05_PHEN__bin02"
+    - "dNdeta_eta_cen_00_05_PHEN__bin03"
+    - "dNdeta_eta_cen_00_05_PHEN__bin04"
+    - "dNdeta_eta_cen_00_05_PHEN__bin05"
+    - "dNdeta_eta_cen_00_05_PHEN__bin06"
+    - "dNdeta_eta_cen_00_05_PHEN__bin07"
+    - "dNdeta_eta_cen_00_05_PHEN__bin08"
+    - "dNdeta_eta_cen_00_05_PHEN__bin09"
+    - "dNdeta_eta_cen_00_05_PHEN__bin10"
+    - "dNdeta_eta_cen_00_05_PHEN__bin11"
+    - "dNdeta_eta_cen_00_05_PHEN__bin12"
+    - "dNdeta_eta_cen_00_05_PHEN__bin13"
+    - "dNdeta_eta_cen_00_05_PHEN__bin14"
+    - "dNdeta_eta_cen_00_05_PHEN__bin15"
+    - "dNdeta_eta_cen_00_05_PHEN__bin16"
+    - "dNdeta_eta_cen_00_05_PHEN__bin17"
+    - "dNdeta_eta_cen_00_05_PHEN__bin18"
+    - "dNdeta_eta_cen_00_05_PHEN__bin19"
+    - "dNdeta_eta_cen_00_05_PHEN__bin20"
+    - "dNdeta_eta_cen_00_05_PHEN__bin21"
+    - "dNdeta_eta_cen_00_05_PHEN__bin22"
+    - "dNdeta_eta_cen_00_05_PHEN__bin23"
+    - "dNdeta_eta_cen_00_05_PHEN__bin24"
+    - "dNdeta_eta_cen_00_05_PHEN__bin25"
+    - "dNdeta_eta_cen_00_05_PHEN__bin26"
+    - "dNdeta_eta_cen_00_05_PHEN__bin27"
+    - "dNdeta_eta_cen_00_05_PHEN__bin28"
+    - "dNdeta_eta_cen_00_05_PHEN__bin29"
+    - "dNdeta_eta_cen_00_05_PHEN__bin30"
+    - "dNdeta_eta_cen_00_05_PHEN__bin31"
+    - "dNdeta_eta_cen_00_05_PHEN__bin32"
+    - "dNdeta_eta_cen_00_05_PHEN__bin33"
+    - "dNdeta_eta_cen_05_10_PHEN__bin00"
+    - "dNdeta_eta_cen_05_10_PHEN__bin01"
+    - "dNdeta_eta_cen_05_10_PHEN__bin02"
+    - "dNdeta_eta_cen_05_10_PHEN__bin03"
+    - "dNdeta_eta_cen_05_10_PHEN__bin04"
+    - "dNdeta_eta_cen_05_10_PHEN__bin05"
+    - "dNdeta_eta_cen_05_10_PHEN__bin06"
+    - "dNdeta_eta_cen_05_10_PHEN__bin07"
+    - "dNdeta_eta_cen_05_10_PHEN__bin08"
+    - "dNdeta_eta_cen_05_10_PHEN__bin09"
+    - "dNdeta_eta_cen_05_10_PHEN__bin10"
+    - "dNdeta_eta_cen_05_10_PHEN__bin11"
+    - "dNdeta_eta_cen_05_10_PHEN__bin12"
+    - "dNdeta_eta_cen_05_10_PHEN__bin13"
+    - "dNdeta_eta_cen_05_10_PHEN__bin14"
+    - "dNdeta_eta_cen_05_10_PHEN__bin15"
+    - "dNdeta_eta_cen_05_10_PHEN__bin16"
+    - "dNdeta_eta_cen_05_10_PHEN__bin17"
+    - "dNdeta_eta_cen_05_10_PHEN__bin18"
+    - "dNdeta_eta_cen_05_10_PHEN__bin19"
+    - "dNdeta_eta_cen_05_10_PHEN__bin20"
+    - "dNdeta_eta_cen_05_10_PHEN__bin21"
+    - "dNdeta_eta_cen_05_10_PHEN__bin22"
+    - "dNdeta_eta_cen_05_10_PHEN__bin23"
+    - "dNdeta_eta_cen_05_10_PHEN__bin24"
+    - "dNdeta_eta_cen_05_10_PHEN__bin25"
+    - "dNdeta_eta_cen_05_10_PHEN__bin26"
+    - "dNdeta_eta_cen_05_10_PHEN__bin27"
+    - "dNdeta_eta_cen_05_10_PHEN__bin28"
+    - "dNdeta_eta_cen_05_10_PHEN__bin29"
+    - "dNdeta_eta_cen_05_10_PHEN__bin30"
+    - "dNdeta_eta_cen_05_10_PHEN__bin31"
+    - "dNdeta_eta_cen_05_10_PHEN__bin32"
+    - "dNdeta_eta_cen_05_10_PHEN__bin33"
+    - "dNdeta_eta_cen_10_20_PHEN__bin00"
+    - "dNdeta_eta_cen_10_20_PHEN__bin01"
+    - "dNdeta_eta_cen_10_20_PHEN__bin02"
+    - "dNdeta_eta_cen_10_20_PHEN__bin03"
+    - "dNdeta_eta_cen_10_20_PHEN__bin04"
+    - "dNdeta_eta_cen_10_20_PHEN__bin05"
+    - "dNdeta_eta_cen_10_20_PHEN__bin06"
+    - "dNdeta_eta_cen_10_20_PHEN__bin07"
+    - "dNdeta_eta_cen_10_20_PHEN__bin08"
+    - "dNdeta_eta_cen_10_20_PHEN__bin09"
+    - "dNdeta_eta_cen_10_20_PHEN__bin10"
+    - "dNdeta_eta_cen_10_20_PHEN__bin11"
+    - "dNdeta_eta_cen_10_20_PHEN__bin12"
+    - "dNdeta_eta_cen_10_20_PHEN__bin13"
+    - "dNdeta_eta_cen_10_20_PHEN__bin14"
+    - "dNdeta_eta_cen_10_20_PHEN__bin15"
+    - "dNdeta_eta_cen_10_20_PHEN__bin16"
+    - "dNdeta_eta_cen_10_20_PHEN__bin17"
+    - "dNdeta_eta_cen_10_20_PHEN__bin18"
+    - "dNdeta_eta_cen_10_20_PHEN__bin19"
+    - "dNdeta_eta_cen_10_20_PHEN__bin20"
+    - "dNdeta_eta_cen_10_20_PHEN__bin21"
+    - "dNdeta_eta_cen_10_20_PHEN__bin22"
+    - "dNdeta_eta_cen_10_20_PHEN__bin23"
+    - "dNdeta_eta_cen_10_20_PHEN__bin24"
+    - "dNdeta_eta_cen_10_20_PHEN__bin25"
+    - "dNdeta_eta_cen_10_20_PHEN__bin26"
+    - "dNdeta_eta_cen_10_20_PHEN__bin27"
+    - "dNdeta_eta_cen_10_20_PHEN__bin28"
+    - "dNdeta_eta_cen_10_20_PHEN__bin29"
+    - "dNdeta_eta_cen_10_20_PHEN__bin30"
+    - "dNdeta_eta_cen_10_20_PHEN__bin31"
+    - "dNdeta_eta_cen_10_20_PHEN__bin32"
+    - "dNdeta_eta_cen_10_20_PHEN__bin33"
+    - "v22_eta_cen_00_05_PHEN__bin00"
+    - "v22_eta_cen_00_05_PHEN__bin01"
+    - "v22_eta_cen_00_05_PHEN__bin02"
+    - "v22_eta_cen_00_05_PHEN__bin03"
+    - "v22_eta_cen_00_05_PHEN__bin04"
+    - "v22_eta_cen_00_05_PHEN__bin05"
+    - "v22_eta_cen_00_05_PHEN__bin06"
+    - "v22_eta_cen_00_05_PHEN__bin07"
+    - "v22_eta_cen_00_05_PHEN__bin08"
+    - "v22_eta_cen_00_05_PHEN__bin09"
+    - "v22_eta_cen_00_05_PHEN__bin10"
+    - "v22_eta_cen_00_05_PHEN__bin11"
+    - "v22_eta_cen_00_05_PHEN__bin12"
+    - "v22_eta_cen_00_05_PHEN__bin13"
+    - "v22_pt_cen_00_05_PHEN__bin00"
+    - "v22_pt_cen_00_05_PHEN__bin01"
+    - "v22_pt_cen_00_05_PHEN__bin02"
+    - "v22_pt_cen_00_05_PHEN__bin03"
+    - "v22_pt_cen_00_05_PHEN__bin04"
+    - "v22_pt_cen_00_10_STAR__bin00"
+    - "v22_pt_cen_00_10_STAR__bin01"
+    - "v22_pt_cen_00_10_STAR__bin02"
+    - "v22_pt_cen_00_10_STAR__bin03"
+    - "v22_pt_cen_00_10_STAR__bin04"
+  validation_output: "model/AllDetectorsAuAu200/d-Au-200/validation_simulation.csv"
+  emulator_source: null
+closure_test:
+  enabled: false

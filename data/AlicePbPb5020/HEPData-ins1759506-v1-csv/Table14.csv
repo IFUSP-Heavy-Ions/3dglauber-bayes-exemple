@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.104923.v1/t14
+#: name: Table 14
+#: description: Integrated yield ratios of protons ($p+pbar$) to pions ($\pi^{+}+\pi^{-}$) measured in pp collisions at $\sqrt{s}$ = 5.02 TeV.
+#: data_file: table_14.yaml
+#: keyword reactions: P P --> CHARGED X | P P --> P X | P P --> PBAR X | P P --> PI+ X | P P --> PI- X
+#: keyword observables: DN/DPT
+#: keyword cmenergies: 5020.0
+#: keyword phrases: Inclusive | Differential Distribution | Transverse Momentum Dependence
+Trigger,$N_{Ch}$,syst. +,syst. -
+MB,4.3,0.32,-0.11
+
+#: RE(P + PBAR),P P --> P X, P P --> PBAR X
+#: RE(PI+ + PI-),P P --> PI+ X, P P --> PI- X
+#: RE,P P --> CHARGED X
+#: SQRT(S)/NUCLEON [GeV],5020.0
+#: YRAP,-0.5-0.5
+Trigger,$(p+pbar)/(\pi^{+}+\pi^{-})$,stat. +,stat. -,syst. +,syst. -
+MB,0.055576,6.3971e-05,-6.3971e-05,0.0042899,-0.0042899
+

@@ -1,0 +1,94 @@
+# HTCondor submit file -- hic-bayes MCMC parameter scan
+#
+# Runs 8 Grad baseline tasks with progressively larger MCMC settings.
+#
+# Usage:
+#   config/AtlasPbPb2760/mcmc_params/submit_mcmc_params.sh
+#
+# Submit only selected scans:
+#   config/AtlasPbPb2760/mcmc_params/submit_mcmc_params.sh --only scan01_minimal --only scan08_precision
+#
+# Force a specific run directory:
+#   config/AtlasPbPb2760/mcmc_params/submit_mcmc_params.sh --run-id run_001
+#
+# ============================================================================
+
+universe     = vanilla
+getenv       = True
+
+# Working directory -- must be the hic-bayes root on the cluster.
+initialdir   = $(HIC_BAYES_ROOT)
+
+ANALYSIS_DIR = config/AtlasPbPb2760/mcmc_params
+TASK_DIR     = $(ANALYSIS_DIR)/tasks
+LOG_DIR      = $(ANALYSIS_DIR)/logs
+
+# Python interpreter with hic-bayes dependencies.
+executable   = $(PYTHON)
+
+# Request the maximum thread count used by the scan grid.
+request_cpus = 6
+request_memory = 10000
+
+# Do not schedule on nodes where the shared workspace is unavailable.
+requirements = !regexp("qgp2", TARGET.Machine) && !regexp("usphydro", TARGET.Machine)
+
+environment  = "HIC_BAYES_RUN_ID=$(RUN_ID)"
+
++WantFlocking = True
+
+# Job 1: minimal executable ptemcee scan
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/mcmc_params_PbPb2760_Grad_scan01_minimal.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan01_minimal.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan01_minimal.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan01_minimal.log
+queue 1
+
+# Job 2: short scan
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/mcmc_params_PbPb2760_Grad_scan02_short.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan02_short.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan02_short.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan02_short.log
+queue 1
+
+# Job 3: warmup scan
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/mcmc_params_PbPb2760_Grad_scan03_warmup.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan03_warmup.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan03_warmup.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan03_warmup.log
+queue 1
+
+# Job 4: medium scan
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/mcmc_params_PbPb2760_Grad_scan04_medium.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan04_medium.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan04_medium.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan04_medium.log
+queue 1
+
+# Job 5: long scan
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/mcmc_params_PbPb2760_Grad_scan05_long.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan05_long.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan05_long.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan05_long.log
+queue 1
+
+# Job 6: light production scan
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/mcmc_params_PbPb2760_Grad_scan06_production_light.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan06_production_light.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan06_production_light.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan06_production_light.log
+queue 1
+
+# Job 7: production scan
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/mcmc_params_PbPb2760_Grad_scan07_production.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan07_production.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan07_production.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan07_production.log
+queue 1
+
+# Job 8: precision scan, comparable in spirit to JETSCAPE production settings
+arguments    = -m pipelines.run_universality_analysis $(TASK_DIR)/mcmc_params_PbPb2760_Grad_scan08_precision.yaml
+output       = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan08_precision.out
+error        = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan08_precision.err
+log          = $(LOG_DIR)/$(RUN_ID)/condor_$(ClusterId).$(ProcId).scan08_precision.log
+queue 1

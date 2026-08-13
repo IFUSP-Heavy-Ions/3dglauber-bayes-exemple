@@ -1,0 +1,64 @@
+# ============================================================
+# hic-bayes baseline analysis using the Universality pipeline
+# Scaled Spectra variant with Grad viscous correction
+# This is intended for apples-to-apples comparison with Universality_Github.
+# ============================================================
+
+system:      UniversalityPbPb2760_ScaledSpectra_Grad
+description: 'Pb+Pb 2.76 TeV ScaledSpectra posterior (Grad, diagonal covariance)'
+hep_link:    'https://www.hepdata.net/record/ins1222333
+
+data:
+  base_dir:    data/AtlasPbPb2760/universality_PbPb2760_ScaledSpectra/Grad
+  design:      design_points.csv
+  simulation:  simulation.csv
+  experiment:  experiment.csv
+  exp_error:   exp_error.csv
+  emulator_pkl: data/universality_PbPb2760_ScaledSpectra/Grad/emulators_Grad_6_pcs.pkl
+
+parameters:
+  - { name: norm,                          min:  10.00,  max:  20.00,  label: '$N$[2.76 TeV]' }
+  - { name: trento_p,                      min:  -0.70,  max:   0.70,  label: '$p$' }
+  - { name: sigma_k,                       min:   0.30,  max:   2.00,  label: '$\\sigma_k$' }
+  - { name: nucleon_width,                 min:   0.50,  max:   1.50,  label: '$w$ [fm]' }
+  - { name: dmin3,                         min:   0.00,  max:   4.913, label: '$d_{\\rm min}$ [fm]' }
+  - { name: tau_R,                         min:   0.30,  max:   2.00,  label: '$\\tau_R$ [fm/$c$]' }
+  - { name: alpha,                         min:  -0.30,  max:   0.30,  label: '$\\alpha$' }
+  - { name: eta_over_s_T_kink_in_GeV,      min:   0.13,  max:   0.30,  label: '$T_{\\eta,\\rm kink}$ [GeV]' }
+  - { name: eta_over_s_low_T_slope_in_GeV, min:  -2.00,  max:   1.00,  label: '$a_{\\eta,\\rm low}$ [GeV$^{-1}$]' }
+  - { name: eta_over_s_high_T_slope_in_GeV,min:  -1.00,  max:   2.00,  label: '$a_{\\eta,\\rm high}$ [GeV$^{-1}$]' }
+  - { name: eta_over_s_at_kink,            min:   0.01,  max:   0.20,  label: '$(\\eta/s)_{\\rm kink}$' }
+  - { name: zeta_over_s_max,               min:   0.01,  max:   0.20,  label: '$(\\zeta/s)_{\\rm max}$' }
+  - { name: zeta_over_s_T_peak_in_GeV,     min:   0.12,  max:   0.30,  label: '$T_{\\zeta,c}$ [GeV]' }
+  - { name: zeta_over_s_width_in_GeV,      min:   0.025, max:   0.15,  label: '$w_{\\zeta}$ [GeV]' }
+  - { name: zeta_over_s_lambda_asymm,      min:  -0.80,  max:   0.80,  label: '$\\lambda_{\\zeta}$' }
+  - { name: shear_relax_time_factor,       min:   2.00,  max:   8.00,  label: '$b_{\\pi}$' }
+  - { name: Tswitch,                       min:   0.13,  max:   0.165, label: '$T_{\\rm sw}$ [GeV]' }
+
+pca:
+  n_components: 6
+
+emulator:
+  n_restarts: 4
+  n_jobs:     1
+  cache_dir:  "${HIC_BAYES_RESULTS}/emulator/scaled_spectra"
+  cache_file: emulators_Grad_6_pcs.pkl
+  
+experimental_covariance:
+  mode:     diag
+  corr_rho: 0.0
+
+mcmc:
+  output_root: "${HIC_BAYES_RESULTS}/results/universality_baseline_scaled"
+  run_tag:     baseline_Grad_scaled_diag
+  shared_run_dir: true
+  n_walkers: 200
+  n_steps: 175
+  n_temps: 20
+  n_threads: 3
+  burnin: 100
+  thin: 10
+  seed: 42
+
+closure_test:
+  enabled: false

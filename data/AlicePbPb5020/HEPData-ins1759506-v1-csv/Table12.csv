@@ -1,0 +1,19 @@
+#: table_doi: 10.17182/hepdata.104923.v1/t12
+#: name: Table 12
+#: description: Integrated yield ratios of kaons ($K^{+}+K^{-}$) to pions ($\pi^{+}+\pi^{-}$) measured in pp collisions at $\sqrt{s}$ = 5.02 TeV.
+#: data_file: table_12.yaml
+#: keyword reactions: P P --> CHARGED X | P P --> K+ X | P P --> K- X | P P --> PI+ X | P P --> PI- X
+#: keyword observables: DN/DPT
+#: keyword cmenergies: 5020.0
+#: keyword phrases: Inclusive | Differential Distribution | Transverse Momentum Dependence
+Trigger,$N_{Ch}$,syst. +,syst. -
+MB,4.3,0.32,-0.11
+
+#: RE(K+ + K-),P P --> K+ X, P P --> K- X
+#: RE(PI+ + PI-),P P --> PI+ X, P P --> PI- X
+#: RE,P P --> CHARGED X
+#: SQRT(S)/NUCLEON [GeV],5020.0
+#: YRAP,-0.5-0.5
+Trigger,$(K^{+}+K^{-})/(\pi^{+}+\pi^{-})$,stat. +,stat. -,syst. +,syst. -
+MB,0.13212,8.0796e-05,-8.0796e-05,0.0092215,-0.0092215
+
