@@ -44,7 +44,7 @@ dir_obs_exp = "HIC_experimental_data"
 #dir_obs_exp = "HIC_pseudodata_val_pt_41"
 
 # Flag to run closure test and validation point number to use
-run_closure = False
+run_closure = False # TODO: Rodar com run_closure = True
 closure_val_pt = 2
 
 ####################################
@@ -73,7 +73,7 @@ idf_label_short = {0: "Grad", 1: "CE"}
 ####################################
 
 # how many versions of the model are run, for instance
-number_of_models_per_run = 1
+number_of_models_per_run = 1 # TODO: Modelos de viscosidade? Testar = 2
 
 # default set this to zero, analysis run using Grad viscous corrections
 idf = 0
@@ -91,7 +91,7 @@ system_strs = ["{:s}-{:s}-{:d}".format(*s) for s in systems]
 num_systems = len(system_strs)
 
 # these are problematic points (legacy from previous analysis)
-nan_sets_by_deltaf = {0: set([65, 78, 207, 322, 210, 229, 256, 316])}
+nan_sets_by_deltaf = {0: set([65, 78, 207, 322, 210, 229, 256, 316])} # TODO: verificar se realmente são problemáticos
 nan_design_pts_set = nan_sets_by_deltaf[idf]
 unfinished_events_design_pts_set = set([])
 strange_features_design_pts_set = set([])
@@ -173,6 +173,9 @@ class systems_setting(dict):
 
 # Some calculation and emulator details for each system (number of principal components, npc, set here)
 SystemsInfo = {"{:s}-{:s}-{:d}".format(*s): systems_setting(*s) for s in systems}
+
+from pprint import pprint
+pprint(SystemsInfo)
 
 if "d-Au-200" in system_strs:
     SystemsInfo["d-Au-200"]["run_id"] = "production_414pts_d_Au_200"

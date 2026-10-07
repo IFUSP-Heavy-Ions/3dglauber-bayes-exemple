@@ -1,0 +1,26 @@
+{
+  "creators": [
+    {
+      "orcid": "0009-0004-7448-6418",
+      "affiliation": "Institute of Physics, University of São Paulo",
+      "name": "Moraes, Nara Avila"
+    },
+    {
+      "orcid": "0000-0002-0367-7055",
+      "affiliation": "Institute of Physics, University of São Paulo",
+      "name": "Luzum, Matthew William"
+    }
+  ],
+
+  "license": "Apache-2.0",
+
+  "title": "Study of the Effect of Correlated Experimental Uncertainty on Bayesian Inference of Quark-Gluon Plasma Properties",
+
+  "keywords": [
+    "Quark-Gluon Plasma",
+    "Heavy-Ion Collisions",
+    "Bayesian Inference",
+    "Gaussian Processes",
+    "Correlated Experimental Uncertainties"
+    ]
+}

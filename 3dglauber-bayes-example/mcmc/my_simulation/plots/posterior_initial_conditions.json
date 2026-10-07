@@ -1,0 +1,64 @@
+{
+  "walkers": 200,
+  "steps": 50000,
+  "burnin": 0,
+  "thin": 50,
+  "samples": 200000,
+  "dropped_nonfinite": 0,
+  "chain": "/Users/avilamrs/Remote-HPC/code-space/my-work/jetscape-emulator/3dglauber-bayes-example/mcmc/chain-idf-0_mine.hdf",
+  "design": "/Users/avilamrs/Remote-HPC/code-space/my-work/jetscape-emulator/3dglauber-bayes-example/production_designs/ProductionMaxPro-Mod/design_pts_Au_Au_200_production/design_ranges_main_AuAu-200.dat",
+  "credible_level": 0.9,
+  "contour_probabilities": [
+    0.68,
+    0.9
+  ],
+  "bins": 45,
+  "smoothing_bins": 1.0,
+  "posterior": {
+    "ylossParam4At2": {
+      "median": 1.0111664214439668,
+      "ci_low": 0.12799850660729303,
+      "ci_high": 1.7497185639046573
+    },
+    "ylossParam4At4": {
+      "median": 1.6776990044545066,
+      "ci_low": 1.14715745964213,
+      "ci_high": 2.121526386589792
+    },
+    "ylossParam4At6": {
+      "median": 2.0540500600076665,
+      "ci_low": 1.6839124516510247,
+      "ci_high": 2.6487539303646552
+    },
+    "ylossParam4var": {
+      "median": 0.6148727085175814,
+      "ci_low": 0.09095234100878824,
+      "ci_high": 0.9590247853645992
+    },
+    "remnant_energy_loss_fraction": {
+      "median": 0.4672335090856701,
+      "ci_low": 0.15161498772615173,
+      "ci_high": 0.6310056991811345
+    },
+    "shadowing_factor": {
+      "median": 0.06934495366976326,
+      "ci_low": 0.006267880453537478,
+      "ci_high": 0.29027807594828664
+    },
+    "tau_form_mean": {
+      "median": 0.5412217701865488,
+      "ci_low": 0.23066662496236431,
+      "ci_high": 0.9589696908231994
+    },
+    "BG": {
+      "median": 7.426165992883077,
+      "ci_low": 2.438445401500215,
+      "ci_high": 22.567363608312263
+    },
+    "string_source_sigma_x": {
+      "median": 0.20652227207252422,
+      "ci_low": 0.10908195698289413,
+      "ci_high": 0.47003519770359325
+    }
+  }
+}

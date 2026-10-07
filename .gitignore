@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# pip editable install metadata
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+*.dill
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated outputs
+
+data/toy/
+
+# Editor / OS
+.DS_Store
+.vscode/
+*.swp
+
+# Chain MCMC
+*.hdf
+*.hdf5
+chain.csv
+
+# macOS AppleDouble
+._*
+
+# Finder metadata
+.DS_Store

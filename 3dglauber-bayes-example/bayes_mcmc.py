@@ -683,46 +683,80 @@ class Chain:
 
             else:
                 print('------ Running MCMC ------')
-                sampler = LoggingEnsembleSampler(
-                    nwalkers, self.ndim, self.log_posterior, #pool=self
-                )
-                if burn:
-                    logging.info("no existing chain found, starting initial burn-in")
-                    # Run first half of burn-in starting from random positions.
-                    nburn0 = nburnsteps // 2
-                    sampler.run_mcmc(self.random_pos(nwalkers), nburn0, status=status)
-                    logging.info("resampling walker positions")
-                    # Reposition walkers to the most likely points in the chain,
-                    # then run the second half of burn-in.  This significantly
-                    # accelerates burn-in and helps prevent stuck walkers.
-                    X0 = sampler.flatchain[
-                        np.unique(sampler.flatlnprobability, return_index=True)[1][
-                            -nwalkers:
+                logging.info("{0} worker processes".format(ncpu))
+
+                with Pool(ncpu) as pool:
+
+                    sampler = LoggingEnsembleSampler(
+                        nwalkers,
+                        self.ndim,
+                        self.log_posterior,
+                        pool=pool,
+                    )
+
+                    if burn:
+                        logging.info("no existing chain found, starting initial burn-in")
+
+                        # Run first half of burn-in starting from random positions.
+                        nburn0 = nburnsteps // 2
+
+                        sampler.run_mcmc(
+                            self.random_pos(nwalkers),
+                            nburn0,
+                            status=status,
+                        )
+
+                        logging.info("resampling walker positions")
+
+                        X0 = sampler.flatchain[
+                            np.unique(
+                                sampler.flatlnprobability,
+                                return_index=True
+                            )[1][-nwalkers:]
                         ]
-                    ]
-                    #print(X0)
-                    #print(np.shape(X0[0]))
-                    #print(X0[0])
-                    #print('last point of chain')
+                        ###### saving burning for convergency study
+                        X0 = sampler.run_mcmc(
+                            X0,
+                            nburnsteps - nburn0,
+                            status=status,
+                        )
 
-                    X0 = sampler.run_mcmc(
-                        X0, nburnsteps - nburn0, status=status, store=False    # used to be "storechain"? bug?
-                    )#[0]
+                        # Save complete burn-in BEFORE reset
+                        logging.info("saving complete burn-in chain")
+
+                        if "burnin" in f:
+                            del f["burnin"]
+
+                        burn_dset = f.create_dataset(
+                            "burnin",
+                            data=sampler.chain,
+                            dtype="f8",
+                            compression="lzf",
+                        )
+
+                        logging.info("burn-in shape: {}".format(sampler.chain.shape))
+
+                        sampler.reset()
+                        logging.info("burn-in complete, starting production")
+                        #######
+
+                    else:
+                        logging.info("restarting from last point of existing chain")
+                        X0 = dset[:, -1, :]
+
+                    sampler.run_mcmc(X0, nsteps, status=status)
+
+                    logging.info("writing chain to file")
+
+                    dset.resize(dset.shape[1] + nsteps, 1)
+                    dset[:, -nsteps:, :] = sampler.chain
+
+                    print('last point of chain')
+                    print(dset[:, -1, :])
+                    print(len(dset[:, -1, :][0]))
+                    print(dset[:, -1, :][0])
+
                     sampler.reset()
-                    logging.info("burn-in complete, starting production")
-                else:
-                    logging.info("restarting from last point of existing chain")
-                    X0 = dset[:, -1, :]
-                sampler.run_mcmc(X0, nsteps, status=status)
-                logging.info("writing chain to file")
-                dset.resize(dset.shape[1] + nsteps, 1)
-                dset[:, -nsteps:, :] = sampler.chain
-                print('last point of chain')
-                print(dset[:, -1, :])
-                print(len(dset[:, -1, :][0]))
-                print(dset[:, -1, :][0])
-                sampler.reset()
-
 
     def open(self, mode="r"):
         """
@@ -834,5 +868,5 @@ def main():
     )
 
 
-if __name__ == "__main__":
+if __name__ == "__main__" and not globals().get("_BENCHMARK_IMPORT", False):
     main()
