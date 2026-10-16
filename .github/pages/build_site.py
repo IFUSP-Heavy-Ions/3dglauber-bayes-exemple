@@ -1115,6 +1115,12 @@ def collect_tree(src: Path, out: Path, execute: bool, changed_notebooks: set[str
                 cmd.append("--execute")
             subprocess.run(cmd, check=True)
 
+            # The generated cell wrapper IDs can leave the exported document
+            # blank in Safari. Keep heading anchors, but omit unused cell IDs.
+            rendered = out_html.read_text(encoding="utf-8")
+            rendered = re.sub(r' id="cell-id=[^"]*"', '', rendered)
+            out_html.write_text(rendered, encoding="utf-8")
+
             fold_math_blocks_in_html(out_html)
             fold_proof_blocks_in_html(out_html)
             _widen_notebook_html(out_html)
