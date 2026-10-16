@@ -1,0 +1,82 @@
+{
+  "baseline": {
+    "path": "mcmc/01_01_baseline_reproduction/chain-idf-0.hdf",
+    "walkers": 200,
+    "steps": 50000,
+    "burnin": 0,
+    "thin": 50,
+    "samples": 200000,
+    "dropped_nonfinite": 0,
+    "attributes": {}
+  },
+  "sector": {
+    "path": "mcmc/02_04_cs_sector/chain-idf-0-cs-observable-region-rho-1-a77902df73a5.hdf",
+    "walkers": 200,
+    "steps": 50000,
+    "burnin": 0,
+    "thin": 50,
+    "samples": 200000,
+    "dropped_nonfinite": 0,
+    "attributes": {
+      "experimental_covariance_model": "compound_symmetry",
+      "experimental_covariance_scope": "observable_rapidity_region",
+      "experimental_covariance_signature": "a77902df73a5c71a58b6a701fc2ce9efa53915c94e27041a7ec9dfc27fff1fb0",
+      "experimental_cs_rho": 1.0,
+      "experimental_cs_scope": "observable_rapidity_region",
+      "experimental_rapidity_regions": "{\"Au-Au-200\": {\"v22_eta_cen_03_15_PHOB\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_15_25_PHOB\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_20_70_STAR\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_25_50_PHOB\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}}, \"d-Au-200\": {\"dNdeta_eta_cen_00_05_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"dNdeta_eta_cen_05_10_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"dNdeta_eta_cen_10_20_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_00_05_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}}}",
+      "experimental_sector_definition": "system + exact observable key + configured rapidity region"
+    }
+  },
+  "corner_scope": "Both marginal densities and joint 68%/90% contours",
+  "n_prediction_samples": 1000,
+  "seed": 12345,
+  "baseline_prediction_source": "../02_06_baseline_vs_cs_sector/baseline_predictions",
+  "sector_prediction_source": "mcmc/02_04_cs_sector/plots/observables",
+  "bands": "Posterior variation of emulator means; no emulator or experimental noise draws",
+  "versions": {
+    "python": "3.14.3",
+    "numpy": "2.4.6"
+  },
+  "source_sha256": "a0f4b8d3aab00ca39f36dbe9f4e0a1f8506828bfce212e546760e77f52aa9c4d",
+  "sector_study_manifest": {
+    "walkers": 200,
+    "steps": 50000,
+    "burnin": 0,
+    "thin": 50,
+    "samples": 200000,
+    "dropped_nonfinite": 0,
+    "chain": "chain-idf-0-cs-observable-region-rho-1-a77902df73a5.hdf",
+    "chain_attributes": {
+      "experimental_covariance_model": "compound_symmetry",
+      "experimental_covariance_scope": "observable_rapidity_region",
+      "experimental_covariance_signature": "a77902df73a5c71a58b6a701fc2ce9efa53915c94e27041a7ec9dfc27fff1fb0",
+      "experimental_cs_rho": 1.0,
+      "experimental_cs_scope": "observable_rapidity_region",
+      "experimental_rapidity_regions": "{\"Au-Au-200\": {\"v22_eta_cen_03_15_PHOB\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_15_25_PHOB\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_20_70_STAR\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_25_50_PHOB\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}}, \"d-Au-200\": {\"dNdeta_eta_cen_00_05_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"dNdeta_eta_cen_05_10_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"dNdeta_eta_cen_10_20_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_00_05_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}}}",
+      "experimental_sector_definition": "system + exact observable key + configured rapidity region"
+    },
+    "n_prediction_samples": 1000,
+    "seed": 12345,
+    "covariance_signature_matches": false,
+    "emulators": [
+      {
+        "system": "Au-Au-200",
+        "sha256": "53a0084d22ad7c69b00c4c86968225541d14c60c27382dc1d0af204a2427e121",
+        "reference_observables_validated": 34
+      },
+      {
+        "system": "d-Au-200",
+        "sha256": "dc228598fd96c31f4e70eda83699894d14f032580acbc18a177001af1f6992ff",
+        "reference_observables_validated": 6
+      }
+    ],
+    "bands": "Posterior variation of emulator means; no emulator or experimental noise draws",
+    "versions": {
+      "python": "3.14.3",
+      "numpy": "2.4.6",
+      "sklearn": "1.8.0",
+      "dill": "0.4.1"
+    },
+    "source_sha256": "78bda77389a8780151ee4c8af830b68bbfceabf72a42d1c2fccd6ce0d1517c2a"
+  }
+}

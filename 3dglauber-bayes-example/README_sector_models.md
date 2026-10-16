@@ -32,6 +32,20 @@ bands show the central 68% variation of emulator means, not full predictive
 uncertainty including emulator or experimental noise. The notebooks record
 the covariance partition, source metadata, numerical validation and limitations.
 
+Baseline comparisons are in `mcmc/02_06_baseline_vs_cs_sector` and
+`mcmc/02_07_baseline_vs_rbf_sector`. Each includes a notebook, overlaid marginal
+densities and joint 68%/90% corner contours, parameter-shift CSVs, and all
+40 observable comparisons with individual model/data ratio panels. Baseline
+prediction arrays are shared from the CS comparison's `baseline_predictions`
+folder; the manifests record this dependency. Chains remain in their original
+study folders and are opened read-only.
+
+To regenerate both comparisons from the project root:
+
+```sh
+python mcmc/scripts/build_sector_comparisons.py --model both
+```
+
 Before launching Python, limit each NumPy/BLAS process to one compute thread.
 This avoids oversubscribing the 20 MCMC worker processes on a 24-core node.
 These environment variables are inherited by the worker processes:
