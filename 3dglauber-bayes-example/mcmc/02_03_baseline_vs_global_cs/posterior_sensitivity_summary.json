@@ -1,0 +1,325 @@
+{
+  "definition": "delta = CS median - baseline median; normalized shift uses baseline central 90% interval width; width ratio = CS width / baseline width",
+  "parameters": [
+    {
+      "parameter": "ylossParam4At2",
+      "baseline_median": 1.0111664214439668,
+      "cs_median": 1.2072826301495843,
+      "delta": 0.1961162087056174,
+      "normalized_shift": 0.12093098794896194,
+      "width_ratio": 1.032497780744003,
+      "baseline_interval": [
+        0.12799850660729303,
+        1.7497185639046573
+      ],
+      "cs_interval": [
+        0.20443713546078876,
+        1.8788594956083546
+      ]
+    },
+    {
+      "parameter": "ylossParam4At4",
+      "baseline_median": 1.6776990044545066,
+      "cs_median": 1.7537654460437846,
+      "delta": 0.076066441589278,
+      "normalized_shift": 0.07806739263285628,
+      "width_ratio": 0.9292312716878754,
+      "baseline_interval": [
+        1.14715745964213,
+        2.121526386589792
+      ],
+      "cs_interval": [
+        1.2944561611974148,
+        2.1998702382781414
+      ]
+    },
+    {
+      "parameter": "ylossParam4At6",
+      "baseline_median": 2.0540500600076665,
+      "cs_median": 2.0587530770388374,
+      "delta": 0.00470301703117082,
+      "normalized_shift": 0.004874393498754936,
+      "width_ratio": 0.8623128116972055,
+      "baseline_interval": [
+        1.6839124516510247,
+        2.6487539303646552
+      ],
+      "cs_interval": [
+        1.6944049674459438,
+        2.526400135797584
+      ]
+    },
+    {
+      "parameter": "ylossParam4var",
+      "baseline_median": 0.6148727085175814,
+      "cs_median": 0.581568788683761,
+      "delta": -0.033303919833820306,
+      "normalized_shift": -0.03836536921585485,
+      "width_ratio": 1.0307298116533754,
+      "baseline_interval": [
+        0.09095234100878824,
+        0.9590247853645992
+      ],
+      "cs_interval": [
+        0.06472914295501084,
+        0.9594772900273612
+      ]
+    },
+    {
+      "parameter": "remnant_energy_loss_fraction",
+      "baseline_median": 0.4672335090856701,
+      "cs_median": 0.4196315280100389,
+      "delta": -0.04760198107563118,
+      "normalized_shift": -0.0992968364596719,
+      "width_ratio": 1.282947909900378,
+      "baseline_interval": [
+        0.15161498772615173,
+        0.6310056991811345
+      ],
+      "cs_interval": [
+        0.024375948170606017,
+        0.6394092594574313
+      ]
+    },
+    {
+      "parameter": "shadowing_factor",
+      "baseline_median": 0.06934495366976326,
+      "cs_median": 0.10457426788600413,
+      "delta": 0.03522931421624087,
+      "normalized_shift": 0.124042427965908,
+      "width_ratio": 1.324990343906652,
+      "baseline_interval": [
+        0.006267880453537478,
+        0.29027807594828664
+      ],
+      "cs_interval": [
+        0.00988198684484489,
+        0.386192753446428
+      ]
+    },
+    {
+      "parameter": "tau_form_mean",
+      "baseline_median": 0.5412217701865488,
+      "cs_median": 0.533305154831858,
+      "delta": -0.007916615354690792,
+      "normalized_shift": -0.010869946490385238,
+      "width_ratio": 1.0211696355607731,
+      "baseline_interval": [
+        0.23066662496236431,
+        0.9589696908231994
+      ],
+      "cs_interval": [
+        0.22506410991621945,
+        0.9687850862591221
+      ]
+    },
+    {
+      "parameter": "BG",
+      "baseline_median": 7.426165992883077,
+      "cs_median": 13.3779278522594,
+      "delta": 5.951761859376323,
+      "normalized_shift": 0.29568215232560896,
+      "width_ratio": 1.0488320707455092,
+      "baseline_interval": [
+        2.438445401500215,
+        22.567363608312263
+      ],
+      "cs_interval": [
+        3.1000147269112888,
+        24.211869691628955
+      ]
+    },
+    {
+      "parameter": "string_source_sigma_x",
+      "baseline_median": 0.20652227207252422,
+      "cs_median": 0.27422071353354416,
+      "delta": 0.06769844146101994,
+      "normalized_shift": 0.1875546021580233,
+      "width_ratio": 1.0102112846087217,
+      "baseline_interval": [
+        0.10908195698289413,
+        0.47003519770359325
+      ],
+      "cs_interval": [
+        0.11689022695781345,
+        0.48152926394995205
+      ]
+    },
+    {
+      "parameter": "string_source_sigma_eta",
+      "baseline_median": 0.4755047453954499,
+      "cs_median": 0.39321676932535093,
+      "delta": -0.08228797607009897,
+      "normalized_shift": -0.13236010147885835,
+      "width_ratio": 0.9813246542844014,
+      "baseline_interval": [
+        0.14882928318058716,
+        0.7705270240458183
+      ],
+      "cs_interval": [
+        0.1297981755339281,
+        0.7398854961578945
+      ]
+    },
+    {
+      "parameter": "stringTransverseShiftFrac",
+      "baseline_median": 0.4799940461683386,
+      "cs_median": 0.5185971927767734,
+      "delta": 0.038603146608434835,
+      "normalized_shift": 0.042905792299566765,
+      "width_ratio": 0.997734969224762,
+      "baseline_interval": [
+        0.04638816830130646,
+        0.9461069367815385
+      ],
+      "cs_interval": [
+        0.0546171331292724,
+        0.9522980109098375
+      ]
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_T_kink_in_GeV",
+      "baseline_median": 0.21214142204584024,
+      "cs_median": 0.20686788707523585,
+      "delta": -0.005273534970604399,
+      "normalized_shift": -0.0373887512250593,
+      "width_ratio": 0.96468265740155,
+      "baseline_interval": [
+        0.14306228175384697,
+        0.28410831292136784
+      ],
+      "cs_interval": [
+        0.14301373449249002,
+        0.2790783946551159
+      ]
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_low_T_slope_in_GeV",
+      "baseline_median": -0.8498547051239919,
+      "cs_median": -0.8539477732272182,
+      "delta": -0.004093068103226294,
+      "normalized_shift": -0.0015586048328053664,
+      "width_ratio": 1.0053719706105155,
+      "baseline_interval": [
+        -1.8997444728493558,
+        0.7263657618142264
+      ],
+      "cs_interval": [
+        -1.8991543089793597,
+        0.7410633126848092
+      ]
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_high_T_slope_in_GeV",
+      "baseline_median": 0.7760484136159731,
+      "cs_median": 0.694153260886718,
+      "delta": -0.08189515272925507,
+      "normalized_shift": -0.03032669032641082,
+      "width_ratio": 1.0103225566570864,
+      "baseline_interval": [
+        -0.7953372225039228,
+        1.9050943724972125
+      ],
+      "cs_interval": [
+        -0.8369659568359593,
+        1.8913409963031615
+      ]
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_at_kink",
+      "baseline_median": 0.10255867183802211,
+      "cs_median": 0.07823624245255914,
+      "delta": -0.024322429385462974,
+      "normalized_shift": -0.15837644888370683,
+      "width_ratio": 0.9489820905615196,
+      "baseline_interval": [
+        0.0257988002141571,
+        0.1793723242885763
+      ],
+      "cs_interval": [
+        0.018064451582612565,
+        0.16380297551365475
+      ]
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_max",
+      "baseline_median": 0.09034613247103954,
+      "cs_median": 0.08055848603486415,
+      "delta": -0.009787646436175385,
+      "normalized_shift": -0.07389999010222234,
+      "width_ratio": 0.9747916524619559,
+      "baseline_interval": [
+        0.04821161441869551,
+        0.18065610355376305
+      ],
+      "cs_interval": [
+        0.04127703357410946,
+        0.1703828159975615
+      ]
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_T_peak_in_GeV",
+      "baseline_median": 0.1620171969669495,
+      "cs_median": 0.18131862963534173,
+      "delta": 0.019301432668392238,
+      "normalized_shift": 0.1205308559497847,
+      "width_ratio": 1.0081544751509954,
+      "baseline_interval": [
+        0.12282886689411386,
+        0.28296572576146944
+      ],
+      "cs_interval": [
+        0.12413723819885861,
+        0.2855799291026065
+      ]
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_width_in_GeV",
+      "baseline_median": 0.08317034289622399,
+      "cs_median": 0.0770058721854803,
+      "delta": -0.006164470710743691,
+      "normalized_shift": -0.054685524067973466,
+      "width_ratio": 1.0010020794509698,
+      "baseline_interval": [
+        0.03014986935249181,
+        0.14287569242554723
+      ],
+      "cs_interval": [
+        0.029105983529844198,
+        0.14194476683379478
+      ]
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_lambda_asymm",
+      "baseline_median": -0.27546092630729424,
+      "cs_median": -0.235658605095621,
+      "delta": 0.039802321211673236,
+      "normalized_shift": 0.03246690113868113,
+      "width_ratio": 1.0183350994114024,
+      "baseline_interval": [
+        -0.7536859125974092,
+        0.4722494189471426
+      ],
+      "cs_interval": [
+        -0.7536900201443194,
+        0.4947229575760525
+      ]
+    },
+    {
+      "parameter": "eps_switch",
+      "baseline_median": 0.5459625719029837,
+      "cs_median": 0.563338726624447,
+      "delta": 0.017376154721463255,
+      "normalized_shift": 0.1117681297548232,
+      "width_ratio": 0.8670637532396205,
+      "baseline_interval": [
+        0.43990140457569865,
+        0.5953674999606705
+      ],
+      "cs_interval": [
+        0.46233218324509695,
+        0.5971311994110995
+      ]
+    }
+  ]
+}

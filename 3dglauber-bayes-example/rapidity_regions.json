@@ -1,0 +1,94 @@
+{
+  "Au-Au-200": {
+    "v22_eta_cen_20_70_STAR": {
+      "boundaries": [
+        -2,
+        2
+      ],
+      "labels": [
+        "lateral",
+        "central",
+        "lateral"
+      ]
+    },
+    "v22_eta_cen_03_15_PHOB": {
+      "boundaries": [
+        -2,
+        2
+      ],
+      "labels": [
+        "lateral",
+        "central",
+        "lateral"
+      ]
+    },
+    "v22_eta_cen_15_25_PHOB": {
+      "boundaries": [
+        -2,
+        2
+      ],
+      "labels": [
+        "lateral",
+        "central",
+        "lateral"
+      ]
+    },
+    "v22_eta_cen_25_50_PHOB": {
+      "boundaries": [
+        -2,
+        2
+      ],
+      "labels": [
+        "lateral",
+        "central",
+        "lateral"
+      ]
+    }
+  },
+  "d-Au-200": {
+    "dNdeta_eta_cen_00_05_PHEN": {
+      "boundaries": [
+        -1,
+        1
+      ],
+      "labels": [
+        "lateral",
+        "central",
+        "lateral"
+      ]
+    },
+    "dNdeta_eta_cen_05_10_PHEN": {
+      "boundaries": [
+        -1,
+        1
+      ],
+      "labels": [
+        "lateral",
+        "central",
+        "lateral"
+      ]
+    },
+    "dNdeta_eta_cen_10_20_PHEN": {
+      "boundaries": [
+        -1,
+        1
+      ],
+      "labels": [
+        "lateral",
+        "central",
+        "lateral"
+      ]
+    },
+    "v22_eta_cen_00_05_PHEN": {
+      "boundaries": [
+        -1,
+        1
+      ],
+      "labels": [
+        "lateral",
+        "central",
+        "lateral"
+      ]
+    }
+  }
+}

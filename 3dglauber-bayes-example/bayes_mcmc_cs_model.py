@@ -207,7 +207,7 @@ class Chain:
             stem = Path(self.filename).stem
             path = workdir / "mcmc" / f"{stem}-cs-system-rho-{self.cs_rho:g}.hdf"
         self.path = Path(path)
-        self.path.parent.mkdir(exist_ok=True)
+        self.path.parent.mkdir(parents=True, exist_ok=True)
 
         self._slices = {}
         self._expt_y = {}
@@ -388,13 +388,29 @@ class Chain:
 
             # Global CS block: every experimental bin in this system is correlated.
             # At rho=1 this is exactly outer(experimental_std, experimental_std).
-            self._expt_cov[s] = compound_symmetry_covariance(
-                experimental_std, rho=self.cs_rho
-            )
-            logging.info("Experimental CS covariance: system=%s, bins=%d, rho=%g",
-                         s, nobs, self.cs_rho)
+            self._expt_cov[s] = self._build_experimental_covariance(s, experimental_std)
+            logging.info("Experimental covariance assembled: system=%s, bins=%d", s, nobs)
 
 
+
+    def _build_experimental_covariance(self, system, experimental_std):
+        """Global CS by default; sector studies override only this construction."""
+        return compound_symmetry_covariance(experimental_std, rho=self.cs_rho)
+
+    def _covariance_metadata(self):
+        return {
+            "experimental_covariance_model": "compound_symmetry",
+            "experimental_cs_scope": "system",
+            "experimental_cs_rho": self.cs_rho,
+        }
+
+    def _validate_covariance_metadata(self, handle):
+        metadata = self._covariance_metadata()
+        if "chain" in handle and any(handle.attrs.get(key) != value
+                                      for key, value in metadata.items()):
+            raise ValueError("Cannot resume: chain metadata does not match this covariance likelihood.")
+        for key, value in metadata.items():
+            handle.attrs[key] = value
 
     def _predict(self, X, **kwargs):
         """
@@ -596,13 +612,7 @@ class Chain:
 
         """
         with self.open("a") as f:
-            if "chain" in f and (f.attrs.get("experimental_covariance_model") != "compound_symmetry"
-                                 or f.attrs.get("experimental_cs_scope") != "system"
-                                 or f.attrs.get("experimental_cs_rho") != self.cs_rho):
-                raise ValueError("Cannot resume: chain metadata does not match this CS likelihood.")
-            f.attrs["experimental_covariance_model"] = "compound_symmetry"
-            f.attrs["experimental_cs_scope"] = "system"
-            f.attrs["experimental_cs_rho"] = self.cs_rho
+            self._validate_covariance_metadata(f)
             try:
                 dset = f["chain"]
                 print(dset)

@@ -1,0 +1,5 @@
+system,run,definition,n_prediction_samples,chi2,chi2_per_bin,logdet,gaussian_loglike
+Au-Au-200,baseline,coordinatewise posterior median prediction; mean emulator covariance,250,665.4213616353879,0.8412406594631959,-5077.90726439086,1479.36257161284
+Au-Au-200,cs,coordinatewise posterior median prediction; mean emulator covariance,250,17324.259881542646,21.901719192847846,-8788.217225620905,-4994.901707725767
+d-Au-200,baseline,coordinatewise posterior median prediction; mean emulator covariance,250,16.46115730769167,0.13064410561660056,-686.7490640376083,219.35769818116955
+d-Au-200,cs,coordinatewise posterior median prediction; mean emulator covariance,250,551.3931244476124,4.376135908314384,-1250.8670470839782,233.95070613439412
