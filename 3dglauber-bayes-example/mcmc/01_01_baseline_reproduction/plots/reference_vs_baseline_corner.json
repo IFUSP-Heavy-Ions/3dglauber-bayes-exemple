@@ -1,0 +1,327 @@
+{
+  "baseline": {
+    "walkers": 200,
+    "steps": 50000,
+    "burnin": 0,
+    "thin": 50,
+    "samples": 200000,
+    "dropped_nonfinite": 0
+  },
+  "reference": {
+    "walkers": 200,
+    "steps": 20000,
+    "burnin": 0,
+    "thin": 50,
+    "samples": 80000,
+    "dropped_nonfinite": 0
+  },
+  "parameters": [
+    {
+      "parameter": "ylossParam4At2",
+      "baseline_median": 1.0111664214439668,
+      "reference_median": 1.0010434208874306,
+      "baseline_90": [
+        0.12799850660729303,
+        1.7497185639046573
+      ],
+      "reference_90": [
+        0.12602927816472168,
+        1.7583643073176805
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": 0.006201545868797057
+    },
+    {
+      "parameter": "ylossParam4At4",
+      "baseline_median": 1.6776990044545066,
+      "reference_median": 1.676395923046062,
+      "baseline_90": [
+        1.14715745964213,
+        2.121526386589792
+      ],
+      "reference_90": [
+        1.1548337897658998,
+        2.1185897033734875
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": 0.0013520865501791977
+    },
+    {
+      "parameter": "ylossParam4At6",
+      "baseline_median": 2.0540500600076665,
+      "reference_median": 2.0329062962264306,
+      "baseline_90": [
+        1.6839124516510247,
+        2.6487539303646552
+      ],
+      "reference_90": [
+        1.685412251498732,
+        2.5509088587278854
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": 0.024429632195701736
+    },
+    {
+      "parameter": "ylossParam4var",
+      "baseline_median": 0.6148727085175814,
+      "reference_median": 0.6228974650569108,
+      "baseline_90": [
+        0.09095234100878824,
+        0.9590247853645992
+      ],
+      "reference_90": [
+        0.09797440594835209,
+        0.9585066231580479
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": -0.009325341200298083
+    },
+    {
+      "parameter": "remnant_energy_loss_fraction",
+      "baseline_median": 0.4672335090856701,
+      "reference_median": 0.4496058358402263,
+      "baseline_90": [
+        0.15161498772615173,
+        0.6310056991811345
+      ],
+      "reference_90": [
+        0.14097445249755078,
+        0.6264452280858839
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": 0.03631047249771345
+    },
+    {
+      "parameter": "shadowing_factor",
+      "baseline_median": 0.06934495366976326,
+      "reference_median": 0.06899042879303213,
+      "baseline_90": [
+        0.006267880453537478,
+        0.29027807594828664
+      ],
+      "reference_90": [
+        0.006386067501136749,
+        0.3117817428622418
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": 0.0011608706518582191
+    },
+    {
+      "parameter": "tau_form_mean",
+      "baseline_median": 0.5412217701865488,
+      "reference_median": 0.5268055514910865,
+      "baseline_90": [
+        0.23066662496236431,
+        0.9589696908231994
+      ],
+      "reference_90": [
+        0.2275193261627293,
+        0.9569811878372603
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": 0.019762813455893136
+    },
+    {
+      "parameter": "BG",
+      "baseline_median": 7.426165992883077,
+      "reference_median": 7.532819387619652,
+      "baseline_90": [
+        2.438445401500215,
+        22.567363608312263
+      ],
+      "reference_90": [
+        2.44680581714834,
+        22.844617063406474
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": -0.005228668578651527
+    },
+    {
+      "parameter": "string_source_sigma_x",
+      "baseline_median": 0.20652227207252422,
+      "reference_median": 0.20459104804100758,
+      "baseline_90": [
+        0.10908195698289413,
+        0.47003519770359325
+      ],
+      "reference_90": [
+        0.10869320883658289,
+        0.4660411458559593
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": 0.005404323997571911
+    },
+    {
+      "parameter": "string_source_sigma_eta",
+      "baseline_median": 0.4755047453954499,
+      "reference_median": 0.45718882115606474,
+      "baseline_90": [
+        0.14882928318058716,
+        0.7705270240458183
+      ],
+      "reference_90": [
+        0.14257784168946808,
+        0.7676414915037243
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": 0.029302494625671992
+    },
+    {
+      "parameter": "stringTransverseShiftFrac",
+      "baseline_median": 0.4799940461683386,
+      "reference_median": 0.5245200274046057,
+      "baseline_90": [
+        0.04638816830130646,
+        0.9461069367815385
+      ],
+      "reference_90": [
+        0.05351713477025792,
+        0.9553943803024563
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": -0.04937033444057267
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_T_kink_in_GeV",
+      "baseline_median": 0.21214142204584024,
+      "reference_median": 0.20281592121280673,
+      "baseline_90": [
+        0.14306228175384697,
+        0.28410831292136784
+      ],
+      "reference_90": [
+        0.13909872610561755,
+        0.27949359761331294
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": 0.06642337239877287
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_low_T_slope_in_GeV",
+      "baseline_median": -0.8498547051239919,
+      "reference_median": -0.8627654119353702,
+      "baseline_90": [
+        -1.8997444728493558,
+        0.7263657618142264
+      ],
+      "reference_90": [
+        -1.8919239786815545,
+        0.7391743534989065
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": 0.004906964765805179
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_high_T_slope_in_GeV",
+      "baseline_median": 0.7760484136159731,
+      "reference_median": 0.831906165861439,
+      "baseline_90": [
+        -0.7953372225039228,
+        1.9050943724972125
+      ],
+      "reference_90": [
+        -0.787248411384508,
+        1.9119541516523195
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": -0.020694168348232907
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_at_kink",
+      "baseline_median": 0.10255867183802211,
+      "reference_median": 0.1046665883280413,
+      "baseline_90": [
+        0.0257988002141571,
+        0.1793723242885763
+      ],
+      "reference_90": [
+        0.026917345112698356,
+        0.1803376866679951
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": -0.013739485055568271
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_max",
+      "baseline_median": 0.09034613247103954,
+      "reference_median": 0.09321046258032065,
+      "baseline_90": [
+        0.04821161441869551,
+        0.18065610355376305
+      ],
+      "reference_90": [
+        0.049375968864349265,
+        0.17851307500074098
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": -0.02218053505284429
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_T_peak_in_GeV",
+      "baseline_median": 0.1620171969669495,
+      "reference_median": 0.150307978949953,
+      "baseline_90": [
+        0.12282886689411386,
+        0.28296572576146944
+      ],
+      "reference_90": [
+        0.12235685897542262,
+        0.2704207045400131
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": 0.07908222275564597
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_width_in_GeV",
+      "baseline_median": 0.08317034289622399,
+      "reference_median": 0.07987994541271798,
+      "baseline_90": [
+        0.03014986935249181,
+        0.14287569242554723
+      ],
+      "reference_90": [
+        0.030014291457592133,
+        0.14271692749661016
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": 0.029195390623932404
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_lambda_asymm",
+      "baseline_median": -0.27546092630729424,
+      "reference_median": -0.3288205286176631,
+      "baseline_90": [
+        -0.7536859125974092,
+        0.4722494189471426
+      ],
+      "reference_90": [
+        -0.7630513135427714,
+        0.4568255850802161
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": 0.043741792610878884
+    },
+    {
+      "parameter": "eps_switch",
+      "baseline_median": 0.5459625719029837,
+      "reference_median": 0.548857363066473,
+      "baseline_90": [
+        0.43990140457569865,
+        0.5953674999606705
+      ],
+      "reference_90": [
+        0.44424234790754047,
+        0.5957346094875048
+      ],
+      "intervals_overlap": true,
+      "median_shift_over_reference_90_width": -0.019108508469664255
+    }
+  ],
+  "contour_probabilities": [
+    0.68,
+    0.9
+  ],
+  "bins": 45,
+  "smoothing_bins": 1.0,
+  "parameter_order": "Assumed common order from design_ranges_main_AuAu-200.dat; HDF datasets do not independently establish parameter names."
+}
