@@ -1,0 +1,513 @@
+{
+  "chain": "/Users/avilamrs/Remote-HPC/code-space/my-work/jetscape-emulator/3dglauber-bayes-example/mcmc/paper_simulation/posterior-chain-default.hdf",
+  "shape": [
+    200,
+    20000,
+    20
+  ],
+  "burnin": 0,
+  "retained_steps": 20000,
+  "display_stride": 14,
+  "diagnostic_thinning": 1,
+  "central_intervals": [
+    0.6,
+    0.9
+  ],
+  "interval_quantiles": [
+    0.05,
+    0.2,
+    0.5,
+    0.8,
+    0.95
+  ],
+  "method": "Mean normalized walker FFT ACF; Sokal window c=5 (emcee approach)",
+  "notes": [
+    "Bands are empirical ensemble coverage intervals, not confidence intervals for the median.",
+    "50tau is a length heuristic, not proof of convergence.",
+    "ESS is approximate and assumes stationarity; cross-walker dependence can affect it.",
+    "No R-hat: ensemble walkers are not independent chains.",
+    "Tau is measured in saved steps; previous chain thinning is unknown."
+  ],
+  "parameters": [
+    {
+      "parameter": "ylossParam4At2",
+      "tau_steps": 1666.5841229728055,
+      "steps_over_tau": 12.000594344031411,
+      "ess_approx": 2400.118868806282,
+      "window_lag": 8334,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.15327082677499201,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        397.22328078394844,
+        767.7440282491275,
+        1120.4723509228293,
+        1411.1453965546887,
+        1666.5841229728055
+      ]
+    },
+    {
+      "parameter": "ylossParam4At4",
+      "tau_steps": 1822.6232277122058,
+      "steps_over_tau": 10.973194951051081,
+      "ess_approx": 2194.638990210216,
+      "window_lag": 9114,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.16964344722178049,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        403.3387596173556,
+        791.6567612278038,
+        1155.0451328145828,
+        1513.427140376619,
+        1822.6232277122058
+      ]
+    },
+    {
+      "parameter": "ylossParam4At6",
+      "tau_steps": 1732.791255907422,
+      "steps_over_tau": 11.542071170901927,
+      "ess_approx": 2308.4142341803854,
+      "window_lag": 8664,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.12764450645508785,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        398.17833752392187,
+        804.4087349398563,
+        1188.5616512528907,
+        1511.6099712574273,
+        1732.791255907422
+      ]
+    },
+    {
+      "parameter": "ylossParam4var",
+      "tau_steps": 1782.2173877858154,
+      "steps_over_tau": 11.221975577764688,
+      "ess_approx": 2244.3951155529376,
+      "window_lag": 8912,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.1596546727715481,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        393.2222907416119,
+        784.7914214867527,
+        1132.1314398196093,
+        1497.6780539311078,
+        1782.2173877858154
+      ]
+    },
+    {
+      "parameter": "remnant_energy_loss_fraction",
+      "tau_steps": 1648.009495727298,
+      "steps_over_tau": 12.135852403674178,
+      "ess_approx": 2427.170480734836,
+      "window_lag": 8241,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.15182838380523703,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        380.9586554235066,
+        784.7778455415286,
+        1114.221463367276,
+        1397.7948774953386,
+        1648.009495727298
+      ]
+    },
+    {
+      "parameter": "shadowing_factor",
+      "tau_steps": 1432.7177525449893,
+      "steps_over_tau": 13.959483620882944,
+      "ess_approx": 2791.8967241765886,
+      "window_lag": 7164,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.13174294149839497,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        387.701789647634,
+        704.2679271918206,
+        1020.9924639482355,
+        1243.9673014877428,
+        1432.7177525449893
+      ]
+    },
+    {
+      "parameter": "tau_form_mean",
+      "tau_steps": 1781.4366025498368,
+      "steps_over_tau": 11.226894053581953,
+      "ess_approx": 2245.3788107163905,
+      "window_lag": 8908,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.1822431829224164,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        404.85411557772284,
+        759.7430112065941,
+        1080.857433025223,
+        1456.781925926659,
+        1781.4366025498368
+      ]
+    },
+    {
+      "parameter": "BG",
+      "tau_steps": 1653.0616051451009,
+      "steps_over_tau": 12.098762646080852,
+      "ess_approx": 2419.7525292161704,
+      "window_lag": 8267,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.15829446112572904,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        382.30345195790255,
+        705.1422379509065,
+        1060.6339562897438,
+        1391.3911091510245,
+        1653.0616051451009
+      ]
+    },
+    {
+      "parameter": "string_source_sigma_x",
+      "tau_steps": 1704.6424113496105,
+      "steps_over_tau": 11.732665963746303,
+      "ess_approx": 2346.5331927492607,
+      "window_lag": 8525,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.17762859773757997,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        383.8924021918761,
+        760.7543586453141,
+        1105.5616631260789,
+        1401.8491701775722,
+        1704.6424113496105
+      ]
+    },
+    {
+      "parameter": "string_source_sigma_eta",
+      "tau_steps": 1698.5990195488198,
+      "steps_over_tau": 11.774409245398234,
+      "ess_approx": 2354.881849079647,
+      "window_lag": 8493,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.17169470758494926,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        385.13096612610207,
+        792.232125500161,
+        1099.1358957526945,
+        1406.9585575833037,
+        1698.5990195488198
+      ]
+    },
+    {
+      "parameter": "stringTransverseShiftFrac",
+      "tau_steps": 1617.6365370186045,
+      "steps_over_tau": 12.363716782053606,
+      "ess_approx": 2472.7433564107214,
+      "window_lag": 8090,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.14652490405536012,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        387.5554980845213,
+        739.8539023821712,
+        1070.4724343148557,
+        1380.6124986355085,
+        1617.6365370186045
+      ]
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_T_kink_in_GeV",
+      "tau_steps": 1749.6643834786748,
+      "steps_over_tau": 11.430763630357548,
+      "ess_approx": 2286.1527260715097,
+      "window_lag": 8749,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.1666513547054233,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        385.90343611985367,
+        754.736285207779,
+        1111.9107761246498,
+        1458.0804436921244,
+        1749.6643834786748
+      ]
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_low_T_slope_in_GeV",
+      "tau_steps": 1705.7602268068017,
+      "steps_over_tau": 11.724977336023468,
+      "ess_approx": 2344.9954672046933,
+      "window_lag": 8529,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.1922182497312263,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        422.1254470910972,
+        782.3655497025076,
+        1075.3120133916048,
+        1377.8819815488587,
+        1705.7602268068017
+      ]
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_high_T_slope_in_GeV",
+      "tau_steps": 1704.2484008853928,
+      "steps_over_tau": 11.735378475115235,
+      "ess_approx": 2347.075695023047,
+      "window_lag": 8523,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.182705677160777,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        368.681995157592,
+        733.596027743241,
+        1086.1062608727093,
+        1392.8725427514557,
+        1704.2484008853928
+      ]
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_at_kink",
+      "tau_steps": 1739.523511961827,
+      "steps_over_tau": 11.4974013644944,
+      "ess_approx": 2299.4802728988802,
+      "window_lag": 8698,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.17156232972271443,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        389.57020813247755,
+        743.9556083540607,
+        1127.884243047922,
+        1441.0868056422178,
+        1739.523511961827
+      ]
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_max",
+      "tau_steps": 1767.1659687439314,
+      "steps_over_tau": 11.317556106071704,
+      "ess_approx": 2263.511221214341,
+      "window_lag": 8836,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.16546339961116935,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        397.11855083619605,
+        793.2844901300291,
+        1174.7015686056423,
+        1474.764679878395,
+        1767.1659687439314
+      ]
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_T_peak_in_GeV",
+      "tau_steps": 1778.4401020935688,
+      "steps_over_tau": 11.245810289846771,
+      "ess_approx": 2249.1620579693545,
+      "window_lag": 8894,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.17208932107513605,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        370.5410814921603,
+        722.6243269639461,
+        1120.711783820031,
+        1472.389552351491,
+        1778.4401020935688
+      ]
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_width_in_GeV",
+      "tau_steps": 1696.9393357408276,
+      "steps_over_tau": 11.785925152868627,
+      "ess_approx": 2357.1850305737253,
+      "window_lag": 8485,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.13731087931993533,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        396.7864540999833,
+        761.8361924801542,
+        1150.0033384885603,
+        1463.9311033976676,
+        1696.9393357408276
+      ]
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_lambda_asymm",
+      "tau_steps": 1684.3409433894176,
+      "steps_over_tau": 11.87408052894195,
+      "ess_approx": 2374.8161057883904,
+      "window_lag": 8423,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.19194178645278823,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        389.2801563536423,
+        743.5699514839138,
+        1053.5343723994026,
+        1361.0455337196781,
+        1684.3409433894176
+      ]
+    },
+    {
+      "parameter": "eps_switch",
+      "tau_steps": 1694.729034762466,
+      "steps_over_tau": 11.801296602440761,
+      "ess_approx": 2360.2593204881523,
+      "window_lag": 8474,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.17833143896767117,
+      "tau_prefix_steps": [
+        4000,
+        8000,
+        12000,
+        16000,
+        20000
+      ],
+      "tau_prefix_values": [
+        392.4753592523246,
+        729.357036440193,
+        1062.7585867753733,
+        1392.505567332983,
+        1694.729034762466
+      ]
+    }
+  ]
+}

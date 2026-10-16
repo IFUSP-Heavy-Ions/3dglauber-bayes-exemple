@@ -1,0 +1,128 @@
+{
+  "chain": "/Users/avilamrs/Remote-HPC/code-space/my-work/jetscape-emulator/3dglauber-bayes-example/mcmc/convergence_mcmc/chain-idf-0.hdf",
+  "dataset": "burnin",
+  "shape": [
+    200,
+    20000,
+    20
+  ],
+  "display_stride": 14,
+  "resampling_step": 10000,
+  "parameters": [
+    {
+      "parameter": "ylossParam4At2",
+      "initial_median": 0.9999636824221616,
+      "final_median": 1.0209015327819762
+    },
+    {
+      "parameter": "ylossParam4At4",
+      "initial_median": 2.102033134716163,
+      "final_median": 1.7116376522773968
+    },
+    {
+      "parameter": "ylossParam4At6",
+      "initial_median": 3.091306764502632,
+      "final_median": 2.0241815824880147
+    },
+    {
+      "parameter": "ylossParam4var",
+      "initial_median": 0.5504233140215702,
+      "final_median": 0.6026872000954597
+    },
+    {
+      "parameter": "remnant_energy_loss_fraction",
+      "initial_median": 0.5008799159852833,
+      "final_median": 0.47703529742559914
+    },
+    {
+      "parameter": "shadowing_factor",
+      "initial_median": 0.5264319941791337,
+      "final_median": 0.05737582960147126
+    },
+    {
+      "parameter": "tau_form_mean",
+      "initial_median": 0.6214066465040867,
+      "final_median": 0.5229666781462223
+    },
+    {
+      "parameter": "BG",
+      "initial_median": 13.765523228554793,
+      "final_median": 6.2544604745813706
+    },
+    {
+      "parameter": "string_source_sigma_x",
+      "initial_median": 0.3033087363091771,
+      "final_median": 0.23530467227130178
+    },
+    {
+      "parameter": "string_source_sigma_eta",
+      "initial_median": 0.44320072159733426,
+      "final_median": 0.5081693694750566
+    },
+    {
+      "parameter": "stringTransverseShiftFrac",
+      "initial_median": 0.49840681882828664,
+      "final_median": 0.47549030721114904
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_T_kink_in_GeV",
+      "initial_median": 0.22336715733214146,
+      "final_median": 0.21099250784511844
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_low_T_slope_in_GeV",
+      "initial_median": -0.6782876152265274,
+      "final_median": -0.8456863420182763
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_high_T_slope_in_GeV",
+      "initial_median": 0.3845189754904116,
+      "final_median": 0.6891433324018398
+    },
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_at_kink",
+      "initial_median": 0.10668003257055653,
+      "final_median": 0.10937344275282881
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_max",
+      "initial_median": 0.09571050972979613,
+      "final_median": 0.08846308515967473
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_T_peak_in_GeV",
+      "initial_median": 0.20886159118012126,
+      "final_median": 0.165393799484228
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_width_in_GeV",
+      "initial_median": 0.087573184075493,
+      "final_median": 0.09433655266234747
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_lambda_asymm",
+      "initial_median": -0.056928000585329985,
+      "final_median": -0.2521659336651865
+    },
+    {
+      "parameter": "eps_switch",
+      "initial_median": 0.36728500178325885,
+      "final_median": 0.5454405936758692
+    }
+  ],
+  "central_intervals": [
+    0.6,
+    0.9
+  ],
+  "interval_quantiles": [
+    0.05,
+    0.2,
+    0.5,
+    0.8,
+    0.95
+  ],
+  "notes": [
+    "Burn-in is transient; no stationary autocorrelation time or ESS is estimated.",
+    "Resampling can break continuity of individual walker identities at the marked boundary."
+  ]
+}
