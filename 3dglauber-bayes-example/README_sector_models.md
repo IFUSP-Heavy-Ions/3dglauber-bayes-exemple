@@ -5,6 +5,50 @@ These scripts reuse the global CS sampler's likelihood, priors, parameter mappin
 emulator covariance and burn-in procedure. Only experimental covariance changes.
 The original `bayes_mcmc_rbf_model.py` is not used or changed by this study.
 
+Legacy dill emulators saved from `emulator.py` as a script resolve prediction
+globals through `__main__`. Both sector launchers expose NumPy and the design
+transformation settings there; the CLI supplies `_Covariance` when starting MCMC.
+Help and covariance-only validation still avoid loading the trained emulators.
+
+## Completed sector studies
+
+The completed CS and RBF chains and their reports are in `mcmc/02_04_cs_sector`
+and `mcmc/02_05_rbf_sector`, respectively. Each folder contains the original
+HDF5 chain, a self-contained notebook with embedded plots, corner and marginal
+PNG/PDF figures, parameter summaries, and all 40 observable predictions.
+
+From the project root, regenerate the marginal/observable figures and notebooks:
+
+```sh
+python mcmc/scripts/build_sector_studies.py --model both
+```
+
+This reads saved chains and trained emulators only: it does not run MCMC,
+retrain emulators, or rewrite model calculations. Corner figures are generated
+separately with `mcmc/scripts/plot_posterior_corner.py --chain PATH --thin 50`.
+The reports retain 200,000 production samples for parameter plots and use
+1,000 posterior parameter vectors (seed 12345) for observable bands. These
+bands show the central 68% variation of emulator means, not full predictive
+uncertainty including emulator or experimental noise. The notebooks record
+the covariance partition, source metadata, numerical validation and limitations.
+
+Before launching Python, limit each NumPy/BLAS process to one compute thread.
+This avoids oversubscribing the 20 MCMC worker processes on a 24-core node.
+These environment variables are inherited by the worker processes:
+
+```sh
+export OMP_NUM_THREADS=1
+export OPENBLAS_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+export BLIS_NUM_THREADS=1
+export VECLIB_MAXIMUM_THREADS=1
+export NUMEXPR_NUM_THREADS=1
+```
+
+The CLI defaults to 20 MCMC worker processes (`--ncpus 20`); override it if the
+remote machine has a different allocation. `--nwalkers 200` is independent of
+the worker count: workers evaluate walker proposals in parallel.
+
 A sector is the **exact observable key within a collision system**. Different
 centrality selections, detectors, particles or observable names are independent
 experimental-error blocks, even when they belong to the same physical family.
@@ -27,7 +71,7 @@ The admissible negative-rho bound is enforced separately for each sector.
 ```sh
 python bayes_mcmc_cs_sector.py --check-covariance
 python bayes_mcmc_cs_sector.py --cs-rho 1 \
-  --nwalkers 200 --nburnsteps 20000 --ncpus 8 --status 1000 50000
+  --nwalkers 200 --nburnsteps 20000 --ncpus 20 --status 1000 50000
 ```
 
 ## RBF with physical coordinates
@@ -64,7 +108,7 @@ python bayes_mcmc_rbf_sector.py \
 
 python bayes_mcmc_rbf_sector.py \
   --rbf-length-pt 0.5 --rbf-length-eta 1 --rbf-length-centrality 10 \
-  --nwalkers 200 --nburnsteps 20000 --ncpus 8 --status 1000 50000
+  --nwalkers 200 --nburnsteps 20000 --ncpus 20 --status 1000 50000
 ```
 
 Optional `--rbf-lengths-json path.json` overrides the axis default for named

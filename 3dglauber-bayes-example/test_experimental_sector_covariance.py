@@ -5,6 +5,7 @@ import tempfile
 import unittest
 import h5py
 import numpy as np
+import logging
 from experimental_sector_covariance import (
     sector_covariance, likelihood_std, bin_centers, observable_axis,
     resolve_length, validate_overrides, covariance_signature, validate_regions, rapidity_region_labels,
@@ -124,6 +125,109 @@ class SectorCovarianceTests(unittest.TestCase):
         with self.assertRaises(ValueError):validate_regions(bad,bins)
         # Continuous coverage alone must not invent rapidity-sector boundaries.
         self.assertEqual(set(rapidity_region_labels('S',obs,bins['S'][obs])),{'all'})
+
+    def test_sector_entrypoints_expose_legacy_emulator_globals(self):
+        root=Path(__file__).parent
+        for filename in ('bayes_mcmc_cs_sector.py','bayes_mcmc_rbf_sector.py'):
+            tree=ast.parse((root/filename).read_text())
+            imports=[
+                node for node in tree.body
+                if isinstance(node,ast.ImportFrom) and node.module=='configurations'
+            ]
+            imported={alias.name for node in imports for alias in node.names}
+            self.assertTrue(
+                {'do_transform_design','transform_design'} <= imported,
+                f'{filename} must bind legacy dill globals in __main__',
+            )
+            self.assertTrue(any(
+                isinstance(node,ast.Import) and any(
+                    alias.name=='numpy' and alias.asname=='np' for alias in node.names
+                ) for node in tree.body
+            ))
+            self.assertTrue(any(
+                isinstance(node,ast.Call) and isinstance(node.func,ast.Name)
+                and node.func.id=='main' and any(
+                    keyword.arg=='legacy_emulator_namespace'
+                    for keyword in node.keywords
+                ) for node in ast.walk(tree)
+            ))
+
+    def test_empty_existing_chain_restarts_with_burnin(self):
+        path=Path(__file__).with_name('bayes_mcmc_cs_model.py')
+        tree=ast.parse(path.read_text())
+        cls=next(node for node in tree.body if isinstance(node,ast.ClassDef) and node.name=='Chain')
+        run_mcmc=next(node for node in cls.body if isinstance(node,ast.FunctionDef) and node.name=='run_mcmc')
+
+        class PoolStub:
+            def __init__(self,workers): pass
+            def __enter__(self): return self
+            def __exit__(self,*args): pass
+
+        class SamplerStub:
+            def __init__(self,nwalkers,ndim,log_prob_fn,pool):
+                self.nwalkers=nwalkers;self.ndim=ndim
+                self.chain=np.empty((nwalkers,0,ndim))
+            def run_mcmc(self,positions,nsteps,status=None):
+                steps=np.repeat(np.asarray(positions)[:,None,:],nsteps,axis=1)
+                self.chain=np.concatenate((self.chain,steps),axis=1)
+                self.flatchain=self.chain.reshape(-1,self.ndim)
+                self.flatlnprobability=np.arange(len(self.flatchain))
+                return self.chain[:,-1,:]
+            def reset(self):
+                self.chain=np.empty((self.nwalkers,0,self.ndim))
+
+        ns={'np':np,'logging':logging,'Pool':PoolStub,'cpu_count':lambda:2,
+            'LoggingEnsembleSampler':SamplerStub,'usePTSampler':False}
+        exec(compile(ast.Module(body=[run_mcmc],type_ignores=[]),str(path),'exec'),ns)
+
+        class ChainStub:
+            ndim=3
+            log_posterior=None
+            def __init__(self,filepath): self.filepath=filepath
+            def open(self,mode): return h5py.File(self.filepath,mode)
+            def _validate_covariance_metadata(self,handle): pass
+            def random_pos(self,nwalkers): return np.zeros((nwalkers,self.ndim))
+
+        with tempfile.TemporaryDirectory() as temp:
+            filepath=Path(temp)/'chain.hdf'
+            with h5py.File(filepath,'w') as handle:
+                handle.create_dataset('chain',dtype='f8',shape=(2,0,3),
+                                      chunks=(2,1,3),maxshape=(2,None,3))
+            ns['run_mcmc'](ChainStub(filepath),nsteps=3,nburnsteps=4,
+                           nwalkers=2,ncpu=2)
+            with h5py.File(filepath,'r') as handle:
+                self.assertEqual(handle['chain'].shape,(2,3,3))
+                self.assertEqual(handle['burnin'].shape,(2,4,3))
+
+    def test_legacy_prediction_mean_and_covariance(self):
+        path=Path(__file__).with_name('emulator.py')
+        tree=ast.parse(path.read_text())
+        covariance=next(node for node in tree.body if isinstance(node,ast.ClassDef) and node.name=='_Covariance')
+        emulator=next(node for node in tree.body if isinstance(node,ast.ClassDef) and node.name=='Emulator')
+        methods=[node for node in emulator.body if isinstance(node,ast.FunctionDef)
+                 and node.name in ('predict','_inverse_transform')]
+        ns={'__name__':'__main__','np':np,'do_transform_design':True,
+            'transform_design':lambda x:x*2}
+        exec(compile(ast.Module(body=[covariance]+methods,type_ignores=[]),str(path),'exec'),ns)
+
+        class GPStub:
+            def predict(self,x,return_cov=False):
+                mean=x[:,0]
+                return (mean,np.eye(len(x))*.5) if return_cov else mean
+
+        model=type('LegacyEmulator',(),{name:ns[name] for name in
+                                      ('predict','_inverse_transform')})()
+        model.gps=[GPStub()]
+        model._trans_matrix=np.array([[2.,3.]])
+        model.scaler=type('Scaler',(),{'mean_':np.array([1.,2.])})()
+        model._slices={'obs':slice(0,2)}
+        model._var_trans=np.array([[4.,6.,6.,9.]])
+        model._cov_trunc=np.eye(2)*.1
+        model.nobs=2
+        mean,cov=model.predict(np.array([[1.]]),return_cov=True,
+                               extra_std=np.array(0.))
+        np.testing.assert_allclose(mean['obs'],[[5.,8.]])
+        np.testing.assert_allclose(cov['obs','obs'],[[[2.1,3.],[3.,4.6]]])
 
 
     def test_existing_global_metadata_and_resume_guard(self):

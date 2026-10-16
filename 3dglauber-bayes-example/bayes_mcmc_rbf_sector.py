@@ -4,7 +4,9 @@
 Usage: python bayes_mcmc_rbf_sector.py --help
 Explicit lengths: pt in GeV/c, eta dimensionless, centrality percentage points.
 """
+import numpy as np
+from configurations import do_transform_design, transform_design
 from sector_mcmc_cli import main
 
 if __name__ == '__main__':
-    main('rbf')
+    main('rbf', legacy_emulator_namespace=globals())

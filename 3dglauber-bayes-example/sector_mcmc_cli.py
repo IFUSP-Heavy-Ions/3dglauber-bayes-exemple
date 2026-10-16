@@ -17,7 +17,8 @@ def parser_for(model):
     parser.add_argument('--nburnsteps', type=int)
     parser.add_argument('--ntemps', type=int, default=1)
     parser.add_argument('--status', type=int)
-    parser.add_argument('--ncpus', type=int, default=None)
+    parser.add_argument('--ncpus', type=int, default=20,
+                        help='Worker processes for MCMC evaluations (default: 20)')
     parser.add_argument('--chain-path', type=Path)
     parser.add_argument('--check-covariance', action='store_true',
                         help='Read experimental data and validate blocks without loading emulators or running MCMC')
@@ -74,7 +75,7 @@ def inspect_covariance(config, model, rho, lengths, overrides, regions=None):
                 signature=covariance_signature(matrices,slices,bins),systems=report)
 
 
-def main(model):
+def main(model, legacy_emulator_namespace=None):
     parser=parser_for(model);args=parser.parse_args()
     if args.nsteps is None and not args.check_covariance:
         parser.error('Specify nsteps or --check-covariance.')
@@ -105,6 +106,10 @@ def main(model):
             print(json.dumps(result,indent=2,allow_nan=False));return
     except (ValueError,OSError,KeyError) as exc:parser.error(str(exc))
     from bayes_mcmc_sector import Chain
+    if legacy_emulator_namespace is not None:
+        # Emulators saved by running emulator.py use the launcher's __main__ globals.
+        from emulator import _Covariance
+        legacy_emulator_namespace['_Covariance'] = _Covariance
     kwargs=dict(nsteps=args.nsteps,nwalkers=args.nwalkers,nburnsteps=args.nburnsteps,
                 ntemps=args.ntemps,status=args.status)
     if args.ncpus is not None:kwargs['ncpu']=args.ncpus

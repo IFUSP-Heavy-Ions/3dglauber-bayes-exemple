@@ -1,0 +1,119 @@
+{
+  "walkers": 200,
+  "steps": 50000,
+  "burnin": 0,
+  "thin": 50,
+  "samples": 200000,
+  "dropped_nonfinite": 0,
+  "chain": "/Users/avilamrs/Remote-HPC/code-space/my-work/jetscape-emulator/3dglauber-bayes-example/mcmc/02_04_cs_sector/chain-idf-0-cs-observable-region-rho-1-a77902df73a5.hdf",
+  "design": "/Users/avilamrs/Remote-HPC/code-space/my-work/jetscape-emulator/3dglauber-bayes-example/production_designs/ProductionMaxPro-Mod/design_pts_Au_Au_200_production/design_ranges_main_AuAu-200.dat",
+  "credible_level": 0.9,
+  "contour_probabilities": [
+    0.68,
+    0.9
+  ],
+  "bins": 45,
+  "smoothing_bins": 1.0,
+  "posterior": {
+    "ylossParam4At2": {
+      "median": 1.2557114067267574,
+      "ci_low": 0.1655559014804873,
+      "ci_high": 1.9071367203289253
+    },
+    "ylossParam4At4": {
+      "median": 1.9693392562595822,
+      "ci_low": 1.5564126225100496,
+      "ci_high": 2.2764874779565267
+    },
+    "ylossParam4At6": {
+      "median": 2.2134379060561526,
+      "ci_low": 1.8683345905698614,
+      "ci_high": 2.636972931990768
+    },
+    "ylossParam4var": {
+      "median": 0.24883660851633205,
+      "ci_low": 0.023125127585037226,
+      "ci_high": 0.7308458599847623
+    },
+    "remnant_energy_loss_fraction": {
+      "median": 0.5306271520167114,
+      "ci_low": 0.2587335527697602,
+      "ci_high": 0.667263723915086
+    },
+    "shadowing_factor": {
+      "median": 0.1076404394933234,
+      "ci_low": 0.009601995305236016,
+      "ci_high": 0.47390019441587267
+    },
+    "tau_form_mean": {
+      "median": 0.6233925902370734,
+      "ci_low": 0.2403007801389274,
+      "ci_high": 0.982726082948457
+    },
+    "BG": {
+      "median": 8.309746615419009,
+      "ci_low": 2.564933180258607,
+      "ci_high": 20.810163697207706
+    },
+    "string_source_sigma_x": {
+      "median": 0.3985543162060087,
+      "ci_low": 0.17915944997918595,
+      "ci_high": 0.49227213519078666
+    },
+    "string_source_sigma_eta": {
+      "median": 0.620838132800969,
+      "ci_low": 0.23888040432564486,
+      "ci_high": 0.7868479624760516
+    },
+    "stringTransverseShiftFrac": {
+      "median": 0.36209564976001996,
+      "ci_low": 0.030345262926716552,
+      "ci_high": 0.912734378551769
+    },
+    "shear_viscosity_3_eta_over_s_T_kink_in_GeV": {
+      "median": 0.20117635355699878,
+      "ci_low": 0.14156900814366488,
+      "ci_high": 0.2822248226538272
+    },
+    "shear_viscosity_3_eta_over_s_low_T_slope_in_GeV": {
+      "median": -0.8109844624887668,
+      "ci_low": -1.8901513771068892,
+      "ci_high": 0.712478610828815
+    },
+    "shear_viscosity_3_eta_over_s_high_T_slope_in_GeV": {
+      "median": 0.39755654315581357,
+      "ci_low": -0.8640602560603691,
+      "ci_high": 1.8442723352522858
+    },
+    "shear_viscosity_3_eta_over_s_at_kink": {
+      "median": 0.07524799918034072,
+      "ci_low": 0.01859354614174908,
+      "ci_high": 0.15644979054868471
+    },
+    "bulk_viscosity_3_zeta_over_s_max": {
+      "median": 0.11150040178159268,
+      "ci_low": 0.04397618103936221,
+      "ci_high": 0.19183042866084815
+    },
+    "bulk_viscosity_3_zeta_over_s_T_peak_in_GeV": {
+      "median": 0.24663365931162654,
+      "ci_low": 0.12889078442256782,
+      "ci_high": 0.29469045662538174
+    },
+    "bulk_viscosity_3_zeta_over_s_width_in_GeV": {
+      "median": 0.07107763702783404,
+      "ci_low": 0.02913407194746388,
+      "ci_high": 0.1400426714903867
+    },
+    "bulk_viscosity_3_zeta_over_s_lambda_asymm": {
+      "median": 0.025523664489990078,
+      "ci_low": -0.7166070423527998,
+      "ci_high": 0.5537658220195503
+    },
+    "eps_switch": {
+      "median": 0.49159952145597585,
+      "ci_low": 0.36604650303886327,
+      "ci_high": 0.5880056194278235
+    }
+  }
+}

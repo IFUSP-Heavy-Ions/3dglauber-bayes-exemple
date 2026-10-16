@@ -630,8 +630,27 @@ class Chain:
                     compression="lzf",
                 )
             else:
-                burn = False
-                nwalkers = dset.shape[0]
+                stored_nwalkers, stored_steps = dset.shape[:2]
+                if stored_steps == 0:
+                    burn = True
+                    if nwalkers is not None and nwalkers != stored_nwalkers:
+                        raise ValueError(
+                            "Existing chain dataset is empty and was created with "
+                            f"{stored_nwalkers} walkers, but {nwalkers} were requested. "
+                            "Use the original walker count or choose a different chain path."
+                        )
+                    nwalkers = stored_nwalkers
+                    if nburnsteps is None:
+                        logging.info(
+                            "existing chain is empty; specify nburnsteps to run burn-in"
+                        )
+                        return
+                    logging.info(
+                        "existing chain dataset is empty; starting burn-in instead of resuming"
+                    )
+                else:
+                    burn = False
+                    nwalkers = stored_nwalkers
 
             # choose number of temperatures for PTSampler
             if usePTSampler:

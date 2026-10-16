@@ -1,0 +1,612 @@
+{
+  "model": "cs",
+  "scope": "observable_rapidity_region",
+  "rapidity_configuration": {
+    "Au-Au-200": {
+      "v22_eta_cen_03_15_PHOB": {
+        "boundaries": [
+          -2,
+          2
+        ],
+        "labels": [
+          "lateral",
+          "central",
+          "lateral"
+        ]
+      },
+      "v22_eta_cen_15_25_PHOB": {
+        "boundaries": [
+          -2,
+          2
+        ],
+        "labels": [
+          "lateral",
+          "central",
+          "lateral"
+        ]
+      },
+      "v22_eta_cen_20_70_STAR": {
+        "boundaries": [
+          -2,
+          2
+        ],
+        "labels": [
+          "lateral",
+          "central",
+          "lateral"
+        ]
+      },
+      "v22_eta_cen_25_50_PHOB": {
+        "boundaries": [
+          -2,
+          2
+        ],
+        "labels": [
+          "lateral",
+          "central",
+          "lateral"
+        ]
+      }
+    },
+    "d-Au-200": {
+      "dNdeta_eta_cen_00_05_PHEN": {
+        "boundaries": [
+          -1,
+          1
+        ],
+        "labels": [
+          "lateral",
+          "central",
+          "lateral"
+        ]
+      },
+      "dNdeta_eta_cen_05_10_PHEN": {
+        "boundaries": [
+          -1,
+          1
+        ],
+        "labels": [
+          "lateral",
+          "central",
+          "lateral"
+        ]
+      },
+      "dNdeta_eta_cen_10_20_PHEN": {
+        "boundaries": [
+          -1,
+          1
+        ],
+        "labels": [
+          "lateral",
+          "central",
+          "lateral"
+        ]
+      },
+      "v22_eta_cen_00_05_PHEN": {
+        "boundaries": [
+          -1,
+          1
+        ],
+        "labels": [
+          "lateral",
+          "central",
+          "lateral"
+        ]
+      }
+    }
+  },
+  "rho": 1.0,
+  "signature": "cb3d15660f630b1a75201402c5b2c7678a3e65e5920f5cf3ecb498f4a42f6601",
+  "systems": [
+    {
+      "system": "Au-Au-200",
+      "n_bins": 791,
+      "n_sectors": 38,
+      "numerical_rank": 38,
+      "min_eigenvalue": -1.274184714609686e-16,
+      "psd_tolerance": 8.31211381646325e-14,
+      "blocks": [
+        {
+          "observable": "dNdeta_eta_cen_00_03_PHOB",
+          "n_bins": 54,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "all": 54
+          },
+          "min_bin_center": -5.300000000000001,
+          "max_bin_center": 5.300000000000001,
+          "length": null
+        },
+        {
+          "observable": "dNdeta_eta_cen_03_06_PHOB",
+          "n_bins": 54,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "all": 54
+          },
+          "min_bin_center": -5.300000000000001,
+          "max_bin_center": 5.300000000000001,
+          "length": null
+        },
+        {
+          "observable": "dNdeta_eta_cen_06_10_PHOB",
+          "n_bins": 54,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "all": 54
+          },
+          "min_bin_center": -5.300000000000001,
+          "max_bin_center": 5.300000000000001,
+          "length": null
+        },
+        {
+          "observable": "dNdeta_eta_cen_10_15_PHOB",
+          "n_bins": 54,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "all": 54
+          },
+          "min_bin_center": -5.300000000000001,
+          "max_bin_center": 5.300000000000001,
+          "length": null
+        },
+        {
+          "observable": "dNdeta_eta_cen_15_20_PHOB",
+          "n_bins": 54,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "all": 54
+          },
+          "min_bin_center": -5.300000000000001,
+          "max_bin_center": 5.300000000000001,
+          "length": null
+        },
+        {
+          "observable": "dNdeta_eta_cen_20_25_PHOB",
+          "n_bins": 54,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "all": 54
+          },
+          "min_bin_center": -5.300000000000001,
+          "max_bin_center": 5.300000000000001,
+          "length": null
+        },
+        {
+          "observable": "dNdeta_eta_cen_25_30_PHOB",
+          "n_bins": 54,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "all": 54
+          },
+          "min_bin_center": -5.300000000000001,
+          "max_bin_center": 5.300000000000001,
+          "length": null
+        },
+        {
+          "observable": "dNdeta_eta_cen_30_35_PHOB",
+          "n_bins": 54,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "all": 54
+          },
+          "min_bin_center": -5.300000000000001,
+          "max_bin_center": 5.300000000000001,
+          "length": null
+        },
+        {
+          "observable": "dNdeta_eta_cen_35_40_PHOB",
+          "n_bins": 54,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "all": 54
+          },
+          "min_bin_center": -5.300000000000001,
+          "max_bin_center": 5.300000000000001,
+          "length": null
+        },
+        {
+          "observable": "dNdeta_eta_cen_40_45_PHOB",
+          "n_bins": 54,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "all": 54
+          },
+          "min_bin_center": -5.300000000000001,
+          "max_bin_center": 5.300000000000001,
+          "length": null
+        },
+        {
+          "observable": "dNdeta_eta_cen_45_50_PHOB",
+          "n_bins": 54,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "all": 54
+          },
+          "min_bin_center": -5.300000000000001,
+          "max_bin_center": 5.300000000000001,
+          "length": null
+        },
+        {
+          "observable": "v22_eta_cen_20_70_STAR",
+          "n_bins": 21,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "central": 9,
+            "lateral": 12
+          },
+          "min_bin_center": -3.8,
+          "max_bin_center": 3.8,
+          "length": null
+        },
+        {
+          "observable": "v22_eta_cen_03_15_PHOB",
+          "n_bins": 16,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "central": 8,
+            "lateral": 8
+          },
+          "min_bin_center": -4.96,
+          "max_bin_center": 4.96,
+          "length": null
+        },
+        {
+          "observable": "v22_eta_cen_15_25_PHOB",
+          "n_bins": 16,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "central": 8,
+            "lateral": 8
+          },
+          "min_bin_center": -4.96,
+          "max_bin_center": 4.96,
+          "length": null
+        },
+        {
+          "observable": "v22_eta_cen_25_50_PHOB",
+          "n_bins": 16,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "central": 8,
+            "lateral": 8
+          },
+          "min_bin_center": -4.96,
+          "max_bin_center": 4.96,
+          "length": null
+        },
+        {
+          "observable": "v22_pt_cen_00_10_PHEN",
+          "n_bins": 5,
+          "coordinate": "pt",
+          "unit": "GeV/c",
+          "rapidity_regions": {
+            "all": 5
+          },
+          "min_bin_center": 0.375,
+          "max_bin_center": 1.375,
+          "length": null
+        },
+        {
+          "observable": "v22_pt_cen_10_20_PHEN",
+          "n_bins": 5,
+          "coordinate": "pt",
+          "unit": "GeV/c",
+          "rapidity_regions": {
+            "all": 5
+          },
+          "min_bin_center": 0.375,
+          "max_bin_center": 1.375,
+          "length": null
+        },
+        {
+          "observable": "v22_pt_cen_20_30_PHEN",
+          "n_bins": 5,
+          "coordinate": "pt",
+          "unit": "GeV/c",
+          "rapidity_regions": {
+            "all": 5
+          },
+          "min_bin_center": 0.375,
+          "max_bin_center": 1.375,
+          "length": null
+        },
+        {
+          "observable": "v22_pt_cen_30_40_PHEN",
+          "n_bins": 5,
+          "coordinate": "pt",
+          "unit": "GeV/c",
+          "rapidity_regions": {
+            "all": 5
+          },
+          "min_bin_center": 0.375,
+          "max_bin_center": 1.375,
+          "length": null
+        },
+        {
+          "observable": "v22_pt_cen_40_50_PHEN",
+          "n_bins": 5,
+          "coordinate": "pt",
+          "unit": "GeV/c",
+          "rapidity_regions": {
+            "all": 5
+          },
+          "min_bin_center": 0.375,
+          "max_bin_center": 1.375,
+          "length": null
+        },
+        {
+          "observable": "v22_pt_cen_50_60_PHEN",
+          "n_bins": 5,
+          "coordinate": "pt",
+          "unit": "GeV/c",
+          "rapidity_regions": {
+            "all": 5
+          },
+          "min_bin_center": 0.375,
+          "max_bin_center": 1.375,
+          "length": null
+        },
+        {
+          "observable": "v22_pt_cen_00_05_STAR",
+          "n_bins": 8,
+          "coordinate": "pt",
+          "unit": "GeV/c",
+          "rapidity_regions": {
+            "all": 8
+          },
+          "min_bin_center": 0.375,
+          "max_bin_center": 1.425,
+          "length": null
+        },
+        {
+          "observable": "v22_pt_cen_05_10_STAR",
+          "n_bins": 8,
+          "coordinate": "pt",
+          "unit": "GeV/c",
+          "rapidity_regions": {
+            "all": 8
+          },
+          "min_bin_center": 0.375,
+          "max_bin_center": 1.425,
+          "length": null
+        },
+        {
+          "observable": "v22_pt_cen_10_20_STAR",
+          "n_bins": 8,
+          "coordinate": "pt",
+          "unit": "GeV/c",
+          "rapidity_regions": {
+            "all": 8
+          },
+          "min_bin_center": 0.375,
+          "max_bin_center": 1.425,
+          "length": null
+        },
+        {
+          "observable": "v22_pt_cen_20_30_STAR",
+          "n_bins": 8,
+          "coordinate": "pt",
+          "unit": "GeV/c",
+          "rapidity_regions": {
+            "all": 8
+          },
+          "min_bin_center": 0.375,
+          "max_bin_center": 1.425,
+          "length": null
+        },
+        {
+          "observable": "v22_pt_cen_30_40_STAR",
+          "n_bins": 8,
+          "coordinate": "pt",
+          "unit": "GeV/c",
+          "rapidity_regions": {
+            "all": 8
+          },
+          "min_bin_center": 0.375,
+          "max_bin_center": 1.425,
+          "length": null
+        },
+        {
+          "observable": "v22_pt_cen_40_50_STAR",
+          "n_bins": 8,
+          "coordinate": "pt",
+          "unit": "GeV/c",
+          "rapidity_regions": {
+            "all": 8
+          },
+          "min_bin_center": 0.375,
+          "max_bin_center": 1.425,
+          "length": null
+        },
+        {
+          "observable": "v22_pt_cen_50_60_STAR",
+          "n_bins": 8,
+          "coordinate": "pt",
+          "unit": "GeV/c",
+          "rapidity_regions": {
+            "all": 8
+          },
+          "min_bin_center": 0.375,
+          "max_bin_center": 1.425,
+          "length": null
+        },
+        {
+          "observable": "v22_int_STAR",
+          "n_bins": 6,
+          "coordinate": "centrality",
+          "unit": "percentage points (0 to 100)",
+          "rapidity_regions": {
+            "all": 6
+          },
+          "min_bin_center": 2.5,
+          "max_bin_center": 45.0,
+          "length": null
+        },
+        {
+          "observable": "v32_int_STAR",
+          "n_bins": 6,
+          "coordinate": "centrality",
+          "unit": "percentage points (0 to 100)",
+          "rapidity_regions": {
+            "all": 6
+          },
+          "min_bin_center": 2.5,
+          "max_bin_center": 45.0,
+          "length": null
+        },
+        {
+          "observable": "meanpT_pi_STAR",
+          "n_bins": 7,
+          "coordinate": "centrality",
+          "unit": "percentage points (0 to 100)",
+          "rapidity_regions": {
+            "all": 7
+          },
+          "min_bin_center": 2.5,
+          "max_bin_center": 55.0,
+          "length": null
+        },
+        {
+          "observable": "meanpT_k_STAR",
+          "n_bins": 7,
+          "coordinate": "centrality",
+          "unit": "percentage points (0 to 100)",
+          "rapidity_regions": {
+            "all": 7
+          },
+          "min_bin_center": 2.5,
+          "max_bin_center": 55.0,
+          "length": null
+        },
+        {
+          "observable": "meanpT_k_PHEN",
+          "n_bins": 8,
+          "coordinate": "centrality",
+          "unit": "percentage points (0 to 100)",
+          "rapidity_regions": {
+            "all": 8
+          },
+          "min_bin_center": 2.5,
+          "max_bin_center": 55.0,
+          "length": null
+        },
+        {
+          "observable": "meanpT_p_PHEN",
+          "n_bins": 8,
+          "coordinate": "centrality",
+          "unit": "percentage points (0 to 100)",
+          "rapidity_regions": {
+            "all": 8
+          },
+          "min_bin_center": 2.5,
+          "max_bin_center": 55.0,
+          "length": null
+        }
+      ]
+    },
+    {
+      "system": "d-Au-200",
+      "n_bins": 126,
+      "n_sectors": 10,
+      "numerical_rank": 10,
+      "min_eigenvalue": -9.180839267065101e-17,
+      "psd_tolerance": 1.3854680079988568e-14,
+      "blocks": [
+        {
+          "observable": "dNdeta_eta_cen_00_05_PHEN",
+          "n_bins": 34,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "central": 8,
+            "lateral": 26
+          },
+          "min_bin_center": -2.55,
+          "max_bin_center": 2.55,
+          "length": null
+        },
+        {
+          "observable": "dNdeta_eta_cen_05_10_PHEN",
+          "n_bins": 34,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "central": 8,
+            "lateral": 26
+          },
+          "min_bin_center": -2.55,
+          "max_bin_center": 2.55,
+          "length": null
+        },
+        {
+          "observable": "dNdeta_eta_cen_10_20_PHEN",
+          "n_bins": 34,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "central": 8,
+            "lateral": 26
+          },
+          "min_bin_center": -2.55,
+          "max_bin_center": 2.55,
+          "length": null
+        },
+        {
+          "observable": "v22_eta_cen_00_05_PHEN",
+          "n_bins": 14,
+          "coordinate": "eta",
+          "unit": "dimensionless pseudorapidity",
+          "rapidity_regions": {
+            "central": 4,
+            "lateral": 10
+          },
+          "min_bin_center": -0.30000000000000004,
+          "max_bin_center": 2.9,
+          "length": null
+        },
+        {
+          "observable": "v22_pt_cen_00_05_PHEN",
+          "n_bins": 5,
+          "coordinate": "pt",
+          "unit": "GeV/c",
+          "rapidity_regions": {
+            "all": 5
+          },
+          "min_bin_center": 0.5,
+          "max_bin_center": 1.2999999999999998,
+          "length": null
+        },
+        {
+          "observable": "v22_pt_cen_00_10_STAR",
+          "n_bins": 5,
+          "coordinate": "pt",
+          "unit": "GeV/c",
+          "rapidity_regions": {
+            "all": 5
+          },
+          "min_bin_center": 0.30000000000000004,
+          "max_bin_center": 1.25,
+          "length": null
+        }
+      ]
+    }
+  ],
+  "saved_chain_signature": "a77902df73a5c71a58b6a701fc2ce9efa53915c94e27041a7ec9dfc27fff1fb0",
+  "matches_saved_chain_signature": false
+}
