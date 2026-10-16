@@ -1,0 +1,308 @@
+/* ============================= */
+/* SOFTWARE LAYOUT */
+/* ============================= */
+
+/* container principal da página Studies */
+.main-wide {
+  width: auto;
+  margin-top: 32px;
+  margin-bottom: 0;
+  margin-left: 4.5vw;
+  margin-right: 2vw;
+  padding: 0;
+  height: calc(100vh - 64px - 32px);
+  overflow: hidden;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ocupa a altura útil (desconta header) */
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr 26px;
+  gap: 16px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* ============================= */
+/* SIDEBAR */
+/* ============================= */
+
+.sidebar {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  padding: 12px;
+
+  /* o scroll fica aqui */
+  overflow: auto;              /* vertical ou horizontal */
+}
+
+/* árvore sem limite artificial */
+.sidebar .tree {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  max-height: none;
+}
+
+/* item */
+.node {
+  margin: 2px 0;
+}
+
+/* rótulo: 1 linha sempre */
+.label {
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 6px;
+
+  display: block;              /* ocupa a linha inteira */
+  white-space: nowrap;         /* NÃO quebra */
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.label:hover {
+  background: #111827;
+}
+
+.dir > .label::before {
+  content: "▸";
+  display: inline-block;
+  width: 1em;
+  color: var(--muted);
+}
+
+.dir.open > .label::before {
+  content: "▾";
+}
+
+.children {
+  margin-left: 0px;
+  display: none;
+}
+
+.dir.open > .children {
+  display: block;
+}
+
+.file-notebook::after {
+  content: ".ipynb";
+  color: var(--muted);
+  font-size: .8rem;
+  margin-left: 6px;
+}
+
+/* ============================= */
+/* VIEWER */
+/* ============================= */
+
+.viewer {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #0b1220;
+  overflow: hidden;
+}
+
+#viewer,
+.viewer iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* ============================= */
+/* SEARCH */
+/* ============================= */
+
+.search {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #0b1220;
+  color: var(--fg);
+  margin-bottom: 10px;
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .notebook-tools {
+    order: 3;
+    flex-direction: row;
+    height: auto;
+    padding: 8px;
+  }
+
+  .sidebar {
+    order: 1;
+    max-height: 70svh;
+  }
+
+  .viewer {
+    order: 2;
+    min-height: 60svh;
+  }
+
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+/* ===== Studies tree: 1 notebook por linha + scroll horizontal ===== */
+
+/* Sidebar deve poder rolar vertical e horizontal quando necessário */
+.sidebar {
+  overflow: auto;           /* em vez de só overflow-y */
+}
+
+/* A árvore e sub-árvores podem rolar horizontalmente */
+.tree,
+.children {
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+/* Cada item ocupa uma linha inteira */
+.node {
+  margin: 2px 0;
+}
+
+/* Notebook: NÃO quebrar linha, e ocupar uma linha inteira */
+a.file-notebook {
+  display: block;           /* 1 por linha */
+  white-space: nowrap;      /* impede quebra */
+  overflow-wrap: normal;    /* evita wrap “esperto” */
+  word-break: normal;       /* não quebra palavra */
+  hyphens: none;            /* não hifeniza */
+}
+
+/* (Opcional) também evitar quebra no sufixo .ipynb */
+.file-notebook::after {
+  white-space: nowrap;
+}
+
+/* notebook selecionado */
+a.file-notebook.is-active {
+  background: #876cb1;
+  font-weight: 600;
+  border-radius: 4px;
+  /* box-shadow: inset 3px 0 0 #60a5fa; */
+}
+
+/* ============================= */
+/* NOTEBOOK TOOLS                */
+/* ============================= */
+
+.notebook-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-top: 10px;
+
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(11, 18, 32, 0.65);
+}
+
+.notebook-tools button {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0;
+
+  border: 0;
+  border-radius: 6px;
+
+  background: transparent;
+  color: rgba(203, 213, 225, 0.75);
+
+  font-size: 13px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.notebook-tools button:hover {
+  background: rgba(148, 163, 184, 0.15);
+  color: #ffffff;
+}
+
+.layout.is-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  width: 100vw;
+  height: 100vh;
+
+  margin: 0;
+  padding: 12px;
+
+  background: #0b1220;
+
+  grid-template-columns: 0 1fr 26px;
+}
+
+.layout.is-fullscreen .sidebar {
+  display: none;
+}
+
+.layout.is-fullscreen .viewer {
+  height: calc(100vh - 24px);
+}
+
+/* ============================= */
+/* COLLAPSED SIDEBAR             */
+/* ============================= */
+
+.layout.sidebar-collapsed {
+  grid-template-columns: 1fr 26px;
+}
+
+.layout.sidebar-collapsed .sidebar {
+  display: none;
+}
+
+.layout.sidebar-collapsed .viewer {
+  grid-column: 1;
+}
+
+.layout.sidebar-collapsed .notebook-tools {
+  grid-column: 2;
+}
+
+.notebook-tools .proof-only {
+  display: none;
+}
+
+.notebook-tools.has-proofs .proof-only {
+  display: flex;
+}
