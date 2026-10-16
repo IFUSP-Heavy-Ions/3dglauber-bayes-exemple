@@ -1,0 +1,19 @@
+{
+  "chain": "mcmc/01_01_baseline_reproduction/chain-idf-0.hdf",
+  "emulators": [
+    {
+      "system": "Au-Au-200",
+      "path": "emulator/emulator-Au-Au-200-idf-0-npc-10.dill",
+      "sha256": "53a0084d22ad7c69b00c4c86968225541d14c60c27382dc1d0af204a2427e121",
+      "validated_observables": 34
+    },
+    {
+      "system": "d-Au-200",
+      "path": "emulator/emulator-d-Au-200-idf-0-npc-10.dill",
+      "sha256": "dc228598fd96c31f4e70eda83699894d14f032580acbc18a177001af1f6992ff",
+      "validated_observables": 6
+    }
+  ],
+  "n_prediction_samples": 1000,
+  "seed": 12345
+}

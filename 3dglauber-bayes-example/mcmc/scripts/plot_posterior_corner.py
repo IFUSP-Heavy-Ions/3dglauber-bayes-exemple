@@ -60,7 +60,9 @@ def load_samples(path, burnin, thin, max_samples):
                          samples=len(samples), dropped_nonfinite=int((~finite).sum()))
 
 
-def plot(samples, labels, ranges, ci, bins, smooth, logo=None, comparison=None):
+def plot(samples, labels, ranges, ci, bins, smooth, logo=None, comparison=None,
+         primary_label='CS correlation model', reference_label='my_simulation',
+         comparison_joint=False):
     n = samples.shape[1]
     tail = (1 - ci) / 2
     bounds = np.quantile(samples, [tail, .5, 1 - tail], axis=0)
@@ -122,6 +124,21 @@ def plot(samples, labels, ranges, ci, bins, smooth, logo=None, comparison=None):
                 if levels.size:
                     ax.contour((xe[:-1]+xe[1:])/2, (ye[:-1]+ye[1:])/2, density,
                                levels=levels, colors=contour, linewidths=.7, alpha=.85)
+                if comparison is not None and comparison_joint:
+                    ref_hist, _, _ = np.histogram2d(
+                        comparison[:, j], comparison[:, i], bins=[xe, ye])
+                    ref_density = gaussian_filter(ref_hist.T, smooth, mode='reflect')
+                    ref_ordered = np.sort(ref_density.ravel())[::-1]
+                    ref_mass = np.cumsum(ref_ordered) / ref_ordered.sum()
+                    ref_levels = np.unique([
+                        ref_ordered[min(np.searchsorted(ref_mass, p), len(ref_ordered)-1)]
+                        for p in (.90, .68)])
+                    ref_levels = ref_levels[
+                        (ref_levels > ref_density.min()) & (ref_levels < ref_density.max())]
+                    if ref_levels.size:
+                        ax.contour((xe[:-1]+xe[1:])/2, (ye[:-1]+ye[1:])/2,
+                                   ref_density, levels=ref_levels, colors=reference_color,
+                                   linewidths=.85, linestyles='--', alpha=.95)
                 ax.axhline(bounds[1, i], color=median, ls=dash, lw=.85)
             ax.axvline(bounds[1, j], color=median, ls=dash, lw=.85)
             if i == n-1:
@@ -134,10 +151,13 @@ def plot(samples, labels, ranges, ci, bins, smooth, logo=None, comparison=None):
                  labels[i], fontsize=17, va='center', ha='right')
     if comparison is not None:
         from matplotlib.lines import Line2D
-        fig.legend(handles=[Line2D([],[],color=primary,label='CS correlation model'),
-                            Line2D([],[],color=reference_color,label='my_simulation (marginals)')],
+        scope = 'joint + marginals' if comparison_joint else 'marginals'
+        fig.legend(handles=[Line2D([],[],color=primary,label=primary_label),
+                            Line2D([],[],color=reference_color,ls='--',
+                                   label=f'{reference_label} ({scope})')],
                    loc='upper right',bbox_to_anchor=(.90,.90),frameon=False,fontsize=20)
-        fig.text(.63,.79, f'Titles: CS median and {ci:.0%} credible interval\n2D panels: CS posterior',
+        panels = 'solid: primary; dashed: reference' if comparison_joint else 'primary posterior'
+        fig.text(.63,.79, f'Titles: {primary_label} median and {ci:.0%} interval\n2D: {panels}',
                  fontsize=14,ha='left',color='#555555')
     if logo:
         if n < 3:
