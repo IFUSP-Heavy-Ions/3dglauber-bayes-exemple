@@ -1,0 +1,44 @@
+\section{Systematic Uncertainties}
+Systematic uncertainties affecting the \dndeta measurement are evaluated. These include statistical limitations in simulations, uncertainties in cluster and tracklet selection criteria, variations across run segments, model dependence of the correction factors, contributions from secondary particles originating from weak decays, effects of detector misalignment, and uncertainties in centrality determination and Glauber model parameters. These systematic uncertainties apply to both methods unless explicitly stated. Table~\ref{tab:uncsummary} provides a summary of the magnitude of systematic uncertainties affecting \dndeta for both analysis approaches, where the reported ranges detail the smallest and largest uncertainties measured in each $\eta$ bin, over all centrality classes. The correlated and uncorrelated uncertainties of the weighted average result, detailed in Section~\ref{sec:results}, are also presented.
+
+\begin{itemize}
+    \item The uncertainty in the correction factors arises from the limited statistics of the simulation. To quantify this uncertainty, the correction factor is varied within its statistical uncertainty. The modified correction is then applied to the uncorrected number of tracklets, and the resulting variation in the \dndeta is evaluated and quoted as the systematic uncertainty. 
+    \item The cluster ADC criterion influences the signal-to-background ratio of clusters. Its impact is evaluated by adjusting the cut level.
+    \item The effect of \intt chip saturation is studied and evaluated by performing the analysis without the cluster $\phi$-size cut. 
+    \item The sensitivity of the correction factors to tracklet selection criteria is examined by varying the nominal selection criteria in both approaches, accounting for potential effects on the signal-to-background ratio of reconstructed tracklets. 
+    \item The impact of potential variations from different machine and data-taking conditions and the stability of detector components is assessed by segmenting the data sample and repeating the analysis for each segment. The baseline \dndeta distribution is obtained from the first segment, while the largest deviation observed across all segments is quoted as a systematic uncertainty.
+    \item The dependence of correction factors on the choice of event generator is studied by comparing results from \hijing, \epos, and \ampt, which model particle production and kinematics differently. These differences affect the ratio of generated hadrons to reconstructed tracklets, leading to variations in correction factors.
+    \item Decays of strange particles can generate multiple clusters, potentially resulting in double or multiple counting in the \dndeta measurement. The sensitivity of the correction factors to secondary particles from weak decays is evaluated using a \hijing sample with a 40\% enhancement in strangeness. This enhancement fraction is chosen as a conservative yet realistic estimate, reflecting the differences in strange particle composition between the \hijing and \epos event generators.
+    \item In the combinatoric method, the impact of detector misalignment is assessed by introducing random displacements of \intt ladders within $\pm250\,\mum$ in simulation. In the closest-match method, this effect is addressed through a correction factor, detailed in Section~\ref{sec:analysis-closest}, that accounts for geometric discrepancies between data and simulation. Due to this correction factor, this systematic uncertainty is not separately evaluated in the closest-match method.
+    \item Uncertainties in \npart values are estimated by applying standard variations in the MC Glauber model and centrality determination, including the variation on the nucleon-nucleon cross-section, geometric parameters in the Glauber model, and the effect of the uncertainty in the event selection effciency to shift the events into other centrality intervals. For the centrality intervals used in this analysis, the uncertainties range from 0.6\% for 0–3\% central events to 14.9\% for 65–70\% peripheral events.
+\end{itemize}
+
+The uncertainty associated with the cluster ADC selection is the dominant source for both approaches. The approximately 3\% difference between the two methods in this uncertainty arises from their differing sensitivities to combinatorial backgrounds. The combinatoric method, which reconstructs all possible cluster pairs, is more susceptible to these backgrounds, as changes in the number of available clusters have a greater impact on the number of reconstructed tracklets. In contrast, the closest-match method, which selects only the cluster pair with the smallest $\DR$, is less affected by such variations. 
+% The same reasoning applies to the difference in uncertainty associated with the cluster $\phi$-size criterion between the two approaches.
+
+\begin{table}[H]
+    \centering
+    \caption{Systematic uncertainties from various sources are reported, with the range indicating the minimum and maximum uncertainty magnitudes across all $\eta$ bins and centrality intervals. Additionally, the correlated and uncorrelated uncertainties of the weighted average result, as detailed in Section~\ref{sec:results}, are provided.}
+    \begin{adjustbox}{width=1\textwidth}
+    \begin{tabular}{l c c}
+        \toprule[1pt]
+        \textbf{Source} & \textbf{The combinatoric method [\%]} & \textbf{The closest-match method [\%]} \\
+        \midrule[1pt]
+        Simulation statistics & 0.1--0.6 & 0.2--0.9 \\
+        Cluster ADC selection & 3.8--8.8 & 2.8--5.4 \\
+        Cluster $\phi$-size selection & $<\text{0.1}$ & $<\text{0.2}$ \\
+        Tracklet reconstruction criteria & 0.7--1.2 & $<\text{1.7}$ \\        
+        Machine and detector stability & $<\text{1.0}$ & 0.1--1.6 \\
+        Model dependence & 0.5--5.7 & 1.6--3.8 \\
+        Secondaries & $<\text{2.6}$ & $<\text{3.2}$ \\
+        Detector misalignment & 0.5--0.9 & -- \\\cmidrule(rl){2-3}
+        \textbf{Total} & 4.1--10.3 & 3.5--6.9 \\
+        \midrule[1pt]
+        Correlated uncertainty in the weighted average result & \multicolumn{2}{c}{3.5\%--7.9\%} \\
+        Uncorrelated uncertainty in the weighted average result & \multicolumn{2}{c}{$<\text{0.9}\%$} \\
+        Total uncertainty in the weighted average result &\multicolumn{2}{c}{3.5\%--7.9\%} \\
+        \bottomrule[1pt]
+    \end{tabular}
+    \label{tab:uncsummary}
+    \end{adjustbox}
+\end{table}

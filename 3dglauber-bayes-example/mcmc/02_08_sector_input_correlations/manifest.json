@@ -1,0 +1,215 @@
+{
+  "cs": {
+    "model": "cs",
+    "chain": "mcmc/02_04_cs_sector/chain-idf-0-cs-observable-region-rho-1-a77902df73a5.hdf",
+    "chain_datasets": [
+      "burnin",
+      "chain"
+    ],
+    "chain_attributes": {
+      "experimental_covariance_model": "compound_symmetry",
+      "experimental_covariance_scope": "observable_rapidity_region",
+      "experimental_covariance_signature": "a77902df73a5c71a58b6a701fc2ce9efa53915c94e27041a7ec9dfc27fff1fb0",
+      "experimental_cs_rho": 1.0,
+      "experimental_cs_scope": "observable_rapidity_region",
+      "experimental_rapidity_regions": "{\"Au-Au-200\": {\"v22_eta_cen_03_15_PHOB\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_15_25_PHOB\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_20_70_STAR\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_25_50_PHOB\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}}, \"d-Au-200\": {\"dNdeta_eta_cen_00_05_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"dNdeta_eta_cen_05_10_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"dNdeta_eta_cen_10_20_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_00_05_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}}}",
+      "experimental_sector_definition": "system + exact observable key + configured rapidity region"
+    },
+    "n_bins": 917,
+    "n_observables": 40,
+    "systems": [
+      {
+        "system": "Au-Au-200",
+        "n_bins": 791
+      },
+      {
+        "system": "d-Au-200",
+        "n_bins": 126
+      }
+    ],
+    "reconstructed_signature": "cb3d15660f630b1a75201402c5b2c7678a3e65e5920f5cf3ecb498f4a42f6601",
+    "chain_signature": "a77902df73a5c71a58b6a701fc2ce9efa53915c94e27041a7ec9dfc27fff1fb0",
+    "exact_chain_signature_matches": false,
+    "scope": "Experimental input only; not parameter-dependent experimental + GP covariance",
+    "reconstruction": "Native sector_covariance and likelihood_std; chain-stored regions/kernel settings; local experimental inputs verified against saved study CSVs.",
+    "warning": "Original remote covariance is not stored in the chain. A differing signature prevents certifying exact reproduction.",
+    "minimum_correlation_eigenvalue": -3.2251382049765213e-14,
+    "psd_tolerance": 1.09952047466777e-11,
+    "numerical_rank": 48,
+    "validated": [
+      "917-bin ordering shared between calibrations",
+      "saved experimental bin edges/values/errors",
+      "symmetry",
+      "unit diagonal",
+      "Pearson bounds",
+      "PSD",
+      "zero cross-system/observable/sector entries",
+      "native kernel formula"
+    ],
+    "source_hashes": {
+      "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_k_PHEN.dat": "75a780de7a88d953a89d7c4126bd143d808af19b41d8cbae30bf224e65f457e7",
+      "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_p_PHEN.dat": "92c07b23f0d6500f56657cfb511aa50aa97aa52992f8746830b68608deec960d",
+      "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_00_10_PHEN.dat": "5146fe35505e9967350aac0fead848f9cd4ae480783db207161813bbf9019f97",
+      "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_10_20_PHEN.dat": "b15f05590592c0eacef70bd48cb8ec0a6cc2b55f61c36821041e482395ca7b63",
+      "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_20_30_PHEN.dat": "988650699272b0a7086ef4a01593acf29256d435a838ced1130c0f294a01d772",
+      "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_30_40_PHEN.dat": "0aa52920ed4c29a8275d8690ea335c310c240bbab59e12921f6e0014173d4755",
+      "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_40_50_PHEN.dat": "dab4454270201115fded6a6570a6448a0ce8bf26a07eaa750e87d07631505b2f",
+      "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_50_60_PHEN.dat": "af5ba0a50e2e4e1c541097cd4caad866bd8ddcc44c2b5036f6f449b224dec82b",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_00_03_PHOB.dat": "be0f288cf631f1c7adb42455b34e5093958061b9a9fbdc6657a7f5b80502729f",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_03_06_PHOB.dat": "9ffa4b04cc26d7099d5f9fb7f404e80ee7780efca3b1454b301d2e2a1b137256",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_06_10_PHOB.dat": "8f705d22a1331514050f23ef7a87a3807cb56c57f459606bf4e0dd9eac2ff19d",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_10_15_PHOB.dat": "ddf577fd28ba81c7c3e1fd3207e068fbf0f2949c734f7fb5725583b8392d9f53",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_15_20_PHOB.dat": "a4898f19bca3c112bb448018e27f026741e9d00a1d25d5cb70de8eb546e3a7e1",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_20_25_PHOB.dat": "e048a3fb23f470d44064ae8a54b2583a446ff0a2b32c325dcbd4863fda287cf0",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_25_30_PHOB.dat": "6d2c620c52addb755c72ca3933f5007691deb5d5f012c3ba7597ddc8ed729bbf",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_30_35_PHOB.dat": "f196d4d376c6bcb1547a5efb0d1ae57b21d10462a6d4c4a4871caa5875fcc2e7",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_35_40_PHOB.dat": "c4bb96fd9a3be63d5f0b0cab73d93e1115873f910068b70207d1b213a9785f8e",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_40_45_PHOB.dat": "f347d69fe1345e7ed3213dfa6c01d387d90f35bc0b03f8b2ded4326c7511554b",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_45_50_PHOB.dat": "b5d231cf25075e1bbcbcbc61dc70fd41b80adc101f53242e7f5299a5f483e7a8",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat": "4ea49505d243a08e8ccba174f15247213465d91debf80d7134907db73a79c70b",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat": "f82da9e29397fa1cfe456f79883958dcc962bbea407a15b4256ddf5b95266060",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat": "15760908be34800ffcab82b0ab5fb9564c9eae1170e1f639eb4aaa742a0fa35b",
+      "HIC_experimental_data/Au-Au-200/STAR/meanpT_k_STAR.dat": "1552a9c378cf8717100a172639891002de7a34c92a73c220790f69a5234750fb",
+      "HIC_experimental_data/Au-Au-200/STAR/meanpT_pi_STAR.dat": "79a8c52403adf41ad74d18668c1136bd797577279c99b4b43107efede28f8e24",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat": "eda34a3a6f45d64bb53f970b8517e25119e1a7e267a95c32d8b6ead4cdfd0a3b",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_int_STAR.dat": "cf31e47af3a24a748a2ae9f64a51925f6f9aab3f91088fe434a0f16617e8aeff",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_00_05_STAR.dat": "9a7598cdd09554d38e7adcdedb8f5b29a6a01b90af1b0e6cf7928e186acf7700",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_05_10_STAR.dat": "5d27bb543ed89c924aa385ca83f3c6db2041fd720383d0b23e2137d3a2308719",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_10_20_STAR.dat": "ee2269f94bee77b0aafa879d1093b8412df5088b68a7b09878f1e2d7342bfc95",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_20_30_STAR.dat": "c8c9adf01ff54d3aa20706830f20619b7ec9f80434648cbd7bd3c16c82a68545",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_30_40_STAR.dat": "a21ca5e56f91f0cff0d11b406212c9047ad7cf0cbe7a99cb1c88445da70e052d",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_40_50_STAR.dat": "7e5707dc5d3719c50e10992058afd8630c31454792564afcc4ec2d8770d4048c",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_50_60_STAR.dat": "bffc1b5daa78abd752c804404e047a721fba510b02b3f579e69d3fdea9a0519b",
+      "HIC_experimental_data/Au-Au-200/STAR/v32_int_STAR.dat": "dad54934559756912b63ad31b6e2a77b71cd5cdab339c20a2408d728a0515b52",
+      "HIC_experimental_data/d-Au-200/PHENIX/dNdeta_eta_cen_00_05_PHEN.dat": "cdcb33d2e0dce42f2460ce708894e8d5ac3248f820ee29e6d3b0d02844560f06",
+      "HIC_experimental_data/d-Au-200/PHENIX/dNdeta_eta_cen_05_10_PHEN.dat": "7c1433be2a5069c2ec9e317d4f42d3e8651037205386867fdd2b6e1510ad016a",
+      "HIC_experimental_data/d-Au-200/PHENIX/dNdeta_eta_cen_10_20_PHEN.dat": "c5e4cf78056f2b08cbc5f63760885dfc327c2fbe42668504f5941fe5a3635d7a",
+      "HIC_experimental_data/d-Au-200/PHENIX/v22_eta_cen_00_05_PHEN.dat": "6e06853c7452f9a4682d1d1a99c42df445de775db6a0aa4dece531ea380ee314",
+      "HIC_experimental_data/d-Au-200/PHENIX/v22_pt_cen_00_05_PHEN.dat": "d267119e8abb5c617f754b3ca4b6728f94a83335a98dfd391e752bfe81efc76b",
+      "HIC_experimental_data/d-Au-200/STAR/v22_pt_cen_00_10_STAR.dat": "c01ac54949319e222d3773789270e48f7486fe31f1aa8d114232ad4490570918"
+    },
+    "versions": {
+      "numpy": "1.26.4",
+      "matplotlib": "3.9.4",
+      "pandas": "2.2.3"
+    },
+    "color_scale": {
+      "colormap": "coolwarm",
+      "minimum": 0,
+      "maximum": 1,
+      "negative_correlations_allowed": false
+    }
+  },
+  "rbf": {
+    "model": "rbf",
+    "chain": "mcmc/02_05_rbf_sector/chain-idf-0-rbf-observable-a873ae558cc9.hdf",
+    "chain_datasets": [
+      "burnin",
+      "chain"
+    ],
+    "chain_attributes": {
+      "experimental_covariance_model": "rbf",
+      "experimental_covariance_scope": "observable_rapidity_region",
+      "experimental_covariance_signature": "a873ae558cc9beef51074b66848c85445a0ef364dddbff69113546cc36887fe9",
+      "experimental_rapidity_regions": "{\"Au-Au-200\": {\"v22_eta_cen_03_15_PHOB\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_15_25_PHOB\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_20_70_STAR\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_25_50_PHOB\": {\"boundaries\": [-2, 2], \"labels\": [\"lateral\", \"central\", \"lateral\"]}}, \"d-Au-200\": {\"dNdeta_eta_cen_00_05_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"dNdeta_eta_cen_05_10_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"dNdeta_eta_cen_10_20_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}, \"v22_eta_cen_00_05_PHEN\": {\"boundaries\": [-1, 1], \"labels\": [\"lateral\", \"central\", \"lateral\"]}}}",
+      "experimental_rbf_coordinates": "physical bin centers; pt GeV/c; eta dimensionless; centrality percentage points",
+      "experimental_rbf_kernel": "exp(-((x_i-x_j)/length)^2)",
+      "experimental_rbf_lengths": "{\"centrality\": 10.0, \"eta\": 1.0, \"pt\": 0.5}",
+      "experimental_rbf_overrides": "{}",
+      "experimental_sector_definition": "system + exact observable key + configured rapidity region"
+    },
+    "n_bins": 917,
+    "n_observables": 40,
+    "systems": [
+      {
+        "system": "Au-Au-200",
+        "n_bins": 791
+      },
+      {
+        "system": "d-Au-200",
+        "n_bins": 126
+      }
+    ],
+    "reconstructed_signature": "c3247aa16774411b5894838a4fecc8d99702b7de3de970bf962c9cac19eb6fc2",
+    "chain_signature": "a873ae558cc9beef51074b66848c85445a0ef364dddbff69113546cc36887fe9",
+    "exact_chain_signature_matches": false,
+    "scope": "Experimental input only; not parameter-dependent experimental + GP covariance",
+    "reconstruction": "Native sector_covariance and likelihood_std; chain-stored regions/kernel settings; local experimental inputs verified against saved study CSVs.",
+    "warning": "Original remote covariance is not stored in the chain. A differing signature prevents certifying exact reproduction.",
+    "minimum_correlation_eigenvalue": -1.2721919246780902e-15,
+    "psd_tolerance": 2.1134871027648504e-12,
+    "numerical_rank": 753,
+    "validated": [
+      "917-bin ordering shared between calibrations",
+      "saved experimental bin edges/values/errors",
+      "symmetry",
+      "unit diagonal",
+      "Pearson bounds",
+      "PSD",
+      "zero cross-system/observable/sector entries",
+      "native kernel formula"
+    ],
+    "source_hashes": {
+      "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_k_PHEN.dat": "75a780de7a88d953a89d7c4126bd143d808af19b41d8cbae30bf224e65f457e7",
+      "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_p_PHEN.dat": "92c07b23f0d6500f56657cfb511aa50aa97aa52992f8746830b68608deec960d",
+      "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_00_10_PHEN.dat": "5146fe35505e9967350aac0fead848f9cd4ae480783db207161813bbf9019f97",
+      "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_10_20_PHEN.dat": "b15f05590592c0eacef70bd48cb8ec0a6cc2b55f61c36821041e482395ca7b63",
+      "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_20_30_PHEN.dat": "988650699272b0a7086ef4a01593acf29256d435a838ced1130c0f294a01d772",
+      "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_30_40_PHEN.dat": "0aa52920ed4c29a8275d8690ea335c310c240bbab59e12921f6e0014173d4755",
+      "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_40_50_PHEN.dat": "dab4454270201115fded6a6570a6448a0ce8bf26a07eaa750e87d07631505b2f",
+      "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_50_60_PHEN.dat": "af5ba0a50e2e4e1c541097cd4caad866bd8ddcc44c2b5036f6f449b224dec82b",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_00_03_PHOB.dat": "be0f288cf631f1c7adb42455b34e5093958061b9a9fbdc6657a7f5b80502729f",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_03_06_PHOB.dat": "9ffa4b04cc26d7099d5f9fb7f404e80ee7780efca3b1454b301d2e2a1b137256",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_06_10_PHOB.dat": "8f705d22a1331514050f23ef7a87a3807cb56c57f459606bf4e0dd9eac2ff19d",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_10_15_PHOB.dat": "ddf577fd28ba81c7c3e1fd3207e068fbf0f2949c734f7fb5725583b8392d9f53",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_15_20_PHOB.dat": "a4898f19bca3c112bb448018e27f026741e9d00a1d25d5cb70de8eb546e3a7e1",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_20_25_PHOB.dat": "e048a3fb23f470d44064ae8a54b2583a446ff0a2b32c325dcbd4863fda287cf0",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_25_30_PHOB.dat": "6d2c620c52addb755c72ca3933f5007691deb5d5f012c3ba7597ddc8ed729bbf",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_30_35_PHOB.dat": "f196d4d376c6bcb1547a5efb0d1ae57b21d10462a6d4c4a4871caa5875fcc2e7",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_35_40_PHOB.dat": "c4bb96fd9a3be63d5f0b0cab73d93e1115873f910068b70207d1b213a9785f8e",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_40_45_PHOB.dat": "f347d69fe1345e7ed3213dfa6c01d387d90f35bc0b03f8b2ded4326c7511554b",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/dNdeta_eta_cen_45_50_PHOB.dat": "b5d231cf25075e1bbcbcbc61dc70fd41b80adc101f53242e7f5299a5f483e7a8",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat": "4ea49505d243a08e8ccba174f15247213465d91debf80d7134907db73a79c70b",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat": "f82da9e29397fa1cfe456f79883958dcc962bbea407a15b4256ddf5b95266060",
+      "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat": "15760908be34800ffcab82b0ab5fb9564c9eae1170e1f639eb4aaa742a0fa35b",
+      "HIC_experimental_data/Au-Au-200/STAR/meanpT_k_STAR.dat": "1552a9c378cf8717100a172639891002de7a34c92a73c220790f69a5234750fb",
+      "HIC_experimental_data/Au-Au-200/STAR/meanpT_pi_STAR.dat": "79a8c52403adf41ad74d18668c1136bd797577279c99b4b43107efede28f8e24",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat": "eda34a3a6f45d64bb53f970b8517e25119e1a7e267a95c32d8b6ead4cdfd0a3b",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_int_STAR.dat": "cf31e47af3a24a748a2ae9f64a51925f6f9aab3f91088fe434a0f16617e8aeff",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_00_05_STAR.dat": "9a7598cdd09554d38e7adcdedb8f5b29a6a01b90af1b0e6cf7928e186acf7700",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_05_10_STAR.dat": "5d27bb543ed89c924aa385ca83f3c6db2041fd720383d0b23e2137d3a2308719",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_10_20_STAR.dat": "ee2269f94bee77b0aafa879d1093b8412df5088b68a7b09878f1e2d7342bfc95",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_20_30_STAR.dat": "c8c9adf01ff54d3aa20706830f20619b7ec9f80434648cbd7bd3c16c82a68545",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_30_40_STAR.dat": "a21ca5e56f91f0cff0d11b406212c9047ad7cf0cbe7a99cb1c88445da70e052d",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_40_50_STAR.dat": "7e5707dc5d3719c50e10992058afd8630c31454792564afcc4ec2d8770d4048c",
+      "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_50_60_STAR.dat": "bffc1b5daa78abd752c804404e047a721fba510b02b3f579e69d3fdea9a0519b",
+      "HIC_experimental_data/Au-Au-200/STAR/v32_int_STAR.dat": "dad54934559756912b63ad31b6e2a77b71cd5cdab339c20a2408d728a0515b52",
+      "HIC_experimental_data/d-Au-200/PHENIX/dNdeta_eta_cen_00_05_PHEN.dat": "cdcb33d2e0dce42f2460ce708894e8d5ac3248f820ee29e6d3b0d02844560f06",
+      "HIC_experimental_data/d-Au-200/PHENIX/dNdeta_eta_cen_05_10_PHEN.dat": "7c1433be2a5069c2ec9e317d4f42d3e8651037205386867fdd2b6e1510ad016a",
+      "HIC_experimental_data/d-Au-200/PHENIX/dNdeta_eta_cen_10_20_PHEN.dat": "c5e4cf78056f2b08cbc5f63760885dfc327c2fbe42668504f5941fe5a3635d7a",
+      "HIC_experimental_data/d-Au-200/PHENIX/v22_eta_cen_00_05_PHEN.dat": "6e06853c7452f9a4682d1d1a99c42df445de775db6a0aa4dece531ea380ee314",
+      "HIC_experimental_data/d-Au-200/PHENIX/v22_pt_cen_00_05_PHEN.dat": "d267119e8abb5c617f754b3ca4b6728f94a83335a98dfd391e752bfe81efc76b",
+      "HIC_experimental_data/d-Au-200/STAR/v22_pt_cen_00_10_STAR.dat": "c01ac54949319e222d3773789270e48f7486fe31f1aa8d114232ad4490570918"
+    },
+    "versions": {
+      "numpy": "1.26.4",
+      "matplotlib": "3.9.4",
+      "pandas": "2.2.3"
+    },
+    "color_scale": {
+      "colormap": "coolwarm",
+      "minimum": 0,
+      "maximum": 1,
+      "negative_correlations_allowed": false
+    }
+  },
+  "source_hashes": {
+    "mcmc/scripts/plot_sector_input_correlations.py": "b3fd052934b18981cac4a02804d23fcdaa8ad041b3b3755b094453f6d6c81857",
+    "configurations.py": "327a1fb1351123868b335281821098008cb0cd2305ce2c01bbc5fe17c8e52fd3",
+    "bins_and_cuts.py": "a6c2640689e4e5ec180ad30e02de0ce367c8b844a04af6832a99789aa426a013",
+    "experimental_sector_covariance.py": "9668a48d11f16ee54b5e21a99d72d879bd282da6672063aa02e81bd12c0cefda",
+    "experimental_cs_covariance.py": "170625a75c29bd7183eee88f6ebadaaffe65a03cde9eccd3fa543a551dc60856",
+    "bayes_mcmc_sector.py": "d560b2aae1573eb674f2b55cd09f117120f48c2ad5d3079ea31dbc2dc9c38a34",
+    "bayes_mcmc_cs_model.py": "733a6a77b4bdb3310d7f1c6cd7b2d710a4c5cc6df89e759b536d81cefba5c276"
+  }
+}

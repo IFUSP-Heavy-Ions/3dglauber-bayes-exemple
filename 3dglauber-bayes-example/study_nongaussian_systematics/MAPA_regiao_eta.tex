@@ -1,0 +1,93 @@
+% Compilar com: latexmk -lualatex MAPA_regiao_eta.tex
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{Latin Modern Roman}
+\setmathfont{Latin Modern Math}
+\usepackage[brazil]{babel}
+\usepackage{booktabs,tabularx,array}
+\usepackage[table]{xcolor}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\feito}{\textcolor{green!45!black}{\textbf{feito}}}
+\newcommand{\agora}{\colorbox{orange!25}{\textbf{$\leftarrow$ AGORA}}}
+\newcommand{\afazer}{\textcolor{black!55}{a fazer}}
+\newcommand{\inviavel}{\textcolor{red!60!black}{\textbf{inviável}}}
+\newcommand{\arq}[1]{\texttt{\nolinkurl{#1}}}
+
+\title{Mapa 2 --- sistemáticos por região do detector em $\eta$\\\large (forward/backward, east/west, Rings/Octagon, TPC/FTPC)}
+\date{Atualizado em 17 de novembro de 2026}
+\author{}
+
+\begin{document}
+\maketitle
+\vspace{-2em}
+
+\textbf{Mapas:} \arq{MAPA.tex} = fonte de \emph{normalização} (fatia 2a feita) $\cdot$ \textbf{este arquivo} = fontes que dependem da \emph{região do detector em $\eta$}.
+
+\section*{A fonte}
+Sistemáticos que não são iguais em todo o detector, mas dependem de onde, em $\eta$, a partícula é medida:
+\begin{enumerate}[nosep]
+\item \textbf{Ímpar em $\eta$ (east/west):} um lado do detector mede a mais, o outro a menos. Vetor $\hat v\propto\mathrm{sign}(\eta)$ (ou crescente com $|\eta|$ só de um lado).
+\item \textbf{Escala relativa entre subdetectores:} Rings vs Octagon (PHOBOS, fronteira em $|\eta|\approx3{,}2$); FTPC vs TPC (STAR, $|\eta|>2{,}5$ vs $|\eta|<1$).
+\item \textbf{Bordas:} efeitos de aceitação e de secundárias que crescem nas extremidades em $\eta$.
+\end{enumerate}
+É a fonte assimétrica proposta no estudo do STAR $v_2(\eta)$ (fontes \emph{asym}, \emph{edge}, \emph{FTPC}). A fatia 2a ($\eta\approx0$) é cega a ela por construção.
+
+\section*{Ideia central: teste de simetria}
+Em colisões \textbf{simétricas} (Au+Au), o valor verdadeiro em $+\eta$ é igual ao de $-\eta$. Então, \emph{dentro do mesmo detector},
+\[
+A(\eta)=\frac{y(\eta)-y(-\eta)}{y(\eta)+y(-\eta)}
+\]
+mede diretamente a parte ímpar do sistemático --- sem precisar de outro experimento. Não se aplica a d+Au (sistema assimétrico).
+
+\section*{Pontos da calibração afetados}
+\begin{tabularx}{\linewidth}{@{}Y r Y Y@{}}
+\toprule
+observável & pontos & regiões & teste de simetria \\
+\midrule
+$dN/d\eta(\eta)$ Au+Au, PHOBOS & 594 & Octagon ($|\eta|<3{,}2$, $\sim$32 bins/classe), Rings ($\sim$22 bins/classe) & \textbf{possível}: dados não simetrizados (11 classes $\times$ 27 pares) \\
+$v_2(\eta)$ Au+Au, STAR & 21 & TPC (9 bins), FTPC east/west (6+6) & \textbf{possível}: não simetrizado \\
+$v_2(\eta)$ Au+Au, PHOBOS & 48 & Octagon + Rings & \inviavel: valores publicados espelhados (simetrizados) \\
+$dN/d\eta$, $v_2(\eta)$ d+Au, PHENIX & 116 & braços centrais + FVTX & não se aplica (sistema assimétrico) \\
+\bottomrule
+\end{tabularx}
+
+\section*{Fatias}
+\begin{tabularx}{\linewidth}{@{}l Y Y l@{}}
+\toprule
+fatia & o que aprende & dados & status \\
+\midrule
+\textbf{R1. Simetria PHOBOS $dN/d\eta$} & parte ímpar: amplitude por região (Octagon/Rings), correlação entre classes e entre bins de $\eta$, distribuição (2º e 3º momento) & calibração (\arq{HIC_experimental_data/Au-Au-200/PHOBOS}) & \feito{} (\arq{regiao_eta/R1.pdf}) \\
+\textbf{R2. Simetria STAR $v_2(\eta)$} & parte ímpar FTPC east/west vs TPC & calibração (\arq{v22_eta_cen_20_70_STAR.dat}) & \agora \\
+R3. Escala Rings/Octagon & salto em $|\eta|\approx3{,}2$ dentro do PHOBOS (parte par) & calibração + forma suave esperada & \afazer \\
+R4. Forma central, PHOBOS--sPHENIX & parte par em $|\eta|<1{,}1$ (antiga fatia 2b) & \arq{data/sphenix_dndeta_vs_eta.csv} & \afazer \\
+R5. Forma dianteira, PHOBOS--BRAHMS & parte par na região dos Rings (antiga fatia 2c) & BRAHMS Au+Au 200/130 & \afazer \\
+\bottomrule
+\end{tabularx}
+
+\section*{Resultado da R1}
+Parte ímpar estruturada e comum às classes (modo 1 = 53\% da variância): tendência suave de $<1\%$ no Octagon, degrau de $\approx+2\%$ na
+fronteira com os Rings e padrão alternado de $\pm1{,}5\%$ nos Rings. Escala: 10--14\% da incerteza citada. Fornece direção $\hat v_{\mathrm{ímpar}}$
+e escala a partir dos dados; 3º momento não mensurável (uma única realização da fonte).
+
+\section*{Primeira olhada (R1)}
+Assimetria $A(\eta)$ nos 11 arquivos do PHOBOS usados na calibração: rms $\approx1{,}0$--$1{,}3\%$ por classe, máximo
+$\approx3$--$4\%$ nas bordas dianteiras, contra $\approx8{,}5\%$ de incerteza citada. Parte ímpar pequena frente à incerteza total,
+mas presente e maior na região dos Rings.
+
+\section*{Limites e hipóteses}
+\begin{enumerate}[nosep]
+\item O teste de simetria só vê a parte \textbf{ímpar} em $\eta$. A parte \textbf{par} da fonte por região (ex.: Rings inteiros
+medindo a mais dos dois lados) precisa de R3--R5.
+\item Dentro de uma medida, as 11 classes compartilham a mesma análise $\Rightarrow$ correlacionadas; o $N$ efetivo para a
+distribuição vem sobretudo dos \emph{bins em $\eta$} e das regiões, não das classes.
+\item Posição do vértice e aceitação podem gerar assimetria física aparente; supõe-se que estão corrigidas na publicação.
+\item Dados simetrizados na publicação (PHOBOS $v_2(\eta)$) perderam essa informação.
+\end{enumerate}
+\end{document}

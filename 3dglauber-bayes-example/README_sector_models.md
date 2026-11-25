@@ -209,3 +209,64 @@ rejects continuation with a different partition. Region-separated CS files have
 `cs-observable-region-...-<signature>.hdf` names. RBF names already include the
 covariance signature. An explicitly supplied empty JSON object reproduces the
 older whole-observable partition, with separate metadata.
+
+## Full input correlation maps for saved calibrations
+
+```sh
+python mcmc/scripts/plot_sector_input_correlations.py
+```
+
+This read-only reconstruction uses metadata from the saved CS and RBF sector
+chains in `mcmc/02_04_cs_sector` and `mcmc/02_05_rbf_sector`, the native
+`sector_covariance`/`likelihood_std` functions, and experimental inputs checked
+against the saved study CSVs. No emulator loading, training, or MCMC is needed.
+Use the existing scientific Python dependencies (NumPy, SciPy, Matplotlib,
+pandas, h5py, threadpoolctl). `HIC_PYTHON_PACKAGES` optionally selects a local
+package directory.
+
+Outputs are in `mcmc/02_08_sector_input_correlations` (override with `--output`):
+individual and combined PDF/300-dpi PNG maps, covariance and correlation NPZ
+arrays, `bin_index.csv`, `observable_groups.csv`, and an audit `manifest.json`.
+The matrices contain all 917 bins in calibration order: 791 Au-Au, then 126
+d-Au. Each entry is `C[i,j] / sqrt(C[i,i] * C[j,j])`, shown on a common
+Pearson scale from 0 to +1 using `coolwarm` (blue = 0, white = 0.5, red = 1).
+These models have nonnegative correlations; plotting rejects negative entries
+rather than clipping or hiding them. A model allowing anticorrelations would
+require a signed scale centered at zero.
+The two systems are assembled as independent
+diagonal blocks, consistent with the summed system likelihoods.
+
+These are **experimental input correlations**, not correlations of MCMC
+parameters or simulated measurements, and not the parameter-dependent total
+experimental-plus-GP covariance. CS uses the chain's rho; RBF uses the
+chain-stored physical-coordinate lengths and rapidity partition. Backward
+and forward bins sharing the `lateral` label remain in the same sector.
+Symmetry, unit diagonal, bounds, PSD, sector zeros and kernel formulas are
+checked numerically.
+
+**Provenance limitation:** the original remote covariance arrays were not
+stored in the chains, only their metadata and binary signatures. Existing
+local reconstructions do not match those signatures. The script reports and
+labels this mismatch rather than certifying exact remote-input reproduction.
+The numerical origin of the mismatch remains unresolved.
+
+### All-to-all illustrative alternative
+
+```sh
+python mcmc/scripts/plot_all_bins_input_correlations.py --length 0.5
+```
+
+This produces a separate illustration in `mcmc/02_09_all_bins_input_correlations`,
+using the preceding exported bin mapping and experimental variances. Unlike the
+saved sector and global-CS calibrations, it explicitly correlates **all 917 bins,
+including between Au-Au and d-Au**. It is not a verified reconstruction of an
+existing fit and does not run a calibration.
+
+CS uses rho=1 for every pair. RBF uses the dimensionless concatenated-list
+coordinate `x_i=i/916` and `exp(-((x_i-x_j)/length)^2)`. The selected length is
+dimensionless (default 0.5); these are not physical eta, pT or centrality
+distances. Reordering bins and rebuilding this kernel changes the model.
+The covariance arrays use the reconstructed experimental likelihood variances;
+the correlation maps are independent of those positive diagonal scales.
+Outputs include PDF/300-dpi PNG, full covariance/correlation arrays, copied bin
+mapping and a provenance/validation manifest. No GP covariance is added.

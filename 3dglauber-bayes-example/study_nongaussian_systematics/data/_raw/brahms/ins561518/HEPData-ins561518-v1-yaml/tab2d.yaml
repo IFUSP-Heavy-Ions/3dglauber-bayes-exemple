@@ -1,0 +1,79 @@
+dependent_variables:
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: DETECTOR, value: TPM}
+  - {name: CENTRALITY, units: PCT, value: 0 TO 5}
+  values:
+  - errors: []
+    value: 560.0
+  - errors: []
+    value: 560.0
+  - errors: []
+    value: 590.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: DETECTOR, value: TPM}
+  - {name: CENTRALITY, units: PCT, value: 5 TO 10}
+  values:
+  - errors: []
+    value: 450.0
+  - errors: []
+    value: 460.0
+  - errors: []
+    value: 490.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: DETECTOR, value: TPM}
+  - {name: CENTRALITY, units: PCT, value: 10 TO 20}
+  values:
+  - errors: []
+    value: 340.0
+  - errors: []
+    value: 350.0
+  - errors: []
+    value: 370.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: DETECTOR, value: TPM}
+  - {name: CENTRALITY, units: PCT, value: 20 TO 30}
+  values:
+  - errors: []
+    value: 230.0
+  - errors: []
+    value: 240.0
+  - errors: []
+    value: 260.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: DETECTOR, value: TPM}
+  - {name: CENTRALITY, units: PCT, value: 30 TO 40}
+  values:
+  - errors: []
+    value: 150.0
+  - errors: []
+    value: 150.0
+  - errors: []
+    value: 170.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: DETECTOR, value: TPM}
+  - {name: CENTRALITY, units: PCT, value: 40 TO 50}
+  values:
+  - errors: []
+    value: 91.0
+  - errors: []
+    value: 96.0
+  - errors: []
+    value: 110.0
+independent_variables:
+- header: {name: ETARAP}
+  values:
+  - {value: -0.00322}
+  - {value: 0.545}
+  - {value: 1.01}

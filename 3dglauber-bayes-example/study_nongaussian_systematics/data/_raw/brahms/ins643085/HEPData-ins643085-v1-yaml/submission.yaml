@@ -1,0 +1,39 @@
+additional_resources:
+- {description: Figures and original data files, location: 'http://www4.rcf.bnl.gov/brahms/WWW/publication-data/mult_2004',
+  type: url}
+- {description: BRAHMS Homepage, location: 'http://www4.rcf.bnl.gov/brahms/WWW', type: url}
+comment: BNL-RHIC-BRAHMS. Charged-particle pseudorapidity densities are presented
+  for the d+Au reaction at sqrt{s_{NN}}=200 GeV with -4.2 <= eta <= 4.2$. The results,
+  from the BRAHMS experiment at RHIC, are shown for minimum-bias events and 0-30%,
+  30-60%, and 60-80% centrality classes. Models incorporating both soft physics and
+  hard, perturbative QCD-based scattering physics agree well with the experimental
+  results. The data do not support predictions based on strong-coupling, semi-classical
+  QCD. In the deuteron-fragmentation region the central 200 GeV data show behavior
+  similar to full-overlap d+Au results at sqrt{s_{NN}}=19.4 GeV.
+hepdata_doi: 10.17182/hepdata.89272.v1
+preprintyear: '2004'
+publicationyear: '2005'
+record_ids:
+- {id: 643085, type: inspire}
+- {id: nucl-ex/0401025, type: arxiv}
+- {id: 10.1103/PhysRevLett.94.032301, type: doi}
+- {id: '5777895', type: SPIRES}
+---
+data_file: tab2.yaml
+description: $\frac{\mathrm{d}N}{\mathrm{d}\eta}$ versus $\eta$ for $x^{\pm}$ in $\mathrm{d}-\mathrm{Au}$
+  at $\sqrt{s_{\mathrm{NN}}}=200\,\mathrm{Ge\!V}$  for $0-30$% central, $30-60$% central,
+  $60-80$% central, Min.Bias
+group: Table 2
+keywords:
+- name: reactions
+  values: [DEUT AU --> CHARGED]
+- name: observables
+  values: [DN/DETARAP]
+- name: cmenergies
+  values: ['200.0']
+- name: phrases
+  values: [Pseudorapidity Dependence, Density, Pseudorapidity Dependence, Centrality
+      Dependence]
+location: Table 2
+name: Table 2
+table_doi: 10.17182/hepdata.89272.v1/t1

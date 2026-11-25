@@ -1,0 +1,126 @@
+dependent_variables:
+- header: {name: DN/DETARAP/(NPART/2)}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: CENTRALITY, units: PCT, value: 0 TO 5}
+  values:
+  - errors:
+    - {label: tot, symerror: 0.21}
+    value: 3.19
+  - errors:
+    - {label: tot, symerror: 0.22}
+    value: 3.21
+  - errors:
+    - {label: tot, symerror: 0.22}
+    value: 3.27
+  - errors:
+    - {label: tot, symerror: 0.22}
+    value: 3.27
+  - errors:
+    - {label: tot, symerror: 0.22}
+    value: 3.28
+  - errors:
+    - {label: tot, symerror: 0.22}
+    value: 3.17
+  - errors:
+    - {label: tot, symerror: 0.21}
+    value: 3.0
+  - errors:
+    - {label: tot, symerror: 0.19}
+    value: 2.81
+  - errors:
+    - {label: tot, symerror: 0.18}
+    value: 2.53
+  - errors:
+    - {label: tot, symerror: 0.16}
+    value: 2.32
+  - errors:
+    - {label: tot, symerror: 0.22}
+    value: 2.02
+  - errors:
+    - {label: tot, symerror: 0.24}
+    value: 1.66
+  - errors:
+    - {label: tot, symerror: 0.18}
+    value: 1.39
+  - errors:
+    - {label: tot, symerror: 0.12}
+    value: 1.0
+  - errors:
+    - {label: tot, symerror: 0.099}
+    value: 0.733
+  - errors:
+    - {label: tot, symerror: 0.091}
+    value: 0.52
+- header: {name: DN/DETARAP/(NPART/2)}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: CENTRALITY, units: PCT, value: 30 TO 40}
+  values:
+  - errors:
+    - {label: tot, symerror: 0.19}
+    value: 2.74
+  - errors:
+    - {label: tot, symerror: 0.19}
+    value: 2.75
+  - errors:
+    - {label: tot, symerror: 0.19}
+    value: 2.77
+  - errors:
+    - {label: tot, symerror: 0.19}
+    value: 2.82
+  - errors:
+    - {label: tot, symerror: 0.19}
+    value: 2.84
+  - errors:
+    - {label: tot, symerror: 0.19}
+    value: 2.75
+  - errors:
+    - {label: tot, symerror: 0.18}
+    value: 2.68
+  - errors:
+    - {label: tot, symerror: 0.18}
+    value: 2.6
+  - errors:
+    - {label: tot, symerror: 0.21}
+    value: 2.39
+  - errors:
+    - {label: tot, symerror: 0.16}
+    value: 2.22
+  - errors:
+    - {label: tot, symerror: 0.23}
+    value: 1.96
+  - errors:
+    - {label: tot, symerror: 0.22}
+    value: 1.61
+  - errors:
+    - {label: tot, symerror: 0.18}
+    value: 1.38
+  - errors:
+    - {label: tot, symerror: 0.12}
+    value: 1.07
+  - errors:
+    - {label: tot, symerror: 0.099}
+    value: 0.889
+  - errors:
+    - {label: tot, symerror: 0.1}
+    value: 0.67
+independent_variables:
+- header: {name: ETARAP}
+  values:
+  - {value: 0.149}
+  - {value: 0.446}
+  - {value: 0.751}
+  - {value: 1.05}
+  - {value: 1.35}
+  - {value: 1.65}
+  - {value: 1.95}
+  - {value: 2.25}
+  - {value: 2.55}
+  - {value: 2.85}
+  - {value: 3.15}
+  - {value: 3.45}
+  - {value: 3.75}
+  - {value: 4.05}
+  - {value: 4.35}
+  - {value: 4.65}

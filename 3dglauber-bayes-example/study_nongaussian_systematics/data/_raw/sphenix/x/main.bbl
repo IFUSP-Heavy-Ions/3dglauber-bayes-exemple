@@ -1,0 +1,502 @@
+\begin{thebibliography}{10}
+
+\bibitem{Busza:2018rrf}
+W.~Busza, K.~Rajagopal, and W.~van~der Schee.
+\newblock {Heavy Ion Collisions: The Big Picture, and the Big Questions}.
+\newblock {\em Ann. Rev. Nucl. Part. Sci.}, 68:339--376, 2018.
+\newblock \href {http://arxiv.org/abs/1802.04801} {\path{arXiv:1802.04801}},
+  \href {https://doi.org/10.1146/annurev-nucl-101917-020852}
+  {\path{doi:10.1146/annurev-nucl-101917-020852}}.
+
+\bibitem{Romatschke:2017ejr}
+P.~Romatschke and U.~Romatschke.
+\newblock {\em {Relativistic Fluid Dynamics In and Out of Equilibrium}}.
+\newblock Cambridge Monographs on Mathematical Physics. Cambridge University
+  Press, 5 2019.
+\newblock \href {http://arxiv.org/abs/1712.05815} {\path{arXiv:1712.05815}},
+  \href {https://doi.org/10.1017/9781108651998}
+  {\path{doi:10.1017/9781108651998}}.
+
+\bibitem{Albacete:2014fwa}
+J.~L. Albacete and C.~Marquet.
+\newblock {Gluon saturation and initial conditions for relativistic heavy ion
+  collisions}.
+\newblock {\em Prog. Part. Nucl. Phys.}, 76:1--42, 2014.
+\newblock \href {http://arxiv.org/abs/1401.4866} {\path{arXiv:1401.4866}},
+  \href {https://doi.org/10.1016/j.ppnp.2014.01.004}
+  {\path{doi:10.1016/j.ppnp.2014.01.004}}.
+
+\bibitem{Kharzeev:2000ph}
+D.~Kharzeev and M.~Nardi.
+\newblock {Hadron production in nuclear collisions at RHIC and high density
+  QCD}.
+\newblock {\em Phys. Lett. B}, 507:121--128, 2001.
+\newblock \href {http://arxiv.org/abs/nucl-th/0012025}
+  {\path{arXiv:nucl-th/0012025}}, \href
+  {https://doi.org/10.1016/S0370-2693(01)00457-9}
+  {\path{doi:10.1016/S0370-2693(01)00457-9}}.
+
+\bibitem{dEnterria:2011twh}
+D.~d'Enterria, R.~Engel, T.~Pierog, S.~Ostapchenko, and K.~Werner.
+\newblock {Constraints from the first LHC data on hadronic event generators for
+  ultra-high energy cosmic-ray physics}.
+\newblock {\em Astropart. Phys.}, 35:98--113, 2011.
+\newblock \href {http://arxiv.org/abs/1101.5596} {\path{arXiv:1101.5596}},
+  \href {https://doi.org/10.1016/j.astropartphys.2011.05.002}
+  {\path{doi:10.1016/j.astropartphys.2011.05.002}}.
+
+\bibitem{HARRISON2003235}
+M.~Harrison, T.~Ludlam, and S.~Ozaki.
+\newblock {RHIC project overview}.
+\newblock {\em Nucl. Instrum. Meth. A}, 499(2):235--244, 2003.
+\newblock \href {https://doi.org/10.1016/S0168-9002(02)01937-X}
+  {\path{doi:10.1016/S0168-9002(02)01937-X}}.
+
+\bibitem{PHENIX:2000owy}
+K.~Adcox et~al. (PHENIX~Collaboration).
+\newblock {Centrality Dependence of Charged Particle Multiplicity in Au-Au
+  Collisions at $\sqrt{s_{NN}} = 130$ GeV}.
+\newblock {\em Phys. Rev. Lett.}, 86:3500--3505, 2001.
+\newblock \href {http://arxiv.org/abs/nucl-ex/0012008}
+  {\path{arXiv:nucl-ex/0012008}}, \href
+  {https://doi.org/10.1103/PhysRevLett.86.3500}
+  {\path{doi:10.1103/PhysRevLett.86.3500}}.
+
+\bibitem{PHENIX:2004vdg}
+S.S.~Adler et~al. (PHENIX~Collaboration).
+\newblock {Systematic studies of the centrality and $\sqrt{s_{NN}}$ dependence
+  of the $dE_T/d\eta$ and $dN_{ch}/d\eta$ in heavy ion collisions at
+  mid-rapidity}.
+\newblock {\em Phys. Rev. C}, 71:034908, 2005.
+\newblock \href {http://arxiv.org/abs/nucl-ex/0409015}
+  {\path{arXiv:nucl-ex/0409015}}, \href
+  {https://doi.org/10.1103/PhysRevC.71.034908}
+  {\path{doi:10.1103/PhysRevC.71.034908}}.
+
+\bibitem{PHENIX:2018hho}
+A.~Adare et~al. (PHENIX~Collaboration).
+\newblock {Pseudorapidity Dependence of Particle Production and Elliptic Flow
+  in Asymmetric Nuclear Collisions of $p+$Al, $p+$Au, $d+$Au, and $^{3}$He$+$Au
+  at $\sqrt{s_{_{NN}}}=200$ GeV}.
+\newblock {\em Phys. Rev. Lett.}, 121(22):222301, 2018.
+\newblock \href {http://arxiv.org/abs/1807.11928} {\path{arXiv:1807.11928}},
+  \href {https://doi.org/10.1103/PhysRevLett.121.222301}
+  {\path{doi:10.1103/PhysRevLett.121.222301}}.
+
+\bibitem{PHOBOS:2000wxz}
+B.B.~Back et~al. (PHOBOS~Collaboration).
+\newblock {Charged-Particle Multiplicity near Midrapidity in Central Au+Au
+  Collisions at $\sqrt{s_{NN}} = 56$ and $130$ GeV}.
+\newblock {\em Phys. Rev. Lett.}, 85:3100--3104, 2000.
+\newblock \href {http://arxiv.org/abs/hep-ex/0007036}
+  {\path{arXiv:hep-ex/0007036}}, \href
+  {https://doi.org/10.1103/PhysRevLett.85.3100}
+  {\path{doi:10.1103/PhysRevLett.85.3100}}.
+
+\bibitem{PHOBOS:2003fjw}
+B.B.~Back et~al. (PHOBOS~Collaboration).
+\newblock {Pseudorapidity Distribution of Charged Particles in d+Au Collisions
+  at $\sqrt{s_{NN}} = 200$ GeV}.
+\newblock {\em Phys. Rev. Lett.}, 93:082301, 2004.
+\newblock \href {http://arxiv.org/abs/nucl-ex/0311009}
+  {\path{arXiv:nucl-ex/0311009}}, \href
+  {https://doi.org/10.1103/PhysRevLett.93.082301}
+  {\path{doi:10.1103/PhysRevLett.93.082301}}.
+
+\bibitem{PHOBOS:2010eyu}
+B.~Alver et~al. (PHOBOS~Collaboration).
+\newblock {Charged-particle multiplicity and pseudorapidity distributions
+  measured with the PHOBOS detector in $\text{Au}+\text{Au}$,
+  $\text{Cu}+\text{Cu}$, $\text{d}+\text{Au}$, and $\text{p}+\text{p}$
+  collisions at ultrarelativistic energies}.
+\newblock {\em Phys. Rev. C}, 83:024913, 2011.
+\newblock \href {http://arxiv.org/abs/1011.1940} {\path{arXiv:1011.1940}},
+  \href {https://doi.org/10.1103/PhysRevC.83.024913}
+  {\path{doi:10.1103/PhysRevC.83.024913}}.
+
+\bibitem{BRAHMS:2001gci}
+I.G.~Bearden et~al. (BRAHMS~Collaboration).
+\newblock {Charged particle densities from Au+Au collisions at $\sqrt{s_{NN}} =
+  130$ GeV}.
+\newblock {\em Phys. Lett. B}, 523:227--233, 2001.
+\newblock \href {http://arxiv.org/abs/nucl-ex/0108016}
+  {\path{arXiv:nucl-ex/0108016}}, \href
+  {https://doi.org/10.1016/S0370-2693(01)01333-8}
+  {\path{doi:10.1016/S0370-2693(01)01333-8}}.
+
+\bibitem{BRAHMS:2001llo}
+I.G.~Bearden et~al. (BRAHMS~Collaboration).
+\newblock {Pseudorapidity Distributions of Charged Particles from
+  $\mathrm{Au}+\mathrm{Au}$ Collisions at the Maximum RHIC Energy,
+  $\sqrt{{\mathit{s}}_{\mathit{NN}}}\phantom{\rule{0ex}{0ex}}=\phantom{\rule{0ex}{0ex}}200~\mathrm{GeV}$}.
+\newblock {\em Phys. Rev. Lett.}, 88:202301, 2002.
+\newblock \href {http://arxiv.org/abs/nucl-ex/0112001}
+  {\path{arXiv:nucl-ex/0112001}}, \href
+  {https://doi.org/10.1103/PhysRevLett.88.202301}
+  {\path{doi:10.1103/PhysRevLett.88.202301}}.
+
+\bibitem{STAR:2001eyo}
+C.~Adler et~al. (STAR~Collaboration).
+\newblock {Multiplicity Distribution and Spectra of Negatively Charged Hadrons
+  in Au+Au Collisions at $\sqrt{s_{NN}} = 130$ GeV}.
+\newblock {\em Phys. Rev. Lett.}, 87:112303, 2001.
+\newblock \href {http://arxiv.org/abs/nucl-ex/0106004}
+  {\path{arXiv:nucl-ex/0106004}}, \href
+  {https://doi.org/10.1103/PhysRevLett.87.112303}
+  {\path{doi:10.1103/PhysRevLett.87.112303}}.
+
+\bibitem{ALICE:2009wpl}
+K.~Aamodt et~al. (ALICE~Collaboration).
+\newblock {First proton-proton collisions at the LHC as observed with the ALICE
+  detector: Measurement of the charged particle pseudorapidity density at
+  $\sqrt{s_{NN}} = 900$ GeV}.
+\newblock {\em Eur. Phys. J. C}, 65:111--125, 2010.
+\newblock \href {http://arxiv.org/abs/0911.5430} {\path{arXiv:0911.5430}},
+  \href {https://doi.org/10.1140/epjc/s10052-009-1227-4}
+  {\path{doi:10.1140/epjc/s10052-009-1227-4}}.
+
+\bibitem{ALICE:2010cin}
+K.~Aamodt et~al. (ALICE~Collaboration).
+\newblock {Charged-particle multiplicity measurement in proton-proton
+  collisions at $\sqrt{s}=0.9$ and $2.36$ TeV with ALICE at LHC}.
+\newblock {\em Eur. Phys. J. C}, 68:89--108, 2010.
+\newblock \href {http://arxiv.org/abs/1004.3034} {\path{arXiv:1004.3034}},
+  \href {https://doi.org/10.1140/epjc/s10052-010-1339-x}
+  {\path{doi:10.1140/epjc/s10052-010-1339-x}}.
+
+\bibitem{ALICE:2010khr}
+K.~Aamodt et~al. (ALICE~Collaboration).
+\newblock {Charged-Particle Multiplicity Density at Mid-rapidity in Central
+  Pb-Pb Collisions at $\sqrt{s_{NN}} = 2.76$ TeV}.
+\newblock {\em Phys. Rev. Lett.}, 105:252301, 2010.
+\newblock \href {http://arxiv.org/abs/1011.3916} {\path{arXiv:1011.3916}},
+  \href {https://doi.org/10.1103/PhysRevLett.105.252301}
+  {\path{doi:10.1103/PhysRevLett.105.252301}}.
+
+\bibitem{ALICE:2010mty}
+K.~Aamodt et~al. (ALICE~Collaboration).
+\newblock {Charged-particle multiplicity measurement in proton-proton
+  collisions at $\sqrt{s}=7$ TeV with ALICE at LHC}.
+\newblock {\em Eur. Phys. J. C}, 68:345--354, 2010.
+\newblock \href {http://arxiv.org/abs/1004.3514} {\path{arXiv:1004.3514}},
+  \href {https://doi.org/10.1140/epjc/s10052-010-1350-2}
+  {\path{doi:10.1140/epjc/s10052-010-1350-2}}.
+
+\bibitem{ALICE:2015juo}
+J.~Adam et~al. (ALICE~Collaboration).
+\newblock {Centrality Dependence of the Charged-Particle Multiplicity Density
+  at Midrapidity in Pb-Pb Collisions at $\sqrt{s_{\rm NN}}$ = $5.02$ TeV}.
+\newblock {\em Phys. Rev. Lett.}, 116(22):222302, 2016.
+\newblock \href {http://arxiv.org/abs/1512.06104} {\path{arXiv:1512.06104}},
+  \href {https://doi.org/10.1103/PhysRevLett.116.222302}
+  {\path{doi:10.1103/PhysRevLett.116.222302}}.
+
+\bibitem{ALICE:2015olq}
+J.~Adam et~al. (ALICE~Collaboration).
+\newblock {Charged-particle multiplicities in proton\textendash{}proton
+  collisions at $\sqrt{s} = 0.9$ to $8$ TeV}.
+\newblock {\em Eur. Phys. J. C}, 77(1):33, 2017.
+\newblock \href {http://arxiv.org/abs/1509.07541} {\path{arXiv:1509.07541}},
+  \href {https://doi.org/10.1140/epjc/s10052-016-4571-1}
+  {\path{doi:10.1140/epjc/s10052-016-4571-1}}.
+
+\bibitem{ALICE:2015qqj}
+J.~Adam et~al. (ALICE~Collaboration).
+\newblock {Pseudorapidity and transverse-momentum distributions of charged
+  particles in proton\textendash{}proton collisions at $\sqrt s= 13$ TeV}.
+\newblock {\em Phys. Lett. B}, 753:319--329, 2016.
+\newblock \href {http://arxiv.org/abs/1509.08734} {\path{arXiv:1509.08734}},
+  \href {https://doi.org/10.1016/j.physletb.2015.12.030}
+  {\path{doi:10.1016/j.physletb.2015.12.030}}.
+
+\bibitem{ALICE:2017pcy}
+S.~Acharya et~al. (ALICE~Collaboration).
+\newblock {Charged-particle multiplicity distributions over a wide
+  pseudorapidity range in proton-proton collisions at $\sqrt{s}= 0.9, 7,$ and
+  $8$ TeV}.
+\newblock {\em Eur. Phys. J. C}, 77(12):852, 2017.
+\newblock \href {http://arxiv.org/abs/1708.01435} {\path{arXiv:1708.01435}},
+  \href {https://doi.org/10.1140/epjc/s10052-017-5412-6}
+  {\path{doi:10.1140/epjc/s10052-017-5412-6}}.
+
+\bibitem{ALICE:2018cpu}
+S.~Acharya et~al. (ALICE~Collaboration).
+\newblock {Centrality and pseudorapidity dependence of the charged-particle
+  multiplicity density in Xe\textendash{}Xe collisions at $\sqrt{s_{\rm NN}}$ =
+  $5.44$ TeV}.
+\newblock {\em Phys. Lett. B}, 790:35--48, 2019.
+\newblock \href {http://arxiv.org/abs/1805.04432} {\path{arXiv:1805.04432}},
+  \href {https://doi.org/10.1016/j.physletb.2018.12.048}
+  {\path{doi:10.1016/j.physletb.2018.12.048}}.
+
+\bibitem{ALICE:2020swj}
+S.~Acharya et~al. (ALICE~Collaboration).
+\newblock {Pseudorapidity distributions of charged particles as a function of
+  mid- and forward rapidity multiplicities in pp collisions at $\sqrt{s} =
+  5.02, 7$ and $13$ TeV}.
+\newblock {\em Eur. Phys. J. C}, 81(7):630, 2021.
+\newblock \href {http://arxiv.org/abs/2009.09434} {\path{arXiv:2009.09434}},
+  \href {https://doi.org/10.1140/epjc/s10052-021-09349-5}
+  {\path{doi:10.1140/epjc/s10052-021-09349-5}}.
+
+\bibitem{CMS:2010wcx}
+V.~Khachatryan et~al. (CMS~Collaboration).
+\newblock {Transverse-momentum and pseudorapidity distributions of charged
+  hadrons in pp collisions at $\sqrt{s} = 0.9$ and $2.36$ TeV}.
+\newblock {\em JHEP}, 02:041, 2010.
+\newblock \href {http://arxiv.org/abs/1002.0621} {\path{arXiv:1002.0621}},
+  \href {https://doi.org/10.1007/JHEP02(2010)041}
+  {\path{doi:10.1007/JHEP02(2010)041}}.
+
+\bibitem{CMS:2010qvf}
+V.~Khachatryan et~al. (CMS~Collaboration).
+\newblock {Charged particle multiplicities in pp interactions at
+  $\sqrt{s}=0.9$, $2.36$, and $7$ TeV}.
+\newblock {\em JHEP}, 01:079, 2011.
+\newblock \href {http://arxiv.org/abs/1011.5531} {\path{arXiv:1011.5531}},
+  \href {https://doi.org/10.1007/JHEP01(2011)079}
+  {\path{doi:10.1007/JHEP01(2011)079}}.
+
+\bibitem{CMS:2010tjh}
+V.~Khachatryan et~al. (CMS~Collaboration).
+\newblock {Transverse-Momentum and Pseudorapidity Distributions of Charged
+  Hadrons in pp Collisions at $\sqrt{s}=7$ TeV}.
+\newblock {\em Phys. Rev. Lett.}, 105:022002, 2010.
+\newblock \href {http://arxiv.org/abs/1005.3299} {\path{arXiv:1005.3299}},
+  \href {https://doi.org/10.1103/PhysRevLett.105.022002}
+  {\path{doi:10.1103/PhysRevLett.105.022002}}.
+
+\bibitem{CMS:2011aqh}
+S.~Chatrchyan et~al. (CMS~Collaboration).
+\newblock {Dependence on pseudorapidity and centrality of charged hadron
+  production in PbPb collisions at a nucleon-nucleon centre-of-mass energy of
+  $2.76$ TeV}.
+\newblock {\em JHEP}, 08:141, 2011.
+\newblock \href {http://arxiv.org/abs/1107.4800} {\path{arXiv:1107.4800}},
+  \href {https://doi.org/10.1007/JHEP08(2011)141}
+  {\path{doi:10.1007/JHEP08(2011)141}}.
+
+\bibitem{CMS:2014kix}
+S.~Chatrchyan et~al. (CMS~Collaboration and TOTEM Collaboration).
+\newblock {Measurement of pseudorapidity distributions of charged particles in
+  proton-proton collisions at $\sqrt{s} = 8$ TeV by the CMS and TOTEM
+  experiments}.
+\newblock {\em Eur. Phys. J. C}, 74(10):3053, 2014.
+\newblock \href {http://arxiv.org/abs/1405.0722} {\path{arXiv:1405.0722}},
+  \href {https://doi.org/10.1140/epjc/s10052-014-3053-6}
+  {\path{doi:10.1140/epjc/s10052-014-3053-6}}.
+
+\bibitem{CMS:2015zrm}
+V.~Khachatryan et~al. (CMS~Collaboration).
+\newblock {Pseudorapidity distribution of charged hadrons in proton-proton
+  collisions at $\sqrt{s} = 13$ TeV}.
+\newblock {\em Phys. Lett. B}, 751:143--163, 2015.
+\newblock \href {http://arxiv.org/abs/1507.05915} {\path{arXiv:1507.05915}},
+  \href {https://doi.org/10.1016/j.physletb.2015.10.004}
+  {\path{doi:10.1016/j.physletb.2015.10.004}}.
+
+\bibitem{CMS:2017shj}
+A.M.~Sirunyan et~al. (CMS~Collaboration).
+\newblock {Pseudorapidity distributions of charged hadrons in proton-lead
+  collisions at $\sqrt{s_{\mathrm{NN}}} = 5.02$ and $8.16$ TeV}.
+\newblock {\em JHEP}, 01:045, 2018.
+\newblock \href {http://arxiv.org/abs/1710.09355} {\path{arXiv:1710.09355}},
+  \href {https://doi.org/10.1007/JHEP01(2018)045}
+  {\path{doi:10.1007/JHEP01(2018)045}}.
+
+\bibitem{CMS:2019gzk}
+A.M.~Sirunyan et~al. (CMS~Collaboration).
+\newblock {Pseudorapidity distributions of charged hadrons in xenon-xenon
+  collisions at $\sqrt{s_{\mathrm{NN}}} = 5.44$ TeV}.
+\newblock {\em Phys. Lett. B}, 799:135049, 2019.
+\newblock \href {http://arxiv.org/abs/1902.03603} {\path{arXiv:1902.03603}},
+  \href {https://doi.org/10.1016/j.physletb.2019.135049}
+  {\path{doi:10.1016/j.physletb.2019.135049}}.
+
+\bibitem{CMS:2024ykx}
+A.~Hayrapetyan et~al. (CMS~Collaboration).
+\newblock {Pseudorapidity distributions of charged hadrons in lead-lead
+  collisions at $\sqrt{s_{\mathrm{NN}}} = 5.36$ TeV}.
+\newblock {\em Phys. Lett. B}, 861:139279, 2025.
+\newblock \href {http://arxiv.org/abs/2409.00838} {\path{arXiv:2409.00838}},
+  \href {https://doi.org/10.1016/j.physletb.2025.139279}
+  {\path{doi:10.1016/j.physletb.2025.139279}}.
+
+\bibitem{ATLAS:2011ag}
+G.~Aad et~al. (ATLAS~Collaboration).
+\newblock {Measurement of the centrality dependence of the charged particle
+  pseudorapidity distribution in lead-lead collisions at $\sqrt{s_{NN}}=2.76$
+  TeV with the ATLAS detector}.
+\newblock {\em Phys. Lett. B}, 710:363--382, 2012.
+\newblock \href {http://arxiv.org/abs/1108.6027} {\path{arXiv:1108.6027}},
+  \href {https://doi.org/10.1016/j.physletb.2012.02.045}
+  {\path{doi:10.1016/j.physletb.2012.02.045}}.
+
+\bibitem{ATLAS:2015hkr}
+G.~Aad et~al. (ATLAS~Collaboration).
+\newblock {Measurement of the centrality dependence of the charged-particle
+  pseudorapidity distribution in proton\textendash{}lead collisions at
+  $\sqrt{s_{\text{NN}}} = 5.02$ TeV with the ATLAS detector}.
+\newblock {\em Eur. Phys. J. C}, 76(4):199, 2016.
+\newblock \href {http://arxiv.org/abs/1508.00848} {\path{arXiv:1508.00848}},
+  \href {https://doi.org/10.1140/epjc/s10052-016-4002-3}
+  {\path{doi:10.1140/epjc/s10052-016-4002-3}}.
+
+\bibitem{PHENIX:2015siv}
+A.~Adare et~al.
+\newblock {An Upgrade Proposal from the PHENIX Collaboration}.
+\newblock 2015.
+\newblock \href {http://arxiv.org/abs/1501.06197} {\path{arXiv:1501.06197}}.
+
+\bibitem{Belmont:2023fau}
+R.~Belmont et~al.
+\newblock {Predictions for the sPHENIX physics program}.
+\newblock {\em Nucl. Phys. A}, 1043:122821, 2024.
+\newblock \href {https://doi.org/10.1016/j.nuclphysa.2024.122821}
+  {\path{doi:10.1016/j.nuclphysa.2024.122821}}.
+
+\bibitem{Wang:1991hta}
+X.-N. Wang and M.~Gyulassy.
+\newblock {HIJING: A Monte Carlo model for multiple jet production in pp, pA
+  and AA collisions}.
+\newblock {\em Phys. Rev. D}, 44:3501--3516, 1991.
+\newblock \href {https://doi.org/10.1103/PhysRevD.44.3501}
+  {\path{doi:10.1103/PhysRevD.44.3501}}.
+
+\bibitem{Lin:2004en}
+Z.-W. Lin, C.~M. Ko, B.-A. Li, B.~Zhang, and S.~Pal.
+\newblock {A Multi-phase transport model for relativistic heavy ion
+  collisions}.
+\newblock {\em Phys. Rev. C}, 72:064901, 2005.
+\newblock \href {http://arxiv.org/abs/nucl-th/0411110}
+  {\path{arXiv:nucl-th/0411110}}, \href
+  {https://doi.org/10.1103/PhysRevC.72.064901}
+  {\path{doi:10.1103/PhysRevC.72.064901}}.
+
+\bibitem{Pierog:2013ria}
+T.~Pierog, I.~Karpenko, J.~M. Katzy, E.~Yatsenko, and K.~Werner.
+\newblock {EPOS LHC: Test of collective hadronization with data measured at the
+  CERN Large Hadron Collider}.
+\newblock {\em Phys. Rev. C}, 92(3):034906, 2015.
+\newblock \href {http://arxiv.org/abs/1306.0121} {\path{arXiv:1306.0121}},
+  \href {https://doi.org/10.1103/PhysRevC.92.034906}
+  {\path{doi:10.1103/PhysRevC.92.034906}}.
+
+\bibitem{INTT_ladder_NIM_cite}
+Y.~Akiba et~al.
+\newblock {The Ladder and Readout Cables of Intermediate Silicon Strip Detector
+  for sPHENIX}.
+\newblock 2025.
+\newblock \href {http://arxiv.org/abs/2503.09105} {\path{arXiv:2503.09105}}.
+
+\bibitem{PHENIX:2003tlh}
+M.~Allen et~al.
+\newblock {PHENIX inner detectors}.
+\newblock {\em Nucl. Instrum. Meth. A}, 499:549--559, 2003.
+\newblock \href {https://doi.org/10.1016/S0168-9002(02)01956-3}
+  {\path{doi:10.1016/S0168-9002(02)01956-3}}.
+
+\bibitem{Adler:2000bd}
+C.~Adler, A.~Denisov, E.~Garcia, M.~Murray, H.~Stroebele, and S.~White.
+\newblock {The RHIC zero degree calorimeters}.
+\newblock {\em Nucl. Instrum. Meth. A}, 470(3):488--499, 2001.
+\newblock \href {https://doi.org/https://doi.org/10.1016/S0168-9002(01)00627-1}
+  {\path{doi:https://doi.org/10.1016/S0168-9002(01)00627-1}}.
+
+\bibitem{Loizides:2014vua}
+C.~Loizides, J.~Nagle, and P.~Steinberg.
+\newblock {Improved version of the PHOBOS Glauber Monte Carlo}.
+\newblock {\em SoftwareX}, 1-2:13--18, 2015.
+\newblock \href {http://arxiv.org/abs/1408.2549} {\path{arXiv:1408.2549}},
+  \href {https://doi.org/10.1016/j.softx.2015.05.001}
+  {\path{doi:10.1016/j.softx.2015.05.001}}.
+
+\bibitem{PHENIX:2013jxf}
+A.~Adare et~al. (PHENIX~Collaboration).
+\newblock {Centrality categorization for $R_{p(d)+A}$ in high-energy
+  collisions}.
+\newblock {\em Phys. Rev. C}, 90(3):034902, 2014.
+\newblock \href {http://arxiv.org/abs/1310.4793} {\path{arXiv:1310.4793}},
+  \href {https://doi.org/10.1103/PhysRevC.90.034902}
+  {\path{doi:10.1103/PhysRevC.90.034902}}.
+
+\bibitem{ANDERSSON1987289}
+B.~Andersson, G.~Gustafson, and B.~Nilsson-Almqvist.
+\newblock {A model for low $p_{T}$ hadronic reactions, with generalizations to
+  hadron-nucleus and nucleus-nucleus collisions}.
+\newblock {\em Nucl. Phys. B}, 281:289--309, 1987.
+\newblock \href {https://doi.org/10.1016/0550-3213(87)90257-4}
+  {\path{doi:10.1016/0550-3213(87)90257-4}}.
+
+\bibitem{Capella:1992yb}
+A.~Capella, U.~Sukhatme, C-I Tan, and J.~Tran Thanh~Van.
+\newblock {Dual parton model}.
+\newblock {\em Phys. Rept.}, 236:225--329, 1994.
+\newblock \href {https://doi.org/10.1016/0370-1573(94)90064-7}
+  {\path{doi:10.1016/0370-1573(94)90064-7}}.
+
+\bibitem{Zhang:1997ej}
+B.~Zhang.
+\newblock {ZPC 1.0.1: A Parton cascade for ultrarelativistic heavy ion
+  collisions}.
+\newblock {\em Comput. Phys. Commun.}, 109:193--206, 1998.
+\newblock \href {http://arxiv.org/abs/nucl-th/9709009}
+  {\path{arXiv:nucl-th/9709009}}, \href
+  {https://doi.org/10.1016/S0010-4655(98)00010-1}
+  {\path{doi:10.1016/S0010-4655(98)00010-1}}.
+
+\bibitem{Li:1995pra}
+B.-A. Li and C.~M. Ko.
+\newblock {Formation of superdense hadronic matter in high-energy heavy ion
+  collisions}.
+\newblock {\em Phys. Rev. C}, 52:2037--2063, 1995.
+\newblock \href {http://arxiv.org/abs/nucl-th/9505016}
+  {\path{arXiv:nucl-th/9505016}}, \href
+  {https://doi.org/10.1103/PhysRevC.52.2037}
+  {\path{doi:10.1103/PhysRevC.52.2037}}.
+
+\bibitem{gribov1968reggeon}
+V.~N. Gribov.
+\newblock A reggeon diagram technique.
+\newblock {\em Sov. Phys. JETP}, 26(2):414--423, 1968.
+
+\bibitem{Drescher:2000ha}
+H.~J. Drescher, M.~Hladik, S.~Ostapchenko, T.~Pierog, and K.~Werner.
+\newblock {Parton-based Gribov-Regge theory}.
+\newblock {\em Phys. Rept.}, 350:93--289, 2001.
+\newblock \href {http://arxiv.org/abs/hep-ph/0007198}
+  {\path{arXiv:hep-ph/0007198}}, \href
+  {https://doi.org/10.1016/S0370-1573(00)00122-8}
+  {\path{doi:10.1016/S0370-1573(00)00122-8}}.
+
+\bibitem{Geant4_cite}
+S.~Agostinelli et~al. (GEANT4~Collaboration).
+\newblock {GEANT4 - A simulation toolkit}.
+\newblock {\em Nucl. Instrum. Meth. A}, 506:250--303, 2003.
+\newblock \href {https://doi.org/10.1016/S0168-9002(03)01368-8}
+  {\path{doi:10.1016/S0168-9002(03)01368-8}}.
+
+\bibitem{ALICE-PUBLIC-2017-005}
+S.~Acharya et~al. (ALICE~Collaboration).
+\newblock {The ALICE definition of primary particles}.
+\newblock 2017.
+
+\bibitem{Miao:2007zz}
+T.~Miao, N.~Leioatts, H.~Wenzel, and F.~Yumiceva.
+\newblock {Beam Position Determination using Tracks}.
+\newblock 2007.
+
+\bibitem{ParticleDataGroup:2024cfk}
+S.~Navas et~al. (Particle Data Group~Collaboration).
+\newblock {Review of Particle Physics}.
+\newblock {\em Phys. Rev. D}, 110(3):030001, 2024.
+\newblock \href {https://doi.org/10.1103/PhysRevD.110.030001}
+  {\path{doi:10.1103/PhysRevD.110.030001}}.
+
+\bibitem{5f88760e-8167-31ed-9022-4d8c4dafd76a}
+{C. R. Henderson}.
+\newblock {Best Linear Unbiased Estimation and Prediction under a Selection
+  Model}.
+\newblock {\em Biometrics}, 31(2):423--447, 1975.
+
+\end{thebibliography}

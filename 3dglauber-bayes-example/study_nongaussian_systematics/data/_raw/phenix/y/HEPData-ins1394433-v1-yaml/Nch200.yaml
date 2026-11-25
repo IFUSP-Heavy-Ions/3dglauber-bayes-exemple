@@ -1,0 +1,216 @@
+dependent_variables:
+- header: {name: '$N_{part}$'}
+  qualifiers:
+  - {name: centrality, value: ''}
+  values:
+  - errors:
+    - {label: sys, symerror: 4.7}
+    value: 350.9
+  - errors:
+    - {label: sys, symerror: 6.6}
+    value: 297.9
+  - errors:
+    - {label: sys, symerror: 7.3}
+    value: 251.0
+  - errors:
+    - {label: sys, symerror: 7.3}
+    value: 211.0
+  - errors:
+    - {label: sys, symerror: 7.0}
+    value: 176.3
+  - errors:
+    - {label: sys, symerror: 7.1}
+    value: 146.8
+  - errors:
+    - {label: sys, symerror: 7.0}
+    value: 120.9
+  - errors:
+    - {label: sys, symerror: 6.8}
+    value: 98.3
+  - errors:
+    - {label: sys, symerror: 6.1}
+    value: 78.7
+  - errors:
+    - {label: sys, symerror: 5.2}
+    value: 61.9
+  - errors:
+    - {label: sys, symerror: 4.9}
+    value: 47.6
+  - errors:
+    - {label: sys, symerror: 5.1}
+    value: 35.6
+- header: {name: '$N_{q}$'}
+  qualifiers:
+  - {name: centrality, value: ''}
+  values:
+  - errors:
+    - {label: sys, symerror: 16.2}
+    value: 924.1
+  - errors:
+    - {label: sys, symerror: 15.3}
+    value: 782.6
+  - errors:
+    - {label: sys, symerror: 14.5}
+    value: 644.6
+  - errors:
+    - {label: sys, symerror: 12.3}
+    value: 532.9
+  - errors:
+    - {label: sys, symerror: 10.4}
+    value: 437.5
+  - errors:
+    - {label: sys, symerror: 12.2}
+    value: 356.8
+  - errors:
+    - {label: sys, symerror: 11.0}
+    value: 288.3
+  - errors:
+    - {label: sys, symerror: 9.2}
+    value: 229.7
+  - errors:
+    - {label: sys, symerror: 6.8}
+    value: 181.0
+  - errors:
+    - {label: sys, symerror: 5.3}
+    value: 141.1
+  - errors:
+    - {label: sys, symerror: 5.5}
+    value: 107.6
+  - errors:
+    - {label: sys, symerror: 6.8}
+    value: 77.5
+- header: {name: '$dN_{ch}/d\eta$'}
+  qualifiers:
+  - {name: centrality, value: ''}
+  values:
+  - errors:
+    - {label: sys, symerror: 36.6}
+    value: 687.4
+  - errors:
+    - {label: sys, symerror: 27.9}
+    value: 560.4
+  - errors:
+    - {label: sys, symerror: 22.3}
+    value: 456.8
+  - errors:
+    - {label: sys, symerror: 18.2}
+    value: 371.5
+  - errors:
+    - {label: sys, symerror: 15.8}
+    value: 302.5
+  - errors:
+    - {label: sys, symerror: 13.8}
+    value: 245.6
+  - errors:
+    - {label: sys, symerror: 12.2}
+    value: 197.2
+  - errors:
+    - {label: sys, symerror: 10.9}
+    value: 156.4
+  - errors:
+    - {label: sys, symerror: 9.6}
+    value: 123.5
+  - errors:
+    - {label: sys, symerror: 8.6}
+    value: 95.3
+  - errors:
+    - {label: sys, symerror: 7.6}
+    value: 70.9
+  - errors:
+    - {label: sys, symerror: 6.5}
+    value: 52.2
+- header: {name: '$(dN_{ch}/d\eta)/N_{part}$'}
+  qualifiers:
+  - {name: centrality, value: ''}
+  values:
+  - errors:
+    - {label: sys, symerror: 0.22}
+    value: 3.92
+  - errors:
+    - {label: sys, symerror: 0.21}
+    value: 3.77
+  - errors:
+    - {label: sys, symerror: 0.21}
+    value: 3.64
+  - errors:
+    - {label: sys, symerror: 0.21}
+    value: 3.52
+  - errors:
+    - {label: sys, symerror: 0.22}
+    value: 3.43
+  - errors:
+    - {label: sys, symerror: 0.25}
+    value: 3.35
+  - errors:
+    - {label: sys, symerror: 0.28}
+    value: 3.26
+  - errors:
+    - {label: sys, symerror: 0.31}
+    value: 3.18
+  - errors:
+    - {label: sys, symerror: 0.34}
+    value: 3.14
+  - errors:
+    - {label: sys, symerror: 0.38}
+    value: 3.08
+  - errors:
+    - {label: sys, symerror: 0.44}
+    value: 2.98
+  - errors:
+    - {label: sys, symerror: 0.56}
+    value: 2.93
+- header: {name: '$(dN_{ch}/d\eta)/N_{q}$'}
+  qualifiers:
+  - {name: centrality, value: ''}
+  values:
+  - errors:
+    - {label: sys, symerror: 0.08}
+    value: 1.49
+  - errors:
+    - {label: sys, symerror: 0.08}
+    value: 1.43
+  - errors:
+    - {label: sys, symerror: 0.08}
+    value: 1.42
+  - errors:
+    - {label: sys, symerror: 0.08}
+    value: 1.39
+  - errors:
+    - {label: sys, symerror: 0.08}
+    value: 1.38
+  - errors:
+    - {label: sys, symerror: 0.09}
+    value: 1.38
+  - errors:
+    - {label: sys, symerror: 0.1}
+    value: 1.37
+  - errors:
+    - {label: sys, symerror: 0.11}
+    value: 1.36
+  - errors:
+    - {label: sys, symerror: 0.12}
+    value: 1.36
+  - errors:
+    - {label: sys, symerror: 0.13}
+    value: 1.35
+  - errors:
+    - {label: sys, symerror: 0.16}
+    value: 1.32
+  - errors:
+    - {label: sys, symerror: 0.2}
+    value: 1.35
+independent_variables:
+- header: {name: centrality}
+  values:
+  - {high: 5, low: 0}
+  - {high: 10, low: 5}
+  - {high: 15, low: 10}
+  - {high: 20, low: 15}
+  - {high: 25, low: 20}
+  - {high: 30, low: 25}
+  - {high: 35, low: 30}
+  - {high: 40, low: 35}
+  - {high: 45, low: 40}
+  - {high: 50, low: 45}
+  - {high: 55, low: 50}
+  - {high: 60, low: 55}

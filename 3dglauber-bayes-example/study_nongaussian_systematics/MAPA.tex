@@ -1,0 +1,160 @@
+% Compilar com: latexmk -lualatex MAPA.tex
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{Latin Modern Roman}
+\setmathfont{Latin Modern Math}
+\usepackage[brazil]{babel}
+\usepackage{booktabs,tabularx,array}
+\usepackage[table]{xcolor}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\feito}{\textcolor{green!45!black}{\textbf{feito}}}
+\newcommand{\agora}{\colorbox{orange!25}{\textbf{$\leftarrow$ AGORA}}}
+\newcommand{\afazer}{\textcolor{black!55}{a fazer}}
+\newcommand{\arq}[1]{\texttt{\nolinkurl{#1}}}
+
+\title{Mapa do estudo de sistemáticos --- onde estamos}
+\date{Atualizado em 17 de novembro de 2026}
+\author{}
+
+\begin{document}
+\maketitle
+\vspace{-2em}
+
+\textbf{Mapas:} \textbf{este arquivo} = fonte de \emph{normalização} $\cdot$ \arq{MAPA_regiao_eta.tex} = fontes que dependem da região do detector em $\eta$ (forward/backward, Rings/Octagon, TPC/FTPC).
+
+\section*{A pergunta}
+Como as incertezas sistemáticas \textbf{correlacionadas} (2º momento) e \textbf{assimétricas} (3º momento)
+dos experimentos afetam a posterior da calibração JETSCAPE (arXiv:2601.17234, 917 pontos)?
+
+\section*{A escada}
+\begin{tabularx}{\linewidth}{@{}l Y Y Y l@{}}
+\toprule
+degrau & o que entra nas incertezas & como & & status \\
+\midrule
+0. JETSCAPE & só variâncias ($\Sigma_{\mathrm{exp}}$ diagonal) & publicado & & --- \\
+1. Supor correlações & CS e RBF, por setor & direto no $\Sigma_{\mathrm{exp}}$ & shifts até $1{,}7\,\sigma_B$, dependem do modelo suposto & \feito \\
+2. \textbf{Aprender} os sistemáticos & 2º e 3º momento por fonte & comparações entre detectores (mesmo sistema/energia/centralidade) & & \textbf{em andamento} \\
+3. Aplicar na calibração & fontes aprendidas $\to$ nuisances $\lambda_a$ com prior Gamma & MCMC com likelihood fatorada por bloco & & \afazer \\
+4. Escala / CQ & réplicas não rotuladas & Tensor PCA: MPS (clássico) ou Hastings (quântico) & validado em réplicas sintéticas (STAR $v_2(\eta)$); custo estimado & --- \\
+\bottomrule
+\end{tabularx}
+
+\section*{Visão geral: todas as fatias}
+\begin{tabularx}{\linewidth}{@{}l Y l r l l l@{}}
+\toprule
+fatia & fonte sistemática & observável & pontos & dificuldade & status & detalhe \\
+\midrule
+2a & normalização (offset comum + inclinação em centralidade) & $dN/d\eta$ PHOBOS & 594 & fácil & \feito & este mapa \\
+R1 & região em $\eta$: parte ímpar (east/west) & $dN/d\eta$ PHOBOS & 594 & fácil & \feito & \arq{MAPA_regiao_eta} \\
+R2 & região em $\eta$: FTPC east/west vs TPC & $v_2(\eta)$ STAR & 21 & fácil & \agora & \arq{MAPA_regiao_eta} \\
+R3 & região em $\eta$: escala Rings/Octagon (salto em $|\eta|\approx3{,}2$) & $dN/d\eta$ PHOBOS & 594 & média & \afazer & \arq{MAPA_regiao_eta} \\
+R4 & região em $\eta$: forma central (par) & $dN/d\eta$ PHOBOS & 594 & média & \afazer & \arq{MAPA_regiao_eta} \\
+R5 & região em $\eta$: forma dianteira, Rings (par) & $dN/d\eta$ PHOBOS & 594 & \textbf{difícil} & \afazer & \arq{MAPA_regiao_eta} \\
+2d & normalização e forma em $p_T$; método (non-flow) & $v_2(p_T)$ STAR, PHENIX & 96 & média & \afazer & este mapa \\
+2e & --- (sem comparações) & $v_2(\eta)$ PHOBOS, STAR & 69 & --- & \textbf{sem dados} & este mapa \\
+--- & correlação PHOBOS $\leftrightarrow$ PHENIX (calibração cruzada) & $dN/d\eta$ d+Au PHENIX & 102 & fácil & \afazer & este mapa \\
+--- & não levantado & $\langle p_T\rangle$; $v_2,v_3(\mathrm{cent})$ & 42 & ? & \afazer & --- \\
+\bottomrule
+\end{tabularx}
+
+Dificuldade: \emph{fácil} = dados já disponíveis e teste direto; \emph{média} = exige modelagem (forma esperada, métodos);
+\emph{difícil} = poucas comparações e dependência de outro experimento.
+
+\section*{Cobertura dos 917 pontos da calibração (Tabela II)}
+\begin{tabularx}{\linewidth}{@{}Y r l Y@{}}
+\toprule
+observável & pontos & fatia & situação \\
+\midrule
+$dN/d\eta(\eta)$ Au+Au, PHOBOS & 594 & 2a, R1, R3--R5 & 2a e R1 feitas \\
+$dN/d\eta(\eta)$ d+Au, PHENIX & 102 & --- & calibrado pelo PHOBOS: correlação conhecida PHOBOS $\leftrightarrow$ PHENIX \\
+$v_2(p_T)$ Au+Au (STAR, PHENIX), d+Au (STAR, PHENIX) & 96 & 2d & \afazer \\
+$v_2(\eta)$ Au+Au (PHOBOS, STAR), d+Au (PHENIX) & 83 & 2e, R2 & sem comparações entre detectores; STAR testável por simetria (R2) \\
+$\langle p_T\rangle$ $\pi$, K, p Au+Au (STAR, PHENIX) & 30 & --- & \textbf{não levantado} (possível sobreposição em K) \\
+$v_2(\mathrm{cent})$, $v_3(\mathrm{cent})$ Au+Au, STAR & 12 & --- & \textbf{não levantado} \\
+\midrule
+\textbf{total} & \textbf{917} & & \\
+\bottomrule
+\end{tabularx}
+
+Por pontos: $\sim$76\% cobertos ou com correlação identificada ($dN/d\eta$), $\sim$10\% com comparações disponíveis ($v_2(p_T)$),
+$\sim$9\% sem comparações ($v_2(\eta)$), $\sim$5\% ainda não levantados.
+
+\section*{As fatias do degrau 2 (aprender de dados reais)}
+Fonte de ``réplicas'': a diferença entre dois detectores medindo a mesma coisa,
+\[
+y_A - y_B = \mathrm{sys}_A - \mathrm{sys}_B \;(+\,\text{ruído estatístico}).
+\]
+Levantamento: \arq{cross_detector_overlaps.md} (136 comparações, $\sim$695 bins).
+
+\subsection*{Observável $dN/d\eta$ (cobre o PHOBOS: 594 dos 917 pontos)}
+\begin{tabularx}{\linewidth}{@{}l Y Y c l@{}}
+\toprule
+fatia & o que aprende & dados & nº comp. & status \\
+\midrule
+\textbf{2a. Normalização ($\eta\approx0$)} & offset global por classe de centralidade; variância e assimetria & PHOBOS, PHENIX, BRAHMS, sPHENIX em $\eta\approx0$, várias energias e sistemas & $\sim$80 & \feito{} (\arq{fatia2a/fatia2a.pdf}) \\
+2b. Forma em $\eta$, central ($|\eta|<1{,}1$) & fontes que variam com $\eta$; testa se a normalização é plana em $\eta$ & PHOBOS--sPHENIX Au+Au 200 (11 classes idênticas) & $\sim$15 & $\to$ R4 em \arq{MAPA_regiao_eta.tex} \\
+2c. Forma em $\eta$, dianteira ($|\eta|>3{,}2$, Rings) & sistemático dos Rings & PHOBOS--BRAHMS & $\sim$9 & $\to$ R5 em \arq{MAPA_regiao_eta.tex} \\
+\bottomrule
+\end{tabularx}
+
+\subsection*{Plano da fatia 2a}
+Para cada comparação (sistema, energia, centralidade) entre detectores $A$ e $B$:
+\[
+r = \ln y_A - \ln y_B = e_A - e_B + \text{ruído estatístico},
+\]
+com $e_d$ o erro de normalização do detector $d$ (em log, como na likelihood do JETSCAPE).
+
+\textbf{Limite 1 --- N efetivo.} As $\sim$80 comparações vêm de $\sim$7 conjuntos de dados (sistema $\times$ energia).
+A normalização global é comum a todas as classes de um conjunto $\Rightarrow$ $N\approx7$ para ela.
+A variação com a centralidade aparece classe a classe $\Rightarrow$ mede a \textbf{correlação entre as 11 classes do PHOBOS}
+(o bloco fora da diagonal que o JETSCAPE zerou e o degrau 1 supôs).
+
+\textbf{Limite 2 --- 3º momento relativo.} Com três detectores, as variâncias se separam (\emph{three-cornered hat}):
+$\mathrm{Var}(A-B),\mathrm{Var}(A-C),\mathrm{Var}(B-C)\to\sigma_A^2,\sigma_B^2,\sigma_C^2$.
+Mas $\kappa_3(A-B)=\kappa_3(A)-\kappa_3(B)$ e as três diferenças somam zero $\Rightarrow$ só a assimetria \emph{relativa} é identificável, sem âncora.
+
+\textbf{Entrega esperada:} 2º momento (variâncias por detector; correlação entre classes do PHOBOS) medido;
+3º momento apenas indicativo e relativo.
+
+\textbf{Resultado da 2a:} erro quase totalmente correlacionado entre classes de centralidade ($\rho_{\mathrm{ef}}=0{,}95$--$1{,}00$);
+covariância $\approx$ offset + inclinação em centralidade + 0,5--2\% diagonal; offsets dentro das incertezas citadas;
+3º momento compatível com zero. \textbf{A verificar:} sistemáticos do PHOBOS na calibração parecem estar em 90\% C.L.\ (não $1\sigma$).
+
+\subsection*{Observável $v_2$}
+\begin{tabularx}{\linewidth}{@{}l Y Y c l@{}}
+\toprule
+fatia & o que aprende & dados & nº comp. & status \\
+\midrule
+2d. $v_2(p_T)$ & normalização e forma em $p_T$; efeito de método (non-flow) & STAR--PHENIX & 28 & \afazer \\
+2e. $v_2(\eta)$ & --- & nenhuma centralidade coincide & 0 & \textbf{sem dados} \\
+\bottomrule
+\end{tabularx}
+
+\subsection*{Blocos menores da calibração}
+STAR $\langle p_T\rangle$, PHENIX d+Au etc.: não cobertos pelas comparações; ficam com o tratamento do degrau 1 ou com a variância publicada.
+
+\section*{Hipóteses a declarar}
+\begin{enumerate}[nosep]
+\item \textbf{Transferência:} o sistemático de um detector é estável entre runs, energias e sistemas.
+\item \textbf{Normalização independente de $\eta$} (testada na fatia 2b). Em log, vira um vetor constante $\hat v\propto\mathbb{1}$ no bloco.
+\item \textbf{Diferenças medem $\mathrm{sys}_A-\mathrm{sys}_B$:} separar cada detector exige $\geq3$ detectores sobrepostos ou uma âncora.
+\item O PHOBOS publica sistemáticos em 90\% C.L. ($\div1{,}645$ para $1\sigma$).
+\item O $dN/d\eta$ do PHENIX em d+Au é calibrado pelo PHOBOS $\Rightarrow$ excluído como comparação independente.
+\item Janelas de ``$\eta\approx0$'' diferem (PHOBOS $|\eta|<1$, PHENIX $|\eta|<0{,}35$, sPHENIX $|\eta|<0{,}3$): corrigir pela forma em $\eta$ antes de calcular os momentos.
+\end{enumerate}
+
+\section*{Arquivos}
+\begin{itemize}[nosep]
+\item \arq{replicas_survey.md} --- repetições do mesmo detector (máx.\ $N=3$; insuficiente)
+\item \arq{cross_detector_overlaps.md} --- comparações entre detectores (base do degrau 2)
+\item \arq{data/} --- dados de $\eta\approx0$ da fatia 2a (em coleta)
+\item \arq{MAPA.tex} --- este arquivo
+\end{itemize}
+\end{document}

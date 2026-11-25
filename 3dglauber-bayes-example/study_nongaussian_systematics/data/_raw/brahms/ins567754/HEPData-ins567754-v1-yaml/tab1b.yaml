@@ -1,0 +1,338 @@
+dependent_variables:
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: CENTRALITY, units: PCT, value: 0-5}
+  - {name: DETECTOR, value: Beam Beam Counters}
+  values:
+  - errors:
+    - {label: stat, symerror: 1.2}
+    value: 166.0
+  - errors:
+    - {label: stat, symerror: 5.3}
+    value: 198.0
+  - errors:
+    - {label: stat, symerror: 19.0}
+    value: 259.0
+  - errors:
+    - {label: stat, symerror: 15.0}
+    value: 332.0
+  - errors:
+    - {label: stat, symerror: 17.0}
+    value: 366.0
+  - errors:
+    - {label: stat, symerror: 14.0}
+    value: 429.0
+  - errors:
+    - {label: stat, symerror: 8.9}
+    value: 477.0
+  - errors:
+    - {label: stat, symerror: 9.9}
+    value: 512.0
+  - errors:
+    - {label: stat, symerror: 13.0}
+    value: 553.0
+  - errors:
+    - {label: stat, symerror: 22.0}
+    value: 492.0
+  - errors:
+    - {label: stat, symerror: 14.0}
+    value: 443.0
+  - errors:
+    - {label: stat, symerror: 11.0}
+    value: 394.0
+  - errors:
+    - {label: stat, symerror: 2.4}
+    value: 338.0
+  - errors:
+    - {label: stat, symerror: 14.0}
+    value: 273.0
+  - errors:
+    - {label: stat, symerror: 5.4}
+    value: 199.0
+  - errors:
+    - {label: stat, symerror: 1.9}
+    value: 154.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: CENTRALITY, units: PCT, value: 5-10}
+  - {name: DETECTOR, value: Beam Beam Counters}
+  values:
+  - errors:
+    - {label: stat, symerror: 1.2}
+    value: 139.0
+  - errors:
+    - {label: stat, symerror: 3.6}
+    value: 172.0
+  - errors:
+    - {label: stat, symerror: 15.0}
+    value: 220.0
+  - errors:
+    - {label: stat, symerror: 13.0}
+    value: 279.0
+  - errors:
+    - {label: stat, symerror: 13.0}
+    value: 309.0
+  - errors:
+    - {label: stat, symerror: 13.0}
+    value: 364.0
+  - errors:
+    - {label: stat, symerror: 8.2}
+    value: 401.0
+  - errors:
+    - {label: stat, symerror: 6.8}
+    value: 432.0
+  - errors:
+    - {label: stat, symerror: 9.5}
+    value: 447.0
+  - errors:
+    - {label: stat, symerror: 15.0}
+    value: 413.0
+  - errors:
+    - {label: stat, symerror: 7.1}
+    value: 373.0
+  - errors:
+    - {label: stat, symerror: 7.5}
+    value: 334.0
+  - errors:
+    - {label: stat, symerror: 3.2}
+    value: 285.0
+  - errors:
+    - {label: stat, symerror: 9.6}
+    value: 234.0
+  - errors:
+    - {label: stat, symerror: 5.5}
+    value: 173.0
+  - errors:
+    - {label: stat, symerror: 1.7}
+    value: 139.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: CENTRALITY, units: PCT, value: 10-20}
+  - {name: DETECTOR, value: Beam Beam Counters}
+  values:
+  - errors:
+    - {label: stat, symerror: 0.77}
+    value: 115.0
+  - errors:
+    - {label: stat, symerror: 2.1}
+    value: 137.0
+  - errors:
+    - {label: stat, symerror: 9.4}
+    value: 172.0
+  - errors:
+    - {label: stat, symerror: 8.7}
+    value: 217.0
+  - errors:
+    - {label: stat, symerror: 7.9}
+    value: 242.0
+  - errors:
+    - {label: stat, symerror: 7.1}
+    value: 284.0
+  - errors:
+    - {label: stat, symerror: 3.7}
+    value: 315.0
+  - errors:
+    - {label: stat, symerror: 5.8}
+    value: 336.0
+  - errors:
+    - {label: stat, symerror: 10.0}
+    value: 348.0
+  - errors:
+    - {label: stat, symerror: 9.3}
+    value: 320.0
+  - errors:
+    - {label: stat, symerror: 5.7}
+    value: 291.0
+  - errors:
+    - {label: stat, symerror: 5.6}
+    value: 262.0
+  - errors:
+    - {label: stat, symerror: 4.7}
+    value: 224.0
+  - errors:
+    - {label: stat, symerror: 7.9}
+    value: 182.0
+  - errors:
+    - {label: stat, symerror: 3.2}
+    value: 135.0
+  - errors:
+    - {label: stat, symerror: 1.1}
+    value: 112.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: CENTRALITY, units: PCT, value: 20-30}
+  - {name: DETECTOR, value: Beam Beam Counters}
+  values:
+  - errors:
+    - {label: stat, symerror: 0.68}
+    value: 82.2
+  - errors:
+    - {label: stat, symerror: 1.6}
+    value: 100.0
+  - errors:
+    - {label: stat, symerror: 5.9}
+    value: 121.0
+  - errors:
+    - {label: stat, symerror: 5.1}
+    value: 151.0
+  - errors:
+    - {label: stat, symerror: 3.4}
+    value: 171.0
+  - errors:
+    - {label: stat, symerror: 3.4}
+    value: 200.0
+  - errors:
+    - {label: stat, symerror: 2.7}
+    value: 222.0
+  - errors:
+    - {label: stat, symerror: 6.6}
+    value: 235.0
+  - errors:
+    - {label: stat, symerror: 9.3}
+    value: 239.0
+  - errors:
+    - {label: stat, symerror: 6.5}
+    value: 224.0
+  - errors:
+    - {label: stat, symerror: 4.4}
+    value: 205.0
+  - errors:
+    - {label: stat, symerror: 5.3}
+    value: 185.0
+  - errors:
+    - {label: stat, symerror: 5.3}
+    value: 159.0
+  - errors:
+    - {label: stat, symerror: 6.3}
+    value: 127.0
+  - errors:
+    - {label: stat, symerror: 2.2}
+    value: 97.5
+  - errors:
+    - {label: stat, symerror: 0.92}
+    value: 79.6
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: CENTRALITY, units: PCT, value: 30-40}
+  - {name: DETECTOR, value: Beam Beam Counters}
+  values:
+  - errors:
+    - {label: stat, symerror: 0.57}
+    value: 59.1
+  - errors:
+    - {label: stat, symerror: 0.58}
+    value: 70.1
+  - errors:
+    - {label: stat, symerror: 3.0}
+    value: 84.2
+  - errors:
+    - {label: stat, symerror: 2.8}
+    value: 102.0
+  - errors:
+    - {label: stat, symerror: 2.0}
+    value: 116.0
+  - errors:
+    - {label: stat, symerror: 2.9}
+    value: 136.0
+  - errors:
+    - {label: stat, symerror: 3.3}
+    value: 150.0
+  - errors:
+    - {label: stat, symerror: 5.7}
+    value: 158.0
+  - errors:
+    - {label: stat, symerror: 4.9}
+    value: 162.0
+  - errors:
+    - {label: stat, symerror: 5.1}
+    value: 151.0
+  - errors:
+    - {label: stat, symerror: 4.0}
+    value: 139.0
+  - errors:
+    - {label: stat, symerror: 4.6}
+    value: 127.0
+  - errors:
+    - {label: stat, symerror: 4.6}
+    value: 108.0
+  - errors:
+    - {label: stat, symerror: 4.7}
+    value: 86.4
+  - errors:
+    - {label: stat, symerror: 1.5}
+    value: 68.4
+  - errors:
+    - {label: stat, symerror: 0.75}
+    value: 56.5
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: CENTRALITY, units: PCT, value: 40-50}
+  - {name: DETECTOR, value: Beam Beam Counters}
+  values:
+  - errors:
+    - {label: stat, symerror: 0.47}
+    value: 40.3
+  - errors:
+    - {label: stat, symerror: 0.6}
+    value: 46.7
+  - errors:
+    - {label: stat, symerror: 1.5}
+    value: 54.7
+  - errors:
+    - {label: stat, symerror: 1.7}
+    value: 66.2
+  - errors:
+    - {label: stat, symerror: 0.84}
+    value: 74.3
+  - errors:
+    - {label: stat, symerror: 1.7}
+    value: 86.8
+  - errors:
+    - {label: stat, symerror: 1.2}
+    value: 96.2
+  - errors:
+    - {label: stat, symerror: 1.8}
+    value: 102.0
+  - errors:
+    - {label: stat, symerror: 3.6}
+    value: 100.0
+  - errors:
+    - {label: stat, symerror: 2.8}
+    value: 96.3
+  - errors:
+    - {label: stat, symerror: 3.2}
+    value: 89.4
+  - errors:
+    - {label: stat, symerror: 3.3}
+    value: 81.8
+  - errors:
+    - {label: stat, symerror: 3.3}
+    value: 70.2
+  - errors:
+    - {label: stat, symerror: 3.2}
+    value: 57.6
+  - errors:
+    - {label: stat, symerror: 0.62}
+    value: 45.3
+  - errors:
+    - {label: stat, symerror: 0.61}
+    value: 37.9
+independent_variables:
+- header: {name: ETARAP}
+  values:
+  - {high: -4.5, low: -4.9}
+  - {high: -4.1, low: -4.5}
+  - {high: -3.8, low: -4.2}
+  - {high: -3.6, low: -4.0}
+  - {high: -3.3, low: -3.7}
+  - {high: -2.9, low: -3.3}
+  - {high: -2.7, low: -3.1}
+  - {high: -2.3, low: -2.7}
+  - {high: 2.7, low: 2.3}
+  - {high: 3.1, low: 2.7}
+  - {high: 3.3, low: 2.9}
+  - {high: 3.7, low: 3.3}
+  - {high: 4.0, low: 3.6}
+  - {high: 4.2, low: 3.8}
+  - {high: 4.5, low: 4.1}
+  - {high: 4.9, low: 4.5}

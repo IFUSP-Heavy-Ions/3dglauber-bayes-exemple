@@ -1,0 +1,26 @@
+# Global RBF (common physical lengths) MCMC, 3dglauber-bayes-example.
+# Same sampler settings as the sector/global-CS studies except production = 20 000 steps (as the paper).
+# Submit from this directory on the HPC submit node:
+#   mkdir -p logs && condor_submit condor_rbf_global.sub
+# Check first (no emulator, no MCMC):
+#   $(PYTHON) bayes_mcmc_rbf_global.py --rbf-length-pt 0.5 --rbf-length-eta 1 --rbf-length-centrality 10 --check-covariance
+PROJECT = /storage/avilamrs/code-space/my-work/jetscape-emulator/3dglauber-bayes-example
+PYTHON  = /storage/avilamrs/code-space/my-work/jetscape-emulator/.venv/bin/python
+NCPUS   = 20
+
+universe = vanilla
+getenv = True
+initialdir = $(PROJECT)
+executable = $(PYTHON)
+arguments = -u bayes_mcmc_rbf_global.py --rbf-length-pt 0.5 --rbf-length-eta 1 --rbf-length-centrality 10 --nwalkers 200 --nburnsteps 20000 --ncpus $(NCPUS) --status 1000 20000
+request_cpus = $(NCPUS)
+request_memory = 16GB
+request_disk = 20GB
+requirements = !regexp("qgp2", TARGET.Machine) && !regexp("usphydro", TARGET.Machine)
+environment = "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 PYTHONUNBUFFERED=1"
+should_transfer_files = NO
++WantFlocking = True
+output = $(PROJECT)/mcmc/02_02_global_rbf/logs/rbf_global.$(ClusterId).$(ProcId).out
+error  = $(PROJECT)/mcmc/02_02_global_rbf/logs/rbf_global.$(ClusterId).$(ProcId).err
+log    = $(PROJECT)/mcmc/02_02_global_rbf/logs/rbf_global.$(ClusterId).$(ProcId).log
+queue

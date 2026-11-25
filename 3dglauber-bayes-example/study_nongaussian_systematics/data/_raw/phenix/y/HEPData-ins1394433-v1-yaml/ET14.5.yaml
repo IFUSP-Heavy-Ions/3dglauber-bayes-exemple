@@ -1,0 +1,184 @@
+dependent_variables:
+- header: {name: '$N_{part}$'}
+  qualifiers:
+  - {name: centrality, value: ''}
+  values:
+  - errors:
+    - {label: sys, symerror: 4.2}
+    value: 337.3
+  - errors:
+    - {label: sys, symerror: 4.9}
+    value: 287.7
+  - errors:
+    - {label: sys, symerror: 5.5}
+    value: 242.5
+  - errors:
+    - {label: sys, symerror: 5.9}
+    value: 205.1
+  - errors:
+    - {label: sys, symerror: 6.4}
+    value: 172.6
+  - errors:
+    - {label: sys, symerror: 7.8}
+    value: 143.6
+  - errors:
+    - {label: sys, symerror: 7.2}
+    value: 119.2
+  - errors:
+    - {label: sys, symerror: 5.8}
+    value: 98.3
+  - errors:
+    - {label: sys, symerror: 5.6}
+    value: 80.2
+  - errors:
+    - {label: sys, symerror: 4.7}
+    value: 63.9
+- header: {name: '$N_{q}$'}
+  qualifiers:
+  - {name: centrality, value: ''}
+  values:
+  - errors:
+    - {label: sys, symerror: 27.5}
+    value: 852.0
+  - errors:
+    - {label: sys, symerror: 23.4}
+    value: 710.1
+  - errors:
+    - {label: sys, symerror: 22.0}
+    value: 585.6
+  - errors:
+    - {label: sys, symerror: 19.7}
+    value: 485.5
+  - errors:
+    - {label: sys, symerror: 19.6}
+    value: 400.4
+  - errors:
+    - {label: sys, symerror: 21.7}
+    value: 325.9
+  - errors:
+    - {label: sys, symerror: 19.2}
+    value: 264.9
+  - errors:
+    - {label: sys, symerror: 14.8}
+    value: 213.7
+  - errors:
+    - {label: sys, symerror: 13.6}
+    value: 170.2
+  - errors:
+    - {label: sys, symerror: 11.0}
+    value: 132.2
+- header: {name: '$dE_{T}/d\eta$'}
+  qualifiers:
+  - {name: centrality, value: ''}
+  values:
+  - errors:
+    - {label: sys, symerror: 14.0}
+    value: 200.4
+  - errors:
+    - {label: sys, symerror: 11.5}
+    value: 164.0
+  - errors:
+    - {label: sys, symerror: 9.4}
+    value: 134.9
+  - errors:
+    - {label: sys, symerror: 7.8}
+    value: 111.0
+  - errors:
+    - {label: sys, symerror: 6.4}
+    value: 91.1
+  - errors:
+    - {label: sys, symerror: 5.2}
+    value: 74.4
+  - errors:
+    - {label: sys, symerror: 4.2}
+    value: 60.2
+  - errors:
+    - {label: sys, symerror: 3.4}
+    value: 48.2
+  - errors:
+    - {label: sys, symerror: 2.7}
+    value: 38.2
+  - errors:
+    - {label: sys, symerror: 2.1}
+    value: 29.7
+- header: {name: '$(dE_{T}/d\eta)/N_{part}$'}
+  qualifiers:
+  - {name: centrality, value: ''}
+  values:
+  - errors:
+    - {label: sys, symerror: 0.08}
+    value: 1.19
+  - errors:
+    - {label: sys, symerror: 0.08}
+    value: 1.14
+  - errors:
+    - {label: sys, symerror: 0.08}
+    value: 1.11
+  - errors:
+    - {label: sys, symerror: 0.08}
+    value: 1.08
+  - errors:
+    - {label: sys, symerror: 0.08}
+    value: 1.06
+  - errors:
+    - {label: sys, symerror: 0.09}
+    value: 1.04
+  - errors:
+    - {label: sys, symerror: 0.09}
+    value: 1.01
+  - errors:
+    - {label: sys, symerror: 0.09}
+    value: 0.98
+  - errors:
+    - {label: sys, symerror: 0.09}
+    value: 0.95
+  - errors:
+    - {label: sys, symerror: 0.09}
+    value: 0.93
+- header: {name: '$(dE_{T}/d\eta)/N_{q}$'}
+  qualifiers:
+  - {name: centrality, value: ''}
+  values:
+  - errors:
+    - {label: sys, symerror: 0.04}
+    value: 0.47
+  - errors:
+    - {label: sys, symerror: 0.04}
+    value: 0.46
+  - errors:
+    - {label: sys, symerror: 0.04}
+    value: 0.46
+  - errors:
+    - {label: sys, symerror: 0.04}
+    value: 0.46
+  - errors:
+    - {label: sys, symerror: 0.04}
+    value: 0.46
+  - errors:
+    - {label: sys, symerror: 0.04}
+    value: 0.46
+  - errors:
+    - {label: sys, symerror: 0.05}
+    value: 0.45
+  - errors:
+    - {label: sys, symerror: 0.04}
+    value: 0.45
+  - errors:
+    - {label: sys, symerror: 0.05}
+    value: 0.45
+  - errors:
+    - {label: sys, symerror: 0.05}
+    value: 0.45
+independent_variables:
+- header: {name: centrality}
+  values:
+  - {high: 5, low: 0}
+  - {high: 10, low: 5}
+  - {high: 15, low: 10}
+  - {high: 20, low: 15}
+  - {high: 25, low: 20}
+  - {high: 30, low: 25}
+  - {high: 35, low: 30}
+  - {high: 40, low: 35}
+  - {high: 45, low: 40}
+  - {high: 50, low: 45}

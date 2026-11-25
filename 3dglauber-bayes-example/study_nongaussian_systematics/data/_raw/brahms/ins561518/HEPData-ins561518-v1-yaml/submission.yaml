@@ -1,0 +1,151 @@
+additional_resources:
+- {description: Figures and original data files, location: 'http://www4.rcf.bnl.gov/brahms/WWW/publication-data/mult_2000',
+  type: url}
+- {description: BRAHMS Homepage, location: 'http://www4.rcf.bnl.gov/brahms/WWW', type: url}
+comment: We present charged particle densities as a function of pseudorapidity and
+  collision centrality for the 197Au+197Au reaction at sqrt{s_{NN}}=130 GeV. An integral
+  charged particle multiplicity of 3860+/-300 is found for the 5% most central events
+  within the pseudorapidity range -4.7 <= eta <= 4.7. At mid-rapidity an enhancement
+  in the particle yields per participant nucleon pair is observed for central events.
+  Near to the beam rapidity, a scaling of the particle yields consistent with the
+  ``limiting fragmentation'' picture is observed. Our results are compared to other
+  recent experimental and theoretical discussions of charged particle densities in
+  ultra-relativistic heavy-ion collisions.
+hepdata_doi: 10.17182/hepdata.110252.v1
+preprintyear: 2001-08
+publicationyear: '2001'
+record_ids:
+- {id: '561518', type: inspire}
+- {id: nucl-ex/0108016, type: arxiv}
+- {id: 10.1016/S0370-2693(01)01333-8, type: doi}
+- {id: '4705416', type: SPIRES}
+---
+additional_resources: []
+data_file: tab1.yaml
+description: 'NPART, $\mathrm{d}N/\mathrm{d}\eta$, $N_{\mathrm{ch}}^{\mathrm{tot}}$
+  versus $\mathrm{Centrality}$ for $x^{\pm}$ in $\mathrm{Au}-\mathrm{Au}$ at $\sqrt{s_{\mathrm{NN}}}=130\,\mathrm{Ge\!V}$ '
+keywords:
+- name: reactions
+  values: [AU AU --> CHARGED]
+- name: observables
+  values: [NPART, DN/DETARAP, DN/DETARAP, DN/DETARAP, DN/DETARAP, MULT]
+- name: cmenergies
+  values: [130.0]
+- name: phrases
+  values: [Pseudorapidity Symmetriced, Pseudorapidity Symmetriced, Pseudorapidity
+      Symmetriced, Pseudorapidity Symmetriced, Centrality Dependence]
+location: Table 1
+name: Table 1
+table_doi: 10.17182/hepdata.110252.v1/t1
+---
+additional_resources: []
+data_file: tab2a.yaml
+description: '$\mathrm{d}N/\mathrm{d}\eta$ versus $\eta$ for $x^{\pm}$ in $\mathrm{Au}-\mathrm{Au}$
+  at $\sqrt{s_{\mathrm{NN}}}=130\,\mathrm{Ge\!V}$ '
+keywords:
+- name: reactions
+  values: [AU AU --> CHARGED]
+- name: observables
+  values: [DN/DETARAP, DN/DETARAP, DN/DETARAP, DN/DETARAP, DN/DETARAP, DN/DETARAP]
+- name: cmenergies
+  values: [130.0]
+- name: phrases
+  values: [Pseudorapidity Symmetriced, Pseudorapidity Symmetriced, Pseudorapidity
+      Symmetriced, Pseudorapidity Symmetriced, Pseudorapidity Symmetriced, Pseudorapidity
+      Symmetriced, Pseudorapidity Dependence]
+location: Table 2
+name: Table 2a
+table_doi: 10.17182/hepdata.110252.v1/t2
+---
+additional_resources: []
+data_file: tab2b.yaml
+description: '$\mathrm{d}N/\mathrm{d}\eta$ versus $\eta$ for $x^{\pm}$ in $\mathrm{Au}-\mathrm{Au}$
+  at $\sqrt{s_{\mathrm{NN}}}=130\,\mathrm{Ge\!V}$ '
+keywords:
+- name: reactions
+  values: [AU AU --> CHARGED]
+- name: observables
+  values: [DN/DETARAP, DN/DETARAP, DN/DETARAP, DN/DETARAP, DN/DETARAP, DN/DETARAP]
+- name: cmenergies
+  values: [130.0]
+- name: phrases
+  values: [Pseudorapidity Symmetriced, Pseudorapidity Symmetriced, Pseudorapidity
+      Symmetriced, Pseudorapidity Symmetriced, Pseudorapidity Symmetriced, Pseudorapidity
+      Symmetriced, Pseudorapidity Dependence]
+location: Table 2
+name: Table 2b
+table_doi: 10.17182/hepdata.110252.v1/t3
+---
+additional_resources: []
+data_file: tab2c.yaml
+description: '$\mathrm{d}N/\mathrm{d}\eta$ versus $\eta$ for $x^{\pm}$ in $\mathrm{Au}-\mathrm{Au}$
+  at $\sqrt{s_{\mathrm{NN}}}=130\,\mathrm{Ge\!V}$ '
+keywords:
+- name: reactions
+  values: [AU AU --> CHARGED]
+- name: observables
+  values: [DN/DETARAP, DN/DETARAP, DN/DETARAP, DN/DETARAP, DN/DETARAP, DN/DETARAP]
+- name: cmenergies
+  values: [130.0]
+- name: phrases
+  values: [Pseudorapidity Symmetriced, Pseudorapidity Symmetriced, Pseudorapidity
+      Symmetriced, Pseudorapidity Symmetriced, Pseudorapidity Symmetriced, Pseudorapidity
+      Symmetriced, Pseudorapidity Dependence]
+location: Table 2
+name: Table 2c
+table_doi: 10.17182/hepdata.110252.v1/t4
+---
+additional_resources: []
+data_file: tab2d.yaml
+description: '$\mathrm{d}N/\mathrm{d}\eta$ versus $\eta$ for $x^{\pm}$ in $\mathrm{Au}-\mathrm{Au}$
+  at $\sqrt{s_{\mathrm{NN}}}=130\,\mathrm{Ge\!V}$ '
+keywords:
+- name: reactions
+  values: [AU AU --> CHARGED]
+- name: observables
+  values: [DN/DETARAP, DN/DETARAP, DN/DETARAP, DN/DETARAP, DN/DETARAP, DN/DETARAP]
+- name: cmenergies
+  values: [130.0]
+- name: phrases
+  values: [Pseudorapidity Symmetriced, Pseudorapidity Symmetriced, Pseudorapidity
+      Symmetriced, Pseudorapidity Symmetriced, Pseudorapidity Symmetriced, Pseudorapidity
+      Symmetriced, Pseudorapidity Dependence]
+location: Table 2
+name: Table 2d
+table_doi: 10.17182/hepdata.110252.v1/t5
+---
+additional_resources: []
+data_file: tab3.yaml
+description: '$\frac{\mathrm{d}N}{\mathrm{d}\eta}\frac{2}{N_{\mathrm{part}}}$ versus
+  $\eta$ for $x^{\pm}$ in $\mathrm{Au}-\mathrm{Au}$ at $\sqrt{s_{\mathrm{NN}}}=130\,\mathrm{Ge\!V}$ '
+keywords:
+- name: reactions
+  values: [AU AU --> CHARGED]
+- name: observables
+  values: [DN/DETARAP/(NPART/2), DN/DETARAP/(NPART/2)]
+- name: cmenergies
+  values: [130.0]
+- name: phrases
+  values: [Pseudorapidity Dependence, Density, Centrality Dependence, Pseudorapidity
+      Dependence, Density, Centrality Dependence, Pseudorapidity Dependence]
+location: Table 3
+name: Table 3
+table_doi: 10.17182/hepdata.110252.v1/t6
+---
+additional_resources: []
+data_file: tab4.yaml
+description: '$\mathrm{d}N/\mathrm{d}\eta$ versus $\eta$ for $x^{\pm}$ in $\mathrm{Au}-\mathrm{Au}$
+  at $\sqrt{s_{\mathrm{NN}}}=130\,\mathrm{Ge\!V}$ '
+keywords:
+- name: reactions
+  values: [AU AU --> CHARGED]
+- name: observables
+  values: [DN/DETARAP, DN/DETARAP, DN/DETARAP, DN/DETARAP]
+- name: cmenergies
+  values: [130.0]
+- name: phrases
+  values: [Pseudorapidity Symmetriced, Pseudorapidity Symmetriced, Pseudorapidity
+      Symmetriced, Pseudorapidity Symmetriced, Pseudorapidity Dependence]
+location: Table 4
+name: Table 4
+table_doi: 10.17182/hepdata.110252.v1/t7

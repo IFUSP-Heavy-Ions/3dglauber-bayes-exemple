@@ -1,0 +1,440 @@
+\pdfoutput=1
+% \documentclass[type=paper,linenumbering=on]{sphenix}
+\documentclass[type=preprint,linenumbering=off]{sphenix}
+
+\usepackage{upgreek}
+\usepackage[inline]{enumitem}
+\usepackage{cite}
+\usepackage{setspace}
+\usepackage{cellspace}
+\setlength\cellspacetoplimit{10pt}
+\setlength\cellspacebottomlimit{10pt}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\usepackage{float}
+
+\usepackage{orcidlink}
+
+%\renewcommand\thefootnote{\textcolor{red}{\arabic{footnote}}}
+
+\renewcommand{\thefootnote}{$\star$} 
+
+\begin{document}
+\include{defs}
+
+\title{Measurement of charged hadron multiplicity in \auau collisions at $\sqrt{\text{s}_{\text{NN}}}$\;=\;200~GeV with the \sphenix detector}
+\author{\sphenix Collaboration\footnote{See the appendix for the list of collaboration members}}
+\date{\today}
+
+%\doctag{sPH-PPG-2023-002}
+\doctag{sPH-BULK-2025-01}
+%\docversion{0.12}
+\docdoi{10.1007/JHEP08(2025)075}
+
+\maketitle
+
+\begin{abstract}
+  The pseudorapidity distribution of charged hadrons produced in \auau collisions at a center-of-mass energy of $\sqrtsnn=200\gev$ is measured using data collected by the \sphenix detector. Charged hadron yields are extracted by counting cluster pairs in the inner and outer layers of the Intermediate Silicon Tracker, with corrections applied for detector acceptance, reconstruction efficiency, combinatorial pairs, and contributions from secondary decays. The measured distributions cover $|\eta|<1.1$ across various centralities, and the average pseudorapidity density of charged hadrons at mid-rapidity is compared to predictions from Monte Carlo heavy-ion event generators. This result, featuring full azimuthal coverage at mid-rapidity, is consistent with previous experimental measurements at the Relativistic Heavy Ion Collider, thereby supporting the broader \sphenix physics program.
+\end{abstract}
+
+\input{introduction.tex}
+\input{detector.tex}
+\input{selection.tex}
+\input{analysis.tex}
+\input{systematic.tex}
+\input{result.tex}
+\input{conclusion.tex}
+
+\section*{Acknowledgements}
+
+We thank the Collider-Accelerator Division, SDCC and Physics
+Departments at Brookhaven National Laboratory and the staff of the
+other sPHENIX participating institutions for their vital
+contributions. We acknowledge support from the Office of Nuclear
+Physics and Graduate Student Research (SCGSR) program in the Office of
+Science of the U.S. Department of Energy, the U.S. National Science
+Foundation, the National Science and Technology Council, the Ministry
+of Education of Taiwan, and the Ministry of Economic Affairs (Taiwan),
+the Ministry of Education, Culture, Sports, Science, and Technology
+and the Japan Society for the Promotion of Science (Japan), Basic
+Science Research Programs through NRF funded by the Ministry of
+Education and the Ministry of Science and ICT (Korea) and the Swedish
+Research Council, VR (Sweden).
+
+\clearpage
+
+\bibliographystyle{unsrturl}
+\bibliography{bib/references}
+
+\newpage
+
+\appendix
+
+\section*{The sPHENIX Collaboration}
+
+\begin{flushleft} 
+\small
+
+M.~I.~Abdulhamid$^{13}$,
+U.~Acharya\,\orcidlink{0000-0001-8560-963X}\,$^{13}$,
+E. R.~Adams$^{7}$,
+G.~Adawi$^{13}$,
+C.~A.~Aidala\,\orcidlink{0000-0001-9540-4988}\,$^{26}$,
+Y.~Akiba$^{39}$,
+M.~Alfred$^{14}$,
+S.~Ali$^{13}$,
+A.~Alsayegh$^{10}$,
+S.~Altaf$^{15}$,
+H.~Amedi$^{13}$,
+D.~M.~Anderson\,\orcidlink{0000-0003-3845-2304}\,$^{17}$,
+V.~V.~Andrieux\,\orcidlink{0000-0001-9957-9910}\,$^{15}$,
+A.~Angerami\,\orcidlink{0000-0001-7834-8750}\,$^{21}$,
+N.~Applegate$^{17}$,
+H.~Aso$^{41}$,
+S.~Aune$^{6}$,
+B.~Azmoun\,\orcidlink{0000-0001-9824-3446}\,$^{3}$,
+V.~R.~Bailey\,\orcidlink{0000-0001-8291-5711}\,$^{13}$,
+D.~Baranyai$^{9}$,
+S.~Bathe\,\orcidlink{0000-0002-5154-3801}\,$^{2}$,
+A.~Bazilevsky$^{3}$,
+S.~Bela$^{22}$,
+R.~Belmont\,\orcidlink{0000-0001-5169-1698}\,$^{33}$,
+J.~Bennett$^{15}$,
+J.~C.~Bernauer$^{43}$,
+J.~Bertaux\,\orcidlink{0000-0002-6317-8194}\,$^{37}$,
+R.~Bi$^{7}$,
+A.~Bonenfant$^{6}$,
+S.~Boose$^{3}$,
+C.~Borchers$^{13}$,
+H.~Bossi\,\orcidlink{0000-0001-7602-6432}\,$^{25}$,
+R.~Botsford$^{22}$,
+R.~Boucher$^{11}$,
+A.~Brahma$^{13}$,
+J.~W.~Bryan\,\orcidlink{0000-0002-0377-6520}\,$^{35}$,
+D.~Cacace\,\orcidlink{0000-0003-2179-7939}\,$^{3}$,
+I.~Cali$^{25}$,
+M.~Chamizo-Llatas$^{3}$,
+S.~B.~Chauhan$^{35}$,
+A.~Chen$^{22}$,
+D.~Chen$^{43}$,
+J.~Chen$^{12}$,
+K.~Chen$^{5}$,
+K.~Y.~Chen$^{30}$,
+K.~Y.~Cheng$^{30}$,
+C.-Y.~Chi$^{8}$,
+M.~Chiu\,\orcidlink{0000-0001-9382-9093}\,$^{3}$,
+J.~Clement$^{7}$,
+E.~W.~Cline\,\orcidlink{0000-0001-9130-3856}\,$^{43}$,
+M.~Connors\,\orcidlink{0000-0002-8588-1657}\,$^{13}$,
+E.~Cook$^{15}$,
+R.~Corliss\,\orcidlink{0000-0002-5515-4563}\,$^{43}$,
+Y.~Corrales~Morales\,\orcidlink{0000-0003-2363-2652}\,$^{25}$,
+E.~Croft$^{22}$,
+N.~d'Hose\,\orcidlink{0009-0007-8104-9365}\,$^{6}$,
+A.~Dabas$^{13}$,
+D.~Dacosta$^{13}$,
+M.~Daradkeh$^{13}$,
+S.~J.~Das\,\orcidlink{0000-0003-2693-3389}\,$^{7}$,
+A.~P.~Dash\,\orcidlink{0000-0001-6351-9043}\,$^{4}$,
+G.~David$^{9,43}$,
+C.~T.~Dean\,\orcidlink{0000-0002-6002-5870}\,$^{25}$,
+K.~Dehmelt\,\orcidlink{0000-0002-3247-1857}\,$^{43}$,
+X.~Dong$^{20}$,
+A.~Drees\,\orcidlink{0000-0003-3672-1259}\,$^{43}$,
+J.~M.~Durham\,\orcidlink{0000-0002-5831-3398}\,$^{23}$,
+A.~Enokizono\,\orcidlink{0009-0006-1977-5369}\,$^{39}$,
+H.~Enyo$^{39}$,
+J.~Escobar~Cepero$^{13}$,
+R.~Esha\,\orcidlink{0000-0002-8146-4856}\,$^{43}$,
+B.~Fadem\,\orcidlink{0009-0001-6519-6177}\,$^{28}$,
+R.~Feder$^{3}$,
+K.~Finnelli$^{43}$,
+D.~Firak\,\orcidlink{0000-0003-0557-2422}\,$^{43}$,
+A.~Francisco\,\orcidlink{0000-0001-8658-995X}\,$^{6}$,
+J.~Frantz$^{35}$,
+A.~Frawley$^{11}$,
+K.~Fujiki$^{41}$,
+M.~Fujiwara$^{29}$,
+B.~Garcia$^{7}$,
+P.~Garg\,\orcidlink{0000-0001-5143-4384}\,$^{43}$,
+G.~Garmire$^{15}$,
+E.~Gentry$^{7}$,
+Y.~Go\,\orcidlink{0000-0003-1253-1223}\,$^{3}$,
+C.~Goblin$^{6}$,
+W.~Goodman$^{22}$,
+Y.~Goto$^{39}$,
+A.~Grabas\,\orcidlink{0009-0003-3225-526X}\,$^{6}$,
+O.~Grachov$^{48}$,
+J.~Granato$^{22}$,
+N.~Grau$^{1}$,
+S.~V.~Greene\,\orcidlink{0000-0002-7382-3003}\,$^{47}$,
+S.~K.~Grossberndt\,\orcidlink{0000-0002-7041-5098}\,$^{2}$,
+R.~Guidolini-Cecato$^{3}$,
+T.~Hachiya\,\orcidlink{0000-0001-7544-0156}\,$^{29}$,
+J.~S.~Haggerty\,\orcidlink{0000-0002-4806-3153}\,$^{3}$,
+R.~Hamilton$^{7}$,
+J.~Hammond$^{3}$,
+D.~A.~Hangal\,\orcidlink{0000-0002-3826-7232}\,$^{21}$,
+S.~Hasegawa$^{18}$,
+M.~Hata$^{29}$,
+W.~He$^{12}$,
+X.~He$^{13}$,
+T.~Hemmick$^{43}$,
+A.~Hodges\,\orcidlink{0000-0002-1021-2555}\,$^{15}$,
+M.~E.~Hoffmann$^{22}$,
+A.~Holt$^{14}$,
+B.~Hong\,\orcidlink{0000-0002-2259-9929}\,$^{19}$,
+M.~Housenga$^{15}$,
+S.~Howell$^{43}$,
+Y.~Hu$^{20}$,
+H.~Z.~Huang\,\orcidlink{0000-0002-6760-2394}\,$^{4}$,
+J.~Huang$^{3}$,
+T.~C.~Huang$^{32}$,
+D.~A.~Huffman\,\orcidlink{0000-0002-1355-2512}\,$^{22}$,
+C.~Hughes\,\orcidlink{0000-0002-2442-4583}\,$^{17,22}$,
+J.~Hwang$^{19}$,
+T.~Ichino$^{41}$,
+M.~Ikemoto$^{29}$,
+D.~Imagawa$^{41}$,
+H.~Imai$^{41}$,
+D.~Jah$^{7}$,
+J.~James\,\orcidlink{0000-0001-8940-8261}\,$^{47}$,
+H.-R.~Jheng\,\orcidlink{0000-0002-8115-5674}\,$^{25}$,
+Y.~Ji\,\orcidlink{0000-0001-8792-2312}\,$^{20}$,
+Z.~Ji\,\orcidlink{0000-0001-6855-2395}\,$^{4}$,
+H.~Jiang$^{8}$,
+M.~Kano$^{29}$,
+L.~Kasper$^{47}$,
+T.~Kato$^{41}$,
+Y.~Kawashima$^{41}$,
+M.~S.~Khan$^{13}$,
+T.~Kikuchi$^{41}$,
+J.~Kim$^{50}$,
+B.~Kimelman\,\orcidlink{0000-0002-3684-2627}\,$^{47}$,
+H.~T.~Klest\,\orcidlink{0000-0003-4695-0223}\,$^{43}$,
+A.~G.~Knospe\,\orcidlink{0000-0002-2211-715X}\,$^{22}$,
+M.~B.~Knuesel$^{7}$,
+H.~S.~Ko$^{20}$,
+J.~Kuczewski$^{3}$,
+N.~Kumar$^{2}$,
+R.~Kunnawalkam~Elayavalli\,\orcidlink{0000-0002-9202-1516}\,$^{47}$,
+C.~M.~Kuo\,\orcidlink{0000-0002-3028-9074}\,$^{30}$,
+J.~Kvapil\,\orcidlink{0000-0002-0298-9073}\,$^{23}$,
+Y.~Kwon$^{50}$,
+J.~Lajoie$^{34}$,
+J.~D.~Lang\,\orcidlink{0009-0004-5667-8352}\,$^{7}$,
+A.~Lebedev\,\orcidlink{0000-0002-9566-1850}\,$^{17}$,
+S.~Lee$^{45}$,
+L.~Legnosky$^{43}$,
+S.~Li$^{8}$,
+X.~Li\,\orcidlink{0000-0002-3167-8629}\,$^{23}$,
+T.~Lian$^{22}$,
+S.~Liechty$^{7}$,
+S.~Lim\,\orcidlink{0000-0001-6335-7427}\,$^{38}$,
+D.~Lis$^{7}$,
+M.~X.~Liu\,\orcidlink{0000-0002-5992-1221}\,$^{23}$,
+W.~J.~Llope\,\orcidlink{0000-0001-8635-5643}\,$^{48}$,
+D.~A.~Loomis\,\orcidlink{0000-0003-3969-1649}\,$^{26}$,
+R.-S.~Lu\,\orcidlink{0000-0001-6828-1695}\,$^{32}$,
+L.~Ma$^{12}$,
+W.~Ma$^{12}$,
+V.~Mahaut\,\orcidlink{0009-0008-0458-0619}\,$^{6}$,
+T.~Majoros$^{9}$,
+I.~Mandjavidze\,\orcidlink{0000-0001-6664-9062}\,$^{6}$,
+E.~Mannel\,\orcidlink{0000-0001-9474-8148}\,$^{3}$,
+C.~Markert\,\orcidlink{0000-0001-9675-4322}\,$^{46}$,
+T.~R.~Marshall\,\orcidlink{0000-0002-5750-3974}\,$^{4}$,
+C.~Martin$^{45}$,
+H.~Masuda$^{41}$,
+G.~Mattson\,\orcidlink{0009-0000-2941-0562}\,$^{15}$,
+M.~Mazeikis$^{15}$,
+C.~McGinn\,\orcidlink{0000-0003-1281-0193}\,$^{25}$,
+E.~McLaughlin\,\orcidlink{0000-0003-2824-1810}\,$^{8}$,
+J.~Mead$^{3}$,
+Y.~Mei\,\orcidlink{0000-0001-6383-9928}\,$^{20}$,
+T.~Mengel\,\orcidlink{0000-0002-1205-9742}\,$^{7,45}$,
+M.~Meskowitz\,\orcidlink{0009-0005-2395-6878}\,$^{22}$,
+J.~Mills$^{3}$,
+A.~Milov$^{49}$,
+C.~Mironov$^{25}$,
+G.~Mitsuka$^{40}$,
+N.~Morimoto$^{29}$,
+D.~Morrison\,\orcidlink{0000-0003-2723-4168}\,$^{3}$,
+L.~W.~Mwibanda$^{10}$,
+C.-J.~Na\"{i}m\,\orcidlink{0000-0001-5586-9027}\,$^{43}$,
+J.~L.~Nagle\,\orcidlink{0000-0003-0056-6613}\,$^{7}$,
+I.~Nakagawa\,\orcidlink{0000-0001-7408-6204}\,$^{39}$,
+Y.~Nakamura$^{41}$,
+G.~Nakano$^{41}$,
+A.~Narde\,\orcidlink{0000-0003-4897-507X}\,$^{15}$,
+C.~E.~Nattrass\,\orcidlink{0000-0002-8768-6468}\,$^{45}$,
+D.~Neff\,\orcidlink{0000-0002-3639-8458}\,$^{6}$,
+S.~Nelson$^{27}$,
+D.~Nemoto$^{41}$,
+P.~A.~Nieto-Mar\'{i}n\,\orcidlink{0000-0003-2125-3325}\,$^{17}$,
+R.~Nouicer$^{3}$,
+G.~Nukazuka\,\orcidlink{0000-0002-4327-9676}\,$^{39}$,
+E.~O'Brien\,\orcidlink{0000-0002-5787-7271}\,$^{3}$,
+G.~Odyniec$^{20}$,
+S.~Oh$^{20}$,
+V.~A.~Okorokov\,\orcidlink{0000-0002-7162-5345}\,$^{31}$,
+A.~C.~Oliveira~da~Silva\,\orcidlink{0000-0002-9421-5568}\,$^{17}$,
+J.~D.~Osborn\,\orcidlink{0000-0003-0697-7704}\,$^{3}$,
+G.~J.~Ottino\,\orcidlink{0000-0001-8083-6411}\,$^{20}$,
+Y.~C.~Ou$^{32}$,
+J.~Ouellette\,\orcidlink{0000-0002-0582-3765}\,$^{7}$,
+D.~Padrazo~Jr.$^{3}$,
+T.~Pani$^{42}$,
+J.~Park$^{7}$,
+A.~Patton\,\orcidlink{0000-0001-9173-4541}\,$^{25}$,
+H.~Pereira~Da~Costa\,\orcidlink{0000-0002-3863-352X}\,$^{23}$,
+D.~V.~Perepelitsa\,\orcidlink{0000-0001-8732-6908}\,$^{7}$,
+M.~Peters$^{25}$,
+S.~Ping$^{12}$,
+C.~Pinkenburg\,\orcidlink{0000-0003-1875-994X}\,$^{3}$,
+R.~Pisani$^{3}$,
+C.~Platte\,\orcidlink{0000-0003-1502-2766}\,$^{47}$,
+C.~Pontieri$^{3}$,
+T.~Protzman$^{22}$,
+M.~L.~Purschke$^{3}$,
+J.~Putschke$^{48}$,
+R.~J.~Reed\,\orcidlink{0000-0002-0821-0139}\,$^{22}$,
+L.~Reeves$^{15}$,
+S.~Regmi\,\orcidlink{0000-0003-2620-2578}\,$^{35}$,
+E.~Renner$^{23}$,
+D.~Richford\,\orcidlink{0000-0003-2455-1328}\,$^{2,51}$,
+C.~Riedl\,\orcidlink{0000-0002-7480-1826}\,$^{15}$,
+T.~Rinn\,\orcidlink{0000-0002-1295-1538}\,$^{23}$,
+C.~Roland\,\orcidlink{0000-0002-7312-5854}\,$^{25}$,
+G.~Roland\,\orcidlink{0000-0001-8983-2169}\,$^{25}$,
+A.~Romero~Hernandez$^{15}$,
+M.~Rosati\,\orcidlink{0000-0001-6524-0126}\,$^{17}$,
+D.~Roy$^{42}$,
+A.~Saed$^{22}$,
+T.~Sakaguchi\,\orcidlink{0000-0002-0240-7790}\,$^{3}$,
+H.~Sako$^{18}$,
+S.~Salur\,\orcidlink{0000-0002-4995-9285}\,$^{42}$,
+J.~Sandhu$^{22}$,
+M.~Sarsour\,\orcidlink{0000-0002-5970-6855}\,$^{13}$,
+S.~Sato$^{18}$,
+B.~Sayki$^{23}$,
+B.~Schaefer\,\orcidlink{0000-0002-2587-4412}\,$^{22}$,
+J.~Schambach\,\orcidlink{0000-0003-3266-1332}\,$^{34}$,
+R.~Seidl\,\orcidlink{0000-0002-6552-6973}\,$^{39}$,
+B.~D.~Seidlitz\,\orcidlink{0000-0002-4703-000X}\,$^{8}$,
+Y.~Sekiguchi\,\orcidlink{0009-0002-7491-3075}\,$^{39}$,
+M.~Shahid\,\orcidlink{0009-0009-7428-3713}\,$^{13}$,
+D.~M.~Shangase\,\orcidlink{0000-0002-0287-6124}\,$^{26}$,
+Z.~Shi$^{23}$,
+C.~W.~Shih\,\orcidlink{0000-0002-4370-5292}\,$^{30}$,
+K.~Shiina$^{41}$,
+M.~Shimomura\,\orcidlink{0000-0001-9598-779X}\,$^{29}$,
+R.~Shishikura$^{41}$,
+E.~Shulga\,\orcidlink{0000-0001-5099-7644}\,$^{43}$,
+A.~Sickles\,\orcidlink{0000-0002-3246-0330}\,$^{15}$,
+D.~Silvermyr\,\orcidlink{0000-0002-0526-5791}\,$^{24}$,
+R.~A.~Soltz\,\orcidlink{0000-0001-5859-2369}\,$^{21}$,
+W.~Sondheim$^{23}$,
+I.~Sourikova$^{3}$,
+P.~Steinberg\,\orcidlink{0000-0002-5349-8370}\,$^{3}$,
+D.~Stewart$^{48}$,
+S.~Stoll\,\orcidlink{0000-0002-3011-8865}\,$^{3}$,
+Y.~Sugiyama$^{29}$,
+O.~Suranyi\,\orcidlink{0000-0002-4684-495X}\,$^{2}$,
+W.-C.~Tang$^{30}$,
+S.~Tarafdar\,\orcidlink{0000-0002-6601-9359}\,$^{47}$,
+E.~Thorsland\,\orcidlink{0000-0002-0420-1980}\,$^{15}$,
+T.~Todoroki$^{40}$,
+L.~S.~Tsai$^{32}$,
+H.~Tsujibata$^{29}$,
+M.~Tsuruta$^{41}$,
+J.~Tutterow$^{13}$,
+E.~Tuttle$^{22}$,
+B.~Ujvari\,\orcidlink{0000-0003-0498-4265}\,$^{9}$,
+E.~N.~Umaka\,\orcidlink{0000-0001-7725-8227}\,$^{3}$,
+M.~Vandenbroucke\,\orcidlink{0000-0001-9055-4020}\,$^{6}$,
+J.~Vasquez$^{3}$,
+J.~Velkovska\,\orcidlink{0000-0003-1423-5241}\,$^{47}$,
+V.~Verkest\,\orcidlink{0000-0002-0109-397X}\,$^{48}$,
+A.~Vijayakumar\,\orcidlink{0009-0002-5561-5750}\,$^{15}$,
+X.~Wang$^{15}$,
+Y.~Wang$^{5}$,
+Z.~Wang$^{2}$,
+I.~S.~Ward\,\orcidlink{0009-0003-0893-4764}\,$^{22}$,
+M.~Watanabe$^{29}$,
+J.~Webb$^{3}$,
+A.~Wehe$^{15}$,
+A.~Wils$^{6}$,
+V.~Wolfe$^{22}$,
+C.~Woody\,\orcidlink{0000-0001-9977-8813}\,$^{3}$,
+W.~Xie\,\orcidlink{0000-0003-1430-9191}\,$^{37}$,
+Y.~Yamaguchi$^{40}$,
+Z.~Ye\,\orcidlink{0000-0001-6091-6772}\,$^{20}$,
+K.~Yip\,\orcidlink{0000-0002-8576-4311}\,$^{3}$,
+Z.~You\,\orcidlink{0000-0001-8324-3291}\,$^{44}$,
+G.~Young$^{3}$,
+C.-J.~Yu$^{16}$,
+X.~Yu$^{12}$,
+X.~Yu\,\orcidlink{0009-0005-7617-7069}\,$^{36}$,
+W.~A.~Zajc\,\orcidlink{0000-0002-9871-6511}\,$^{8}$,
+V.~Zakharov\,\orcidlink{0000-0001-6921-0194}\,$^{43}$,
+J.~Zhang$^{12}$,
+C.~Zimmerli$^{22}$
+
+\section*{Collaboration Institutes}
+
+$^{1}$ Augustana University, Sioux Falls, South Dakota\\
+$^{2}$ Baruch College, City University of New York, New York, New York\\
+$^{3}$ Brookhaven National Laboratory, Upton, New York\\
+$^{4}$ University of California, Los Angeles, California\\
+$^{5}$ Central China Normal University, Wuhan, Hubei\\
+$^{6}$ IRFU, CEA, Universit\'{e} Paris-Saclay, Gif-sur-Yvette, France\\
+$^{7}$ University of Colorado, Boulder, Colorado\\
+$^{8}$ Columbia University, New York, New York\\
+$^{9}$ Debrecen University, Debrecen, Hungary\\
+$^{10}$ Florida Agricultural and Mechanical University, Tallahassee, Florida\\
+$^{11}$ Florida State University, Tallahassee, Florida\\
+$^{12}$ Fudan University, Shanghai\\
+$^{13}$ Georgia State University, Atlanta, Georgia\\
+$^{14}$ Howard University, Washington, District of Columbia\\
+$^{15}$ University of Illinois at Urbana-Champaign, Urbana, Illinois\\
+$^{16}$ Institute for Information Industry, Taipei\\
+$^{17}$ Iowa State University, Ames, Iowa\\
+$^{18}$ Japan Atomic Energy Agency, Naka, Ibaraki, Japan\\
+$^{19}$ Korea University, Seoul, Korea\\
+$^{20}$ Lawrence Berkeley National Laboratory, Berkeley, California\\
+$^{21}$ Lawrence Livermore National Laboratory, Livermore, California\\
+$^{22}$ Lehigh University, Bethlehem, Pennsylvania\\
+$^{23}$ Los Alamos National Laboratory, Los Alamos, New Mexico\\
+$^{24}$ Lund University, Lund, Sweden\\
+$^{25}$ Massachusetts Institute of Technology, Cambridge, Massachusetts\\
+$^{26}$ University of Michigan, Ann Arbor, Michigan\\
+$^{27}$ Morgan State University, Baltimore, Maryland\\
+$^{28}$ Muhlenberg College, Allentown, Pennsylvania\\
+$^{29}$ Nara Women's University, Nara, Nara, Japan\\
+$^{30}$ National Central University, Taoyuan City\\
+$^{31}$ National Research Nuclear University, MEPhI, Moscow Engineering Physics Institute, Moscow, Russia\\
+$^{32}$ National Taiwan University, Taipei\\
+$^{33}$ University of North Carolina, Greensboro, North Carolina\\
+$^{34}$ Oak Ridge National Laboratory, Oak Ridge, Tennessee\\
+$^{35}$ Ohio University, Athens, Ohio\\
+$^{36}$ Peking University, Beijing\\
+$^{37}$ Purdue University, West Lafayette, Indiana\\
+$^{38}$ Pusan National University, Pusan, Korea\\
+$^{39}$ RIKEN Nishina Center for Accelerator-Based Science, Wako, Saitama, Japan\\
+$^{40}$ RIKEN BNL Research Center, Brookhaven National Laboratory, Upton, New York\\
+$^{41}$ Rikkyo University, Toshima, Tokyo, Japan\\
+$^{42}$ Rutgers University, Piscataway, New Jersey\\
+$^{43}$ State University of New York, Stony Brook, New York\\
+$^{44}$ Sun Yat-sen University, Guangzhou, Guangdong\\
+$^{45}$ University of Tennessee, Knoxville, Tennessee\\
+$^{46}$ University of Texas, Austin, Texas\\
+$^{47}$ Vanderbilt University, Nashville, Tennessee\\
+$^{48}$ Wayne State University, Detroit, Michigan\\
+$^{49}$ Weizmann Institute of Science, Rehovot, Israel\\
+$^{50}$ Yonsei University, Seoul, Korea\\
+$^{51}$ United States Merchant Marine Academy, Kings Point, New York\\
+
+\end{flushleft}
+
+\end{document}

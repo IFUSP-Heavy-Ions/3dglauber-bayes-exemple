@@ -1,0 +1,47 @@
+{
+  "baseline": "mcmc/01_01_baseline_reproduction/chain-idf-0.hdf",
+  "cs_sector": "mcmc/02_04_cs_sector/chain-idf-0-cs-observable-region-rho-1-a77902df73a5.hdf",
+  "nuisance": {
+    "path": "/storage/avilamrs/code-space/my-work/jetscape-emulator/3dglauber-bayes-example/mcmc/02_10_nongaussian_nuisance/chain-idf-0-nongauss-nuisance-6058bef13723.hdf",
+    "walkers": 200,
+    "steps": 20000,
+    "burnin": 0,
+    "thin": 50,
+    "samples": 80000,
+    "dropped_nonfinite": 0,
+    "attributes": {
+      "experimental_covariance_model": "diagonal_plus_nongaussian_nuisance",
+      "experimental_nuisance_labels": "[\"lambda_norm\", \"lambda_asym\", \"lambda_edge\"]",
+      "experimental_nuisance_observable": "Au-Au-200/v22_eta_cen_20_70_STAR",
+      "experimental_nuisance_s": "[0.011023133554355925, 0.009198860268882772, 0.004596753188247675]",
+      "experimental_nuisance_skew": "[2.024061884424205, 1.6147032149436131, 2.3442954213896816]",
+      "experimental_nuisance_sources_sha256": "6058bef13723ec694c6dd5758929bf178869f66dd50507c7e436bcd264fd644f"
+    }
+  },
+  "sources": {
+    "path": "study_nongaussian_systematics/data/inferred_sources.npz",
+    "sha256": "6058bef13723ec694c6dd5758929bf178869f66dd50507c7e436bcd264fd644f"
+  },
+  "n_prediction_samples": 1000,
+  "seed": 12345,
+  "star_v2_eta_summary": {
+    "baseline_backward_FTPC_median_over_data": 1.3374557362943207,
+    "baseline_TPC_median_over_data": 0.969914295844736,
+    "baseline_forward_FTPC_median_over_data": 1.3570505521417247,
+    "cs_backward_FTPC_median_over_data": 1.4328992894165646,
+    "cs_TPC_median_over_data": 0.9889978734846202,
+    "cs_forward_FTPC_median_over_data": 1.452437628509687,
+    "nuis_backward_FTPC_median_over_data": 1.3187917309789094,
+    "nuis_TPC_median_over_data": 0.9700777503050391,
+    "nuis_forward_FTPC_median_over_data": 1.3380309392761767,
+    "shift_median_backward_FTPC": -0.001732173366873586,
+    "shift_median_TPC": -0.0028360303168762186,
+    "shift_median_forward_FTPC": -0.002431290155414453
+  },
+  "bands": "Posterior variation of emulator means (68%); no emulator or experimental noise draws",
+  "versions": {
+    "python": "3.9.25",
+    "numpy": "1.20.3"
+  },
+  "script_sha256": "3487f17db58d62a7e9ce96604d00d822c387a5015a35c223feb1d76c7f1a874a"
+}

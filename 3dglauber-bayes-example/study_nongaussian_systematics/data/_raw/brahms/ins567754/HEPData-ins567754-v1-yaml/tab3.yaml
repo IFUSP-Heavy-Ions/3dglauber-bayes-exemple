@@ -1,0 +1,232 @@
+dependent_variables:
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: CENTRALITY, units: PCT, value: 0-5}
+  - {name: ETARAP, value: SYMMETRICED}
+  values:
+  - errors:
+    - {label: stat, symerror: 4.7}
+    value: 623.0
+  - errors:
+    - {label: stat, symerror: 4.6}
+    value: 625.0
+  - errors:
+    - {label: stat, symerror: 4.4}
+    value: 636.0
+  - errors:
+    - {label: stat, symerror: 4.0}
+    value: 634.0
+  - errors:
+    - {label: stat, symerror: 4.6}
+    value: 633.0
+  - errors:
+    - {label: stat, symerror: 3.2}
+    value: 620.0
+  - errors:
+    - {label: stat, symerror: 3.0}
+    value: 596.0
+  - errors:
+    - {label: stat, symerror: 2.8}
+    value: 568.0
+  - errors:
+    - {label: stat, symerror: 2.8}
+    value: 542.0
+  - errors:
+    - {label: stat, symerror: 8.9}
+    value: 508.0
+  - errors:
+    - {label: stat, symerror: 9.8}
+    value: 436.0
+  - errors:
+    - {label: stat, symerror: 9.3}
+    value: 386.0
+  - errors:
+    - {label: stat, symerror: 2.4}
+    value: 338.0
+  - errors:
+    - {label: stat, symerror: 11.0}
+    value: 268.0
+  - errors:
+    - {label: stat, symerror: 3.8}
+    value: 199.0
+  - errors:
+    - {label: stat, symerror: 3.7}
+    value: 162.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: CENTRALITY, units: PCT, value: 5-10}
+  - {name: ETARAP, value: SYMMETRICED}
+  values:
+  - errors:
+    - {label: stat, symerror: 4.1}
+    value: 498.0
+  - errors:
+    - {label: stat, symerror: 4.0}
+    value: 503.0
+  - errors:
+    - {label: stat, symerror: 3.8}
+    value: 505.0
+  - errors:
+    - {label: stat, symerror: 6.4}
+    value: 510.0
+  - errors:
+    - {label: stat, symerror: 10.0}
+    value: 520.0
+  - errors:
+    - {label: stat, symerror: 3.5}
+    value: 509.0
+  - errors:
+    - {label: stat, symerror: 4.4}
+    value: 488.0
+  - errors:
+    - {label: stat, symerror: 2.9}
+    value: 468.0
+  - errors:
+    - {label: stat, symerror: 2.4}
+    value: 445.0
+  - errors:
+    - {label: stat, symerror: 9.2}
+    value: 423.0
+  - errors:
+    - {label: stat, symerror: 6.2}
+    value: 371.0
+  - errors:
+    - {label: stat, symerror: 7.7}
+    value: 328.0
+  - errors:
+    - {label: stat, symerror: 3.1}
+    value: 285.0
+  - errors:
+    - {label: stat, symerror: 8.0}
+    value: 230.0
+  - errors:
+    - {label: stat, symerror: 3.0}
+    value: 172.0
+  - errors:
+    - {label: stat, symerror: 0.99}
+    value: 139.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: CENTRALITY, units: PCT, value: 20-30}
+  - {name: ETARAP, value: SYMMETRICED}
+  values:
+  - errors:
+    - {label: stat, symerror: 2.1}
+    value: 257.0
+  - errors:
+    - {label: stat, symerror: 1.9}
+    value: 257.0
+  - errors:
+    - {label: stat, symerror: 1.9}
+    value: 263.0
+  - errors:
+    - {label: stat, symerror: 3.5}
+    value: 264.0
+  - errors:
+    - {label: stat, symerror: 1.7}
+    value: 268.0
+  - errors:
+    - {label: stat, symerror: 2.6}
+    value: 266.0
+  - errors:
+    - {label: stat, symerror: 1.4}
+    value: 259.0
+  - errors:
+    - {label: stat, symerror: 1.3}
+    value: 250.0
+  - errors:
+    - {label: stat, symerror: 1.2}
+    value: 239.0
+  - errors:
+    - {label: stat, symerror: 3.8}
+    value: 230.0
+  - errors:
+    - {label: stat, symerror: 2.7}
+    value: 202.0
+  - errors:
+    - {label: stat, symerror: 4.6}
+    value: 175.0
+  - errors:
+    - {label: stat, symerror: 3.7}
+    value: 155.0
+  - errors:
+    - {label: stat, symerror: 4.3}
+    value: 124.0
+  - errors:
+    - {label: stat, symerror: 1.3}
+    value: 99.2
+  - errors:
+    - {label: stat, symerror: 0.86}
+    value: 81.3
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: CENTRALITY, units: PCT, value: 40-50}
+  - {name: ETARAP, value: SYMMETRICED}
+  values:
+  - errors:
+    - {label: stat, symerror: 1.5}
+    value: 110.0
+  - errors:
+    - {label: stat, symerror: 1.3}
+    value: 109.0
+  - errors:
+    - {label: stat, symerror: 1.2}
+    value: 110.0
+  - errors:
+    - {label: stat, symerror: 1.2}
+    value: 116.0
+  - errors:
+    - {label: stat, symerror: 2.2}
+    value: 116.0
+  - errors:
+    - {label: stat, symerror: 0.98}
+    value: 117.0
+  - errors:
+    - {label: stat, symerror: 0.93}
+    value: 118.0
+  - errors:
+    - {label: stat, symerror: 1.1}
+    value: 115.0
+  - errors:
+    - {label: stat, symerror: 3.2}
+    value: 107.0
+  - errors:
+    - {label: stat, symerror: 3.2}
+    value: 102.0
+  - errors:
+    - {label: stat, symerror: 1.5}
+    value: 87.3
+  - errors:
+    - {label: stat, symerror: 1.3}
+    value: 74.8
+  - errors:
+    - {label: stat, symerror: 1.5}
+    value: 67.0
+  - errors:
+    - {label: stat, symerror: 1.3}
+    value: 55.2
+  - errors:
+    - {label: stat, symerror: 0.51}
+    value: 46.0
+  - errors:
+    - {label: stat, symerror: 0.84}
+    value: 39.4
+independent_variables:
+- header: {name: ETARAP}
+  values:
+  - {value: 0.15}
+  - {value: 0.45}
+  - {value: 0.75}
+  - {value: 1.1}
+  - {value: 1.4}
+  - {value: 1.6}
+  - {value: 1.9}
+  - {value: 2.2}
+  - {value: 2.5}
+  - {value: 2.9}
+  - {value: 3.1}
+  - {value: 3.5}
+  - {value: 3.8}
+  - {value: 4.0}
+  - {value: 4.3}
+  - {value: 4.7}

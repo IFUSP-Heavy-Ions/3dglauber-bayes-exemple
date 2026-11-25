@@ -1,0 +1,283 @@
+comment: |
+  BNL-RHIC.  Measurements of midrapidity charged particle multiplicity distributions, $dN_{ch}/d\eta$, and midrapidity transverse-energy distributions, $dE_T/d\eta$, are presented for a variety of collision systems and energies. Included are distributions for Au+Au collisions at $\sqrt{s_{NN}}$ = 200, 130, 62.4, 39, 27,19.6, 14.5, and 7.7 GeV, Cu+Cu collisions at $\sqrt{s_{NN}}$ = 200 and 62.4 GeV, Cu+Au collisions at $\sqrt{s_{NN}}$ = 200 GeV, U+U collisions at $\sqrt{s_{NN}}$ = 193 GeV, d+Au collisions at $\sqrt{s_{NN}}$ = 200 GeV, $^3$He+Au collisions at $\sqrt{s_{NN}}$ 200 GeV, and p+p collisions at $\sqrt{s_{NN}}$ = 200 GeV. Centrality dependent distributions at midrapidity are presented in terms of the number of nucleon participants, Npart, and the number of constituent quark participants, $N_{qp}$. For all A+A collisions down to $\sqrt{s_{NN}}$ = 7.7 GeV, it is observed that the midrapidity data are better described by scaling with $N_{qp}$ than scaling with $N_{part}$. Also presented are estimates of the Bjorken energy density, $\epsilon_{BJ}$, and the ratio of $dET/d\eta$ to $dNch/d\eta$, the latter of which is seen to be constant as a function of centrality for all systems.
+hepdata_doi: 10.17182/hepdata.96601.v1
+---
+data_file: ET200.yaml
+description: Transverse energy in Au+Au collisions at $\sqrt{s_{NN}}$ = 200 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [200]
+name: Table 7
+table_doi: 10.17182/hepdata.96601.v1/t1
+---
+data_file: Nch200.yaml
+description: Multiplicity in Au+Au collisions at $\sqrt{s_{NN}}$ = 200 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [200]
+name: Table 8
+table_doi: 10.17182/hepdata.96601.v1/t2
+---
+data_file: ET130.yaml
+description: Transverse energy in Au+Au collisions at $\sqrt{s_{NN}}$ = 130 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [130]
+name: Table 9
+table_doi: 10.17182/hepdata.96601.v1/t3
+---
+data_file: Nch130.yaml
+description: Multiplicity in Au+Au collisions at $\sqrt{s_{NN}}$ = 130 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [130]
+name: Table 10
+table_doi: 10.17182/hepdata.96601.v1/t4
+---
+data_file: ET62.yaml
+description: Transverse energy in Au+Au collisions at $\sqrt{s_{NN}}$ = 62.4 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [62.4]
+name: Table 11
+table_doi: 10.17182/hepdata.96601.v1/t5
+---
+data_file: Nch62.yaml
+description: Multiplicity in Au+Au collisions at $\sqrt{s_{NN}}$ = 62.4 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [62.4]
+name: Table 12
+table_doi: 10.17182/hepdata.96601.v1/t6
+---
+data_file: ET39.yaml
+description: Transverse energy in Au+Au collisions at $\sqrt{s_{NN}}$ = 39 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [39]
+name: Table 13
+table_doi: 10.17182/hepdata.96601.v1/t7
+---
+data_file: Nch39.yaml
+description: Multiplicity in Au+Au collisions at $\sqrt{s_{NN}}$ = 39 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [39]
+name: Table 14
+table_doi: 10.17182/hepdata.96601.v1/t8
+---
+data_file: ET27.yaml
+description: Transverse energy in Au+Au collisions at $\sqrt{s_{NN}}$ = 27 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [27]
+name: Table 15
+table_doi: 10.17182/hepdata.96601.v1/t9
+---
+data_file: Nch27.yaml
+description: Multiplicity in Au+Au collisions at $\sqrt{s_{NN}}$ = 27 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [27]
+name: Table 16
+table_doi: 10.17182/hepdata.96601.v1/t10
+---
+data_file: ET19.6.yaml
+description: Transverse energy in Au+Au collisions at $\sqrt{s_{NN}}$ = 19.6 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [19.6]
+name: Table 17
+table_doi: 10.17182/hepdata.96601.v1/t11
+---
+data_file: Nch19.6.yaml
+description: Multiplicity in Au+Au collisions at $\sqrt{s_{NN}}$ = 19.6 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [19.6]
+name: Table 18
+table_doi: 10.17182/hepdata.96601.v1/t12
+---
+data_file: ET14.5.yaml
+description: Transverse energy in Au+Au collisions at $\sqrt{s_{NN}}$ = 14.5 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [14.5]
+name: Table 19
+table_doi: 10.17182/hepdata.96601.v1/t13
+---
+data_file: Nch14.5.yaml
+description: Multiplicity in Au+Au collisions at $\sqrt{s_{NN}}$ = 14.5 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [14.5]
+name: Table 20
+table_doi: 10.17182/hepdata.96601.v1/t14
+---
+data_file: ET7.7.yaml
+description: Transverse energy in Au+Au collisions at $\sqrt{s_{NN}}$ = 7.7 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [7.7]
+name: Table 21
+table_doi: 10.17182/hepdata.96601.v1/t15
+---
+data_file: Nch7.7.yaml
+description: Multiplicity in Au+Au collisions at $\sqrt{s_{NN}}$ = 7.7 GeV
+keywords:
+- name: reactions
+  values: [AU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [7.7]
+name: Table 22
+table_doi: 10.17182/hepdata.96601.v1/t16
+---
+data_file: CuCu200ET.yaml
+description: Transverse energy in Cu+Cu collisions at $\sqrt{s_{NN}}$ = 200 GeV
+keywords:
+- name: reactions
+  values: [CU CU --> NEUTRAL X]
+- name: cmenergies
+  values: [200]
+name: Table 23
+table_doi: 10.17182/hepdata.96601.v1/t17
+---
+data_file: CuCu200Nch.yaml
+description: Multiplicity in Cu+Cu collisions at $\sqrt{s_{NN}}$ = 200 GeV
+keywords:
+- name: reactions
+  values: [CU CU --> NEUTRAL X]
+- name: cmenergies
+  values: [200]
+name: Table 24
+table_doi: 10.17182/hepdata.96601.v1/t18
+---
+data_file: CuCu62ET.yaml
+description: Transverse energy in Cu+Cu collisions at $\sqrt{s_{NN}}$ = 62.4 GeV
+keywords:
+- name: reactions
+  values: [CU CU --> NEUTRAL X]
+- name: cmenergies
+  values: [62.4]
+name: Table 25
+table_doi: 10.17182/hepdata.96601.v1/t19
+---
+data_file: CuCu62Nch.yaml
+description: Multiplicity in Cu+Cu collisions at $\sqrt{s_{NN}}$ = 62.4 GeV
+keywords:
+- name: reactions
+  values: [CU CU --> NEUTRAL X]
+- name: cmenergies
+  values: [62.4]
+name: Table 26
+table_doi: 10.17182/hepdata.96601.v1/t20
+---
+data_file: CuAu200ET.yaml
+description: Transverse energy in Cu+Au collisions at $\sqrt{s_{NN}}$ = 200 GeV
+keywords:
+- name: reactions
+  values: [CU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [200]
+name: Table 27
+table_doi: 10.17182/hepdata.96601.v1/t21
+---
+data_file: CuAu200Nch.yaml
+description: Multiplicity in Cu+Au collisions at $\sqrt{s_{NN}}$ = 200 GeV
+keywords:
+- name: reactions
+  values: [CU AU --> NEUTRAL X]
+- name: cmenergies
+  values: [200]
+name: Table 28
+table_doi: 10.17182/hepdata.96601.v1/t22
+---
+data_file: UU193ET.yaml
+description: Transverse energy in U+U collisions at $\sqrt{s_{NN}}$ = 193 GeV
+keywords:
+- name: reactions
+  values: [U U --> NEUTRAL X]
+- name: cmenergies
+  values: [193]
+name: Table 29
+table_doi: 10.17182/hepdata.96601.v1/t23
+---
+data_file: UU193Nch.yaml
+description: Multiplicity in U+U collisions at $\sqrt{s_{NN}}$ = 193 GeV
+keywords:
+- name: reactions
+  values: [U U --> NEUTRAL X]
+- name: cmenergies
+  values: [193]
+name: Table 30
+table_doi: 10.17182/hepdata.96601.v1/t24
+---
+data_file: dAu200ET.yaml
+description: Transverse energy in d+Au collisions at $\sqrt{s_{NN}}$ = 200 GeV
+keywords:
+- name: reactions
+  values: [D AU --> NEUTRAL X]
+- name: cmenergies
+  values: [200]
+name: Table 31
+table_doi: 10.17182/hepdata.96601.v1/t25
+---
+data_file: dAu200Nch.yaml
+description: Multiplicity in d+Au collisions at $\sqrt{s_{NN}}$ = 200 GeV
+keywords:
+- name: reactions
+  values: [D AU --> NEUTRAL X]
+- name: cmenergies
+  values: [200]
+name: Table 32
+table_doi: 10.17182/hepdata.96601.v1/t26
+---
+data_file: HeAu200ET.yaml
+description: Transverse energy in He+Au collisions at $\sqrt{s_{NN}}$ = 200 GeV
+keywords:
+- name: reactions
+  values: [HE AU --> NEUTRAL X]
+- name: cmenergies
+  values: [200]
+name: Table 33
+table_doi: 10.17182/hepdata.96601.v1/t27
+---
+data_file: HeAu200Nch.yaml
+description: Multiplicity in He+Au collisions at $\sqrt{s_{NN}}$ = 200 GeV
+keywords:
+- name: reactions
+  values: [HE AU --> NEUTRAL X]
+- name: cmenergies
+  values: [200]
+name: Table 34
+table_doi: 10.17182/hepdata.96601.v1/t28

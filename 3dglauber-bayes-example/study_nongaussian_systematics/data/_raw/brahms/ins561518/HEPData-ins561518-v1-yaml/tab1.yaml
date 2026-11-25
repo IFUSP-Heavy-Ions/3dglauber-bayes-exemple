@@ -1,0 +1,142 @@
+dependent_variables:
+- header: {name: NPART}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: ETARAP, value: ''}
+  values:
+  - errors: []
+    value: 350.0
+  - errors: []
+    value: 300.0
+  - errors: []
+    value: 240.0
+  - errors: []
+    value: 160.0
+  - errors: []
+    value: 110.0
+  - errors: []
+    value: 75.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: ETARAP, value: 0.0}
+  values:
+  - errors:
+    - {label: tot, symerror: 36.0}
+    value: 553.0
+  - errors:
+    - {label: tot, symerror: 29.0}
+    value: 447.0
+  - errors:
+    - {label: tot, symerror: 23.0}
+    value: 345.0
+  - errors:
+    - {label: tot, symerror: 16.0}
+    value: 237.0
+  - errors:
+    - {label: tot, symerror: 11.0}
+    value: 156.0
+  - errors:
+    - {label: tot, symerror: 7.0}
+    value: 98.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: ETARAP, value: 1.5}
+  values:
+  - errors:
+    - {label: tot, symerror: 37.0}
+    value: 554.0
+  - errors:
+    - {label: tot, symerror: 31.0}
+    value: 454.0
+  - errors:
+    - {label: tot, symerror: 25.0}
+    value: 348.0
+  - errors:
+    - {label: tot, symerror: 16.0}
+    value: 239.0
+  - errors:
+    - {label: tot, symerror: 11.0}
+    value: 159.0
+  - errors:
+    - {label: tot, symerror: 7.0}
+    value: 104.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: ETARAP, value: 3.0}
+  values:
+  - errors:
+    - {label: tot, symerror: 37.0}
+    value: 372.0
+  - errors:
+    - {label: tot, symerror: 36.0}
+    value: 312.0
+  - errors:
+    - {label: tot, symerror: 27.0}
+    value: 243.0
+  - errors:
+    - {label: tot, symerror: 18.0}
+    value: 172.0
+  - errors:
+    - {label: tot, symerror: 13.0}
+    value: 117.0
+  - errors:
+    - {label: tot, symerror: 9.0}
+    value: 77.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: ETARAP, value: 4.5}
+  values:
+  - errors:
+    - {label: tot, symerror: 15.0}
+    value: 107.0
+  - errors:
+    - {label: tot, symerror: 13.0}
+    value: 94.0
+  - errors:
+    - {label: tot, symerror: 10.0}
+    value: 79.0
+  - errors:
+    - {label: tot, symerror: 8.0}
+    value: 59.0
+  - errors:
+    - {label: tot, symerror: 6.0}
+    value: 43.0
+  - errors:
+    - {label: tot, symerror: 4.0}
+    value: 30.0
+- header: {name: MULT}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: ETARAP, value: -4.7 TO 4.7}
+  values:
+  - errors:
+    - {label: tot, symerror: 300.0}
+    value: 3860.0
+  - errors:
+    - {label: tot, symerror: 250.0}
+    value: 3180.0
+  - errors:
+    - {label: tot, symerror: 190.0}
+    value: 2470.0
+  - errors:
+    - {label: tot, symerror: 130.0}
+    value: 1720.0
+  - errors:
+    - {label: tot, symerror: 90.0}
+    value: 1160.0
+  - errors:
+    - {label: tot, symerror: 60.0}
+    value: 750.0
+independent_variables:
+- header: {name: CENTRALITY, units: PCT}
+  values:
+  - {high: 5.0, low: 0.0}
+  - {high: 10.0, low: 5.0}
+  - {high: 20.0, low: 10.0}
+  - {high: 30.0, low: 20.0}
+  - {high: 40.0, low: 30.0}
+  - {high: 50.0, low: 40.0}

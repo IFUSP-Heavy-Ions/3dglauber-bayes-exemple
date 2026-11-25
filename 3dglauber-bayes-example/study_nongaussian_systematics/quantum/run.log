@@ -1,0 +1,24 @@
+[classical]
+  source 0: w = 1.678e-06
+  source 1: w = 4.172e-07
+  source 2: w = 1.069e-06
+  source 3: w = 1.149e-07
+  {'seconds': 2.9860644340515137, 'spectral_calls': None, 'circuits': None}
+[qpe_sv]
+  source 0: w = 1.678e-06
+  source 1: w = -1.069e-06
+  source 2: w = 4.172e-07
+  source 3: w = 1.147e-07
+  {'seconds': 32.9653263092041, 'spectral_calls': 288, 'circuits': 288}
+[qpe_shots]
+  source 0: w = 1.675e-06
+  source 1: w = 1.068e-06
+  source 2: w = 4.170e-07
+  source 3: w = 1.082e-07
+  {'seconds': 346.7067952156067, 'spectral_calls': 769, 'circuits': 10703}
+
+angle to classical (raw):
+  qpe_sv     [0.   0.13 0.02 0.17]
+  qpe_shots  [ 2.    1.03  1.46 11.37]
+bootstrap spread of classical (median): [ 3.97  7.68  3.65 61.7 ]
+angle to truth (raw): classical [ 2.98 14.86  3.76 24.32] | sv [ 2.98 14.89  3.76 24.33] | shots [ 3.18 14.93  3.94 31.11]

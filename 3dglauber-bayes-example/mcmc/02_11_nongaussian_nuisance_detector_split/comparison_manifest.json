@@ -1,0 +1,69 @@
+{
+  "baseline": "mcmc/01_01_baseline_reproduction/chain-idf-0.hdf",
+  "cs_sector": "mcmc/02_04_cs_sector/chain-idf-0-cs-observable-region-rho-1-a77902df73a5.hdf",
+  "nuisance": {
+    "path": "mcmc/02_11_nongaussian_nuisance_detector_split/chain-idf-0-nongauss-nuisance-detector-split.hdf",
+    "walkers": 200,
+    "steps": 20000,
+    "burnin": 0,
+    "thin": 50,
+    "samples": 80000,
+    "dropped_nonfinite": 0,
+    "attributes": {
+      "experimental_covariance_model": "diagonal_plus_nongaussian_nuisance",
+      "experimental_nuisance_labels": "[\"lambda_norm_TPC\", \"lambda_norm_FTPC\", \"lambda_asym\", \"lambda_edge\"]",
+      "experimental_nuisance_observable": "Au-Au-200/v22_eta_cen_20_70_STAR",
+      "experimental_nuisance_s": "[0.009529839004740569, 0.005690011561132003, 0.009098112971626611, 0.004342791568512637]",
+      "experimental_nuisance_skew": "[1.939270329678307, 1.9110965044227755, 1.4199726256720224, 2.3636557137565566]",
+      "experimental_nuisance_sources_sha256": "3042144b0e730e50a9976f12da73059b930f1dd7f35a1a1c61aaee25f3f066b7"
+    }
+  },
+  "sources": {
+    "path": "study_nongaussian_systematics/data/detector_split/inferred_sources.npz",
+    "sha256": "3042144b0e730e50a9976f12da73059b930f1dd7f35a1a1c61aaee25f3f066b7"
+  },
+  "previous": "mcmc/02_10_nongaussian_nuisance",
+  "models": [
+    [
+      "baseline",
+      "Baseline (diagonal)"
+    ],
+    [
+      "cs",
+      "CS sector (rho=1)"
+    ],
+    [
+      "nuis_prev",
+      "Nuisance, global normalization"
+    ],
+    [
+      "nuis",
+      "Nuisance, TPC/FTPC normalizations"
+    ]
+  ],
+  "n_prediction_samples": 1000,
+  "seed": 12345,
+  "star_v2_eta_summary": {
+    "baseline_backward_FTPC_median_over_data": 1.3374557362943207,
+    "baseline_TPC_median_over_data": 0.969914295844736,
+    "baseline_forward_FTPC_median_over_data": 1.3570505521417247,
+    "cs_backward_FTPC_median_over_data": 1.4328992894165646,
+    "cs_TPC_median_over_data": 0.9889978734846202,
+    "cs_forward_FTPC_median_over_data": 1.452437628509687,
+    "nuis_prev_backward_FTPC_median_over_data": 1.3187917309789094,
+    "nuis_prev_TPC_median_over_data": 0.9700777503050391,
+    "nuis_prev_forward_FTPC_median_over_data": 1.3380309392761767,
+    "nuis_backward_FTPC_median_over_data": 1.3151697807164295,
+    "nuis_TPC_median_over_data": 0.9674041409473154,
+    "nuis_forward_FTPC_median_over_data": 1.3342931624374523,
+    "shift_median_backward_FTPC": -0.0018034827359313165,
+    "shift_median_TPC": -0.0016498764183890536,
+    "shift_median_forward_FTPC": -0.0022158401217522335
+  },
+  "bands": "Posterior variation of emulator means (68%); no emulator or experimental noise draws",
+  "versions": {
+    "python": "3.9.25",
+    "numpy": "1.20.3"
+  },
+  "script_sha256": "7a2f1f5224bafde9087a61117fb1ca7de91bd078c42633d118a8e1bddaa1a439"
+}

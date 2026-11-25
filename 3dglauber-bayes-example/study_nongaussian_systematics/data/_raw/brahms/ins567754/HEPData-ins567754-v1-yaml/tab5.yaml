@@ -1,0 +1,76 @@
+dependent_variables:
+- header: {name: DN/DYRAP/(NPART/2)}
+  qualifiers:
+  - {name: ETARAP, value: '0'}
+  values:
+  - errors:
+    - {label: stat, symerror: 0.31}
+    value: 3.5
+  - errors:
+    - {label: stat, symerror: 0.29}
+    value: 3.27
+  - errors:
+    - {label: stat, symerror: 0.28}
+    value: 3.15
+  - errors:
+    - {label: stat, symerror: 0.27}
+    value: 3.06
+  - errors:
+    - {label: stat, symerror: 0.28}
+    value: 3.05
+  - errors:
+    - {label: stat, symerror: 0.27}
+    value: 3.01
+- header: {name: DN/DYRAP/(NPART/2)}
+  qualifiers:
+  - {name: ETARAP, value: '3'}
+  values:
+  - errors:
+    - {label: stat, symerror: 0.25}
+    value: 2.63
+  - errors:
+    - {label: stat, symerror: 0.24}
+    value: 2.59
+  - errors:
+    - {label: stat, symerror: 0.23}
+    value: 2.59
+  - errors:
+    - {label: stat, symerror: 0.2}
+    value: 2.57
+  - errors:
+    - {label: stat, symerror: 0.25}
+    value: 2.61
+  - errors:
+    - {label: stat, symerror: 0.25}
+    value: 2.6
+- header: {name: DN/DYRAP/(NPART/2)}
+  qualifiers:
+  - {name: ETARAP, value: '4.5'}
+  values:
+  - errors:
+    - {label: stat, symerror: 0.12}
+    value: 1.01
+  - errors:
+    - {label: stat, symerror: 0.12}
+    value: 1.02
+  - errors:
+    - {label: stat, symerror: 0.12}
+    value: 1.05
+  - errors:
+    - {label: stat, symerror: 0.12}
+    value: 1.07
+  - errors:
+    - {label: stat, symerror: 0.12}
+    value: 1.12
+  - errors:
+    - {label: stat, symerror: 0.14}
+    value: 1.18
+independent_variables:
+- header: {name: NPART}
+  values:
+  - {value: 357.0}
+  - {value: 306.0}
+  - {value: 239.0}
+  - {value: 168.0}
+  - {value: 114.0}
+  - {value: 73.0}

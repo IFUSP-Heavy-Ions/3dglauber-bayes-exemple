@@ -1,0 +1,248 @@
+dependent_variables:
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: DETECTOR, value: TMA}
+  - {name: CENTRALITY, units: PCT, value: 0 TO 5}
+  values:
+  - errors: []
+    value: 510.0
+  - errors: []
+    value: 540.0
+  - errors: []
+    value: 570.0
+  - errors: []
+    value: 590.0
+  - errors: []
+    value: 580.0
+  - errors: []
+    value: 570.0
+  - errors: []
+    value: 560.0
+  - errors: []
+    value: 560.0
+  - errors: []
+    value: 550.0
+  - errors: []
+    value: 560.0
+  - errors: []
+    value: 570.0
+  - errors: []
+    value: 570.0
+  - errors: []
+    value: 570.0
+  - errors: []
+    value: 560.0
+  - errors: []
+    value: 530.0
+  - errors: []
+    value: 500.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: DETECTOR, value: TMA}
+  - {name: CENTRALITY, units: PCT, value: 5 TO 10}
+  values:
+  - errors: []
+    value: 430.0
+  - errors: []
+    value: 450.0
+  - errors: []
+    value: 470.0
+  - errors: []
+    value: 480.0
+  - errors: []
+    value: 480.0
+  - errors: []
+    value: 470.0
+  - errors: []
+    value: 460.0
+  - errors: []
+    value: 460.0
+  - errors: []
+    value: 460.0
+  - errors: []
+    value: 460.0
+  - errors: []
+    value: 470.0
+  - errors: []
+    value: 480.0
+  - errors: []
+    value: 470.0
+  - errors: []
+    value: 460.0
+  - errors: []
+    value: 440.0
+  - errors: []
+    value: 420.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: DETECTOR, value: TMA}
+  - {name: CENTRALITY, units: PCT, value: 10 TO 20}
+  values:
+  - errors: []
+    value: 330.0
+  - errors: []
+    value: 350.0
+  - errors: []
+    value: 360.0
+  - errors: []
+    value: 360.0
+  - errors: []
+    value: 360.0
+  - errors: []
+    value: 360.0
+  - errors: []
+    value: 350.0
+  - errors: []
+    value: 350.0
+  - errors: []
+    value: 350.0
+  - errors: []
+    value: 350.0
+  - errors: []
+    value: 360.0
+  - errors: []
+    value: 360.0
+  - errors: []
+    value: 360.0
+  - errors: []
+    value: 350.0
+  - errors: []
+    value: 330.0
+  - errors: []
+    value: 320.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: DETECTOR, value: TMA}
+  - {name: CENTRALITY, units: PCT, value: 20 TO 30}
+  values:
+  - errors: []
+    value: 210.0
+  - errors: []
+    value: 230.0
+  - errors: []
+    value: 230.0
+  - errors: []
+    value: 240.0
+  - errors: []
+    value: 250.0
+  - errors: []
+    value: 250.0
+  - errors: []
+    value: 240.0
+  - errors: []
+    value: 240.0
+  - errors: []
+    value: 240.0
+  - errors: []
+    value: 240.0
+  - errors: []
+    value: 240.0
+  - errors: []
+    value: 250.0
+  - errors: []
+    value: 250.0
+  - errors: []
+    value: 240.0
+  - errors: []
+    value: 230.0
+  - errors: []
+    value: 220.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: DETECTOR, value: TMA}
+  - {name: CENTRALITY, units: PCT, value: 30 TO 40}
+  values:
+  - errors: []
+    value: 160.0
+  - errors: []
+    value: 160.0
+  - errors: []
+    value: 170.0
+  - errors: []
+    value: 170.0
+  - errors: []
+    value: 170.0
+  - errors: []
+    value: 160.0
+  - errors: []
+    value: 160.0
+  - errors: []
+    value: 160.0
+  - errors: []
+    value: 160.0
+  - errors: []
+    value: 160.0
+  - errors: []
+    value: 160.0
+  - errors: []
+    value: 160.0
+  - errors: []
+    value: 170.0
+  - errors: []
+    value: 160.0
+  - errors: []
+    value: 150.0
+  - errors: []
+    value: 150.0
+- header: {name: DN/DETARAP}
+  qualifiers:
+  - {name: PARTICLE, value: CHARGED}
+  - {name: DETECTOR, value: TMA}
+  - {name: CENTRALITY, units: PCT, value: 40 TO 50}
+  values:
+  - errors: []
+    value: 110.0
+  - errors: []
+    value: 110.0
+  - errors: []
+    value: 110.0
+  - errors: []
+    value: 110.0
+  - errors: []
+    value: 110.0
+  - errors: []
+    value: 110.0
+  - errors: []
+    value: 110.0
+  - errors: []
+    value: 100.0
+  - errors: []
+    value: 110.0
+  - errors: []
+    value: 110.0
+  - errors: []
+    value: 110.0
+  - errors: []
+    value: 110.0
+  - errors: []
+    value: 110.0
+  - errors: []
+    value: 110.0
+  - errors: []
+    value: 110.0
+  - errors: []
+    value: 110.0
+independent_variables:
+- header: {name: ETARAP}
+  values:
+  - {value: -2.31}
+  - {value: -2.01}
+  - {value: -1.71}
+  - {value: -1.41}
+  - {value: -1.11}
+  - {value: -0.81}
+  - {value: -0.51}
+  - {value: -0.21}
+  - {value: 0.11}
+  - {value: 0.41}
+  - {value: 0.71}
+  - {value: 1.05}
+  - {value: 1.35}
+  - {value: 1.65}
+  - {value: 1.95}
+  - {value: 2.25}

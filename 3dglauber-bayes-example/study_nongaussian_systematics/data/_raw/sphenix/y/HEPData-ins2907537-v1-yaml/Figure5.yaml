@@ -1,0 +1,570 @@
+dependent_variables:
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}$'}
+  qualifiers:
+  - {name: centrality, value: Centrality 0-3}
+  values:
+  - errors:
+    - {label: sys, symerror: 31}
+    value: 758
+  - errors:
+    - {label: sys, symerror: 32}
+    value: 747
+  - errors:
+    - {label: sys, symerror: 40.0}
+    value: 740.0
+  - errors:
+    - {label: sys, symerror: 40.0}
+    value: 730.0
+  - errors:
+    - {label: sys, symerror: 40.0}
+    value: 720.0
+  - errors:
+    - {label: sys, symerror: 50.0}
+    value: 720.0
+  - errors:
+    - {label: sys, symerror: 50.0}
+    value: 730.0
+  - errors:
+    - {label: sys, symerror: 40.0}
+    value: 730.0
+  - errors:
+    - {label: sys, symerror: 34}
+    value: 735
+  - errors:
+    - {label: sys, symerror: 32}
+    value: 737
+  - errors:
+    - {label: sys, symerror: 32}
+    value: 746
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}$'}
+  qualifiers:
+  - {name: centrality, value: Centrality 3-6}
+  values:
+  - errors:
+    - {label: sys, symerror: 25}
+    value: 676
+  - errors:
+    - {label: sys, symerror: 26}
+    value: 667
+  - errors:
+    - {label: sys, symerror: 31}
+    value: 660
+  - errors:
+    - {label: sys, symerror: 35}
+    value: 653
+  - errors:
+    - {label: sys, symerror: 40.0}
+    value: 650.0
+  - errors:
+    - {label: sys, symerror: 40.0}
+    value: 640.0
+  - errors:
+    - {label: sys, symerror: 40.0}
+    value: 650.0
+  - errors:
+    - {label: sys, symerror: 40.0}
+    value: 650.0
+  - errors:
+    - {label: sys, symerror: 31}
+    value: 658
+  - errors:
+    - {label: sys, symerror: 28}
+    value: 661
+  - errors:
+    - {label: sys, symerror: 27}
+    value: 668
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}$'}
+  qualifiers:
+  - {name: centrality, value: Centrality 6-10}
+  values:
+  - errors:
+    - {label: sys, symerror: 22}
+    value: 587
+  - errors:
+    - {label: sys, symerror: 22}
+    value: 577
+  - errors:
+    - {label: sys, symerror: 26}
+    value: 571
+  - errors:
+    - {label: sys, symerror: 31}
+    value: 567
+  - errors:
+    - {label: sys, symerror: 32}
+    value: 560
+  - errors:
+    - {label: sys, symerror: 35}
+    value: 555
+  - errors:
+    - {label: sys, symerror: 34}
+    value: 560
+  - errors:
+    - {label: sys, symerror: 31}
+    value: 566
+  - errors:
+    - {label: sys, symerror: 28}
+    value: 572
+  - errors:
+    - {label: sys, symerror: 24}
+    value: 572
+  - errors:
+    - {label: sys, symerror: 23}
+    value: 577
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}$'}
+  qualifiers:
+  - {name: centrality, value: Centrality 10-15}
+  values:
+  - errors:
+    - {label: sys, symerror: 19}
+    value: 492
+  - errors:
+    - {label: sys, symerror: 19}
+    value: 485
+  - errors:
+    - {label: sys, symerror: 21}
+    value: 480
+  - errors:
+    - {label: sys, symerror: 25}
+    value: 474
+  - errors:
+    - {label: sys, symerror: 28}
+    value: 470
+  - errors:
+    - {label: sys, symerror: 28}
+    value: 467
+  - errors:
+    - {label: sys, symerror: 29}
+    value: 471
+  - errors:
+    - {label: sys, symerror: 25}
+    value: 474
+  - errors:
+    - {label: sys, symerror: 21}
+    value: 478
+  - errors:
+    - {label: sys, symerror: 19}
+    value: 480
+  - errors:
+    - {label: sys, symerror: 18}
+    value: 484
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}$'}
+  qualifiers:
+  - {name: centrality, value: Centrality 15-20}
+  values:
+  - errors:
+    - {label: sys, symerror: 15}
+    value: 407
+  - errors:
+    - {label: sys, symerror: 15}
+    value: 399
+  - errors:
+    - {label: sys, symerror: 17}
+    value: 395
+  - errors:
+    - {label: sys, symerror: 19}
+    value: 391
+  - errors:
+    - {label: sys, symerror: 23}
+    value: 388
+  - errors:
+    - {label: sys, symerror: 23}
+    value: 384
+  - errors:
+    - {label: sys, symerror: 22}
+    value: 387
+  - errors:
+    - {label: sys, symerror: 20}
+    value: 390
+  - errors:
+    - {label: sys, symerror: 17}
+    value: 394
+  - errors:
+    - {label: sys, symerror: 16}
+    value: 396
+  - errors:
+    - {label: sys, symerror: 16}
+    value: 400
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}$'}
+  qualifiers:
+  - {name: centrality, value: Centrality 20-25}
+  values:
+  - errors:
+    - {label: sys, symerror: 12}
+    value: 334
+  - errors:
+    - {label: sys, symerror: 12}
+    value: 328
+  - errors:
+    - {label: sys, symerror: 14}
+    value: 325
+  - errors:
+    - {label: sys, symerror: 16}
+    value: 321
+  - errors:
+    - {label: sys, symerror: 17}
+    value: 318
+  - errors:
+    - {label: sys, symerror: 20}
+    value: 317
+  - errors:
+    - {label: sys, symerror: 19}
+    value: 317
+  - errors:
+    - {label: sys, symerror: 16}
+    value: 321
+  - errors:
+    - {label: sys, symerror: 15}
+    value: 324
+  - errors:
+    - {label: sys, symerror: 13}
+    value: 325
+  - errors:
+    - {label: sys, symerror: 12}
+    value: 329
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}$'}
+  qualifiers:
+  - {name: centrality, value: Centrality 25-30}
+  values:
+  - errors:
+    - {label: sys, symerror: 9}
+    value: 273
+  - errors:
+    - {label: sys, symerror: 11}
+    value: 270
+  - errors:
+    - {label: sys, symerror: 11}
+    value: 265
+  - errors:
+    - {label: sys, symerror: 13}
+    value: 262
+  - errors:
+    - {label: sys, symerror: 15}
+    value: 260
+  - errors:
+    - {label: sys, symerror: 15}
+    value: 257
+  - errors:
+    - {label: sys, symerror: 15}
+    value: 259
+  - errors:
+    - {label: sys, symerror: 14}
+    value: 262
+  - errors:
+    - {label: sys, symerror: 12}
+    value: 265
+  - errors:
+    - {label: sys, symerror: 10}
+    value: 266
+  - errors:
+    - {label: sys, symerror: 10}
+    value: 268
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}$'}
+  qualifiers:
+  - {name: centrality, value: Centrality 30-35}
+  values:
+  - errors:
+    - {label: sys, symerror: 8}
+    value: 222
+  - errors:
+    - {label: sys, symerror: 9}
+    value: 218
+  - errors:
+    - {label: sys, symerror: 9}
+    value: 215
+  - errors:
+    - {label: sys, symerror: 11}
+    value: 213
+  - errors:
+    - {label: sys, symerror: 12}
+    value: 210
+  - errors:
+    - {label: sys, symerror: 13}
+    value: 208
+  - errors:
+    - {label: sys, symerror: 12}
+    value: 210
+  - errors:
+    - {label: sys, symerror: 11}
+    value: 212
+  - errors:
+    - {label: sys, symerror: 10}
+    value: 215
+  - errors:
+    - {label: sys, symerror: 8}
+    value: 216
+  - errors:
+    - {label: sys, symerror: 8}
+    value: 218
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}$'}
+  qualifiers:
+  - {name: centrality, value: Centrality 35-40}
+  values:
+  - errors:
+    - {label: sys, symerror: 7}
+    value: 178
+  - errors:
+    - {label: sys, symerror: 7}
+    value: 174
+  - errors:
+    - {label: sys, symerror: 7}
+    value: 172
+  - errors:
+    - {label: sys, symerror: 9}
+    value: 170
+  - errors:
+    - {label: sys, symerror: 10}
+    value: 168
+  - errors:
+    - {label: sys, symerror: 10}
+    value: 166
+  - errors:
+    - {label: sys, symerror: 10}
+    value: 168
+  - errors:
+    - {label: sys, symerror: 9}
+    value: 169
+  - errors:
+    - {label: sys, symerror: 8}
+    value: 172
+  - errors:
+    - {label: sys, symerror: 7}
+    value: 172
+  - errors:
+    - {label: sys, symerror: 7}
+    value: 175
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}$'}
+  qualifiers:
+  - {name: centrality, value: Centrality 40-45}
+  values:
+  - errors:
+    - {label: sys, symerror: 5}
+    value: 140
+  - errors:
+    - {label: sys, symerror: 5}
+    value: 137
+  - errors:
+    - {label: sys, symerror: 6}
+    value: 135
+  - errors:
+    - {label: sys, symerror: 7}
+    value: 133
+  - errors:
+    - {label: sys, symerror: 8}
+    value: 132
+  - errors:
+    - {label: sys, symerror: 8}
+    value: 131
+  - errors:
+    - {label: sys, symerror: 8}
+    value: 132
+  - errors:
+    - {label: sys, symerror: 7}
+    value: 133
+  - errors:
+    - {label: sys, symerror: 6}
+    value: 135
+  - errors:
+    - {label: sys, symerror: 5}
+    value: 135
+  - errors:
+    - {label: sys, symerror: 6}
+    value: 138
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}$'}
+  qualifiers:
+  - {name: centrality, value: Centrality 45-50}
+  values:
+  - errors:
+    - {label: sys, symerror: 4}
+    value: 108
+  - errors:
+    - {label: sys, symerror: 4}
+    value: 106
+  - errors:
+    - {label: sys, symerror: 5}
+    value: 105
+  - errors:
+    - {label: sys, symerror: 6}
+    value: 104
+  - errors:
+    - {label: sys, symerror: 6}
+    value: 101
+  - errors:
+    - {label: sys, symerror: 7}
+    value: 101
+  - errors:
+    - {label: sys, symerror: 6}
+    value: 102
+  - errors:
+    - {label: sys, symerror: 6}
+    value: 103
+  - errors:
+    - {label: sys, symerror: 5}
+    value: 104
+  - errors:
+    - {label: sys, symerror: 4}
+    value: 105
+  - errors:
+    - {label: sys, symerror: 4}
+    value: 106
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}$'}
+  qualifiers:
+  - {name: centrality, value: Centrality 50-55}
+  values:
+  - errors:
+    - {label: sys, symerror: 3.3}
+    value: 82.3
+  - errors:
+    - {label: sys, symerror: 3.4}
+    value: 80.3
+  - errors:
+    - {label: sys, symerror: 4}
+    value: 79
+  - errors:
+    - {label: sys, symerror: 4}
+    value: 78
+  - errors:
+    - {label: sys, symerror: 5}
+    value: 77
+  - errors:
+    - {label: sys, symerror: 5}
+    value: 77
+  - errors:
+    - {label: sys, symerror: 5}
+    value: 77
+  - errors:
+    - {label: sys, symerror: 4}
+    value: 78
+  - errors:
+    - {label: sys, symerror: 4}
+    value: 79
+  - errors:
+    - {label: sys, symerror: 3.3}
+    value: 79.2
+  - errors:
+    - {label: sys, symerror: 3.4}
+    value: 80.8
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}$'}
+  qualifiers:
+  - {name: centrality, value: Centrality 55-60}
+  values:
+  - errors:
+    - {label: sys, symerror: 2.3}
+    value: 59.8
+  - errors:
+    - {label: sys, symerror: 2.3}
+    value: 58.7
+  - errors:
+    - {label: sys, symerror: 2.8}
+    value: 57.3
+  - errors:
+    - {label: sys, symerror: 3.5}
+    value: 56.8
+  - errors:
+    - {label: sys, symerror: 4}
+    value: 56
+  - errors:
+    - {label: sys, symerror: 4}
+    value: 55
+  - errors:
+    - {label: sys, symerror: 4}
+    value: 56
+  - errors:
+    - {label: sys, symerror: 3.5}
+    value: 56.4
+  - errors:
+    - {label: sys, symerror: 2.7}
+    value: 56.9
+  - errors:
+    - {label: sys, symerror: 2.7}
+    value: 58.3
+  - errors:
+    - {label: sys, symerror: 2.6}
+    value: 59.0
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}$'}
+  qualifiers:
+  - {name: centrality, value: Centrality 60-65}
+  values:
+  - errors:
+    - {label: sys, symerror: 1.6}
+    value: 42.5
+  - errors:
+    - {label: sys, symerror: 1.8}
+    value: 41.8
+  - errors:
+    - {label: sys, symerror: 2.0}
+    value: 40.6
+  - errors:
+    - {label: sys, symerror: 2.6}
+    value: 40.0
+  - errors:
+    - {label: sys, symerror: 2.8}
+    value: 39.3
+  - errors:
+    - {label: sys, symerror: 3.1}
+    value: 39.2
+  - errors:
+    - {label: sys, symerror: 3.0}
+    value: 39.5
+  - errors:
+    - {label: sys, symerror: 2.5}
+    value: 39.8
+  - errors:
+    - {label: sys, symerror: 1.9}
+    value: 40.2
+  - errors:
+    - {label: sys, symerror: 1.9}
+    value: 41.2
+  - errors:
+    - {label: sys, symerror: 1.8}
+    value: 42.2
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}$'}
+  qualifiers:
+  - {name: centrality, value: Centrality 65-70}
+  values:
+  - errors:
+    - {label: sys, symerror: 1.2}
+    value: 28.9
+  - errors:
+    - {label: sys, symerror: 1.3}
+    value: 28.4
+  - errors:
+    - {label: sys, symerror: 1.4}
+    value: 27.7
+  - errors:
+    - {label: sys, symerror: 1.8}
+    value: 27.0
+  - errors:
+    - {label: sys, symerror: 2.0}
+    value: 26.8
+  - errors:
+    - {label: sys, symerror: 2.1}
+    value: 26.9
+  - errors:
+    - {label: sys, symerror: 1.9}
+    value: 26.6
+  - errors:
+    - {label: sys, symerror: 1.7}
+    value: 26.9
+  - errors:
+    - {label: sys, symerror: 1.5}
+    value: 27.7
+  - errors:
+    - {label: sys, symerror: 1.3}
+    value: 28.0
+  - errors:
+    - {label: sys, symerror: 1.2}
+    value: 28.4
+independent_variables:
+- header: {name: $\eta$}
+  values:
+  - {high: -0.9, low: -1.1}
+  - {high: -0.7, low: -0.9}
+  - {high: -0.5, low: -0.7}
+  - {high: -0.3, low: -0.5}
+  - {high: -0.1, low: -0.3}
+  - {high: 0.1, low: -0.1}
+  - {high: 0.3, low: 0.1}
+  - {high: 0.5, low: 0.3}
+  - {high: 0.7, low: 0.5}
+  - {high: 0.9, low: 0.7}
+  - {high: 1.1, low: 0.9}

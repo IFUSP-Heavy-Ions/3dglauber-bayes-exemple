@@ -1,0 +1,24 @@
+# Degrau 3: PHOBOS dN/deta covariance learned from cross-detector data (fatia 2a). 3dglauber-bayes-example.
+# Same sampler settings as the global RBF study (production = 20 000 steps, as the paper).
+# Submit from this directory:  mkdir -p logs && condor_submit condor_learned_phobos.sub
+# Check first (no emulator, no MCMC):  $(PYTHON) bayes_mcmc_learned_phobos.py --check-covariance
+PROJECT = /storage/avilamrs/code-space/my-work/jetscape-emulator/3dglauber-bayes-example
+PYTHON  = /storage/avilamrs/code-space/my-work/jetscape-emulator/.venv/bin/python
+NCPUS   = 20
+
+universe = vanilla
+getenv = True
+initialdir = $(PROJECT)
+executable = $(PYTHON)
+arguments = -u bayes_mcmc_learned_phobos.py --u 0.0148 --slope 0.025 --nwalkers 200 --nburnsteps 20000 --ncpus $(NCPUS) --status 1000 20000
+request_cpus = $(NCPUS)
+request_memory = 16GB
+request_disk = 20GB
+requirements = !regexp("qgp2", TARGET.Machine) && !regexp("usphydro", TARGET.Machine)
+environment = "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 PYTHONUNBUFFERED=1"
+should_transfer_files = NO
++WantFlocking = True
+output = $(PROJECT)/mcmc/02_14_learned_phobos_normalization/logs/learned_phobos.$(ClusterId).$(ProcId).out
+error  = $(PROJECT)/mcmc/02_14_learned_phobos_normalization/logs/learned_phobos.$(ClusterId).$(ProcId).err
+log    = $(PROJECT)/mcmc/02_14_learned_phobos_normalization/logs/learned_phobos.$(ClusterId).$(ProcId).log
+queue

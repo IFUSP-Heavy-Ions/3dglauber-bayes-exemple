@@ -1,0 +1,281 @@
+{
+  "parameters": [
+    {
+      "index": 14,
+      "param": "shear_viscosity_3_eta_over_s_at_kink",
+      "min": "0.01",
+      "max": "0.2"
+    },
+    {
+      "index": 15,
+      "param": "bulk_viscosity_3_zeta_over_s_max",
+      "min": "0.01",
+      "max": "0.2"
+    }
+  ],
+  "system": "Au-Au-200",
+  "chain": "mcmc/01_01_baseline_reproduction/chain-idf-0.hdf",
+  "chain_size_bytes": 1602808120,
+  "chain_mtime_ns": 1791356821000000000,
+  "chain_schema": {
+    "chain": {
+      "shape": [
+        200,
+        50000,
+        20
+      ],
+      "attrs": {}
+    }
+  },
+  "chain_attributes": {},
+  "sampling": {
+    "walkers": 200,
+    "steps": 50000,
+    "burnin": 0,
+    "thin": 50,
+    "samples": 200000,
+    "dropped_nonfinite": 0
+  },
+  "chain_processing": "Project load_samples(): discard production steps then stride steps before flattening; burn-in saved separately by run_mcmc().",
+  "anchor_method": "coordinatewise posterior median (not MAP)",
+  "MAP_available": false,
+  "anchor": [
+    1.0111664214439668,
+    1.6776990044545066,
+    2.0540500600076665,
+    0.6148727085175814,
+    0.4672335090856701,
+    0.06934495366976326,
+    0.5412217701865488,
+    7.426165992883077,
+    0.20652227207252422,
+    0.4755047453954499,
+    0.4799940461683386,
+    0.21214142204584024,
+    -0.8498547051239919,
+    0.7760484136159731,
+    0.10255867183802211,
+    0.09034613247103954,
+    0.1620171969669495,
+    0.08317034289622399,
+    -0.27546092630729424,
+    0.5459625719029837
+  ],
+  "all_parameter_names": [
+    "ylossParam4At2",
+    "ylossParam4At4",
+    "ylossParam4At6",
+    "ylossParam4var",
+    "remnant_energy_loss_fraction",
+    "shadowing_factor",
+    "tau_form_mean",
+    "BG",
+    "string_source_sigma_x",
+    "string_source_sigma_eta",
+    "stringTransverseShiftFrac",
+    "shear_viscosity_3_eta_over_s_T_kink_in_GeV",
+    "shear_viscosity_3_eta_over_s_low_T_slope_in_GeV",
+    "shear_viscosity_3_eta_over_s_high_T_slope_in_GeV",
+    "shear_viscosity_3_eta_over_s_at_kink",
+    "bulk_viscosity_3_zeta_over_s_max",
+    "bulk_viscosity_3_zeta_over_s_T_peak_in_GeV",
+    "bulk_viscosity_3_zeta_over_s_width_in_GeV",
+    "bulk_viscosity_3_zeta_over_s_lambda_asymm",
+    "eps_switch"
+  ],
+  "observables": [
+    {
+      "observable": "v22_pt_cen_30_40_STAR",
+      "bin_index": 3,
+      "emulator_output_index": 728,
+      "bin_low": 0.75,
+      "bin_high": 0.9,
+      "experiment": 0.102,
+      "experimental_std": 0.00035000000000000005,
+      "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_30_40_STAR.dat",
+      "gp_std_at_anchor": 0.0050360396618608335,
+      "gradient_per_prior_span": [
+        -0.03302450282102257,
+        0.012034770511369294
+      ],
+      "weighted_gradient": [
+        -6.541853651705735,
+        2.3839785823247692
+      ],
+      "pilot_mean_range": [
+        0.08516918958014484,
+        0.12434563149640566
+      ],
+      "pilot_compatible_fraction": 0.3254437869822485
+    },
+    {
+      "observable": "meanpT_pi_STAR",
+      "bin_index": 5,
+      "emulator_output_index": 766,
+      "bin_low": 40.0,
+      "bin_high": 50.0,
+      "experiment": 0.395,
+      "experimental_std": 0.02,
+      "file": "HIC_experimental_data/Au-Au-200/STAR/meanpT_pi_STAR.dat",
+      "gp_std_at_anchor": 0.015419044743843613,
+      "gradient_per_prior_span": [
+        0.02676788853172435,
+        -0.08983928121799462
+      ],
+      "weighted_gradient": [
+        1.0599610900141523,
+        -3.5574768003481076
+      ],
+      "pilot_mean_range": [
+        0.38251542571307356,
+        0.47595471863093436
+      ],
+      "pilot_compatible_fraction": 0.6331360946745562
+    }
+  ],
+  "selection_method": "Maximize absolute determinant of uncertainty-weighted local gradients: one flow bin and one mean-pT bin, requiring coarse-grid measurement compatibility. Selected to illustrate complementarity, not discovery significance.",
+  "sensitivity_determinant": 20.745568060524352,
+  "gradient_sine_angle": 0.8026685450960395,
+  "historical_validation": {
+    "observable_groups": 34,
+    "tolerance_rtol": 1e-06,
+    "tolerance_atol": 1e-10,
+    "sklearn_cache_version": "1.6.1"
+  },
+  "experimental_covariance": "Baseline: diagonal. The err input column is variance; std=sqrt(err), as in bayes_exp.py. No separate statistical/systematic decomposition supplied.",
+  "transformed_coordinates": "Native Emulator.predict() applies transform_design(), source GP prediction and PCA/scaler inverse reconstruction. Selected outputs are non-logarithmic.",
+  "posterior_scope": "Full saved calibration, all active observables and both systems Au-Au-200 and d-Au-200; 2D marginal over other 18 parameters, NOT a new two-observable posterior.",
+  "compatibility": "Abs(GP mean - measurement) <= sqrt(experimental marginal variance + GP marginal variance). A pointwise 1-sigma diagnostic, NOT joint likelihood or posterior.",
+  "convergence_diagnostics": [
+    {
+      "parameter": "shear_viscosity_3_eta_over_s_at_kink",
+      "tau_steps": 3212.6008751835866,
+      "steps_over_tau": 15.563713621021382,
+      "ess_approx": 3112.7427242042763,
+      "window_lag": 16064,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.12488533553182464,
+      "tau_prefix_steps": [
+        10000,
+        20000,
+        30000,
+        40000,
+        50000
+      ],
+      "tau_prefix_values": [
+        948.9810459676609,
+        1643.5637877959318,
+        2251.1837501077566,
+        2811.394136956451,
+        3212.6008751835866
+      ]
+    },
+    {
+      "parameter": "bulk_viscosity_3_zeta_over_s_max",
+      "tau_steps": 3698.9003302234814,
+      "steps_over_tau": 13.517531032521518,
+      "ess_approx": 2703.5062065043035,
+      "window_lag": 18496,
+      "window_found": true,
+      "passes_50tau": false,
+      "relative_tau_change": 0.14806620655031208,
+      "tau_prefix_steps": [
+        10000,
+        20000,
+        30000,
+        40000,
+        50000
+      ],
+      "tau_prefix_values": [
+        905.8381575553266,
+        1805.3740657975916,
+        2470.4284642460907,
+        3151.218189919594,
+        3698.9003302234814
+      ]
+    }
+  ],
+  "limitations": [
+    "No saved MAP or log-posterior values found; median used if MAP unavailable.",
+    "Thinning reduces display size, not proof of independent draws.",
+    "Published existing convergence diagnostics include finite-chain limitations; contours are estimates from saved samples.",
+    "Covariance off-diagonals within a single observed bin do not enter the diagnostic; full chain inference includes the baseline multi-bin likelihood."
+  ],
+  "versions": {
+    "python": "3.9.6",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sklearn": "1.6.1",
+    "dill": "0.4.1",
+    "matplotlib": "3.9.4"
+  },
+  "input_snapshots": [
+    {
+      "path": "production_designs/ProductionMaxPro-Mod/design_pts_Au_Au_200_production/design_ranges_main_AuAu-200.dat",
+      "bytes": 742,
+      "sha256": "7d07a3143ad39932b3c8319755d70e6052a48483d0fd5ec321f019e3fd2b13c3",
+      "snapshot": "inputs/production_designs/ProductionMaxPro-Mod/design_pts_Au_Au_200_production/design_ranges_main_AuAu-200.dat"
+    },
+    {
+      "path": "configurations.py",
+      "bytes": 19133,
+      "sha256": "327a1fb1351123868b335281821098008cb0cd2305ce2c01bbc5fe17c8e52fd3",
+      "snapshot": "inputs/configurations.py"
+    },
+    {
+      "path": "bins_and_cuts.py",
+      "bytes": 11415,
+      "sha256": "a6c2640689e4e5ec180ad30e02de0ce367c8b844a04af6832a99789aa426a013",
+      "snapshot": "inputs/bins_and_cuts.py"
+    },
+    {
+      "path": "bayes_mcmc.py",
+      "bytes": 32122,
+      "sha256": "4b706767341979d60567236ba93b516053236f93a957bb914477432af4a7a400",
+      "snapshot": "inputs/bayes_mcmc.py"
+    },
+    {
+      "path": "bayes_exp.py",
+      "bytes": 3580,
+      "sha256": "616b938288266e42f01d7b5fc1ee5921e40f39ad9f872cfacad05f39941ffeac",
+      "snapshot": "inputs/bayes_exp.py"
+    },
+    {
+      "path": "emulator.py",
+      "bytes": 16155,
+      "sha256": "ffee5966521081421e6c3da715018cc2ed5fcbe374a2513f9faccb262b933c87",
+      "snapshot": "inputs/emulator.py"
+    },
+    {
+      "path": "mcmc/01_01_baseline_reproduction/plots/posterior_corner.json",
+      "bytes": 3637,
+      "sha256": "1e96fce00a7384e1c59933757c2fbc09c6299416c5d4f4cbe22b2c578b13a922",
+      "snapshot": "inputs/mcmc/01_01_baseline_reproduction/plots/posterior_corner.json"
+    },
+    {
+      "path": "mcmc/01_01_baseline_reproduction/plots/convergencia/diagnostics.json",
+      "bytes": 12947,
+      "sha256": "b9f292b418f31e0ee22fdaa4e9c098bc962e4bf40050f9e805b18a57a3be4cc5",
+      "snapshot": "inputs/mcmc/01_01_baseline_reproduction/plots/convergencia/diagnostics.json"
+    },
+    {
+      "path": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_30_40_STAR.dat",
+      "bytes": 298,
+      "sha256": "a21ca5e56f91f0cff0d11b406212c9047ad7cf0cbe7a99cb1c88445da70e052d",
+      "snapshot": "inputs/HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_30_40_STAR.dat"
+    },
+    {
+      "path": "HIC_experimental_data/Au-Au-200/STAR/meanpT_pi_STAR.dat",
+      "bytes": 130,
+      "sha256": "79a8c52403adf41ad74d18668c1136bd797577279c99b4b43107efede28f8e24",
+      "snapshot": "inputs/HIC_experimental_data/Au-Au-200/STAR/meanpT_pi_STAR.dat"
+    }
+  ],
+  "original_emulator": {
+    "path": "emulator/emulator-Au-Au-200-idf-0-npc-10.dill",
+    "bytes": 74258292,
+    "sha256": "53a0084d22ad7c69b00c4c86968225541d14c60c27382dc1d0af204a2427e121"
+  },
+  "posterior_snapshot_sha256": "cdbb3c04ed2f390abb07314b9fdf70c423891d092ffd5f63f954b69ebd5a8da3"
+}

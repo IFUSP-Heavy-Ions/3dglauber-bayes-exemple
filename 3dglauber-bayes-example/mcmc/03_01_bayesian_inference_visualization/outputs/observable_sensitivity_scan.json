@@ -1,0 +1,4730 @@
+[
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 0,
+    "emulator_output_index": 594,
+    "bin_low": -3.9,
+    "bin_high": -3.7,
+    "experiment": 0.0279,
+    "experimental_std": 0.004548,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.0018427240746286995,
+    "gradient_per_prior_span": [
+      -0.0033406029392984288,
+      -0.0005344729514937183
+    ],
+    "weighted_gradient": [
+      -0.6807649611720016,
+      -0.10891760100873277
+    ],
+    "pilot_mean_range": [
+      0.03710621670088156,
+      0.04328458221132287
+    ],
+    "pilot_compatible_fraction": 0.0
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 1,
+    "emulator_output_index": 595,
+    "bin_low": -3.7,
+    "bin_high": -3.5,
+    "experiment": 0.0301,
+    "experimental_std": 0.004512,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.0018661041677754662,
+    "gradient_per_prior_span": [
+      -0.004102273441310145,
+      -0.002057676293104778
+    ],
+    "weighted_gradient": [
+      -0.8401697249664016,
+      -0.4214242053780792
+    ],
+    "pilot_mean_range": [
+      0.03906197129336864,
+      0.046038003652869704
+    ],
+    "pilot_compatible_fraction": 0.0
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 2,
+    "emulator_output_index": 596,
+    "bin_low": -3.5,
+    "bin_high": -3.3,
+    "experiment": 0.0321,
+    "experimental_std": 0.004652,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.0019975443809337004,
+    "gradient_per_prior_span": [
+      -0.005025059084344356,
+      -0.003652445701312311
+    ],
+    "weighted_gradient": [
+      -0.992558152991522,
+      -0.721437240507467
+    ],
+    "pilot_mean_range": [
+      0.04049621287448982,
+      0.04872379302529348
+    ],
+    "pilot_compatible_fraction": 0.0
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 3,
+    "emulator_output_index": 597,
+    "bin_low": -3.3,
+    "bin_high": -3.1,
+    "experiment": 0.0346,
+    "experimental_std": 0.004902,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.002182708554058205,
+    "gradient_per_prior_span": [
+      -0.006165306420322092,
+      -0.005052931412136662
+    ],
+    "weighted_gradient": [
+      -1.14896028936738,
+      -0.941659204205257
+    ],
+    "pilot_mean_range": [
+      0.0414976208641084,
+      0.05137765158790858
+    ],
+    "pilot_compatible_fraction": 0.0
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 4,
+    "emulator_output_index": 598,
+    "bin_low": -3.1,
+    "bin_high": -2.9,
+    "experiment": 0.0376,
+    "experimental_std": 0.005242,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.0023734811038744557,
+    "gradient_per_prior_span": [
+      -0.00728837530775267,
+      -0.006264695712992693
+    ],
+    "weighted_gradient": [
+      -1.266596183836078,
+      -1.088698008530168
+    ],
+    "pilot_mean_range": [
+      0.04216323049594511,
+      0.053907891793228295
+    ],
+    "pilot_compatible_fraction": 0.17751479289940827
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 5,
+    "emulator_output_index": 599,
+    "bin_low": -2.9,
+    "bin_high": -2.7,
+    "experiment": 0.0361,
+    "experimental_std": 0.005242,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.002582095518222421,
+    "gradient_per_prior_span": [
+      -0.008462760204615977,
+      -0.00712914994244751
+    ],
+    "weighted_gradient": [
+      -1.4482499033314256,
+      -1.220026382096143
+    ],
+    "pilot_mean_range": [
+      0.04272655503456029,
+      0.0563500350436575
+    ],
+    "pilot_compatible_fraction": 0.0
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 6,
+    "emulator_output_index": 600,
+    "bin_low": -0.9,
+    "bin_high": -0.7,
+    "experiment": 0.0646,
+    "experimental_std": 0.008322,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.0024983637865965726,
+    "gradient_per_prior_span": [
+      -0.015423612215905227,
+      -0.0031876775310454852
+    ],
+    "weighted_gradient": [
+      -1.7750876238030335,
+      -0.3668665196469836
+    ],
+    "pilot_mean_range": [
+      0.05574396942224614,
+      0.0725592017048232
+    ],
+    "pilot_compatible_fraction": 0.9585798816568047
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 7,
+    "emulator_output_index": 601,
+    "bin_low": -0.7,
+    "bin_high": -0.5,
+    "experiment": 0.0653,
+    "experimental_std": 0.008395999999999999,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.002555537478616896,
+    "gradient_per_prior_span": [
+      -0.01576269871882731,
+      -0.002929094513652586
+    ],
+    "weighted_gradient": [
+      -1.7960511568441726,
+      -0.333750183492883
+    ],
+    "pilot_mean_range": [
+      0.05654087668449834,
+      0.07349756273801696
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 8,
+    "emulator_output_index": 602,
+    "bin_low": -0.5,
+    "bin_high": -0.3,
+    "experiment": 0.0655,
+    "experimental_std": 0.00843,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.0026458421520196853,
+    "gradient_per_prior_span": [
+      -0.016046163712254632,
+      -0.002797601073535952
+    ],
+    "weighted_gradient": [
+      -1.8161092810558357,
+      -0.31663326920067425
+    ],
+    "pilot_mean_range": [
+      0.05711049170872197,
+      0.07422918486846995
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 9,
+    "emulator_output_index": 603,
+    "bin_low": -0.3,
+    "bin_high": -0.1,
+    "experiment": 0.0651,
+    "experimental_std": 0.008382,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.0027248465889354906,
+    "gradient_per_prior_span": [
+      -0.016216094643828338,
+      -0.002735979658586782
+    ],
+    "weighted_gradient": [
+      -1.8398570376181809,
+      -0.3104206987066945
+    ],
+    "pilot_mean_range": [
+      0.05744462976482251,
+      0.07467415956513027
+    ],
+    "pilot_compatible_fraction": 0.9881656804733728
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 10,
+    "emulator_output_index": 604,
+    "bin_low": -0.1,
+    "bin_high": 0.1,
+    "experiment": 0.0652,
+    "experimental_std": 0.008394,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.0027500039744853713,
+    "gradient_per_prior_span": [
+      -0.016236469238108814,
+      -0.0027100350257835276
+    ],
+    "weighted_gradient": [
+      -1.838161766486095,
+      -0.3068082535174175
+    ],
+    "pilot_mean_range": [
+      0.057591105523088354,
+      0.07482474334900818
+    ],
+    "pilot_compatible_fraction": 0.9881656804733728
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 11,
+    "emulator_output_index": 605,
+    "bin_low": 0.1,
+    "bin_high": 0.3,
+    "experiment": 0.0654,
+    "experimental_std": 0.008418,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.0027185896770021228,
+    "gradient_per_prior_span": [
+      -0.016171504454595698,
+      -0.0027274975966853215
+    ],
+    "weighted_gradient": [
+      -1.8280946063036987,
+      -0.3083277538713942
+    ],
+    "pilot_mean_range": [
+      0.05745395094021156,
+      0.07463628278577221
+    ],
+    "pilot_compatible_fraction": 0.9940828402366864
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 12,
+    "emulator_output_index": 606,
+    "bin_low": 0.3,
+    "bin_high": 0.5,
+    "experiment": 0.0655,
+    "experimental_std": 0.00843,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.002644371512080887,
+    "gradient_per_prior_span": [
+      -0.01600149229299859,
+      -0.002772707920790929
+    ],
+    "weighted_gradient": [
+      -1.8111436089515667,
+      -0.31383149385555376
+    ],
+    "pilot_mean_range": [
+      0.05712019926002459,
+      0.07418457773231969
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 13,
+    "emulator_output_index": 607,
+    "bin_low": 0.5,
+    "bin_high": 0.7,
+    "experiment": 0.0656,
+    "experimental_std": 0.008432,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.00254589353257131,
+    "gradient_per_prior_span": [
+      -0.015692470185105917,
+      -0.002937943962967593
+    ],
+    "weighted_gradient": [
+      -1.7816232464212833,
+      -0.33355546955724896
+    ],
+    "pilot_mean_range": [
+      0.05652777207706573,
+      0.07342612608799515
+    ],
+    "pilot_compatible_fraction": 0.9526627218934911
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 14,
+    "emulator_output_index": 608,
+    "bin_low": 0.7,
+    "bin_high": 0.9,
+    "experiment": 0.0649,
+    "experimental_std": 0.008357999999999999,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.0024857160626932267,
+    "gradient_per_prior_span": [
+      -0.015348185023376232,
+      -0.003164908232186972
+    ],
+    "weighted_gradient": [
+      -1.7601529116762404,
+      -0.3629564298050518
+    ],
+    "pilot_mean_range": [
+      0.055757394500283816,
+      0.07249438043054497
+    ],
+    "pilot_compatible_fraction": 0.9408284023668639
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 15,
+    "emulator_output_index": 609,
+    "bin_low": 2.7,
+    "bin_high": 2.9,
+    "experiment": 0.0361,
+    "experimental_std": 0.005292,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.0025392667818843087,
+    "gradient_per_prior_span": [
+      -0.008365243381471509,
+      -0.007147681989383772
+    ],
+    "weighted_gradient": [
+      -1.425161815964207,
+      -1.2177294765251567
+    ],
+    "pilot_mean_range": [
+      0.042656818101336896,
+      0.056239103432014284
+    ],
+    "pilot_compatible_fraction": 0.0
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 16,
+    "emulator_output_index": 610,
+    "bin_low": 2.9,
+    "bin_high": 3.1,
+    "experiment": 0.0367,
+    "experimental_std": 0.005184,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.002360948050840259,
+    "gradient_per_prior_span": [
+      -0.0071828396463581926,
+      -0.006282841421211514
+    ],
+    "weighted_gradient": [
+      -1.2609639236855168,
+      -1.102967177389454
+    ],
+    "pilot_mean_range": [
+      0.042117597679576804,
+      0.05381008435998847
+    ],
+    "pilot_compatible_fraction": 0.05325443786982249
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 17,
+    "emulator_output_index": 611,
+    "bin_low": 3.1,
+    "bin_high": 3.3,
+    "experiment": 0.0347,
+    "experimental_std": 0.004954,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.0021585235589515546,
+    "gradient_per_prior_span": [
+      -0.005979790986023262,
+      -0.00506909142960147
+    ],
+    "weighted_gradient": [
+      -1.106584579815608,
+      -0.9380559325206189
+    ],
+    "pilot_mean_range": [
+      0.04148825002227878,
+      0.05123932304398915
+    ],
+    "pilot_compatible_fraction": 0.0
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 18,
+    "emulator_output_index": 612,
+    "bin_low": 3.3,
+    "bin_high": 3.5,
+    "experiment": 0.0324,
+    "experimental_std": 0.0047279999999999996,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.0019888246104845107,
+    "gradient_per_prior_span": [
+      -0.00488148989611064,
+      -0.0036282411632875683
+    ],
+    "weighted_gradient": [
+      -0.9516929722324415,
+      -0.7073601892357527
+    ],
+    "pilot_mean_range": [
+      0.04048431536814707,
+      0.04857411073452393
+    ],
+    "pilot_compatible_fraction": 0.0
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 19,
+    "emulator_output_index": 613,
+    "bin_low": 3.5,
+    "bin_high": 3.7,
+    "experiment": 0.029,
+    "experimental_std": 0.00443,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.0018755621330187623,
+    "gradient_per_prior_span": [
+      -0.003886426865843881,
+      -0.002059675191200608
+    ],
+    "weighted_gradient": [
+      -0.8078748950981651,
+      -0.4281464534046183
+    ],
+    "pilot_mean_range": [
+      0.039084423672651504,
+      0.04586328081170291
+    ],
+    "pilot_compatible_fraction": 0.0
+  },
+  {
+    "observable": "v22_eta_cen_20_70_STAR",
+    "bin_index": 20,
+    "emulator_output_index": 614,
+    "bin_low": 3.7,
+    "bin_high": 3.9,
+    "experiment": 0.0267,
+    "experimental_std": 0.004404,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_eta_cen_20_70_STAR.dat",
+    "gp_std_at_anchor": 0.0018501729482113527,
+    "gradient_per_prior_span": [
+      -0.003174302085169091,
+      -0.0005453748709376496
+    ],
+    "weighted_gradient": [
+      -0.6645169747248664,
+      -0.11417024895636115
+    ],
+    "pilot_mean_range": [
+      0.03716867207963803,
+      0.04311178175290612
+    ],
+    "pilot_compatible_fraction": 0.0
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 0,
+    "emulator_output_index": 615,
+    "bin_low": -5.06,
+    "bin_high": -4.86,
+    "experiment": 0.0148,
+    "experimental_std": 0.011209817126073022,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.00144163829450417,
+    "gradient_per_prior_span": [
+      -0.0012642324389550586,
+      0.0021087468093152276
+    ],
+    "weighted_gradient": [
+      -0.1118578140548179,
+      0.18657946214387433
+    ],
+    "pilot_mean_range": [
+      0.01009700294137643,
+      0.013088366627036498
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 1,
+    "emulator_output_index": 616,
+    "bin_low": -4.23,
+    "bin_high": -4.03,
+    "experiment": 0.0146,
+    "experimental_std": 0.009969954864491615,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.0011559725133647553,
+    "gradient_per_prior_span": [
+      -0.000580366091924682,
+      0.0002079663835589246
+    ],
+    "weighted_gradient": [
+      -0.05782412802275616,
+      0.020720498586436188
+    ],
+    "pilot_mean_range": [
+      0.01665261496512459,
+      0.018229271713836506
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 2,
+    "emulator_output_index": 617,
+    "bin_low": -3.77,
+    "bin_high": -3.57,
+    "experiment": 0.0234,
+    "experimental_std": 0.006410148204214938,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.0011721794219774527,
+    "gradient_per_prior_span": [
+      -0.0009750874031354446,
+      -0.001442045586283816
+    ],
+    "weighted_gradient": [
+      -0.1496349599904345,
+      -0.22129342755747655
+    ],
+    "pilot_mean_range": [
+      0.01861034158241867,
+      0.02090501225158589
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 3,
+    "emulator_output_index": 618,
+    "bin_low": -3.14,
+    "bin_high": -2.94,
+    "experiment": 0.0226,
+    "experimental_std": 0.004870318264754368,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.0015875512209355886,
+    "gradient_per_prior_span": [
+      -0.0025859252337362415,
+      -0.004073412976793658
+    ],
+    "weighted_gradient": [
+      -0.504814022301298,
+      -0.7951954536359384
+    ],
+    "pilot_mean_range": [
+      0.020007806798870487,
+      0.025755607746363048
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 4,
+    "emulator_output_index": 619,
+    "bin_low": -1.79,
+    "bin_high": -1.59,
+    "experiment": 0.0292,
+    "experimental_std": 0.004740253157796533,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.0018149098404479627,
+    "gradient_per_prior_span": [
+      -0.005268481605648877,
+      -0.004018496664731641
+    ],
+    "weighted_gradient": [
+      -1.037957771233172,
+      -0.7916948665741952
+    ],
+    "pilot_mean_range": [
+      0.02514266233666483,
+      0.033386898724104046
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 5,
+    "emulator_output_index": 620,
+    "bin_low": -1.32,
+    "bin_high": -1.12,
+    "experiment": 0.0304,
+    "experimental_std": 0.004679743582719036,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.0017014022414078016,
+    "gradient_per_prior_span": [
+      -0.005856408981990725,
+      -0.0030949901255083317
+    ],
+    "weighted_gradient": [
+      -1.1761192535921738,
+      -0.6215545204376528
+    ],
+    "pilot_mean_range": [
+      0.02776185197252416,
+      0.03568754256493071
+    ],
+    "pilot_compatible_fraction": 0.9881656804733728
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 6,
+    "emulator_output_index": 621,
+    "bin_low": -0.86,
+    "bin_high": -0.66,
+    "experiment": 0.032,
+    "experimental_std": 0.0048404545241123795,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.0016702211568749292,
+    "gradient_per_prior_span": [
+      -0.006209378854054107,
+      -0.002683649867017343
+    ],
+    "weighted_gradient": [
+      -1.2126481450542104,
+      -0.5240979991241492
+    ],
+    "pilot_mean_range": [
+      0.029365075993450097,
+      0.03722136028779756
+    ],
+    "pilot_compatible_fraction": 0.9940828402366864
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 7,
+    "emulator_output_index": 622,
+    "bin_low": -0.41,
+    "bin_high": -0.21,
+    "experiment": 0.0316,
+    "experimental_std": 0.004740253157796533,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.001781935743581123,
+    "gradient_per_prior_span": [
+      -0.006622658513636033,
+      -0.002667267536412589
+    ],
+    "weighted_gradient": [
+      -1.3077613936174506,
+      -0.5266992860023543
+    ],
+    "pilot_mean_range": [
+      0.03048354429551386,
+      0.03868764131773472
+    ],
+    "pilot_compatible_fraction": 0.8224852071005917
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 8,
+    "emulator_output_index": 623,
+    "bin_low": 0.21,
+    "bin_high": 0.41,
+    "experiment": 0.0316,
+    "experimental_std": 0.004740253157796533,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.0018152263431151293,
+    "gradient_per_prior_span": [
+      -0.006626721314738522,
+      -0.0025675127913064866
+    ],
+    "weighted_gradient": [
+      -1.3055191300939761,
+      -0.5058213415971698
+    ],
+    "pilot_mean_range": [
+      0.03050281199433697,
+      0.03859635828344037
+    ],
+    "pilot_compatible_fraction": 0.8224852071005917
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 9,
+    "emulator_output_index": 624,
+    "bin_low": 0.66,
+    "bin_high": 0.86,
+    "experiment": 0.032,
+    "experimental_std": 0.0048404545241123795,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.001712824148698179,
+    "gradient_per_prior_span": [
+      -0.0061885448394159714,
+      -0.0025713529254249926
+    ],
+    "weighted_gradient": [
+      -1.2052712943791168,
+      -0.5007926659904409
+    ],
+    "pilot_mean_range": [
+      0.029469201799751647,
+      0.03719346256689595
+    ],
+    "pilot_compatible_fraction": 0.9940828402366864
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 10,
+    "emulator_output_index": 625,
+    "bin_low": 1.12,
+    "bin_high": 1.32,
+    "experiment": 0.0304,
+    "experimental_std": 0.004679743582719036,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.0017208479358038905,
+    "gradient_per_prior_span": [
+      -0.00584079785397023,
+      -0.0029768945400509075
+    ],
+    "weighted_gradient": [
+      -1.171413176636218,
+      -0.5970371817099733
+    ],
+    "pilot_mean_range": [
+      0.027824728107060624,
+      0.03563040667658199
+    ],
+    "pilot_compatible_fraction": 0.9940828402366864
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 11,
+    "emulator_output_index": 626,
+    "bin_low": 1.59,
+    "bin_high": 1.79,
+    "experiment": 0.0292,
+    "experimental_std": 0.004740253157796533,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.0018161069410081217,
+    "gradient_per_prior_span": [
+      -0.005322839359776007,
+      -0.003880963338519401
+    ],
+    "weighted_gradient": [
+      -1.0485784885556584,
+      -0.7645345644652042
+    ],
+    "pilot_mean_range": [
+      0.025235984213698097,
+      0.033417918351860254
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 12,
+    "emulator_output_index": 627,
+    "bin_low": 2.94,
+    "bin_high": 3.14,
+    "experiment": 0.0226,
+    "experimental_std": 0.004870318264754368,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.001566152882158296,
+    "gradient_per_prior_span": [
+      -0.0025867459937167943,
+      -0.004124885964642069
+    ],
+    "weighted_gradient": [
+      -0.5056248414098593,
+      -0.8062812571361595
+    ],
+    "pilot_mean_range": [
+      0.02002523930168857,
+      0.025816901095527013
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 13,
+    "emulator_output_index": 628,
+    "bin_low": 3.57,
+    "bin_high": 3.77,
+    "experiment": 0.0234,
+    "experimental_std": 0.006410148204214938,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.0011510024639917356,
+    "gradient_per_prior_span": [
+      -0.0009681674410573493,
+      -0.0014228113019737476
+    ],
+    "weighted_gradient": [
+      -0.1486591781650044,
+      -0.21846836597221223
+    ],
+    "pilot_mean_range": [
+      0.018645691779440594,
+      0.021000148188698074
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 14,
+    "emulator_output_index": 629,
+    "bin_low": 4.03,
+    "bin_high": 4.23,
+    "experiment": 0.0146,
+    "experimental_std": 0.01038989894079822,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.001154267870705937,
+    "gradient_per_prior_span": [
+      -0.0005051656936070487,
+      0.00020290115137142073
+    ],
+    "weighted_gradient": [
+      -0.048323554054493734,
+      0.019409284676490262
+    ],
+    "pilot_mean_range": [
+      0.016651444018779042,
+      0.018219477714532268
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_03_15_PHOB",
+    "bin_index": 15,
+    "emulator_output_index": 630,
+    "bin_low": 4.86,
+    "bin_high": 5.06,
+    "experiment": 0.0148,
+    "experimental_std": 0.011209817126073022,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_03_15_PHOB.dat",
+    "gp_std_at_anchor": 0.0014104193117869966,
+    "gradient_per_prior_span": [
+      -0.0013291663285341926,
+      0.0024273389463473627
+    ],
+    "weighted_gradient": [
+      -0.11764409728421571,
+      0.21484301325987792
+    ],
+    "pilot_mean_range": [
+      0.010120346675786727,
+      0.013477457815442106
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 0,
+    "emulator_output_index": 631,
+    "bin_low": -5.06,
+    "bin_high": -4.86,
+    "experiment": 0.0183,
+    "experimental_std": 0.016130096093948106,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.002090755038978116,
+    "gradient_per_prior_span": [
+      -0.002153899432414102,
+      0.002958656789571728
+    ],
+    "weighted_gradient": [
+      -0.13242516033089152,
+      0.1819029216624031
+    ],
+    "pilot_mean_range": [
+      0.015390290420903164,
+      0.019946654155758657
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 1,
+    "emulator_output_index": 632,
+    "bin_low": -4.23,
+    "bin_high": -4.03,
+    "experiment": 0.0239,
+    "experimental_std": 0.00788986691902975,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.001628111561983369,
+    "gradient_per_prior_span": [
+      -0.0011522600876633093,
+      2.709087100994864e-05
+    ],
+    "weighted_gradient": [
+      -0.14302951642045975,
+      0.00336277739847761
+    ],
+    "pilot_mean_range": [
+      0.02558131353710547,
+      0.028615888415602808
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 2,
+    "emulator_output_index": 633,
+    "bin_low": -3.77,
+    "bin_high": -3.57,
+    "experiment": 0.028,
+    "experimental_std": 0.01,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.0015114804253887441,
+    "gradient_per_prior_span": [
+      -0.0018811279309098074,
+      -0.002249242175148859
+    ],
+    "weighted_gradient": [
+      -0.18600013672318663,
+      -0.22239813955604074
+    ],
+    "pilot_mean_range": [
+      0.028548789880262996,
+      0.03284029263553586
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 3,
+    "emulator_output_index": 634,
+    "bin_low": -3.14,
+    "bin_high": -2.94,
+    "experiment": 0.035,
+    "experimental_std": 0.0089,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.002019297608966629,
+    "gradient_per_prior_span": [
+      -0.004329023408373295,
+      -0.00654995664435571
+    ],
+    "weighted_gradient": [
+      -0.4743510401439584,
+      -0.7177089274080556
+    ],
+    "pilot_mean_range": [
+      0.03078209466860623,
+      0.040105575572940796
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 4,
+    "emulator_output_index": 635,
+    "bin_low": -1.79,
+    "bin_high": -1.59,
+    "experiment": 0.0437,
+    "experimental_std": 0.012769886452118516,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.0025686337411160855,
+    "gradient_per_prior_span": [
+      -0.00907788442317415,
+      -0.006646091900490252
+    ],
+    "weighted_gradient": [
+      -0.6969230576447725,
+      -0.510230630041253
+    ],
+    "pilot_mean_range": [
+      0.03774878158225141,
+      0.0517083102052702
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 5,
+    "emulator_output_index": 636,
+    "bin_low": -1.32,
+    "bin_high": -1.12,
+    "experiment": 0.0467,
+    "experimental_std": 0.011170049238924598,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.0024371405739834037,
+    "gradient_per_prior_span": [
+      -0.010090005072056936,
+      -0.005140785579657407
+    ],
+    "weighted_gradient": [
+      -0.8825464080888654,
+      -0.449651096870735
+    ],
+    "pilot_mean_range": [
+      0.04170795409573555,
+      0.05519397035049772
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 6,
+    "emulator_output_index": 637,
+    "bin_low": -0.86,
+    "bin_high": -0.66,
+    "experiment": 0.0498,
+    "experimental_std": 0.011080162453682707,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.002463783928123397,
+    "gradient_per_prior_span": [
+      -0.0108395779594702,
+      -0.0044400413839768005
+    ],
+    "weighted_gradient": [
+      -0.954963176374632,
+      -0.3911661541741928
+    ],
+    "pilot_mean_range": [
+      0.04420052340156493,
+      0.05769767544449072
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 7,
+    "emulator_output_index": 638,
+    "bin_low": -0.41,
+    "bin_high": -0.21,
+    "experiment": 0.051,
+    "experimental_std": 0.0109,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.0027263836875811897,
+    "gradient_per_prior_span": [
+      -0.011561706832445562,
+      -0.004187262309879314
+    ],
+    "weighted_gradient": [
+      -1.029006245422967,
+      -0.3726715380810794
+    ],
+    "pilot_mean_range": [
+      0.04596825578192174,
+      0.05984659131312214
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 8,
+    "emulator_output_index": 639,
+    "bin_low": 0.21,
+    "bin_high": 0.41,
+    "experiment": 0.051,
+    "experimental_std": 0.0109,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.0027212247379183752,
+    "gradient_per_prior_span": [
+      -0.01152239117493837,
+      -0.004160479312751569
+    ],
+    "weighted_gradient": [
+      -1.0256212701231526,
+      -0.37032904127976624
+    ],
+    "pilot_mean_range": [
+      0.04599814338204767,
+      0.05981487167480411
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 9,
+    "emulator_output_index": 640,
+    "bin_low": 0.66,
+    "bin_high": 0.86,
+    "experiment": 0.0498,
+    "experimental_std": 0.011080162453682707,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.002454254884954293,
+    "gradient_per_prior_span": [
+      -0.0107997720180171,
+      -0.004515221539404778
+    ],
+    "weighted_gradient": [
+      -0.9516293743592031,
+      -0.397861866108715
+    ],
+    "pilot_mean_range": [
+      0.04418130342281371,
+      0.05769722594278899
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 10,
+    "emulator_output_index": 641,
+    "bin_low": 1.12,
+    "bin_high": 1.32,
+    "experiment": 0.0467,
+    "experimental_std": 0.011170049238924598,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.002436923444838355,
+    "gradient_per_prior_span": [
+      -0.010069423931342858,
+      -0.005254879260993724
+    ],
+    "weighted_gradient": [
+      -0.8807497949671258,
+      -0.4596324341148285
+    ],
+    "pilot_mean_range": [
+      0.041634930441248885,
+      0.055202211574460924
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 11,
+    "emulator_output_index": 642,
+    "bin_low": 1.59,
+    "bin_high": 1.79,
+    "experiment": 0.0437,
+    "experimental_std": 0.012769886452118516,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.002615368796447536,
+    "gradient_per_prior_span": [
+      -0.00905278677631443,
+      -0.006814104053310711
+    ],
+    "weighted_gradient": [
+      -0.6945005990937531,
+      -0.5227560821042683
+    ],
+    "pilot_mean_range": [
+      0.03766092318171451,
+      0.051759866292385444
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 12,
+    "emulator_output_index": 643,
+    "bin_low": 2.94,
+    "bin_high": 3.14,
+    "experiment": 0.035,
+    "experimental_std": 0.0089,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.001993688891998571,
+    "gradient_per_prior_span": [
+      -0.004281120822074297,
+      -0.0066830322619186935
+    ],
+    "weighted_gradient": [
+      -0.4693918106554624,
+      -0.7327428363890369
+    ],
+    "pilot_mean_range": [
+      0.03072333697488884,
+      0.040165266809962415
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 13,
+    "emulator_output_index": 644,
+    "bin_low": 3.57,
+    "bin_high": 3.77,
+    "experiment": 0.028,
+    "experimental_std": 0.01,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.0015116475799648494,
+    "gradient_per_prior_span": [
+      -0.0017825704321991313,
+      -0.0022633646558863074
+    ],
+    "weighted_gradient": [
+      -0.17625463938020486,
+      -0.22379397414159408
+    ],
+    "pilot_mean_range": [
+      0.028686225605237002,
+      0.03283790940336444
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 14,
+    "emulator_output_index": 645,
+    "bin_low": 4.03,
+    "bin_high": 4.23,
+    "experiment": 0.0239,
+    "experimental_std": 0.00788986691902975,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.0016708343008060838,
+    "gradient_per_prior_span": [
+      -0.0011543504497421413,
+      0.00026890513538701047
+    ],
+    "weighted_gradient": [
+      -0.1431336601657653,
+      0.03334288670646875
+    ],
+    "pilot_mean_range": [
+      0.025640449698699167,
+      0.02858527608379181
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_15_25_PHOB",
+    "bin_index": 15,
+    "emulator_output_index": 646,
+    "bin_low": 4.86,
+    "bin_high": 5.06,
+    "experiment": 0.0183,
+    "experimental_std": 0.016130096093948106,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_15_25_PHOB.dat",
+    "gp_std_at_anchor": 0.002055449292720698,
+    "gradient_per_prior_span": [
+      -0.0021715565618096906,
+      0.0030623264978464106
+    ],
+    "weighted_gradient": [
+      -0.13354770197088903,
+      0.18832881153744016
+    ],
+    "pilot_mean_range": [
+      0.015416888684148096,
+      0.020093956442816856
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 0,
+    "emulator_output_index": 647,
+    "bin_low": -5.06,
+    "bin_high": -4.86,
+    "experiment": 0.0209,
+    "experimental_std": 0.016862087652482417,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.0025516265064686127,
+    "gradient_per_prior_span": [
+      -0.003009855819360776,
+      0.0038959615914611716
+    ],
+    "weighted_gradient": [
+      -0.17648915691352465,
+      0.22844781209170523
+    ],
+    "pilot_mean_range": [
+      0.01752318871988465,
+      0.023559114061196224
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 1,
+    "emulator_output_index": 648,
+    "bin_low": -4.23,
+    "bin_high": -4.03,
+    "experiment": 0.0276,
+    "experimental_std": 0.009203803561571704,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.0020757529627684766,
+    "gradient_per_prior_span": [
+      -0.0017898921595848813,
+      0.0006779235637931202
+    ],
+    "weighted_gradient": [
+      -0.18970820681783476,
+      0.07185218559568195
+    ],
+    "pilot_mean_range": [
+      0.03017724657152016,
+      0.03450061795771456
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 2,
+    "emulator_output_index": 649,
+    "bin_low": -3.77,
+    "bin_high": -3.57,
+    "experiment": 0.0372,
+    "experimental_std": 0.010710742271196708,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.001796694697594552,
+    "gradient_per_prior_span": [
+      -0.0024968848683236747,
+      -0.002334775300966152
+    ],
+    "weighted_gradient": [
+      -0.2299074375392582,
+      -0.21498076002016708
+    ],
+    "pilot_mean_range": [
+      0.034753751372914095,
+      0.04037186784092801
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 3,
+    "emulator_output_index": 650,
+    "bin_low": -3.14,
+    "bin_high": -2.94,
+    "experiment": 0.0448,
+    "experimental_std": 0.010923827168167756,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.0023570715423130925,
+    "gradient_per_prior_span": [
+      -0.005640421236859441,
+      -0.008151525848117819
+    ],
+    "weighted_gradient": [
+      -0.5047252512337425,
+      -0.7294279556185104
+    ],
+    "pilot_mean_range": [
+      0.03854216101508203,
+      0.05034273138398731
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 4,
+    "emulator_output_index": 651,
+    "bin_low": -1.79,
+    "bin_high": -1.59,
+    "experiment": 0.0537,
+    "experimental_std": 0.008227393268830657,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.0033576773803379433,
+    "gradient_per_prior_span": [
+      -0.012319905956835638,
+      -0.00896330709513806
+    ],
+    "weighted_gradient": [
+      -1.3864136638785416,
+      -1.0086807053380071
+    ],
+    "pilot_mean_range": [
+      0.04693544704397822,
+      0.06584723739741966
+    ],
+    "pilot_compatible_fraction": 0.9467455621301775
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 5,
+    "emulator_output_index": 652,
+    "bin_low": -1.32,
+    "bin_high": -1.12,
+    "experiment": 0.057,
+    "experimental_std": 0.008374962686484043,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.003098110721612984,
+    "gradient_per_prior_span": [
+      -0.013830488673562992,
+      -0.006841585523033496
+    ],
+    "weighted_gradient": [
+      -1.5488311204134655,
+      -0.7661667509478296
+    ],
+    "pilot_mean_range": [
+      0.05185956860565208,
+      0.07022362885522015
+    ],
+    "pilot_compatible_fraction": 0.9230769230769231
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 6,
+    "emulator_output_index": 653,
+    "bin_low": -0.86,
+    "bin_high": -0.66,
+    "experiment": 0.061,
+    "experimental_std": 0.008470537173048708,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.003016200887020355,
+    "gradient_per_prior_span": [
+      -0.014823175828664048,
+      -0.0055836654445428485
+    ],
+    "weighted_gradient": [
+      -1.6485724926784697,
+      -0.6209922466407292
+    ],
+    "pilot_mean_range": [
+      0.05497416419131919,
+      0.07323304872791633
+    ],
+    "pilot_compatible_fraction": 0.9408284023668639
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 7,
+    "emulator_output_index": 654,
+    "bin_low": -0.41,
+    "bin_high": -0.21,
+    "experiment": 0.0634,
+    "experimental_std": 0.008346256645946133,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.0032673159423759466,
+    "gradient_per_prior_span": [
+      -0.015731025369808416,
+      -0.004852849794107286
+    ],
+    "weighted_gradient": [
+      -1.7551073179282675,
+      -0.5414314697369351
+    ],
+    "pilot_mean_range": [
+      0.05723961854211386,
+      0.07581819376211853
+    ],
+    "pilot_compatible_fraction": 0.9349112426035503
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 8,
+    "emulator_output_index": 655,
+    "bin_low": 0.21,
+    "bin_high": 0.41,
+    "experiment": 0.0634,
+    "experimental_std": 0.008346256645946133,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.0032638981796305074,
+    "gradient_per_prior_span": [
+      -0.015744608057060433,
+      -0.004835048657454363
+    ],
+    "weighted_gradient": [
+      -1.7568668358027824,
+      -0.5395203618273045
+    ],
+    "pilot_mean_range": [
+      0.05725180972761293,
+      0.07583735684987038
+    ],
+    "pilot_compatible_fraction": 0.9349112426035503
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 9,
+    "emulator_output_index": 656,
+    "bin_low": 0.66,
+    "bin_high": 0.86,
+    "experiment": 0.061,
+    "experimental_std": 0.008470537173048708,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.002994601255850537,
+    "gradient_per_prior_span": [
+      -0.014845628093970026,
+      -0.005554715104751605
+    ],
+    "weighted_gradient": [
+      -1.6523968473846913,
+      -0.6182691408617346
+    ],
+    "pilot_mean_range": [
+      0.05497548622716216,
+      0.07323763160793749
+    ],
+    "pilot_compatible_fraction": 0.9408284023668639
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 10,
+    "emulator_output_index": 657,
+    "bin_low": 1.12,
+    "bin_high": 1.32,
+    "experiment": 0.057,
+    "experimental_std": 0.008374962686484043,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.0030451033511580644,
+    "gradient_per_prior_span": [
+      -0.013831898034669284,
+      -0.006787014907452468
+    ],
+    "weighted_gradient": [
+      -1.552161555061866,
+      -0.7616122954763646
+    ],
+    "pilot_mean_range": [
+      0.0518859072114813,
+      0.07021573230682951
+    ],
+    "pilot_compatible_fraction": 0.9230769230769231
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 11,
+    "emulator_output_index": 658,
+    "bin_low": 1.59,
+    "bin_high": 1.79,
+    "experiment": 0.0537,
+    "experimental_std": 0.008227393268830657,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.0032966969547269715,
+    "gradient_per_prior_span": [
+      -0.012336589548903737,
+      -0.00885425983635467
+    ],
+    "weighted_gradient": [
+      -1.3918720813636325,
+      -0.9989792574769203
+    ],
+    "pilot_mean_range": [
+      0.04696515084316273,
+      0.06580187238213857
+    ],
+    "pilot_compatible_fraction": 0.9467455621301775
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 12,
+    "emulator_output_index": 659,
+    "bin_low": 2.94,
+    "bin_high": 3.14,
+    "experiment": 0.0448,
+    "experimental_std": 0.010923827168167756,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.002351463646397292,
+    "gradient_per_prior_span": [
+      -0.005616299511534278,
+      -0.007989510895035738
+    ],
+    "weighted_gradient": [
+      -0.5026198902070391,
+      -0.7150058647377564
+    ],
+    "pilot_mean_range": [
+      0.038580438764885226,
+      0.05024838610981047
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 13,
+    "emulator_output_index": 660,
+    "bin_low": 3.57,
+    "bin_high": 3.77,
+    "experiment": 0.0372,
+    "experimental_std": 0.010710742271196708,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.0018457957422258618,
+    "gradient_per_prior_span": [
+      -0.0023188794733100884,
+      -0.0023137166131321704
+    ],
+    "weighted_gradient": [
+      -0.2133554096515331,
+      -0.2128803853301263
+    ],
+    "pilot_mean_range": [
+      0.034733931805762126,
+      0.040195312160794305
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 14,
+    "emulator_output_index": 661,
+    "bin_low": 4.03,
+    "bin_high": 4.23,
+    "experiment": 0.0276,
+    "experimental_std": 0.009203803561571704,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.0021075029982030344,
+    "gradient_per_prior_span": [
+      -0.0016633334035861744,
+      0.0006557693453982522
+    ],
+    "weighted_gradient": [
+      -0.17616304726278334,
+      0.06945229737935205
+    ],
+    "pilot_mean_range": [
+      0.03014370875014412,
+      0.03435253052763527
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_eta_cen_25_50_PHOB",
+    "bin_index": 15,
+    "emulator_output_index": 662,
+    "bin_low": 4.86,
+    "bin_high": 5.06,
+    "experiment": 0.0209,
+    "experimental_std": 0.016862087652482417,
+    "file": "HIC_experimental_data/Au-Au-200/PHOBOS/v22_eta_cen_25_50_PHOB.dat",
+    "gp_std_at_anchor": 0.0026442838945698738,
+    "gradient_per_prior_span": [
+      -0.003085217316550499,
+      0.0036827586909837264
+    ],
+    "weighted_gradient": [
+      -0.18075858875074566,
+      0.21576770625547143
+    ],
+    "pilot_mean_range": [
+      0.017472096287177222,
+      0.023365553300989203
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "v22_pt_cen_00_10_PHEN",
+    "bin_index": 0,
+    "emulator_output_index": 663,
+    "bin_low": 0.25,
+    "bin_high": 0.5,
+    "experiment": 0.0169959,
+    "experimental_std": 0.0018516071397572434,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_00_10_PHEN.dat",
+    "gp_std_at_anchor": 0.0009354730254489238,
+    "gradient_per_prior_span": [
+      -0.003901195184895581,
+      0.0004468415800122291
+    ],
+    "weighted_gradient": [
+      -1.8805453449234357,
+      0.2153970292139387
+    ],
+    "pilot_mean_range": [
+      0.017328296056952554,
+      0.022410473622640238
+    ],
+    "pilot_compatible_fraction": 0.24260355029585798
+  },
+  {
+    "observable": "v22_pt_cen_00_10_PHEN",
+    "bin_index": 1,
+    "emulator_output_index": 664,
+    "bin_low": 0.5,
+    "bin_high": 0.75,
+    "experiment": 0.0274202,
+    "experimental_std": 0.001987205324041781,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_00_10_PHEN.dat",
+    "gp_std_at_anchor": 0.0016579214187768694,
+    "gradient_per_prior_span": [
+      -0.007489140066110206,
+      0.0022730297153841783
+    ],
+    "weighted_gradient": [
+      -2.8938064659687237,
+      0.8782995149847941
+    ],
+    "pilot_mean_range": [
+      0.03006553040606932,
+      0.040371098700314315
+    ],
+    "pilot_compatible_fraction": 0.0
+  },
+  {
+    "observable": "v22_pt_cen_00_10_PHEN",
+    "bin_index": 2,
+    "emulator_output_index": 665,
+    "bin_low": 0.75,
+    "bin_high": 1.0,
+    "experiment": 0.0373922,
+    "experimental_std": 0.0022602400868049393,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_00_10_PHEN.dat",
+    "gp_std_at_anchor": 0.0022609342132737507,
+    "gradient_per_prior_span": [
+      -0.010275653593411725,
+      0.003028685710206036
+    ],
+    "weighted_gradient": [
+      -3.214202226738428,
+      0.9473663417455613
+    ],
+    "pilot_mean_range": [
+      0.03876378614315411,
+      0.05254118011235379
+    ],
+    "pilot_compatible_fraction": 0.03550295857988166
+  },
+  {
+    "observable": "v22_pt_cen_00_10_PHEN",
+    "bin_index": 3,
+    "emulator_output_index": 666,
+    "bin_low": 1.0,
+    "bin_high": 1.25,
+    "experiment": 0.0462346,
+    "experimental_std": 0.002396446588159227,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_00_10_PHEN.dat",
+    "gp_std_at_anchor": 0.0029543041803059746,
+    "gradient_per_prior_span": [
+      -0.012815293887132734,
+      0.0037492659153893007
+    ],
+    "weighted_gradient": [
+      -3.3688467676566645,
+      0.9855959973595672
+    ],
+    "pilot_mean_range": [
+      0.045946177864840114,
+      0.0629393839792766
+    ],
+    "pilot_compatible_fraction": 0.1301775147928994
+  },
+  {
+    "observable": "v22_pt_cen_00_10_PHEN",
+    "bin_index": 4,
+    "emulator_output_index": 667,
+    "bin_low": 1.25,
+    "bin_high": 1.5,
+    "experiment": 0.055339,
+    "experimental_std": 0.003310821839060507,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_00_10_PHEN.dat",
+    "gp_std_at_anchor": 0.003701435606302746,
+    "gradient_per_prior_span": [
+      -0.014666731749802056,
+      0.004507174078826823
+    ],
+    "weighted_gradient": [
+      -2.953369146830755,
+      0.9075879405772946
+    ],
+    "pilot_mean_range": [
+      0.05200898258948626,
+      0.0716566538376534
+    ],
+    "pilot_compatible_fraction": 0.3609467455621302
+  },
+  {
+    "observable": "v22_pt_cen_10_20_PHEN",
+    "bin_index": 0,
+    "emulator_output_index": 668,
+    "bin_low": 0.25,
+    "bin_high": 0.5,
+    "experiment": 0.0298107,
+    "experimental_std": 0.001782314506449409,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_10_20_PHEN.dat",
+    "gp_std_at_anchor": 0.001493303776073168,
+    "gradient_per_prior_span": [
+      -0.007270241134214178,
+      0.0007837961646058045
+    ],
+    "weighted_gradient": [
+      -3.1267031310709688,
+      0.33708619518288857
+    ],
+    "pilot_mean_range": [
+      0.029081037054543818,
+      0.037659914565024606
+    ],
+    "pilot_compatible_fraction": 0.28402366863905326
+  },
+  {
+    "observable": "v22_pt_cen_10_20_PHEN",
+    "bin_index": 1,
+    "emulator_output_index": 669,
+    "bin_low": 0.5,
+    "bin_high": 0.75,
+    "experiment": 0.0491524,
+    "experimental_std": 0.002185877455371183,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_10_20_PHEN.dat",
+    "gp_std_at_anchor": 0.002647380274900226,
+    "gradient_per_prior_span": [
+      -0.014243979837658995,
+      0.003916782921626651
+    ],
+    "weighted_gradient": [
+      -4.148924735297139,
+      1.140863560011678
+    ],
+    "pilot_mean_range": [
+      0.05038403166358121,
+      0.06804817872073482
+    ],
+    "pilot_compatible_fraction": 0.029585798816568046
+  },
+  {
+    "observable": "v22_pt_cen_10_20_PHEN",
+    "bin_index": 2,
+    "emulator_output_index": 670,
+    "bin_low": 0.75,
+    "bin_high": 1.0,
+    "experiment": 0.0669039,
+    "experimental_std": 0.0027244565513144087,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_10_20_PHEN.dat",
+    "gp_std_at_anchor": 0.0036501842881300588,
+    "gradient_per_prior_span": [
+      -0.01988733250397924,
+      0.005583434663765374
+    ],
+    "weighted_gradient": [
+      -4.366203990687621,
+      1.225826274378332
+    ],
+    "pilot_mean_range": [
+      0.06495401893993447,
+      0.08918186715894644
+    ],
+    "pilot_compatible_fraction": 0.1834319526627219
+  },
+  {
+    "observable": "v22_pt_cen_10_20_PHEN",
+    "bin_index": 3,
+    "emulator_output_index": 671,
+    "bin_low": 1.0,
+    "bin_high": 1.25,
+    "experiment": 0.0831539,
+    "experimental_std": 0.003227302433922176,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_10_20_PHEN.dat",
+    "gp_std_at_anchor": 0.004894017669010076,
+    "gradient_per_prior_span": [
+      -0.025123827038630447,
+      0.006936242158467332
+    ],
+    "weighted_gradient": [
+      -4.285639920730249,
+      1.1831890200673898
+    ],
+    "pilot_mean_range": [
+      0.07742654177398864,
+      0.10759738536252536
+    ],
+    "pilot_compatible_fraction": 0.3609467455621302
+  },
+  {
+    "observable": "v22_pt_cen_10_20_PHEN",
+    "bin_index": 4,
+    "emulator_output_index": 672,
+    "bin_low": 1.25,
+    "bin_high": 1.5,
+    "experiment": 0.0981141,
+    "experimental_std": 0.003486662695185756,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_10_20_PHEN.dat",
+    "gp_std_at_anchor": 0.006409118532268166,
+    "gradient_per_prior_span": [
+      -0.02913460843187894,
+      0.008757209697459259
+    ],
+    "weighted_gradient": [
+      -3.993155266669812,
+      1.2002528919001567
+    ],
+    "pilot_mean_range": [
+      0.08796503915228412,
+      0.12340211339527193
+    ],
+    "pilot_compatible_fraction": 0.46745562130177515
+  },
+  {
+    "observable": "v22_pt_cen_20_30_PHEN",
+    "bin_index": 0,
+    "emulator_output_index": 673,
+    "bin_low": 0.25,
+    "bin_high": 0.5,
+    "experiment": 0.0413482,
+    "experimental_std": 0.001817982329397071,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_20_30_PHEN.dat",
+    "gp_std_at_anchor": 0.0017258779359165886,
+    "gradient_per_prior_span": [
+      -0.00955126517104346,
+      0.00152943036870537
+    ],
+    "weighted_gradient": [
+      -3.8102430855526874,
+      0.6101287507817447
+    ],
+    "pilot_mean_range": [
+      0.03666901256343961,
+      0.0479200581884727
+    ],
+    "pilot_compatible_fraction": 0.514792899408284
+  },
+  {
+    "observable": "v22_pt_cen_20_30_PHEN",
+    "bin_index": 1,
+    "emulator_output_index": 674,
+    "bin_low": 0.5,
+    "bin_high": 0.75,
+    "experiment": 0.0681018,
+    "experimental_std": 0.0024501208133273756,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_20_30_PHEN.dat",
+    "gp_std_at_anchor": 0.0031165730424522796,
+    "gradient_per_prior_span": [
+      -0.019504250342708418,
+      0.006319336224085842
+    ],
+    "weighted_gradient": [
+      -4.919903687012153,
+      1.5940384809494845
+    ],
+    "pilot_mean_range": [
+      0.06317832224857996,
+      0.08691750147742923
+    ],
+    "pilot_compatible_fraction": 0.25443786982248523
+  },
+  {
+    "observable": "v22_pt_cen_20_30_PHEN",
+    "bin_index": 2,
+    "emulator_output_index": 675,
+    "bin_low": 0.75,
+    "bin_high": 1.0,
+    "experiment": 0.092432,
+    "experimental_std": 0.0029428767388390564,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_20_30_PHEN.dat",
+    "gp_std_at_anchor": 0.004335086993241766,
+    "gradient_per_prior_span": [
+      -0.027790010612620264,
+      0.00919899323791988
+    ],
+    "weighted_gradient": [
+      -5.303832877213356,
+      1.7556640568674653
+    ],
+    "pilot_mean_range": [
+      0.08138832985995176,
+      0.11454202660013191
+    ],
+    "pilot_compatible_fraction": 0.38461538461538464
+  },
+  {
+    "observable": "v22_pt_cen_20_30_PHEN",
+    "bin_index": 3,
+    "emulator_output_index": 676,
+    "bin_low": 1.0,
+    "bin_high": 1.25,
+    "experiment": 0.11367,
+    "experimental_std": 0.0037352878068496946,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_20_30_PHEN.dat",
+    "gp_std_at_anchor": 0.005778676889853401,
+    "gradient_per_prior_span": [
+      -0.035675652705374414,
+      0.011785335073434891
+    ],
+    "weighted_gradient": [
+      -5.184807757535468,
+      1.7127842682663756
+    ],
+    "pilot_mean_range": [
+      0.09720358207656188,
+      0.13913836226564696
+    ],
+    "pilot_compatible_fraction": 0.41420118343195267
+  },
+  {
+    "observable": "v22_pt_cen_20_30_PHEN",
+    "bin_index": 4,
+    "emulator_output_index": 677,
+    "bin_low": 1.25,
+    "bin_high": 1.5,
+    "experiment": 0.133053,
+    "experimental_std": 0.0043184299230160025,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_20_30_PHEN.dat",
+    "gp_std_at_anchor": 0.007434227153300688,
+    "gradient_per_prior_span": [
+      -0.041973100344060155,
+      0.01483915213023046
+    ],
+    "weighted_gradient": [
+      -4.882026647367713,
+      1.7259896345584245
+    ],
+    "pilot_mean_range": [
+      0.11070708307006134,
+      0.16069929352756712
+    ],
+    "pilot_compatible_fraction": 0.4437869822485207
+  },
+  {
+    "observable": "v22_pt_cen_30_40_PHEN",
+    "bin_index": 0,
+    "emulator_output_index": 678,
+    "bin_low": 0.25,
+    "bin_high": 0.5,
+    "experiment": 0.049085,
+    "experimental_std": 0.0020189297288167314,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_30_40_PHEN.dat",
+    "gp_std_at_anchor": 0.002086212612877425,
+    "gradient_per_prior_span": [
+      -0.011187212414858275,
+      0.0025032906881855554
+    ],
+    "weighted_gradient": [
+      -3.853455405464555,
+      0.8622629727693357
+    ],
+    "pilot_mean_range": [
+      0.040611646501687776,
+      0.05419885232970498
+    ],
+    "pilot_compatible_fraction": 0.514792899408284
+  },
+  {
+    "observable": "v22_pt_cen_30_40_PHEN",
+    "bin_index": 1,
+    "emulator_output_index": 679,
+    "bin_low": 0.5,
+    "bin_high": 0.75,
+    "experiment": 0.0814801,
+    "experimental_std": 0.002927060641667678,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_30_40_PHEN.dat",
+    "gp_std_at_anchor": 0.003726312627620091,
+    "gradient_per_prior_span": [
+      -0.023701550138615843,
+      0.008813689069003816
+    ],
+    "weighted_gradient": [
+      -5.00194249115197,
+      1.8600287998136145
+    ],
+    "pilot_mean_range": [
+      0.06931108881943115,
+      0.09878338068973326
+    ],
+    "pilot_compatible_fraction": 0.38461538461538464
+  },
+  {
+    "observable": "v22_pt_cen_30_40_PHEN",
+    "bin_index": 2,
+    "emulator_output_index": 680,
+    "bin_low": 0.75,
+    "bin_high": 1.0,
+    "experiment": 0.109918,
+    "experimental_std": 0.0037547984300092593,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_30_40_PHEN.dat",
+    "gp_std_at_anchor": 0.005307118875982973,
+    "gradient_per_prior_span": [
+      -0.0343690743862677,
+      0.012869223144766628
+    ],
+    "weighted_gradient": [
+      -5.286672702643492,
+      1.9795520222345404
+    ],
+    "pilot_mean_range": [
+      0.08873798329227328,
+      0.1306763715272265
+    ],
+    "pilot_compatible_fraction": 0.378698224852071
+  },
+  {
+    "observable": "v22_pt_cen_30_40_PHEN",
+    "bin_index": 3,
+    "emulator_output_index": 681,
+    "bin_low": 1.0,
+    "bin_high": 1.25,
+    "experiment": 0.135116,
+    "experimental_std": 0.004281121173244224,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_30_40_PHEN.dat",
+    "gp_std_at_anchor": 0.00721335563930346,
+    "gradient_per_prior_span": [
+      -0.044505951122561505,
+      0.01693667326390716
+    ],
+    "weighted_gradient": [
+      -5.305833702908105,
+      2.0191270954150373
+    ],
+    "pilot_mean_range": [
+      0.10581367351121071,
+      0.15982563402593622
+    ],
+    "pilot_compatible_fraction": 0.3727810650887574
+  },
+  {
+    "observable": "v22_pt_cen_30_40_PHEN",
+    "bin_index": 4,
+    "emulator_output_index": 682,
+    "bin_low": 1.25,
+    "bin_high": 1.5,
+    "experiment": 0.156499,
+    "experimental_std": 0.005146375277804758,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_30_40_PHEN.dat",
+    "gp_std_at_anchor": 0.009391056745876907,
+    "gradient_per_prior_span": [
+      -0.05239785114721507,
+      0.02167924332004481
+    ],
+    "weighted_gradient": [
+      -4.892998447650605,
+      2.024443781352605
+    ],
+    "pilot_mean_range": [
+      0.12068969290564308,
+      0.18547307073922348
+    ],
+    "pilot_compatible_fraction": 0.39644970414201186
+  },
+  {
+    "observable": "v22_pt_cen_40_50_PHEN",
+    "bin_index": 0,
+    "emulator_output_index": 683,
+    "bin_low": 0.25,
+    "bin_high": 0.5,
+    "experiment": 0.0529655,
+    "experimental_std": 0.002700027592451603,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_40_50_PHEN.dat",
+    "gp_std_at_anchor": 0.00248731677826668,
+    "gradient_per_prior_span": [
+      -0.012198428621117315,
+      0.002683456258182476
+    ],
+    "weighted_gradient": [
+      -3.3228366115896275,
+      0.7309701091214251
+    ],
+    "pilot_mean_range": [
+      0.042927926012707056,
+      0.05739822880067978
+    ],
+    "pilot_compatible_fraction": 0.6272189349112426
+  },
+  {
+    "observable": "v22_pt_cen_40_50_PHEN",
+    "bin_index": 1,
+    "emulator_output_index": 684,
+    "bin_low": 0.5,
+    "bin_high": 0.75,
+    "experiment": 0.0889087,
+    "experimental_std": 0.0036241789759889065,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_40_50_PHEN.dat",
+    "gp_std_at_anchor": 0.004620779684624209,
+    "gradient_per_prior_span": [
+      -0.027315918437004552,
+      0.009943233906448481
+    ],
+    "weighted_gradient": [
+      -4.651495915906309,
+      1.6931853129305978
+    ],
+    "pilot_mean_range": [
+      0.07202547792509914,
+      0.1049921239132104
+    ],
+    "pilot_compatible_fraction": 0.4319526627218935
+  },
+  {
+    "observable": "v22_pt_cen_40_50_PHEN",
+    "bin_index": 2,
+    "emulator_output_index": 685,
+    "bin_low": 0.75,
+    "bin_high": 1.0,
+    "experiment": 0.119992,
+    "experimental_std": 0.004401992105853894,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_40_50_PHEN.dat",
+    "gp_std_at_anchor": 0.006694490789825253,
+    "gradient_per_prior_span": [
+      -0.04072703943575444,
+      0.014961191458722281
+    ],
+    "weighted_gradient": [
+      -5.083191799141916,
+      1.8673246762347289
+    ],
+    "pilot_mean_range": [
+      0.09140496349520298,
+      0.13964274298408305
+    ],
+    "pilot_compatible_fraction": 0.3905325443786982
+  },
+  {
+    "observable": "v22_pt_cen_40_50_PHEN",
+    "bin_index": 3,
+    "emulator_output_index": 686,
+    "bin_low": 1.0,
+    "bin_high": 1.25,
+    "experiment": 0.147327,
+    "experimental_std": 0.0051251695337715415,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_40_50_PHEN.dat",
+    "gp_std_at_anchor": 0.009249545337132898,
+    "gradient_per_prior_span": [
+      -0.05357046169634089,
+      0.02039945969566151
+    ],
+    "weighted_gradient": [
+      -5.065972480921704,
+      1.9291060441047394
+    ],
+    "pilot_mean_range": [
+      0.10857456579603833,
+      0.17199168723330327
+    ],
+    "pilot_compatible_fraction": 0.378698224852071
+  },
+  {
+    "observable": "v22_pt_cen_40_50_PHEN",
+    "bin_index": 4,
+    "emulator_output_index": 687,
+    "bin_low": 1.25,
+    "bin_high": 1.5,
+    "experiment": 0.170525,
+    "experimental_std": 0.006225537506914564,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_40_50_PHEN.dat",
+    "gp_std_at_anchor": 0.012706800937814277,
+    "gradient_per_prior_span": [
+      -0.06363449220864459,
+      0.02666121840302002
+    ],
+    "weighted_gradient": [
+      -4.4971641293982865,
+      1.8841963043405414
+    ],
+    "pilot_mean_range": [
+      0.12391598652918251,
+      0.20087315110067053
+    ],
+    "pilot_compatible_fraction": 0.4319526627218935
+  },
+  {
+    "observable": "v22_pt_cen_50_60_PHEN",
+    "bin_index": 0,
+    "emulator_output_index": 688,
+    "bin_low": 0.25,
+    "bin_high": 0.5,
+    "experiment": 0.0535787,
+    "experimental_std": 0.003969549470657848,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_50_60_PHEN.dat",
+    "gp_std_at_anchor": 0.0028756004796906525,
+    "gradient_per_prior_span": [
+      -0.012276180520903214,
+      0.0021604924468378306
+    ],
+    "weighted_gradient": [
+      -2.5044877075554646,
+      0.44076630888233864
+    ],
+    "pilot_mean_range": [
+      0.04323326721070465,
+      0.05756352853589353
+    ],
+    "pilot_compatible_fraction": 0.7396449704142012
+  },
+  {
+    "observable": "v22_pt_cen_50_60_PHEN",
+    "bin_index": 1,
+    "emulator_output_index": 689,
+    "bin_low": 0.5,
+    "bin_high": 0.75,
+    "experiment": 0.0917667,
+    "experimental_std": 0.005113971255296611,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_50_60_PHEN.dat",
+    "gp_std_at_anchor": 0.00538164208031254,
+    "gradient_per_prior_span": [
+      -0.029467786309268426,
+      0.009251821686499101
+    ],
+    "weighted_gradient": [
+      -3.969296108926267,
+      1.2462157637253557
+    ],
+    "pilot_mean_range": [
+      0.07113645866707388,
+      0.10519553404443424
+    ],
+    "pilot_compatible_fraction": 0.5207100591715976
+  },
+  {
+    "observable": "v22_pt_cen_50_60_PHEN",
+    "bin_index": 2,
+    "emulator_output_index": 690,
+    "bin_low": 0.75,
+    "bin_high": 1.0,
+    "experiment": 0.124355,
+    "experimental_std": 0.006240676085168978,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_50_60_PHEN.dat",
+    "gp_std_at_anchor": 0.007822917109211687,
+    "gradient_per_prior_span": [
+      -0.0446602541266352,
+      0.014707626443285007
+    ],
+    "weighted_gradient": [
+      -4.46281178107319,
+      1.4697043231460263
+    ],
+    "pilot_mean_range": [
+      0.08928306950961505,
+      0.14034620278621962
+    ],
+    "pilot_compatible_fraction": 0.4319526627218935
+  },
+  {
+    "observable": "v22_pt_cen_50_60_PHEN",
+    "bin_index": 3,
+    "emulator_output_index": 691,
+    "bin_low": 1.0,
+    "bin_high": 1.25,
+    "experiment": 0.153979,
+    "experimental_std": 0.007137165351174092,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_50_60_PHEN.dat",
+    "gp_std_at_anchor": 0.010437050780248196,
+    "gradient_per_prior_span": [
+      -0.05880583008464266,
+      0.02121733089350611
+    ],
+    "weighted_gradient": [
+      -4.650882033206288,
+      1.6780530587386557
+    ],
+    "pilot_mean_range": [
+      0.10590660994325479,
+      0.17397896266060198
+    ],
+    "pilot_compatible_fraction": 0.40236686390532544
+  },
+  {
+    "observable": "v22_pt_cen_50_60_PHEN",
+    "bin_index": 4,
+    "emulator_output_index": 692,
+    "bin_low": 1.25,
+    "bin_high": 1.5,
+    "experiment": 0.17449,
+    "experimental_std": 0.008549737627547408,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/v22_pt_cen_50_60_PHEN.dat",
+    "gp_std_at_anchor": 0.013242889637597469,
+    "gradient_per_prior_span": [
+      -0.06955901600831788,
+      0.02904441151357212
+    ],
+    "weighted_gradient": [
+      -4.412803409506176,
+      1.8425688790489105
+    ],
+    "pilot_mean_range": [
+      0.12109951674818895,
+      0.20443570085079488
+    ],
+    "pilot_compatible_fraction": 0.4378698224852071
+  },
+  {
+    "observable": "v22_pt_cen_00_05_STAR",
+    "bin_index": 0,
+    "emulator_output_index": 693,
+    "bin_low": 0.3,
+    "bin_high": 0.45,
+    "experiment": 0.0129,
+    "experimental_std": 0.00025,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_00_05_STAR.dat",
+    "gp_std_at_anchor": 0.0009825839947460594,
+    "gradient_per_prior_span": [
+      -0.0022573980442901903,
+      -6.848967415169077e-06
+    ],
+    "weighted_gradient": [
+      -2.2264741036238727,
+      -0.006755143881252254
+    ],
+    "pilot_mean_range": [
+      0.012372156477497299,
+      0.015887143739162946
+    ],
+    "pilot_compatible_fraction": 0.28994082840236685
+  },
+  {
+    "observable": "v22_pt_cen_00_05_STAR",
+    "bin_index": 1,
+    "emulator_output_index": 694,
+    "bin_low": 0.45,
+    "bin_high": 0.6,
+    "experiment": 0.0202,
+    "experimental_std": 0.00028000000000000003,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_00_05_STAR.dat",
+    "gp_std_at_anchor": 0.0015466729738160749,
+    "gradient_per_prior_span": [
+      -0.0038524966429280202,
+      0.0007057524120343897
+    ],
+    "weighted_gradient": [
+      -2.450988585898414,
+      0.4490052209498792
+    ],
+    "pilot_mean_range": [
+      0.019590633709575794,
+      0.02565595158981495
+    ],
+    "pilot_compatible_fraction": 0.17159763313609466
+  },
+  {
+    "observable": "v22_pt_cen_00_05_STAR",
+    "bin_index": 2,
+    "emulator_output_index": 695,
+    "bin_low": 0.6,
+    "bin_high": 0.75,
+    "experiment": 0.026099,
+    "experimental_std": 0.0003200000312499985,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_00_05_STAR.dat",
+    "gp_std_at_anchor": 0.0020292005474895213,
+    "gradient_per_prior_span": [
+      -0.005203857876610613,
+      0.0012940288607825486
+    ],
+    "weighted_gradient": [
+      -2.5331819069975547,
+      0.6299192973736727
+    ],
+    "pilot_mean_range": [
+      0.025157912525008513,
+      0.03337448159186295
+    ],
+    "pilot_compatible_fraction": 0.17159763313609466
+  },
+  {
+    "observable": "v22_pt_cen_00_05_STAR",
+    "bin_index": 3,
+    "emulator_output_index": 696,
+    "bin_low": 0.75,
+    "bin_high": 0.9,
+    "experiment": 0.0323,
+    "experimental_std": 0.00037999999605263155,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_00_05_STAR.dat",
+    "gp_std_at_anchor": 0.0026183434623983557,
+    "gradient_per_prior_span": [
+      -0.006871563793211556,
+      0.0017321422070773126
+    ],
+    "weighted_gradient": [
+      -2.5971842655401542,
+      0.6546824887725655
+    ],
+    "pilot_mean_range": [
+      0.0313533154711282,
+      0.04193933136891337
+    ],
+    "pilot_compatible_fraction": 0.15384615384615385
+  },
+  {
+    "observable": "v22_pt_cen_00_05_STAR",
+    "bin_index": 4,
+    "emulator_output_index": 697,
+    "bin_low": 0.9,
+    "bin_high": 1.05,
+    "experiment": 0.0382,
+    "experimental_std": 0.00046000000021739133,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_00_05_STAR.dat",
+    "gp_std_at_anchor": 0.003070928962766314,
+    "gradient_per_prior_span": [
+      -0.008007652095200213,
+      0.001801541768934635
+    ],
+    "weighted_gradient": [
+      -2.5787962074779505,
+      0.580171194516112
+    ],
+    "pilot_mean_range": [
+      0.03533169851088556,
+      0.047390923607696034
+    ],
+    "pilot_compatible_fraction": 0.34911242603550297
+  },
+  {
+    "observable": "v22_pt_cen_00_05_STAR",
+    "bin_index": 5,
+    "emulator_output_index": 698,
+    "bin_low": 1.05,
+    "bin_high": 1.2,
+    "experiment": 0.042,
+    "experimental_std": 0.00055,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_00_05_STAR.dat",
+    "gp_std_at_anchor": 0.0033484294677526057,
+    "gradient_per_prior_span": [
+      -0.00863163113667461,
+      0.0019503051113893208
+    ],
+    "weighted_gradient": [
+      -2.5437282311659573,
+      0.5747518739707819
+    ],
+    "pilot_mean_range": [
+      0.03749241770924903,
+      0.05040825384342582
+    ],
+    "pilot_compatible_fraction": 0.5029585798816568
+  },
+  {
+    "observable": "v22_pt_cen_00_05_STAR",
+    "bin_index": 6,
+    "emulator_output_index": 699,
+    "bin_low": 1.2,
+    "bin_high": 1.35,
+    "experiment": 0.0467,
+    "experimental_std": 0.00065,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_00_05_STAR.dat",
+    "gp_std_at_anchor": 0.003811850090889772,
+    "gradient_per_prior_span": [
+      -0.00940196417612265,
+      0.00191142180908134
+    ],
+    "weighted_gradient": [
+      -2.431413176153293,
+      0.4943069431800085
+    ],
+    "pilot_mean_range": [
+      0.04072264190385755,
+      0.054633495443473325
+    ],
+    "pilot_compatible_fraction": 0.6272189349112426
+  },
+  {
+    "observable": "v22_pt_cen_00_05_STAR",
+    "bin_index": 7,
+    "emulator_output_index": 700,
+    "bin_low": 1.35,
+    "bin_high": 1.5,
+    "experiment": 0.0521,
+    "experimental_std": 0.00079,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_00_05_STAR.dat",
+    "gp_std_at_anchor": 0.0045781847032502895,
+    "gradient_per_prior_span": [
+      -0.010612126412360215,
+      0.002255333971979724
+    ],
+    "weighted_gradient": [
+      -2.2842188141560564,
+      0.4854518397934937
+    ],
+    "pilot_mean_range": [
+      0.04494542661134151,
+      0.060546559434704966
+    ],
+    "pilot_compatible_fraction": 0.6863905325443787
+  },
+  {
+    "observable": "v22_pt_cen_05_10_STAR",
+    "bin_index": 0,
+    "emulator_output_index": 701,
+    "bin_low": 0.3,
+    "bin_high": 0.45,
+    "experiment": 0.02,
+    "experimental_std": 0.00021009521650908666,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_05_10_STAR.dat",
+    "gp_std_at_anchor": 0.0011147804120130193,
+    "gradient_per_prior_span": [
+      -0.004299753090029369,
+      0.00021189864408913822
+    ],
+    "weighted_gradient": [
+      -3.7903147310161223,
+      0.18679271468769781
+    ],
+    "pilot_mean_range": [
+      0.018088948078962955,
+      0.023256054518503932
+    ],
+    "pilot_compatible_fraction": 0.5088757396449705
+  },
+  {
+    "observable": "v22_pt_cen_05_10_STAR",
+    "bin_index": 1,
+    "emulator_output_index": 702,
+    "bin_low": 0.45,
+    "bin_high": 0.6,
+    "experiment": 0.0297,
+    "experimental_std": 0.00024,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_05_10_STAR.dat",
+    "gp_std_at_anchor": 0.0017328782672225611,
+    "gradient_per_prior_span": [
+      -0.007361041872601393,
+      0.0014676970059582933
+    ],
+    "weighted_gradient": [
+      -4.207706427222884,
+      0.8389625045026435
+    ],
+    "pilot_mean_range": [
+      0.028484808710988484,
+      0.03772373621695499
+    ],
+    "pilot_compatible_fraction": 0.24260355029585798
+  },
+  {
+    "observable": "v22_pt_cen_05_10_STAR",
+    "bin_index": 2,
+    "emulator_output_index": 703,
+    "bin_low": 0.6,
+    "bin_high": 0.75,
+    "experiment": 0.0391,
+    "experimental_std": 0.00028000017857137164,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_05_10_STAR.dat",
+    "gp_std_at_anchor": 0.002233765316257427,
+    "gradient_per_prior_span": [
+      -0.009906568101002329,
+      0.0023065689455906493
+    ],
+    "weighted_gradient": [
+      -4.400482685390256,
+      1.0245744645619053
+    ],
+    "pilot_mean_range": [
+      0.03664796333891483,
+      0.04904055812917405
+    ],
+    "pilot_compatible_fraction": 0.31952662721893493
+  },
+  {
+    "observable": "v22_pt_cen_05_10_STAR",
+    "bin_index": 3,
+    "emulator_output_index": 704,
+    "bin_low": 0.75,
+    "bin_high": 0.9,
+    "experiment": 0.0472,
+    "experimental_std": 0.00034000029411751986,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_05_10_STAR.dat",
+    "gp_std_at_anchor": 0.0028567423438468605,
+    "gradient_per_prior_span": [
+      -0.013144527089846252,
+      0.0032948564083357806
+    ],
+    "weighted_gradient": [
+      -4.56898345480034,
+      1.1452785111803623
+    ],
+    "pilot_mean_range": [
+      0.04573315397566216,
+      0.06194496503623265
+    ],
+    "pilot_compatible_fraction": 0.21301775147928995
+  },
+  {
+    "observable": "v22_pt_cen_05_10_STAR",
+    "bin_index": 4,
+    "emulator_output_index": 705,
+    "bin_low": 0.9,
+    "bin_high": 1.05,
+    "experiment": 0.0562,
+    "experimental_std": 0.0004,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_05_10_STAR.dat",
+    "gp_std_at_anchor": 0.0032850804187097757,
+    "gradient_per_prior_span": [
+      -0.015420429550252676,
+      0.003916923667237823
+    ],
+    "weighted_gradient": [
+      -4.659664457607848,
+      1.1835954333121679
+    ],
+    "pilot_mean_range": [
+      0.05154651629630512,
+      0.07032750454124448
+    ],
+    "pilot_compatible_fraction": 0.41420118343195267
+  },
+  {
+    "observable": "v22_pt_cen_05_10_STAR",
+    "bin_index": 5,
+    "emulator_output_index": 706,
+    "bin_low": 1.05,
+    "bin_high": 1.2,
+    "experiment": 0.0622,
+    "experimental_std": 0.00048,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_05_10_STAR.dat",
+    "gp_std_at_anchor": 0.003598403712297917,
+    "gradient_per_prior_span": [
+      -0.01673694473948613,
+      0.004160013587461292
+    ],
+    "weighted_gradient": [
+      -4.610377085605015,
+      1.145921888251745
+    ],
+    "pilot_mean_range": [
+      0.054906963875162945,
+      0.07505086914938855
+    ],
+    "pilot_compatible_fraction": 0.46153846153846156
+  },
+  {
+    "observable": "v22_pt_cen_05_10_STAR",
+    "bin_index": 6,
+    "emulator_output_index": 707,
+    "bin_low": 1.2,
+    "bin_high": 1.35,
+    "experiment": 0.0697,
+    "experimental_std": 0.00056999956140334,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_05_10_STAR.dat",
+    "gp_std_at_anchor": 0.003934571276566518,
+    "gradient_per_prior_span": [
+      -0.018346030027307017,
+      0.004718314450310665
+    ],
+    "weighted_gradient": [
+      -4.61460505122839,
+      1.186804865318513
+    ],
+    "pilot_mean_range": [
+      0.059594217474290126,
+      0.0816356349392335
+    ],
+    "pilot_compatible_fraction": 0.4319526627218935
+  },
+  {
+    "observable": "v22_pt_cen_05_10_STAR",
+    "bin_index": 7,
+    "emulator_output_index": 708,
+    "bin_low": 1.35,
+    "bin_high": 1.5,
+    "experiment": 0.0751999,
+    "experimental_std": 0.0006900000072463768,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_05_10_STAR.dat",
+    "gp_std_at_anchor": 0.004607488217184961,
+    "gradient_per_prior_span": [
+      -0.02072037993881594,
+      0.0059773495618330175
+    ],
+    "weighted_gradient": [
+      -4.447514190693067,
+      1.2830048038445614
+    ],
+    "pilot_mean_range": [
+      0.06587108383286988,
+      0.09107807406624308
+    ],
+    "pilot_compatible_fraction": 0.4911242603550296
+  },
+  {
+    "observable": "v22_pt_cen_10_20_STAR",
+    "bin_index": 0,
+    "emulator_output_index": 709,
+    "bin_low": 0.3,
+    "bin_high": 0.45,
+    "experiment": 0.0291,
+    "experimental_std": 0.00015,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_10_20_STAR.dat",
+    "gp_std_at_anchor": 0.0013106965626615559,
+    "gradient_per_prior_span": [
+      -0.006107407150842542,
+      0.0005745527848942215
+    ],
+    "weighted_gradient": [
+      -4.629447431361834,
+      0.43551409763853777
+    ],
+    "pilot_mean_range": [
+      0.024912343258670852,
+      0.03205811483887133
+    ],
+    "pilot_compatible_fraction": 0.42011834319526625
+  },
+  {
+    "observable": "v22_pt_cen_10_20_STAR",
+    "bin_index": 1,
+    "emulator_output_index": 710,
+    "bin_low": 0.45,
+    "bin_high": 0.6,
+    "experiment": 0.0429,
+    "experimental_std": 0.00018,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_10_20_STAR.dat",
+    "gp_std_at_anchor": 0.0020242816963531086,
+    "gradient_per_prior_span": [
+      -0.010553638422163003,
+      0.002566262978325254
+    ],
+    "weighted_gradient": [
+      -5.193032799701318,
+      1.2627576657464155
+    ],
+    "pilot_mean_range": [
+      0.03918603212492667,
+      0.052030211309776246
+    ],
+    "pilot_compatible_fraction": 0.33727810650887574
+  },
+  {
+    "observable": "v22_pt_cen_10_20_STAR",
+    "bin_index": 2,
+    "emulator_output_index": 711,
+    "bin_low": 0.6,
+    "bin_high": 0.75,
+    "experiment": 0.0556,
+    "experimental_std": 0.00020999999999999998,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_10_20_STAR.dat",
+    "gp_std_at_anchor": 0.002587996114435104,
+    "gradient_per_prior_span": [
+      -0.014336103287777846,
+      0.0040567574036771276
+    ],
+    "weighted_gradient": [
+      -5.521313658251243,
+      1.5623931839435188
+    ],
+    "pilot_mean_range": [
+      0.05030519574197939,
+      0.06771302883516525
+    ],
+    "pilot_compatible_fraction": 0.3431952662721893
+  },
+  {
+    "observable": "v22_pt_cen_10_20_STAR",
+    "bin_index": 3,
+    "emulator_output_index": 712,
+    "bin_low": 0.75,
+    "bin_high": 0.9,
+    "experiment": 0.0673,
+    "experimental_std": 0.00025,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_10_20_STAR.dat",
+    "gp_std_at_anchor": 0.003376302739979015,
+    "gradient_per_prior_span": [
+      -0.019253047861156336,
+      0.005658595541520317
+    ],
+    "weighted_gradient": [
+      -5.686837261376462,
+      1.6713983263657541
+    ],
+    "pilot_mean_range": [
+      0.06280011729978627,
+      0.08579858817269931
+    ],
+    "pilot_compatible_fraction": 0.27218934911242604
+  },
+  {
+    "observable": "v22_pt_cen_10_20_STAR",
+    "bin_index": 4,
+    "emulator_output_index": 713,
+    "bin_low": 0.9,
+    "bin_high": 1.05,
+    "experiment": 0.0784,
+    "experimental_std": 0.00029,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_10_20_STAR.dat",
+    "gp_std_at_anchor": 0.00397603782842917,
+    "gradient_per_prior_span": [
+      -0.022805962858512413,
+      0.006657418803742918
+    ],
+    "weighted_gradient": [
+      -5.72065540294326,
+      1.6699491745016448
+    ],
+    "pilot_mean_range": [
+      0.07077214107292996,
+      0.09759858545659578
+    ],
+    "pilot_compatible_fraction": 0.3609467455621302
+  },
+  {
+    "observable": "v22_pt_cen_10_20_STAR",
+    "bin_index": 5,
+    "emulator_output_index": 714,
+    "bin_low": 1.05,
+    "bin_high": 1.2,
+    "experiment": 0.0881,
+    "experimental_std": 0.00035,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_10_20_STAR.dat",
+    "gp_std_at_anchor": 0.004384608685048975,
+    "gradient_per_prior_span": [
+      -0.024834162854079148,
+      0.0072002192314298
+    ],
+    "weighted_gradient": [
+      -5.645981057859957,
+      1.6369507453082623
+    ],
+    "pilot_mean_range": [
+      0.07542461080763244,
+      0.10440560050657123
+    ],
+    "pilot_compatible_fraction": 0.3668639053254438
+  },
+  {
+    "observable": "v22_pt_cen_10_20_STAR",
+    "bin_index": 6,
+    "emulator_output_index": 715,
+    "bin_low": 1.2,
+    "bin_high": 1.35,
+    "experiment": 0.0973,
+    "experimental_std": 0.00042000000000000007,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_10_20_STAR.dat",
+    "gp_std_at_anchor": 0.00493591332534638,
+    "gradient_per_prior_span": [
+      -0.027541986685079844,
+      0.00800491391792918
+    ],
+    "weighted_gradient": [
+      -5.559825578516666,
+      1.6159300947900261
+    ],
+    "pilot_mean_range": [
+      0.08190811647221648,
+      0.11386321839338723
+    ],
+    "pilot_compatible_fraction": 0.3609467455621302
+  },
+  {
+    "observable": "v22_pt_cen_10_20_STAR",
+    "bin_index": 7,
+    "emulator_output_index": 716,
+    "bin_low": 1.35,
+    "bin_high": 1.5,
+    "experiment": 0.107,
+    "experimental_std": 0.0005100000000000001,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_10_20_STAR.dat",
+    "gp_std_at_anchor": 0.005901884611869835,
+    "gradient_per_prior_span": [
+      -0.03116189555843231,
+      0.010084522375177624
+    ],
+    "weighted_gradient": [
+      -5.260386944346694,
+      1.7023511853726667
+    ],
+    "pilot_mean_range": [
+      0.09073055379773302,
+      0.1274213933703347
+    ],
+    "pilot_compatible_fraction": 0.40236686390532544
+  },
+  {
+    "observable": "v22_pt_cen_20_30_STAR",
+    "bin_index": 0,
+    "emulator_output_index": 717,
+    "bin_low": 0.3,
+    "bin_high": 0.45,
+    "experiment": 0.0388,
+    "experimental_std": 0.00017,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_20_30_STAR.dat",
+    "gp_std_at_anchor": 0.0015769475573635832,
+    "gradient_per_prior_span": [
+      -0.00807131882348544,
+      0.0010464781910388826
+    ],
+    "weighted_gradient": [
+      -5.088833245198357,
+      0.659787220080851
+    ],
+    "pilot_mean_range": [
+      0.03128975622571155,
+      0.04077608237325393
+    ],
+    "pilot_compatible_fraction": 0.3905325443786982
+  },
+  {
+    "observable": "v22_pt_cen_20_30_STAR",
+    "bin_index": 1,
+    "emulator_output_index": 718,
+    "bin_low": 0.45,
+    "bin_high": 0.6,
+    "experiment": 0.0566,
+    "experimental_std": 0.0002,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_20_30_STAR.dat",
+    "gp_std_at_anchor": 0.0024489372660493223,
+    "gradient_per_prior_span": [
+      -0.014323016457981792,
+      0.00391381659040034
+    ],
+    "weighted_gradient": [
+      -5.829258811860712,
+      1.5928662732830907
+    ],
+    "pilot_mean_range": [
+      0.04895888931923903,
+      0.06616638749933909
+    ],
+    "pilot_compatible_fraction": 0.35502958579881655
+  },
+  {
+    "observable": "v22_pt_cen_20_30_STAR",
+    "bin_index": 2,
+    "emulator_output_index": 719,
+    "bin_low": 0.6,
+    "bin_high": 0.75,
+    "experiment": 0.073,
+    "experimental_std": 0.00023,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_20_30_STAR.dat",
+    "gp_std_at_anchor": 0.0031923477248691134,
+    "gradient_per_prior_span": [
+      -0.01979769780890081,
+      0.006084260239731104
+    ],
+    "weighted_gradient": [
+      -6.185577395258482,
+      1.900961564775
+    ],
+    "pilot_mean_range": [
+      0.06267164991149989,
+      0.08626821573486348
+    ],
+    "pilot_compatible_fraction": 0.33727810650887574
+  },
+  {
+    "observable": "v22_pt_cen_20_30_STAR",
+    "bin_index": 3,
+    "emulator_output_index": 720,
+    "bin_low": 0.75,
+    "bin_high": 0.9,
+    "experiment": 0.0878,
+    "experimental_std": 0.00028,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_20_30_STAR.dat",
+    "gp_std_at_anchor": 0.004247269822577478,
+    "gradient_per_prior_span": [
+      -0.026962661180351954,
+      0.008673370912989573
+    ],
+    "weighted_gradient": [
+      -6.334483523900631,
+      2.0376818436990147
+    ],
+    "pilot_mean_range": [
+      0.07807354241057826,
+      0.10971268325030689
+    ],
+    "pilot_compatible_fraction": 0.3136094674556213
+  },
+  {
+    "observable": "v22_pt_cen_20_30_STAR",
+    "bin_index": 4,
+    "emulator_output_index": 721,
+    "bin_low": 0.9,
+    "bin_high": 1.05,
+    "experiment": 0.102,
+    "experimental_std": 0.00033,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_20_30_STAR.dat",
+    "gp_std_at_anchor": 0.005127649927183147,
+    "gradient_per_prior_span": [
+      -0.03219629157895851,
+      0.01019791421511991
+    ],
+    "weighted_gradient": [
+      -6.265993745905583,
+      1.9847026958528384
+    ],
+    "pilot_mean_range": [
+      0.08803285407565702,
+      0.12517483373594182
+    ],
+    "pilot_compatible_fraction": 0.3609467455621302
+  },
+  {
+    "observable": "v22_pt_cen_20_30_STAR",
+    "bin_index": 5,
+    "emulator_output_index": 722,
+    "bin_low": 1.05,
+    "bin_high": 1.2,
+    "experiment": 0.115,
+    "experimental_std": 0.0004,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_20_30_STAR.dat",
+    "gp_std_at_anchor": 0.005681792278892356,
+    "gradient_per_prior_span": [
+      -0.03520830186176452,
+      0.011153040418225568
+    ],
+    "weighted_gradient": [
+      -6.181390191822412,
+      1.9580976930070935
+    ],
+    "pilot_mean_range": [
+      0.09383713464165558,
+      0.13418482220663988
+    ],
+    "pilot_compatible_fraction": 0.33727810650887574
+  },
+  {
+    "observable": "v22_pt_cen_20_30_STAR",
+    "bin_index": 6,
+    "emulator_output_index": 723,
+    "bin_low": 1.2,
+    "bin_high": 1.35,
+    "experiment": 0.127,
+    "experimental_std": 0.00048,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_20_30_STAR.dat",
+    "gp_std_at_anchor": 0.006494454743046819,
+    "gradient_per_prior_span": [
+      -0.03921025264226746,
+      0.012671076967162714
+    ],
+    "weighted_gradient": [
+      -6.021074373060659,
+      1.945753767569978
+    ],
+    "pilot_mean_range": [
+      0.10200951409488519,
+      0.14683412205141658
+    ],
+    "pilot_compatible_fraction": 0.3136094674556213
+  },
+  {
+    "observable": "v22_pt_cen_20_30_STAR",
+    "bin_index": 7,
+    "emulator_output_index": 724,
+    "bin_low": 1.35,
+    "bin_high": 1.5,
+    "experiment": 0.138,
+    "experimental_std": 0.00057,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_20_30_STAR.dat",
+    "gp_std_at_anchor": 0.007996084976122936,
+    "gradient_per_prior_span": [
+      -0.044410425773611095,
+      0.016007133092538206
+    ],
+    "weighted_gradient": [
+      -5.539963315375536,
+      1.9968043217835776
+    ],
+    "pilot_mean_range": [
+      0.11316084340436817,
+      0.16483328922405988
+    ],
+    "pilot_compatible_fraction": 0.3727810650887574
+  },
+  {
+    "observable": "v22_pt_cen_30_40_STAR",
+    "bin_index": 0,
+    "emulator_output_index": 725,
+    "bin_low": 0.3,
+    "bin_high": 0.45,
+    "experiment": 0.0453,
+    "experimental_std": 0.00020999999999999998,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_30_40_STAR.dat",
+    "gp_std_at_anchor": 0.0018092273980370303,
+    "gradient_per_prior_span": [
+      -0.009141429132131229,
+      0.0017378314264739417
+    ],
+    "weighted_gradient": [
+      -5.018973808779418,
+      0.9541320385987627
+    ],
+    "pilot_mean_range": [
+      0.0347414324073764,
+      0.04586076415749851
+    ],
+    "pilot_compatible_fraction": 0.2603550295857988
+  },
+  {
+    "observable": "v22_pt_cen_30_40_STAR",
+    "bin_index": 1,
+    "emulator_output_index": 726,
+    "bin_low": 0.45,
+    "bin_high": 0.6,
+    "experiment": 0.0652,
+    "experimental_std": 0.00024,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_30_40_STAR.dat",
+    "gp_std_at_anchor": 0.002792163220062059,
+    "gradient_per_prior_span": [
+      -0.016798416685295456,
+      0.005497478864744873
+    ],
+    "weighted_gradient": [
+      -5.994170745728299,
+      1.9616626735517695
+    ],
+    "pilot_mean_range": [
+      0.053994239628798874,
+      0.0745570772037544
+    ],
+    "pilot_compatible_fraction": 0.33136094674556216
+  },
+  {
+    "observable": "v22_pt_cen_30_40_STAR",
+    "bin_index": 2,
+    "emulator_output_index": 727,
+    "bin_low": 0.6,
+    "bin_high": 0.75,
+    "experiment": 0.0844999999999999,
+    "experimental_std": 0.00029,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_30_40_STAR.dat",
+    "gp_std_at_anchor": 0.0036848208780481586,
+    "gradient_per_prior_span": [
+      -0.02373703327742012,
+      0.008413166969998762
+    ],
+    "weighted_gradient": [
+      -6.421984014681429,
+      2.276157393500948
+    ],
+    "pilot_mean_range": [
+      0.06874302776823067,
+      0.09742583104758287
+    ],
+    "pilot_compatible_fraction": 0.3136094674556213
+  },
+  {
+    "observable": "v22_pt_cen_30_40_STAR",
+    "bin_index": 3,
+    "emulator_output_index": 728,
+    "bin_low": 0.75,
+    "bin_high": 0.9,
+    "experiment": 0.102,
+    "experimental_std": 0.00035000000000000005,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_30_40_STAR.dat",
+    "gp_std_at_anchor": 0.0050360396618608335,
+    "gradient_per_prior_span": [
+      -0.03302450282102257,
+      0.012034770511369294
+    ],
+    "weighted_gradient": [
+      -6.541853651705735,
+      2.3839785823247692
+    ],
+    "pilot_mean_range": [
+      0.08516918958014484,
+      0.12434563149640566
+    ],
+    "pilot_compatible_fraction": 0.3254437869822485
+  },
+  {
+    "observable": "v22_pt_cen_30_40_STAR",
+    "bin_index": 4,
+    "emulator_output_index": 729,
+    "bin_low": 0.9,
+    "bin_high": 1.05,
+    "experiment": 0.118,
+    "experimental_std": 0.00042000000000000007,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_30_40_STAR.dat",
+    "gp_std_at_anchor": 0.006153704933483257,
+    "gradient_per_prior_span": [
+      -0.03967031723517318,
+      0.01448154939126603
+    ],
+    "weighted_gradient": [
+      -6.4316117812047136,
+      2.347843681783906
+    ],
+    "pilot_mean_range": [
+      0.09586380734488709,
+      0.14232791213880774
+    ],
+    "pilot_compatible_fraction": 0.33136094674556216
+  },
+  {
+    "observable": "v22_pt_cen_30_40_STAR",
+    "bin_index": 5,
+    "emulator_output_index": 730,
+    "bin_low": 1.05,
+    "bin_high": 1.2,
+    "experiment": 0.131,
+    "experimental_std": 0.0005,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_30_40_STAR.dat",
+    "gp_std_at_anchor": 0.006853609509336,
+    "gradient_per_prior_span": [
+      -0.043527550701411705,
+      0.015946142758261478
+    ],
+    "weighted_gradient": [
+      -6.334206394404154,
+      2.3205109820752097
+    ],
+    "pilot_mean_range": [
+      0.1022250250282998,
+      0.1529111016547395
+    ],
+    "pilot_compatible_fraction": 0.3136094674556213
+  },
+  {
+    "observable": "v22_pt_cen_30_40_STAR",
+    "bin_index": 6,
+    "emulator_output_index": 731,
+    "bin_low": 1.2,
+    "bin_high": 1.35,
+    "experiment": 0.145,
+    "experimental_std": 0.00061,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_30_40_STAR.dat",
+    "gp_std_at_anchor": 0.007974407741364355,
+    "gradient_per_prior_span": [
+      -0.04869322668357157,
+      0.018482727069344534
+    ],
+    "weighted_gradient": [
+      -6.088400251750262,
+      2.311003969264473
+    ],
+    "pilot_mean_range": [
+      0.11108239642654863,
+      0.16787514868983733
+    ],
+    "pilot_compatible_fraction": 0.33136094674556216
+  },
+  {
+    "observable": "v22_pt_cen_30_40_STAR",
+    "bin_index": 7,
+    "emulator_output_index": 732,
+    "bin_low": 1.35,
+    "bin_high": 1.5,
+    "experiment": 0.158,
+    "experimental_std": 0.00073,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_30_40_STAR.dat",
+    "gp_std_at_anchor": 0.00985615122429346,
+    "gradient_per_prior_span": [
+      -0.05554020264736392,
+      0.023283823037734824
+    ],
+    "weighted_gradient": [
+      -5.619687362545397,
+      2.355911571077282
+    ],
+    "pilot_mean_range": [
+      0.12326047781904909,
+      0.18921816149333262
+    ],
+    "pilot_compatible_fraction": 0.3609467455621302
+  },
+  {
+    "observable": "v22_pt_cen_40_50_STAR",
+    "bin_index": 0,
+    "emulator_output_index": 733,
+    "bin_low": 0.3,
+    "bin_high": 0.45,
+    "experiment": 0.0484,
+    "experimental_std": 0.00028000000000000003,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_40_50_STAR.dat",
+    "gp_std_at_anchor": 0.0020890040789390218,
+    "gradient_per_prior_span": [
+      -0.009654457787894137,
+      0.00173478684898868
+    ],
+    "weighted_gradient": [
+      -4.580597021623096,
+      0.8230767225055888
+    ],
+    "pilot_mean_range": [
+      0.036879270879460746,
+      0.04843383542608017
+    ],
+    "pilot_compatible_fraction": 0.20710059171597633
+  },
+  {
+    "observable": "v22_pt_cen_40_50_STAR",
+    "bin_index": 1,
+    "emulator_output_index": 734,
+    "bin_low": 0.45,
+    "bin_high": 0.6,
+    "experiment": 0.0704,
+    "experimental_std": 0.00032,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_40_50_STAR.dat",
+    "gp_std_at_anchor": 0.003274123249682324,
+    "gradient_per_prior_span": [
+      -0.018657636075052747,
+      0.005747708846481556
+    ],
+    "weighted_gradient": [
+      -5.671490035976939,
+      1.7471706126856958
+    ],
+    "pilot_mean_range": [
+      0.05667124437474086,
+      0.07880384769702985
+    ],
+    "pilot_compatible_fraction": 0.35502958579881655
+  },
+  {
+    "observable": "v22_pt_cen_40_50_STAR",
+    "bin_index": 2,
+    "emulator_output_index": 735,
+    "bin_low": 0.6,
+    "bin_high": 0.75,
+    "experiment": 0.0902,
+    "experimental_std": 0.00039,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_40_50_STAR.dat",
+    "gp_std_at_anchor": 0.004449935983735961,
+    "gradient_per_prior_span": [
+      -0.02707417611478788,
+      0.009001555103944556
+    ],
+    "weighted_gradient": [
+      -6.060939325100328,
+      2.015126114465795
+    ],
+    "pilot_mean_range": [
+      0.07147480180106558,
+      0.10315510537110588
+    ],
+    "pilot_compatible_fraction": 0.31952662721893493
+  },
+  {
+    "observable": "v22_pt_cen_40_50_STAR",
+    "bin_index": 3,
+    "emulator_output_index": 736,
+    "bin_low": 0.75,
+    "bin_high": 0.9,
+    "experiment": 0.109,
+    "experimental_std": 0.00047,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_40_50_STAR.dat",
+    "gp_std_at_anchor": 0.006180786369747619,
+    "gradient_per_prior_span": [
+      -0.03841815319654447,
+      0.013098959262158871
+    ],
+    "weighted_gradient": [
+      -6.197845340206234,
+      2.113202141945357
+    ],
+    "pilot_mean_range": [
+      0.08789267239037185,
+      0.1320423642744885
+    ],
+    "pilot_compatible_fraction": 0.35502958579881655
+  },
+  {
+    "observable": "v22_pt_cen_40_50_STAR",
+    "bin_index": 4,
+    "emulator_output_index": 737,
+    "bin_low": 0.9,
+    "bin_high": 1.05,
+    "experiment": 0.126,
+    "experimental_std": 0.00057,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_40_50_STAR.dat",
+    "gp_std_at_anchor": 0.007534290352109386,
+    "gradient_per_prior_span": [
+      -0.046456778802085597,
+      0.01611222279427893
+    ],
+    "weighted_gradient": [
+      -6.148475294859683,
+      2.1324251562497842
+    ],
+    "pilot_mean_range": [
+      0.0986143021537842,
+      0.1515828166377925
+    ],
+    "pilot_compatible_fraction": 0.3254437869822485
+  },
+  {
+    "observable": "v22_pt_cen_40_50_STAR",
+    "bin_index": 5,
+    "emulator_output_index": 738,
+    "bin_low": 1.05,
+    "bin_high": 1.2,
+    "experiment": 0.14,
+    "experimental_std": 0.0006900000000000001,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_40_50_STAR.dat",
+    "gp_std_at_anchor": 0.008442869375574313,
+    "gradient_per_prior_span": [
+      -0.051182440996769274,
+      0.017940189815304763
+    ],
+    "weighted_gradient": [
+      -6.042065067810144,
+      2.1178316641790955
+    ],
+    "pilot_mean_range": [
+      0.10503056633292435,
+      0.16318352677420467
+    ],
+    "pilot_compatible_fraction": 0.3254437869822485
+  },
+  {
+    "observable": "v22_pt_cen_40_50_STAR",
+    "bin_index": 6,
+    "emulator_output_index": 739,
+    "bin_low": 1.2,
+    "bin_high": 1.35,
+    "experiment": 0.157,
+    "experimental_std": 0.00083,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_40_50_STAR.dat",
+    "gp_std_at_anchor": 0.00974921512845556,
+    "gradient_per_prior_span": [
+      -0.05706866969413457,
+      0.021168789845114194
+    ],
+    "weighted_gradient": [
+      -5.832569105363881,
+      2.1635063566453447
+    ],
+    "pilot_mean_range": [
+      0.11428286447091456,
+      0.17955058745081928
+    ],
+    "pilot_compatible_fraction": 0.33136094674556216
+  },
+  {
+    "observable": "v22_pt_cen_40_50_STAR",
+    "bin_index": 7,
+    "emulator_output_index": 740,
+    "bin_low": 1.35,
+    "bin_high": 1.5,
+    "experiment": 0.1689999999999999,
+    "experimental_std": 0.001,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_40_50_STAR.dat",
+    "gp_std_at_anchor": 0.012032419178392359,
+    "gradient_per_prior_span": [
+      -0.06525214901860824,
+      0.027170543551772314
+    ],
+    "weighted_gradient": [
+      -5.404396078456886,
+      2.250353148964722
+    ],
+    "pilot_mean_range": [
+      0.12661356098275633,
+      0.20288825033016483
+    ],
+    "pilot_compatible_fraction": 0.3727810650887574
+  },
+  {
+    "observable": "v22_pt_cen_50_60_STAR",
+    "bin_index": 0,
+    "emulator_output_index": 741,
+    "bin_low": 0.3,
+    "bin_high": 0.45,
+    "experiment": 0.0495,
+    "experimental_std": 0.0004,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_50_60_STAR.dat",
+    "gp_std_at_anchor": 0.0024698397658297574,
+    "gradient_per_prior_span": [
+      -0.009372832413349907,
+      0.0013072493998180293
+    ],
+    "weighted_gradient": [
+      -3.74610479855009,
+      0.5224774148938179
+    ],
+    "pilot_mean_range": [
+      0.03681691652907413,
+      0.048199108316873636
+    ],
+    "pilot_compatible_fraction": 0.08284023668639054
+  },
+  {
+    "observable": "v22_pt_cen_50_60_STAR",
+    "bin_index": 1,
+    "emulator_output_index": 742,
+    "bin_low": 0.45,
+    "bin_high": 0.6,
+    "experiment": 0.0712,
+    "experimental_std": 0.00046,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_50_60_STAR.dat",
+    "gp_std_at_anchor": 0.0038361382148986993,
+    "gradient_per_prior_span": [
+      -0.01937153763022989,
+      0.004986584017015877
+    ],
+    "weighted_gradient": [
+      -5.013831495347637,
+      1.2906508753179773
+    ],
+    "pilot_mean_range": [
+      0.055745670915302914,
+      0.0780246820573221
+    ],
+    "pilot_compatible_fraction": 0.39644970414201186
+  },
+  {
+    "observable": "v22_pt_cen_50_60_STAR",
+    "bin_index": 2,
+    "emulator_output_index": 743,
+    "bin_low": 0.6,
+    "bin_high": 0.75,
+    "experiment": 0.0921,
+    "experimental_std": 0.0005600000000000001,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_50_60_STAR.dat",
+    "gp_std_at_anchor": 0.005239592972206974,
+    "gradient_per_prior_span": [
+      -0.028942709483738976,
+      0.007932422540673362
+    ],
+    "weighted_gradient": [
+      -5.492565154100092,
+      1.5053651994461472
+    ],
+    "pilot_mean_range": [
+      0.06949631224823834,
+      0.10204341369666561
+    ],
+    "pilot_compatible_fraction": 0.34911242603550297
+  },
+  {
+    "observable": "v22_pt_cen_50_60_STAR",
+    "bin_index": 3,
+    "emulator_output_index": 744,
+    "bin_low": 0.75,
+    "bin_high": 0.9,
+    "experiment": 0.1119999999999999,
+    "experimental_std": 0.00068,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_50_60_STAR.dat",
+    "gp_std_at_anchor": 0.007310479304609272,
+    "gradient_per_prior_span": [
+      -0.041787872553739405,
+      0.012043596208929225
+    ],
+    "weighted_gradient": [
+      -5.691591096125541,
+      1.6403616829241747
+    ],
+    "pilot_mean_range": [
+      0.08451718310060942,
+      0.13081348557510228
+    ],
+    "pilot_compatible_fraction": 0.35502958579881655
+  },
+  {
+    "observable": "v22_pt_cen_50_60_STAR",
+    "bin_index": 4,
+    "emulator_output_index": 745,
+    "bin_low": 0.9,
+    "bin_high": 1.05,
+    "experiment": 0.129,
+    "experimental_std": 0.00083,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_50_60_STAR.dat",
+    "gp_std_at_anchor": 0.00886950275235759,
+    "gradient_per_prior_span": [
+      -0.050808295543129656,
+      0.015209968109482566
+    ],
+    "weighted_gradient": [
+      -5.703508097751879,
+      1.7074018199516652
+    ],
+    "pilot_mean_range": [
+      0.09442465277713208,
+      0.15041305933578217
+    ],
+    "pilot_compatible_fraction": 0.33136094674556216
+  },
+  {
+    "observable": "v22_pt_cen_50_60_STAR",
+    "bin_index": 5,
+    "emulator_output_index": 746,
+    "bin_low": 1.05,
+    "bin_high": 1.2,
+    "experiment": 0.147,
+    "experimental_std": 0.001,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_50_60_STAR.dat",
+    "gp_std_at_anchor": 0.00979021368759763,
+    "gradient_per_prior_span": [
+      -0.05573314792781947,
+      0.017410084305366502
+    ],
+    "weighted_gradient": [
+      -5.663274447814924,
+      1.7691102915733574
+    ],
+    "pilot_mean_range": [
+      0.10052014450747176,
+      0.16215407933335402
+    ],
+    "pilot_compatible_fraction": 0.33727810650887574
+  },
+  {
+    "observable": "v22_pt_cen_50_60_STAR",
+    "bin_index": 6,
+    "emulator_output_index": 747,
+    "bin_low": 1.2,
+    "bin_high": 1.35,
+    "experiment": 0.159,
+    "experimental_std": 0.0012,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_50_60_STAR.dat",
+    "gp_std_at_anchor": 0.011134070206643748,
+    "gradient_per_prior_span": [
+      -0.06238309700078576,
+      0.0211202543425347
+    ],
+    "weighted_gradient": [
+      -5.570640634840654,
+      1.8859811826465054
+    ],
+    "pilot_mean_range": [
+      0.1091155841287875,
+      0.1789044012984031
+    ],
+    "pilot_compatible_fraction": 0.3431952662721893
+  },
+  {
+    "observable": "v22_pt_cen_50_60_STAR",
+    "bin_index": 7,
+    "emulator_output_index": 748,
+    "bin_low": 1.35,
+    "bin_high": 1.5,
+    "experiment": 0.175,
+    "experimental_std": 0.0015,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_pt_cen_50_60_STAR.dat",
+    "gp_std_at_anchor": 0.013427266578241545,
+    "gradient_per_prior_span": [
+      -0.0711105591873401,
+      0.028124246363066957
+    ],
+    "weighted_gradient": [
+      -5.263241537715512,
+      2.081613523598777
+    ],
+    "pilot_mean_range": [
+      0.12077532351774134,
+      0.2027485435160868
+    ],
+    "pilot_compatible_fraction": 0.3609467455621302
+  },
+  {
+    "observable": "v22_int_STAR",
+    "bin_index": 0,
+    "emulator_output_index": 749,
+    "bin_low": 0.0,
+    "bin_high": 5.0,
+    "experiment": 0.0241,
+    "experimental_std": 9.591663046625439e-05,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_int_STAR.dat",
+    "gp_std_at_anchor": 0.0018633329784473703,
+    "gradient_per_prior_span": [
+      -0.003510891864486835,
+      -0.0019303946887620424
+    ],
+    "weighted_gradient": [
+      -1.8817085376614218,
+      -1.0346203492173716
+    ],
+    "pilot_mean_range": [
+      0.021868744971326536,
+      0.027477219309537403
+    ],
+    "pilot_compatible_fraction": 0.7869822485207101
+  },
+  {
+    "observable": "v22_int_STAR",
+    "bin_index": 1,
+    "emulator_output_index": 750,
+    "bin_low": 5.0,
+    "bin_high": 10.0,
+    "experiment": 0.0355,
+    "experimental_std": 8.774964387392122e-05,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_int_STAR.dat",
+    "gp_std_at_anchor": 0.002102230504757266,
+    "gradient_per_prior_span": [
+      -0.007119366379014676,
+      -0.00213845680362007
+    ],
+    "weighted_gradient": [
+      -3.3836310138553016,
+      -1.016347295153558
+    ],
+    "pilot_mean_range": [
+      0.030833256468151722,
+      0.039192025480935866
+    ],
+    "pilot_compatible_fraction": 0.5443786982248521
+  },
+  {
+    "observable": "v22_int_STAR",
+    "bin_index": 2,
+    "emulator_output_index": 751,
+    "bin_low": 10.0,
+    "bin_high": 20.0,
+    "experiment": 0.0497,
+    "experimental_std": 6.633249580710799e-05,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_int_STAR.dat",
+    "gp_std_at_anchor": 0.00238776085478096,
+    "gradient_per_prior_span": [
+      -0.01061813088697721,
+      -0.0026779453171695694
+    ],
+    "weighted_gradient": [
+      -4.445183870668921,
+      -1.1210974376870184
+    ],
+    "pilot_mean_range": [
+      0.04331367536739485,
+      0.05517492573179704
+    ],
+    "pilot_compatible_fraction": 0.4319526627218935
+  },
+  {
+    "observable": "v22_int_STAR",
+    "bin_index": 3,
+    "emulator_output_index": 752,
+    "bin_low": 20.0,
+    "bin_high": 30.0,
+    "experiment": 0.0642,
+    "experimental_std": 7.483314773547883e-05,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_int_STAR.dat",
+    "gp_std_at_anchor": 0.0027704818343366913,
+    "gradient_per_prior_span": [
+      -0.014441595853228843,
+      -0.003041129384559818
+    ],
+    "weighted_gradient": [
+      -5.210765272312935,
+      -1.097289492568907
+    ],
+    "pilot_mean_range": [
+      0.05430384759728685,
+      0.06992695646067648
+    ],
+    "pilot_compatible_fraction": 0.3727810650887574
+  },
+  {
+    "observable": "v22_int_STAR",
+    "bin_index": 4,
+    "emulator_output_index": 753,
+    "bin_low": 30.0,
+    "bin_high": 40.0,
+    "experiment": 0.0729,
+    "experimental_std": 9.380831519646858e-05,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_int_STAR.dat",
+    "gp_std_at_anchor": 0.0032807107850698486,
+    "gradient_per_prior_span": [
+      -0.017040290164090435,
+      -0.0022785230981373777
+    ],
+    "weighted_gradient": [
+      -5.191962773800951,
+      -0.6942374214791622
+    ],
+    "pilot_mean_range": [
+      0.05969726689478983,
+      0.07781860150346047
+    ],
+    "pilot_compatible_fraction": 0.3431952662721893
+  },
+  {
+    "observable": "v22_int_STAR",
+    "bin_index": 5,
+    "emulator_output_index": 754,
+    "bin_low": 40.0,
+    "bin_high": 50.0,
+    "experiment": 0.0764,
+    "experimental_std": 0.00013,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v22_int_STAR.dat",
+    "gp_std_at_anchor": 0.003852815302674629,
+    "gradient_per_prior_span": [
+      -0.019115146216737086,
+      -0.002806631079887295
+    ],
+    "weighted_gradient": [
+      -4.958523253568136,
+      -0.7280480785243901
+    ],
+    "pilot_mean_range": [
+      0.06104684796330653,
+      0.08144737065188307
+    ],
+    "pilot_compatible_fraction": 0.31952662721893493
+  },
+  {
+    "observable": "v32_int_STAR",
+    "bin_index": 0,
+    "emulator_output_index": 755,
+    "bin_low": 0.0,
+    "bin_high": 5.0,
+    "experiment": 0.0138,
+    "experimental_std": 0.0010945775440780795,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v32_int_STAR.dat",
+    "gp_std_at_anchor": 0.0016911780945866597,
+    "gradient_per_prior_span": [
+      -0.004211481463796711,
+      -0.0006154380693854881
+    ],
+    "weighted_gradient": [
+      -2.0905909273211147,
+      -0.30550514236987986
+    ],
+    "pilot_mean_range": [
+      0.010801180198444197,
+      0.015718337538368578
+    ],
+    "pilot_compatible_fraction": 0.7751479289940828
+  },
+  {
+    "observable": "v32_int_STAR",
+    "bin_index": 1,
+    "emulator_output_index": 756,
+    "bin_low": 5.0,
+    "bin_high": 10.0,
+    "experiment": 0.0157,
+    "experimental_std": 0.0005590169943749475,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v32_int_STAR.dat",
+    "gp_std_at_anchor": 0.00153635005581942,
+    "gradient_per_prior_span": [
+      -0.005394552624311691,
+      5.68842141667001e-05
+    ],
+    "weighted_gradient": [
+      -3.299638743858841,
+      0.03479386893595399
+    ],
+    "pilot_mean_range": [
+      0.011641371479512073,
+      0.017235469546212218
+    ],
+    "pilot_compatible_fraction": 0.5384615384615384
+  },
+  {
+    "observable": "v32_int_STAR",
+    "bin_index": 2,
+    "emulator_output_index": 757,
+    "bin_low": 10.0,
+    "bin_high": 20.0,
+    "experiment": 0.0175,
+    "experimental_std": 0.0005590169943749475,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v32_int_STAR.dat",
+    "gp_std_at_anchor": 0.0015867962866987799,
+    "gradient_per_prior_span": [
+      -0.006324381356223336,
+      -9.332230247256941e-05
+    ],
+    "weighted_gradient": [
+      -3.7591739213771573,
+      -0.05547021059894564
+    ],
+    "pilot_mean_range": [
+      0.012365258402990315,
+      0.01888617224586966
+    ],
+    "pilot_compatible_fraction": 0.4556213017751479
+  },
+  {
+    "observable": "v32_int_STAR",
+    "bin_index": 3,
+    "emulator_output_index": 758,
+    "bin_low": 20.0,
+    "bin_high": 30.0,
+    "experiment": 0.0183,
+    "experimental_std": 0.0005000999900019995,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v32_int_STAR.dat",
+    "gp_std_at_anchor": 0.0018042514677280637,
+    "gradient_per_prior_span": [
+      -0.007770688220373311,
+      9.930603448275732e-05
+    ],
+    "weighted_gradient": [
+      -4.150393231614717,
+      0.05304023037433526
+    ],
+    "pilot_mean_range": [
+      0.01301863205643247,
+      0.021062409133063096
+    ],
+    "pilot_compatible_fraction": 0.44970414201183434
+  },
+  {
+    "observable": "v32_int_STAR",
+    "bin_index": 4,
+    "emulator_output_index": 759,
+    "bin_low": 30.0,
+    "bin_high": 40.0,
+    "experiment": 0.0187,
+    "experimental_std": 0.0003858756276314947,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v32_int_STAR.dat",
+    "gp_std_at_anchor": 0.002332941798658778,
+    "gradient_per_prior_span": [
+      -0.009000827683415796,
+      -0.00014861511618557977
+    ],
+    "weighted_gradient": [
+      -3.8064278799972735,
+      -0.06284896695446408
+    ],
+    "pilot_mean_range": [
+      0.013071028792058263,
+      0.022292802769799218
+    ],
+    "pilot_compatible_fraction": 0.5325443786982249
+  },
+  {
+    "observable": "v32_int_STAR",
+    "bin_index": 5,
+    "emulator_output_index": 760,
+    "bin_low": 40.0,
+    "bin_high": 50.0,
+    "experiment": 0.0181,
+    "experimental_std": 0.0003720215047547655,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/v32_int_STAR.dat",
+    "gp_std_at_anchor": 0.002630293220681747,
+    "gradient_per_prior_span": [
+      -0.010174186393932094,
+      -0.00046099293301042274
+    ],
+    "weighted_gradient": [
+      -3.8299621294982633,
+      -0.1735357901885155
+    ],
+    "pilot_mean_range": [
+      0.012546736369386594,
+      0.02293153024372275
+    ],
+    "pilot_compatible_fraction": 0.5443786982248521
+  },
+  {
+    "observable": "meanpT_pi_STAR",
+    "bin_index": 0,
+    "emulator_output_index": 761,
+    "bin_low": 0.0,
+    "bin_high": 5.0,
+    "experiment": 0.4245,
+    "experimental_std": 0.022,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/meanpT_pi_STAR.dat",
+    "gp_std_at_anchor": 0.01393096121436157,
+    "gradient_per_prior_span": [
+      0.03179545344314527,
+      -0.081118448400469
+    ],
+    "weighted_gradient": [
+      1.2210324889886777,
+      -3.115170574007899
+    ],
+    "pilot_mean_range": [
+      0.4060138725887341,
+      0.4958960635420971
+    ],
+    "pilot_compatible_fraction": 0.7159763313609467
+  },
+  {
+    "observable": "meanpT_pi_STAR",
+    "bin_index": 1,
+    "emulator_output_index": 762,
+    "bin_low": 5.0,
+    "bin_high": 10.0,
+    "experiment": 0.42,
+    "experimental_std": 0.021,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/meanpT_pi_STAR.dat",
+    "gp_std_at_anchor": 0.013906343122992496,
+    "gradient_per_prior_span": [
+      0.031218373480913775,
+      -0.08295259305503289
+    ],
+    "weighted_gradient": [
+      1.2394623729011682,
+      -3.293464917035343
+    ],
+    "pilot_mean_range": [
+      0.4044850757593698,
+      0.49568526837533566
+    ],
+    "pilot_compatible_fraction": 0.6863905325443787
+  },
+  {
+    "observable": "meanpT_pi_STAR",
+    "bin_index": 2,
+    "emulator_output_index": 763,
+    "bin_low": 10.0,
+    "bin_high": 20.0,
+    "experiment": 0.4185,
+    "experimental_std": 0.021,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/meanpT_pi_STAR.dat",
+    "gp_std_at_anchor": 0.014023774423725656,
+    "gradient_per_prior_span": [
+      0.030749556745542084,
+      -0.08533541602531586
+    ],
+    "weighted_gradient": [
+      1.2177051543890818,
+      -3.379345491249353
+    ],
+    "pilot_mean_range": [
+      0.4012838266570492,
+      0.49417142325269503
+    ],
+    "pilot_compatible_fraction": 0.6923076923076923
+  },
+  {
+    "observable": "meanpT_pi_STAR",
+    "bin_index": 3,
+    "emulator_output_index": 764,
+    "bin_low": 20.0,
+    "bin_high": 30.0,
+    "experiment": 0.4095,
+    "experimental_std": 0.021,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/meanpT_pi_STAR.dat",
+    "gp_std_at_anchor": 0.014295218521551582,
+    "gradient_per_prior_span": [
+      0.029630647239509145,
+      -0.08763967326310823
+    ],
+    "weighted_gradient": [
+      1.1663862190582168,
+      -3.449864132584762
+    ],
+    "pilot_mean_range": [
+      0.39642113054984696,
+      0.49033026727647927
+    ],
+    "pilot_compatible_fraction": 0.6390532544378699
+  },
+  {
+    "observable": "meanpT_pi_STAR",
+    "bin_index": 4,
+    "emulator_output_index": 765,
+    "bin_low": 30.0,
+    "bin_high": 40.0,
+    "experiment": 0.403,
+    "experimental_std": 0.021,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/meanpT_pi_STAR.dat",
+    "gp_std_at_anchor": 0.014665901859747074,
+    "gradient_per_prior_span": [
+      0.028348140520176313,
+      -0.08916212335558643
+    ],
+    "weighted_gradient": [
+      1.106734135870821,
+      -3.4809607873264046
+    ],
+    "pilot_mean_range": [
+      0.38971953917560354,
+      0.48392747441209905
+    ],
+    "pilot_compatible_fraction": 0.6390532544378699
+  },
+  {
+    "observable": "meanpT_pi_STAR",
+    "bin_index": 5,
+    "emulator_output_index": 766,
+    "bin_low": 40.0,
+    "bin_high": 50.0,
+    "experiment": 0.395,
+    "experimental_std": 0.02,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/meanpT_pi_STAR.dat",
+    "gp_std_at_anchor": 0.015419044743843613,
+    "gradient_per_prior_span": [
+      0.02676788853172435,
+      -0.08983928121799462
+    ],
+    "weighted_gradient": [
+      1.0599610900141523,
+      -3.5574768003481076
+    ],
+    "pilot_mean_range": [
+      0.38251542571307356,
+      0.47595471863093436
+    ],
+    "pilot_compatible_fraction": 0.6331360946745562
+  },
+  {
+    "observable": "meanpT_pi_STAR",
+    "bin_index": 6,
+    "emulator_output_index": 767,
+    "bin_low": 50.0,
+    "bin_high": 60.0,
+    "experiment": 0.389,
+    "experimental_std": 0.02,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/meanpT_pi_STAR.dat",
+    "gp_std_at_anchor": 0.016514136569513897,
+    "gradient_per_prior_span": [
+      0.025383565720993317,
+      -0.09091583000645498
+    ],
+    "weighted_gradient": [
+      0.9786705556168337,
+      -3.5052855396590448
+    ],
+    "pilot_mean_range": [
+      0.37415905771254604,
+      0.4672442239395549
+    ],
+    "pilot_compatible_fraction": 0.6627218934911243
+  },
+  {
+    "observable": "meanpT_k_STAR",
+    "bin_index": 0,
+    "emulator_output_index": 768,
+    "bin_low": 0.0,
+    "bin_high": 5.0,
+    "experiment": 0.7195,
+    "experimental_std": 0.074,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/meanpT_k_STAR.dat",
+    "gp_std_at_anchor": 0.023019591647185433,
+    "gradient_per_prior_span": [
+      0.05239985188066343,
+      -0.12477184332083391
+    ],
+    "weighted_gradient": [
+      0.6761467317135241,
+      -1.6100059645852882
+    ],
+    "pilot_mean_range": [
+      0.6194841456923657,
+      0.7611679774987661
+    ],
+    "pilot_compatible_fraction": 0.7810650887573964
+  },
+  {
+    "observable": "meanpT_k_STAR",
+    "bin_index": 1,
+    "emulator_output_index": 769,
+    "bin_low": 5.0,
+    "bin_high": 10.0,
+    "experiment": 0.7035,
+    "experimental_std": 0.064,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/meanpT_k_STAR.dat",
+    "gp_std_at_anchor": 0.02272306572633637,
+    "gradient_per_prior_span": [
+      0.05135181330141181,
+      -0.12814146889230382
+    ],
+    "weighted_gradient": [
+      0.7561278496822658,
+      -1.8868142544442694
+    ],
+    "pilot_mean_range": [
+      0.6134857107440492,
+      0.7573433521196792
+    ],
+    "pilot_compatible_fraction": 0.7869822485207101
+  },
+  {
+    "observable": "meanpT_k_STAR",
+    "bin_index": 2,
+    "emulator_output_index": 770,
+    "bin_low": 10.0,
+    "bin_high": 20.0,
+    "experiment": 0.6805,
+    "experimental_std": 0.055,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/meanpT_k_STAR.dat",
+    "gp_std_at_anchor": 0.02258025929702486,
+    "gradient_per_prior_span": [
+      0.05043645369202099,
+      -0.13223719584333493
+    ],
+    "weighted_gradient": [
+      0.84831654151344,
+      -2.224165111255631
+    ],
+    "pilot_mean_range": [
+      0.6035458756206002,
+      0.7500534227865785
+    ],
+    "pilot_compatible_fraction": 0.7988165680473372
+  },
+  {
+    "observable": "meanpT_k_STAR",
+    "bin_index": 3,
+    "emulator_output_index": 771,
+    "bin_low": 20.0,
+    "bin_high": 30.0,
+    "experiment": 0.668,
+    "experimental_std": 0.047,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/meanpT_k_STAR.dat",
+    "gp_std_at_anchor": 0.02278494367367567,
+    "gradient_per_prior_span": [
+      0.04831415160168606,
+      -0.1363514562266438
+    ],
+    "weighted_gradient": [
+      0.9249961901058097,
+      -2.6105100336817904
+    ],
+    "pilot_mean_range": [
+      0.5891738018026753,
+      0.7373473019777939
+    ],
+    "pilot_compatible_fraction": 0.6863905325443787
+  },
+  {
+    "observable": "meanpT_k_STAR",
+    "bin_index": 4,
+    "emulator_output_index": 772,
+    "bin_low": 30.0,
+    "bin_high": 40.0,
+    "experiment": 0.643,
+    "experimental_std": 0.042,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/meanpT_k_STAR.dat",
+    "gp_std_at_anchor": 0.023263524286761934,
+    "gradient_per_prior_span": [
+      0.04615651878744076,
+      -0.13943651906555
+    ],
+    "weighted_gradient": [
+      0.9613455834556718,
+      -2.90417659948335
+    ],
+    "pilot_mean_range": [
+      0.5713107629842948,
+      0.7203744886097826
+    ],
+    "pilot_compatible_fraction": 0.6804733727810651
+  },
+  {
+    "observable": "meanpT_k_STAR",
+    "bin_index": 5,
+    "emulator_output_index": 773,
+    "bin_low": 40.0,
+    "bin_high": 50.0,
+    "experiment": 0.619,
+    "experimental_std": 0.037,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/meanpT_k_STAR.dat",
+    "gp_std_at_anchor": 0.024410279904125566,
+    "gradient_per_prior_span": [
+      0.04346795693105643,
+      -0.14130280684848118
+    ],
+    "weighted_gradient": [
+      0.9806256013800889,
+      -3.187753916344896
+    ],
+    "pilot_mean_range": [
+      0.5520630484245316,
+      0.7003941214387005
+    ],
+    "pilot_compatible_fraction": 0.6627218934911243
+  },
+  {
+    "observable": "meanpT_k_STAR",
+    "bin_index": 6,
+    "emulator_output_index": 774,
+    "bin_low": 50.0,
+    "bin_high": 60.0,
+    "experiment": 0.6085,
+    "experimental_std": 0.036000000000000004,
+    "file": "HIC_experimental_data/Au-Au-200/STAR/meanpT_k_STAR.dat",
+    "gp_std_at_anchor": 0.026469227160666953,
+    "gradient_per_prior_span": [
+      0.04136611392508982,
+      -0.1447864912335256
+    ],
+    "weighted_gradient": [
+      0.9257570256190805,
+      -3.240263557676712
+    ],
+    "pilot_mean_range": [
+      0.5301104679011683,
+      0.6793261314363908
+    ],
+    "pilot_compatible_fraction": 0.4911242603550296
+  },
+  {
+    "observable": "meanpT_k_PHEN",
+    "bin_index": 0,
+    "emulator_output_index": 775,
+    "bin_low": 0.0,
+    "bin_high": 5.0,
+    "experiment": 0.6735,
+    "experimental_std": 0.07453198776364414,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_k_PHEN.dat",
+    "gp_std_at_anchor": 0.022005767399662163,
+    "gradient_per_prior_span": [
+      0.05128049098008791,
+      -0.12303567041429542
+    ],
+    "weighted_gradient": [
+      0.6598723267559944,
+      -1.583210935749227
+    ],
+    "pilot_mean_range": [
+      0.6192971456585207,
+      0.760291306985083
+    ],
+    "pilot_compatible_fraction": 0.9704142011834319
+  },
+  {
+    "observable": "meanpT_k_PHEN",
+    "bin_index": 1,
+    "emulator_output_index": 776,
+    "bin_low": 5.0,
+    "bin_high": 10.0,
+    "experiment": 0.6755,
+    "experimental_std": 0.07453198776364414,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_k_PHEN.dat",
+    "gp_std_at_anchor": 0.022168455154839405,
+    "gradient_per_prior_span": [
+      0.05081341856839061,
+      -0.12727431894555274
+    ],
+    "weighted_gradient": [
+      0.653473390611607,
+      -1.6367798719779711
+    ],
+    "pilot_mean_range": [
+      0.6132841166261694,
+      0.7568977550572143
+    ],
+    "pilot_compatible_fraction": 0.9763313609467456
+  },
+  {
+    "observable": "meanpT_k_PHEN",
+    "bin_index": 2,
+    "emulator_output_index": 777,
+    "bin_low": 10.0,
+    "bin_high": 15.0,
+    "experiment": 0.672,
+    "experimental_std": 0.07453198776364414,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_k_PHEN.dat",
+    "gp_std_at_anchor": 0.022240759483852183,
+    "gradient_per_prior_span": [
+      0.05060960905990952,
+      -0.1300193276580236
+    ],
+    "weighted_gradient": [
+      0.6506795997267981,
+      -1.6716375733533764
+    ],
+    "pilot_mean_range": [
+      0.6064245158864392,
+      0.7519135395664621
+    ],
+    "pilot_compatible_fraction": 0.9822485207100592
+  },
+  {
+    "observable": "meanpT_k_PHEN",
+    "bin_index": 3,
+    "emulator_output_index": 778,
+    "bin_low": 15.0,
+    "bin_high": 20.0,
+    "experiment": 0.6685,
+    "experimental_std": 0.07404389441405686,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_k_PHEN.dat",
+    "gp_std_at_anchor": 0.022524848794605173,
+    "gradient_per_prior_span": [
+      0.05004161437254517,
+      -0.1332353492687427
+    ],
+    "weighted_gradient": [
+      0.6465806717108785,
+      -1.721515236988059
+    ],
+    "pilot_mean_range": [
+      0.5997183115644182,
+      0.7469403535161668
+    ],
+    "pilot_compatible_fraction": 0.9822485207100592
+  },
+  {
+    "observable": "meanpT_k_PHEN",
+    "bin_index": 4,
+    "emulator_output_index": 779,
+    "bin_low": 20.0,
+    "bin_high": 30.0,
+    "experiment": 0.6645,
+    "experimental_std": 0.07355300537707483,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_k_PHEN.dat",
+    "gp_std_at_anchor": 0.02276471039068487,
+    "gradient_per_prior_span": [
+      0.04819609072484188,
+      -0.13617097987395355
+    ],
+    "weighted_gradient": [
+      0.6259614421845566,
+      -1.768562173065414
+    ],
+    "pilot_mean_range": [
+      0.5888803827182132,
+      0.7368926129049235
+    ],
+    "pilot_compatible_fraction": 1.0
+  },
+  {
+    "observable": "meanpT_k_PHEN",
+    "bin_index": 5,
+    "emulator_output_index": 780,
+    "bin_low": 30.0,
+    "bin_high": 40.0,
+    "experiment": 0.6545,
+    "experimental_std": 0.07306525987088529,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_k_PHEN.dat",
+    "gp_std_at_anchor": 0.02336944344022598,
+    "gradient_per_prior_span": [
+      0.04641766515035839,
+      -0.13951900886097213
+    ],
+    "weighted_gradient": [
+      0.6050935026533226,
+      -1.818748217622354
+    ],
+    "pilot_mean_range": [
+      0.5709533509610156,
+      0.7199564751342036
+    ],
+    "pilot_compatible_fraction": 0.9526627218934911
+  },
+  {
+    "observable": "meanpT_k_PHEN",
+    "bin_index": 6,
+    "emulator_output_index": 781,
+    "bin_low": 40.0,
+    "bin_high": 50.0,
+    "experiment": 0.64,
+    "experimental_std": 0.05316689477485026,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_k_PHEN.dat",
+    "gp_std_at_anchor": 0.024432309994554632,
+    "gradient_per_prior_span": [
+      0.04403912697156509,
+      -0.1411916722953016
+    ],
+    "weighted_gradient": [
+      0.7526509434122471,
+      -2.4130370573337223
+    ],
+    "pilot_mean_range": [
+      0.5511643086139041,
+      0.699629646995464
+    ],
+    "pilot_compatible_fraction": 0.6627218934911243
+  },
+  {
+    "observable": "meanpT_k_PHEN",
+    "bin_index": 7,
+    "emulator_output_index": 782,
+    "bin_low": 50.0,
+    "bin_high": 60.0,
+    "experiment": 0.619,
+    "experimental_std": 0.05220867169350318,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_k_PHEN.dat",
+    "gp_std_at_anchor": 0.026481564409819327,
+    "gradient_per_prior_span": [
+      0.041759844029487514,
+      -0.14431389012024565
+    ],
+    "weighted_gradient": [
+      0.7133466626497394,
+      -2.4651871740370055
+    ],
+    "pilot_mean_range": [
+      0.5296394775680558,
+      0.6785208911352559
+    ],
+    "pilot_compatible_fraction": 0.6390532544378699
+  },
+  {
+    "observable": "meanpT_p_PHEN",
+    "bin_index": 0,
+    "emulator_output_index": 783,
+    "bin_low": 0.0,
+    "bin_high": 5.0,
+    "experiment": 0.954,
+    "experimental_std": 0.09348954914855458,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_p_PHEN.dat",
+    "gp_std_at_anchor": 0.03927344514600291,
+    "gradient_per_prior_span": [
+      0.06511962662614224,
+      -0.1394929501985498
+    ],
+    "weighted_gradient": [
+      0.6421823041047022,
+      -1.375620666241741
+    ],
+    "pilot_mean_range": [
+      1.0412461219074116,
+      1.2112179153443143
+    ],
+    "pilot_compatible_fraction": 0.09467455621301775
+  },
+  {
+    "observable": "meanpT_p_PHEN",
+    "bin_index": 1,
+    "emulator_output_index": 784,
+    "bin_low": 5.0,
+    "bin_high": 10.0,
+    "experiment": 0.9495,
+    "experimental_std": 0.09258669828868508,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_p_PHEN.dat",
+    "gp_std_at_anchor": 0.03875898412821947,
+    "gradient_per_prior_span": [
+      0.06399185337085389,
+      -0.14597535335087453
+    ],
+    "weighted_gradient": [
+      0.6375463162138212,
+      -1.4543421370766132
+    ],
+    "pilot_mean_range": [
+      1.0241843102043784,
+      1.1976724346670926
+    ],
+    "pilot_compatible_fraction": 0.21893491124260356
+  },
+  {
+    "observable": "meanpT_p_PHEN",
+    "bin_index": 2,
+    "emulator_output_index": 785,
+    "bin_low": 10.0,
+    "bin_high": 15.0,
+    "experiment": 0.946,
+    "experimental_std": 0.09258669828868508,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_p_PHEN.dat",
+    "gp_std_at_anchor": 0.038147741611840855,
+    "gradient_per_prior_span": [
+      0.06273923850205199,
+      -0.15016995810782086
+    ],
+    "weighted_gradient": [
+      0.6265300307968918,
+      -1.4996354868888588
+    ],
+    "pilot_mean_range": [
+      1.0071051353756992,
+      1.1825111849207242
+    ],
+    "pilot_compatible_fraction": 0.3668639053254438
+  },
+  {
+    "observable": "meanpT_p_PHEN",
+    "bin_index": 3,
+    "emulator_output_index": 786,
+    "bin_low": 15.0,
+    "bin_high": 20.0,
+    "experiment": 0.9385,
+    "experimental_std": 0.09258669828868508,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_p_PHEN.dat",
+    "gp_std_at_anchor": 0.038023257746493226,
+    "gradient_per_prior_span": [
+      0.06128945879864123,
+      -0.15513537480894013
+    ],
+    "weighted_gradient": [
+      0.61234174508326,
+      -1.5499543966728264
+    ],
+    "pilot_mean_range": [
+      0.9903614599739003,
+      1.167745056170373
+    ],
+    "pilot_compatible_fraction": 0.5207100591715976
+  },
+  {
+    "observable": "meanpT_p_PHEN",
+    "bin_index": 4,
+    "emulator_output_index": 787,
+    "bin_low": 20.0,
+    "bin_high": 30.0,
+    "experiment": 0.9215,
+    "experimental_std": 0.0930386204755853,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_p_PHEN.dat",
+    "gp_std_at_anchor": 0.03743415222925871,
+    "gradient_per_prior_span": [
+      0.057196730037029075,
+      -0.1594823554396274
+    ],
+    "weighted_gradient": [
+      0.5703299335542178,
+      -1.5902580640898014
+    ],
+    "pilot_mean_range": [
+      0.9645585334142606,
+      1.141680264924548
+    ],
+    "pilot_compatible_fraction": 0.6035502958579881
+  },
+  {
+    "observable": "meanpT_p_PHEN",
+    "bin_index": 5,
+    "emulator_output_index": 788,
+    "bin_low": 30.0,
+    "bin_high": 40.0,
+    "experiment": 0.8965,
+    "experimental_std": 0.09168586368683015,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_p_PHEN.dat",
+    "gp_std_at_anchor": 0.03739182729094586,
+    "gradient_per_prior_span": [
+      0.05288459990191452,
+      -0.16599266576589333
+    ],
+    "weighted_gradient": [
+      0.5340939837029333,
+      -1.6763988815043673
+    ],
+    "pilot_mean_range": [
+      0.9238152827514122,
+      1.1016456762776445
+    ],
+    "pilot_compatible_fraction": 0.6686390532544378
+  },
+  {
+    "observable": "meanpT_p_PHEN",
+    "bin_index": 6,
+    "emulator_output_index": 789,
+    "bin_low": 40.0,
+    "bin_high": 50.0,
+    "experiment": 0.866,
+    "experimental_std": 0.09666436778875657,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_p_PHEN.dat",
+    "gp_std_at_anchor": 0.03791342817238717,
+    "gradient_per_prior_span": [
+      0.047673187487304314,
+      -0.1699904694679233
+    ],
+    "weighted_gradient": [
+      0.4591303966971884,
+      -1.6371422972783929
+    ],
+    "pilot_mean_range": [
+      0.8796245342901462,
+      1.056091422256814
+    ],
+    "pilot_compatible_fraction": 0.7396449704142012
+  },
+  {
+    "observable": "meanpT_p_PHEN",
+    "bin_index": 7,
+    "emulator_output_index": 790,
+    "bin_low": 50.0,
+    "bin_high": 60.0,
+    "experiment": 0.8285,
+    "experimental_std": 0.09484724561103501,
+    "file": "HIC_experimental_data/Au-Au-200/PHENIX/meanpT_p_PHEN.dat",
+    "gp_std_at_anchor": 0.04148639071500368,
+    "gradient_per_prior_span": [
+      0.04263713147569237,
+      -0.17845947236425352
+    ],
+    "weighted_gradient": [
+      0.4118593402571585,
+      -1.7238542558259313
+    ],
+    "pilot_mean_range": [
+      0.8309133292601125,
+      1.0101586706302577
+    ],
+    "pilot_compatible_fraction": 0.7633136094674556
+  }
+]

@@ -1,0 +1,42 @@
+additional_resources:
+- {description: 'InspireHEP ID: 2907537', location: 'https://inspirehep.net/literature/2907537'}
+- {description: arxiv paper, location: 'https://arxiv.org/abs/2504.02240'}
+comment: BNL-RHIC. The pseudorapidity distribution of charged hadrons produced in
+  Au+Au collisions at a center-of-mass energy of $\sqrt{s_{\scriptscriptstyle NN}}=200{\rm~GeV}$
+  is measured using data collected by the sPHENIX detector. Charged hadron yields
+  are extracted by counting cluster pairs in the inner and outer layers of the Intermediate
+  Silicon Tracker, with corrections applied for detector acceptance, reconstruction
+  efficiency, combinatorial pairs, and contributions from secondary decays. The measured
+  distributions cover $|\eta|<1.1$ across various centralities, and the average pseudorapidity
+  density of charged hadrons at mid-rapidity is compared to predictions from Monte
+  Carlo heavy-ion event generators. This result, featuring full azimuthal coverage
+  at mid-rapidity, is consistent with previous experimental measurements at the Relativistic
+  Heavy Ion Collider, thereby supporting the broader sPHENIX physics program.
+hepdata_doi: 10.17182/hepdata.159879.v1
+---
+additional_resources:
+- {description: Thumbnail Image file, location: thumb_dNdEta_eta0_divnpart2_RHIC.png}
+- {description: Image file, location: dNdEta_eta0_divnpart2_RHIC.pdf}
+data_file: Table.yaml
+description: Nch, Npart, and Nch/(Npart/2) values in Table 4, presented in Figure
+  6.
+keywords:
+- name: phrases
+  values: [multiplicity]
+location: Data from Table 4
+name: Table 4
+table_doi: 10.17182/hepdata.159879.v1/t1
+---
+additional_resources:
+- {description: Thumbnail Image file, location: thumb_dNdEta_RHIC_woBRAHMS_altCent.png}
+- {description: Image file, location: dNdEta_RHIC_woBRAHMS_altCent.pdf}
+- {description: Thumbnail Image file, location: thumb_dNdEta_RHIC_combine_woBRAHMS_altCent.png}
+- {description: Image file, location: dNdEta_RHIC_combine_woBRAHMS_altCent.pdf}
+data_file: Figure5.yaml
+description: Nch as a function of $\eta$, presented in Figure 5.
+keywords:
+- name: phrases
+  values: [multiplicity]
+location: Data from Figure 5
+name: Figure 5
+table_doi: 10.17182/hepdata.159879.v1/t2

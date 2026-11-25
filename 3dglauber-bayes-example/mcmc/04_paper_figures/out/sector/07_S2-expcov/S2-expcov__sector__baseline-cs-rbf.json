@@ -1,0 +1,82 @@
+{
+  "models": [
+    "baseline",
+    "cs_sector",
+    "rbf_sector"
+  ],
+  "n_bins": 917,
+  "bin_index": "mcmc/02_08_sector_input_correlations/bin_index.csv",
+  "sector_sources": {
+    "cs_sector": "mcmc/02_08_sector_input_correlations/cs_sector_input_matrices.npz",
+    "rbf_sector": "mcmc/02_08_sector_input_correlations/rbf_sector_input_matrices.npz"
+  },
+  "rbf_global_lengths": {
+    "pt": 0.5,
+    "eta": 1.0,
+    "centrality": 10.0
+  },
+  "covariance_log_range": [
+    1e-09,
+    0.044711418639775756
+  ],
+  "correlation_range": [
+    0,
+    1
+  ],
+  "statistics": {
+    "baseline": {
+      "mean_offdiag_correlation": 0.0,
+      "frac_above_0p5": 0.0
+    },
+    "cs_sector": {
+      "mean_offdiag_correlation": 0.041727581395570326,
+      "frac_above_0p5": 0.041727581395570326
+    },
+    "rbf_sector": {
+      "mean_offdiag_correlation": 0.006937571138572106,
+      "frac_above_0p5": 0.007214526198492331
+    }
+  },
+  "observable_order": [
+    "Au-Au-200/dNdeta_eta_cen_00_03_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_03_06_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_06_10_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_10_15_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_15_20_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_20_25_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_25_30_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_30_35_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_35_40_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_40_45_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_45_50_PHOB",
+    "Au-Au-200/v22_eta_cen_20_70_STAR",
+    "Au-Au-200/v22_eta_cen_03_15_PHOB",
+    "Au-Au-200/v22_eta_cen_15_25_PHOB",
+    "Au-Au-200/v22_eta_cen_25_50_PHOB",
+    "Au-Au-200/v22_pt_cen_00_10_PHEN",
+    "Au-Au-200/v22_pt_cen_10_20_PHEN",
+    "Au-Au-200/v22_pt_cen_20_30_PHEN",
+    "Au-Au-200/v22_pt_cen_30_40_PHEN",
+    "Au-Au-200/v22_pt_cen_40_50_PHEN",
+    "Au-Au-200/v22_pt_cen_50_60_PHEN",
+    "Au-Au-200/v22_pt_cen_00_05_STAR",
+    "Au-Au-200/v22_pt_cen_05_10_STAR",
+    "Au-Au-200/v22_pt_cen_10_20_STAR",
+    "Au-Au-200/v22_pt_cen_20_30_STAR",
+    "Au-Au-200/v22_pt_cen_30_40_STAR",
+    "Au-Au-200/v22_pt_cen_40_50_STAR",
+    "Au-Au-200/v22_pt_cen_50_60_STAR",
+    "Au-Au-200/v22_int_STAR",
+    "Au-Au-200/v32_int_STAR",
+    "Au-Au-200/meanpT_pi_STAR",
+    "Au-Au-200/meanpT_k_STAR",
+    "Au-Au-200/meanpT_k_PHEN",
+    "Au-Au-200/meanpT_p_PHEN",
+    "d-Au-200/dNdeta_eta_cen_00_05_PHEN",
+    "d-Au-200/dNdeta_eta_cen_05_10_PHEN",
+    "d-Au-200/dNdeta_eta_cen_10_20_PHEN",
+    "d-Au-200/v22_eta_cen_00_05_PHEN",
+    "d-Au-200/v22_pt_cen_00_05_PHEN",
+    "d-Au-200/v22_pt_cen_00_10_STAR"
+  ]
+}

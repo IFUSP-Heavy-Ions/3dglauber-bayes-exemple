@@ -44,3 +44,13 @@ chain.csv
 
 # Finder metadata
 .DS_Store
+# Regenerable caches and vendored libraries (paper figures / visualization)
+3dglauber-bayes-example/mcmc/04_paper_figures/cache/
+3dglauber-bayes-example/mcmc/03_01_bayesian_inference_visualization/python-packages/
+# HTCondor logs of running jobs
+3dglauber-bayes-example/mcmc/*/logs/
+3dglauber-bayes-example/study_nongaussian_systematics/posterior/logs/
+*.bak-*
+*.aux
+*.fdb_latexmk
+*.fls

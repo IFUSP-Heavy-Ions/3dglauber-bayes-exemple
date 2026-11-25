@@ -1,0 +1,109 @@
+additional_resources:
+- {description: Figures and original data files, location: 'http://www4.rcf.bnl.gov/brahms/WWW/publication-data/mult_2001',
+  type: url}
+- {description: BRAHMS Homepage, location: 'http://www4.rcf.bnl.gov/brahms/WWW', type: url}
+comment: BNL-RHIC-BRAHMS. We present charged particle densities as a function of pseudorapidity
+  and collision centrality for the 197Au+197Au reaction at Sqrt{s_NN}=200 GeV. For
+  the 5% most central events we obtain dN_ch/deta(eta=0) = 625 +/- 55 and N_ch(-4.7&lt;=
+  eta &lt;= 4.7) = 4630+-370, i.e. 14% and 21% increases, respectively, relative to
+  Sqrt{s_NN}=130 GeV collisions. Charged-particle production per pair of participant
+  nucleons is found to increase from peripheral to central collisions around mid-rapidity.
+  These results constrain current models of particle production at the highest RHIC
+  energy.
+hepdata_doi: 10.17182/hepdata.89441.v1
+preprintyear: '2001'
+publicationyear: '2002'
+record_ids:
+- {id: 567754, type: inspire}
+- {id: nucl-ex/0112001, type: arxiv}
+- {id: 10.1103/PhysRevLett.88.202301, type: doi}
+- {id: '4795830', type: SPIRES}
+---
+data_file: tab1a.yaml
+description: $\mathrm{d}N/\mathrm{d}\eta$ versus $\eta$ for $x^{\pm}$ in $\mathrm{Au}-\mathrm{Au}$
+  at $\sqrt{s_{\mathrm{NN}}}=200\,\mathrm{Ge\!V}$  for $0-5$% central, $5-10$% central,
+  $10-20$% central, $20-30$% central, $30-40$% central, $40-50$% central
+keywords:
+- name: reactions
+  values: [AU AU --> CHARGED]
+- name: observables
+  values: [DN/DETARAP]
+- name: cmenergies
+  values: ['200.0']
+- name: phrases
+  values: [Pseudorapidity Symmetriced, Pseudorapidity Dependence, Centrality Dependence]
+location: Table 1
+name: Table 1a
+table_doi: 10.17182/hepdata.89441.v1/t1
+---
+data_file: tab1b.yaml
+description: $\mathrm{d}N/\mathrm{d}\eta$ versus $\eta$ for $x^{\pm}$ in $\mathrm{Au}-\mathrm{Au}$
+  at $\sqrt{s_{\mathrm{NN}}}=200\,\mathrm{Ge\!V}$  for $0-5$% central, $5-10$% central,
+  $10-20$% central, $20-30$% central, $30-40$% central, $40-50$% central
+keywords:
+- name: reactions
+  values: [AU AU --> CHARGED]
+- name: observables
+  values: [DN/DETARAP]
+- name: cmenergies
+  values: ['200.0']
+- name: phrases
+  values: [Pseudorapidity Symmetriced, Pseudorapidity Dependence, Centrality Dependence,
+    Centrality Dependence]
+location: Table 1
+name: Table 1b
+table_doi: 10.17182/hepdata.89441.v1/t2
+---
+data_file: tab3.yaml
+description: $\mathrm{d}N/\mathrm{d}\eta$ versus $\eta$ for $x^{\pm}$ in $\mathrm{Au}-\mathrm{Au}$
+  at $\sqrt{s_{\mathrm{NN}}}=200\,\mathrm{Ge\!V}$  for $0-5$% central, $5-10$% central,
+  $20-30$% central, $40-50$% central
+keywords:
+- name: reactions
+  values: [AU AU --> CHARGED]
+- name: observables
+  values: [DN/DETARAP]
+- name: cmenergies
+  values: ['200.0']
+- name: phrases
+  values: [Pseudorapidity Symmetriced, Pseudorapidity Dependence, Centrality Dependence,
+    Centrality Dependence, Centrality Dependence]
+location: Table 3
+name: Table 3
+table_doi: 10.17182/hepdata.89441.v1/t3
+---
+data_file: tab4.yaml
+description: $\left.\frac{\mathrm{d}N}{\mathrm{d}\eta}\right\vert_{200\mathrm{Ge\!V}}\,/\,\left.\frac{\mathrm{d}N}{\mathrm{d}\eta}\right\vert_{130\mathrm{Ge\!V}}$
+  versus $\eta$ for $x^{\pm}$ in $\mathrm{Au}-\mathrm{Au}$ at $\sqrt{s_{\mathrm{NN}}}=200\,\mathrm{Ge\!V}$  for
+  , per centrality
+keywords:
+- name: reactions
+  values: [AU AU --> CHARGED]
+- name: observables
+  values: [(DN/DETARAP(200GEV))/(DN/DETARAP(130GEV))]
+- name: cmenergies
+  values: ['200.0']
+- name: phrases
+  values: [Pseudorapidity Dependence, Pseudorapidity Dependence, Centrality Dependence,
+    Centrality Dependence, Centrality Dependence, Centrality Dependence]
+location: Table 4
+name: Table 4
+table_doi: 10.17182/hepdata.89441.v1/t4
+---
+data_file: tab5.yaml
+description: '$\frac{\mathrm{d}N}{\mathrm{d}y}\frac{2}{N_{\mathrm{part}}}$ versus
+  $N_{\mathrm{part}}$ for $x^{\pm}$ in $\mathrm{Au}-\mathrm{Au}$ at $\sqrt{s_{\mathrm{NN}}}=200\,\mathrm{Ge\!V}$ '
+keywords:
+- name: reactions
+  values: [AU AU --> CHARGED]
+- name: observables
+  values: [DN/DYRAP/(NPART/2)]
+- name: cmenergies
+  values: ['200.0']
+- name: phrases
+  values: [Rapidity Dependence, Density, Centrality Dependence, Centrality Dependence,
+    Centrality Dependence, Centrality Dependence, Centrality Dependence, Centrality
+      Dependence]
+location: Table 5
+name: Table 5
+table_doi: 10.17182/hepdata.89441.v1/t5

@@ -1,0 +1,160 @@
+dependent_variables:
+- header: {name: '$\frac{dN_{\text{ch}}}{d\eta}\big|_{|\eta|<0.3}$'}
+  values:
+  - errors:
+    - {label: sys, symerror: 45.3}
+    value: 723.4
+  - errors:
+    - {label: sys, symerror: 40.2}
+    value: 646.9
+  - errors:
+    - {label: sys, symerror: 33.7}
+    value: 558.1
+  - errors:
+    - {label: sys, symerror: 28.5}
+    value: 469.5
+  - errors:
+    - {label: sys, symerror: 23.0}
+    value: 386.3
+  - errors:
+    - {label: sys, symerror: 18.6}
+    value: 317.4
+  - errors:
+    - {label: sys, symerror: 15.2}
+    value: 258.9
+  - errors:
+    - {label: sys, symerror: 12.3}
+    value: 209.3
+  - errors:
+    - {label: sys, symerror: 10.2}
+    value: 167.4
+  - errors:
+    - {label: sys, symerror: 8.0}
+    value: 131.4
+  - errors:
+    - {label: sys, symerror: 6.6}
+    value: 101.3
+  - errors:
+    - {label: sys, symerror: 5.2}
+    value: 76.8
+  - errors:
+    - {label: sys, symerror: 3.9}
+    value: 55.7
+  - errors:
+    - {label: sys, symerror: 2.9}
+    value: 39.3
+  - errors:
+    - {label: sys, symerror: 2.0}
+    value: 26.8
+- header: {name: '$\langle N_{\text{part}} \rangle$'}
+  values:
+  - errors:
+    - {label: sys, symerror: 2.1}
+    value: 359.3
+  - errors:
+    - {label: sys, symerror: 2.9}
+    value: 331.2
+  - errors:
+    - {label: sys, symerror: 3.2}
+    value: 297.0
+  - errors:
+    - {label: sys, symerror: 3.8}
+    value: 257.3
+  - errors:
+    - {label: sys, symerror: 4.3}
+    value: 219.0
+  - errors:
+    - {label: sys, symerror: 4.6}
+    value: 185.7
+  - errors:
+    - {label: sys, symerror: 5.0}
+    value: 156.0
+  - errors:
+    - {label: sys, symerror: 5.2}
+    value: 130.0
+  - errors:
+    - {label: sys, symerror: 5.2}
+    value: 107.1
+  - errors:
+    - {label: sys, symerror: 5.1}
+    value: 87.1
+  - errors:
+    - {label: sys, symerror: 5.0}
+    value: 69.5
+  - errors:
+    - {label: sys, symerror: 4.7}
+    value: 54.2
+  - errors:
+    - {label: sys, symerror: 4.4}
+    value: 41.4
+  - errors:
+    - {label: sys, symerror: 3.9}
+    value: 30.7
+  - errors:
+    - {label: sys, symerror: 3.3}
+    value: 22.1
+- header: {name: '$\frac{\frac{dN_{\text{ch}}}{d\eta}|_{|\eta|<0.3}}{\langle N_{\text{part}}\rangle/2}$'}
+  values:
+  - errors:
+    - {label: sys, symerror: 0.3}
+    value: 4.0
+  - errors:
+    - {label: sys, symerror: 0.2}
+    value: 3.9
+  - errors:
+    - {label: sys, symerror: 0.2}
+    value: 3.8
+  - errors:
+    - {label: sys, symerror: 0.2}
+    value: 3.6
+  - errors:
+    - {label: sys, symerror: 0.2}
+    value: 3.5
+  - errors:
+    - {label: sys, symerror: 0.2}
+    value: 3.4
+  - errors:
+    - {label: sys, symerror: 0.2}
+    value: 3.3
+  - errors:
+    - {label: sys, symerror: 0.2}
+    value: 3.2
+  - errors:
+    - {label: sys, symerror: 0.2}
+    value: 3.1
+  - errors:
+    - {label: sys, symerror: 0.3}
+    value: 3.0
+  - errors:
+    - {label: sys, symerror: 0.3}
+    value: 2.9
+  - errors:
+    - {label: sys, symerror: 0.3}
+    value: 2.8
+  - errors:
+    - {label: sys, symerror: 0.3}
+    value: 2.7
+  - errors:
+    - {label: sys, symerror: 0.4}
+    value: 2.6
+  - errors:
+    - {label: sys, symerror: 0.4}
+    value: 2.4
+independent_variables:
+- header: {name: centrality}
+  values:
+  - {high: 3, low: 0}
+  - {high: 6, low: 3}
+  - {high: 10, low: 6}
+  - {high: 15, low: 10}
+  - {high: 20, low: 15}
+  - {high: 25, low: 20}
+  - {high: 30, low: 25}
+  - {high: 35, low: 30}
+  - {high: 40, low: 35}
+  - {high: 45, low: 40}
+  - {high: 50, low: 45}
+  - {high: 55, low: 50}
+  - {high: 60, low: 55}
+  - {high: 65, low: 60}
+  - {high: 70, low: 65}

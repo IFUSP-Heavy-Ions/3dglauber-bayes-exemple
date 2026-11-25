@@ -1,0 +1,152 @@
+dependent_variables:
+- header: {name: '$N_{part}$'}
+  qualifiers:
+  - {name: centrality, value: ''}
+  values:
+  - errors:
+    - {label: sys, symerror: 1.2}
+    value: 17.8
+  - errors:
+    - {label: sys, symerror: 1.0}
+    value: 15.6
+  - errors:
+    - {label: sys, symerror: 0.9}
+    value: 14.1
+  - errors:
+    - {label: sys, symerror: 0.7}
+    value: 11.9
+  - errors:
+    - {label: sys, symerror: 0.6}
+    value: 10.5
+  - errors:
+    - {label: sys, symerror: 0.5}
+    value: 8.7
+  - errors:
+    - {label: sys, symerror: 0.4}
+    value: 7.1
+  - errors:
+    - {label: sys, symerror: 0.4}
+    value: 5.7
+- header: {name: '$N_{q}$'}
+  qualifiers:
+  - {name: centrality, value: ''}
+  values:
+  - errors:
+    - {label: sys, symerror: 2.3}
+    value: 27.2
+  - errors:
+    - {label: sys, symerror: 2.0}
+    value: 24.7
+  - errors:
+    - {label: sys, symerror: 1.8}
+    value: 22.9
+  - errors:
+    - {label: sys, symerror: 1.5}
+    value: 20.0
+  - errors:
+    - {label: sys, symerror: 1.2}
+    value: 18.0
+  - errors:
+    - {label: sys, symerror: 0.9}
+    value: 15.3
+  - errors:
+    - {label: sys, symerror: 0.6}
+    value: 12.7
+  - errors:
+    - {label: sys, symerror: 0.5}
+    value: 10.4
+- header: {name: '$dN_{ch}/d\eta$'}
+  qualifiers:
+  - {name: centrality, value: ''}
+  values:
+  - errors:
+    - {label: sys, symerror: 1.5}
+    value: 20.8
+  - errors:
+    - {label: sys, symerror: 1.2}
+    value: 17.7
+  - errors:
+    - {label: sys, symerror: 1.1}
+    value: 15.5
+  - errors:
+    - {label: sys, symerror: 0.9}
+    value: 13.2
+  - errors:
+    - {label: sys, symerror: 0.8}
+    value: 11.2
+  - errors:
+    - {label: sys, symerror: 0.7}
+    value: 9.3
+  - errors:
+    - {label: sys, symerror: 0.5}
+    value: 7.5
+  - errors:
+    - {label: sys, symerror: 0.4}
+    value: 5.8
+- header: {name: '$(dN_{ch}/d\eta)/N_{part}$'}
+  qualifiers:
+  - {name: centrality, value: ''}
+  values:
+  - errors:
+    - {label: sys, symerror: 0.23}
+    value: 2.43
+  - errors:
+    - {label: sys, symerror: 0.22}
+    value: 2.36
+  - errors:
+    - {label: sys, symerror: 0.21}
+    value: 2.28
+  - errors:
+    - {label: sys, symerror: 0.21}
+    value: 2.3
+  - errors:
+    - {label: sys, symerror: 0.2}
+    value: 2.22
+  - errors:
+    - {label: sys, symerror: 0.2}
+    value: 2.23
+  - errors:
+    - {label: sys, symerror: 0.2}
+    value: 2.18
+  - errors:
+    - {label: sys, symerror: 0.2}
+    value: 2.12
+- header: {name: '$(dN_{ch}/d\eta)/N_{q}$'}
+  qualifiers:
+  - {name: centrality, value: ''}
+  values:
+  - errors:
+    - {label: sys, symerror: 0.17}
+    value: 1.53
+  - errors:
+    - {label: sys, symerror: 0.15}
+    value: 1.43
+  - errors:
+    - {label: sys, symerror: 0.14}
+    value: 1.35
+  - errors:
+    - {label: sys, symerror: 0.13}
+    value: 1.32
+  - errors:
+    - {label: sys, symerror: 0.12}
+    value: 1.25
+  - errors:
+    - {label: sys, symerror: 0.11}
+    value: 1.22
+  - errors:
+    - {label: sys, symerror: 0.1}
+    value: 1.18
+  - errors:
+    - {label: sys, symerror: 0.1}
+    value: 1.12
+independent_variables:
+- header: {name: centrality}
+  values:
+  - {high: 5, low: 0}
+  - {high: 10, low: 5}
+  - {high: 20, low: 10}
+  - {high: 30, low: 20}
+  - {high: 40, low: 30}
+  - {high: 50, low: 40}
+  - {high: 60, low: 50}
+  - {high: 70, low: 60}

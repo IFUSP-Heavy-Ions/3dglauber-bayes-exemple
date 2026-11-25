@@ -1,0 +1,46 @@
+{
+  "scope": "All 917 bins, INCLUDING cross-observable, cross-sector and cross-system pairs",
+  "interpretation": "User-requested illustration, NOT verified as the covariance used in an existing calibration",
+  "cs_rho": 1,
+  "rbf_length": 0.5,
+  "rbf_coordinate": "x_i=i/(N-1), i=0,...,916",
+  "rbf_kernel": "exp(-((x_i-x_j)/length)^2)",
+  "ordering_warning": "RBF distances depend on concatenated bin order, not physical distances. Reordering bins and rebuilding the kernel changes the model.",
+  "variance_source": "Reconstructed experimental variances in likelihood coordinates from the sector study; original remote covariance hashes were not matched. Correlation maps themselves do not depend on these positive variances.",
+  "n_bins": 917,
+  "systems": {
+    "Au-Au-200": 791,
+    "d-Au-200": 126
+  },
+  "validation": {
+    "cs": {
+      "minimum_eigenvalue": -3.3426809061140225e-12,
+      "psd_tolerance": 1.8671486579080465e-10,
+      "numerical_rank": 1,
+      "first_last_correlation": 1.0,
+      "first_middle_correlation": 1.0,
+      "minimum_cross_system_correlation": 1.0
+    },
+    "rbf": {
+      "minimum_eigenvalue": -3.97712277356699e-13,
+      "psd_tolerance": 1.21680302746425e-10,
+      "numerical_rank": 13,
+      "first_last_correlation": 0.01831563888873418,
+      "first_middle_correlation": 0.36787944117144233,
+      "minimum_cross_system_correlation": 0.01831563888873418
+    }
+  },
+  "color_scale": {
+    "colormap": "coolwarm",
+    "minimum": 0,
+    "maximum": 1,
+    "negative_correlations_allowed": false
+  },
+  "sources": {
+    "mcmc/02_08_sector_input_correlations/bin_index.csv": "73276bfbd7ba2db08e2f33455448d23e318c844cdf9323402e8d63b8e2eaf2af",
+    "mcmc/02_08_sector_input_correlations/observable_groups.csv": "b363b5e74c075f75e10514eab75689bd98d091351fbf5acd44d86dcf4b2e1bb6",
+    "mcmc/02_08_sector_input_correlations/cs_sector_input_matrices.npz": "c9bc88018e2c7f917849d27b678403a2d0071e49acce482ce5c1a437d0645ded",
+    "mcmc/scripts/plot_all_bins_input_correlations.py": "29762c9d14071cf8ca174c2dacae51f3a6493a690897f78f724f3e490af7efe3",
+    "mcmc/scripts/plot_sector_input_correlations.py": "b3fd052934b18981cac4a02804d23fcdaa8ad041b3b3755b094453f6d6c81857"
+  }
+}

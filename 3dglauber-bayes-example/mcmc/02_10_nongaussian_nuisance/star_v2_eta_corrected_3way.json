@@ -1,0 +1,14 @@
+{
+ "corr[nuis]_vs_baseline_backward_FTPC_pull_rms": 2.7108294934556754,
+ "corr[nuis]_vs_baseline_TPC_pull_rms": 0.6226709789439876,
+ "corr[nuis]_vs_baseline_forward_FTPC_pull_rms": 2.616729264749995,
+ "corr[nuis]_vs_cs_backward_FTPC_pull_rms": 3.6042174730351797,
+ "corr[nuis]_vs_cs_TPC_pull_rms": 0.4635170728568873,
+ "corr[nuis]_vs_cs_forward_FTPC_pull_rms": 3.4699851581318892,
+ "corr[nuis]_vs_nuis_backward_FTPC_pull_rms": 2.5264727998217746,
+ "corr[nuis]_vs_nuis_TPC_pull_rms": 0.6215717495313065,
+ "corr[nuis]_vs_nuis_forward_FTPC_pull_rms": 2.435790438581449,
+ "corr[nuis]_backward_FTPC_sigma_stat_over_total": 0.6945849232800031,
+ "corr[nuis]_TPC_sigma_stat_over_total": 0.9265584189680042,
+ "corr[nuis]_forward_FTPC_sigma_stat_over_total": 0.7142156370977192
+}
