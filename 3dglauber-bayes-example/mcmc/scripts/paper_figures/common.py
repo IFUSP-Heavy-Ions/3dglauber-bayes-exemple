@@ -42,28 +42,33 @@ MODELS = {
                      label="baseline (diag)", color=style.BASELINE, ls="-"),
     "cs_global": dict(path=MCMC / "02_01_global_cs/chain-idf-0-cs-system-rho-1.hdf",
                       label="CS global", color=style.CS, ls=style.DASH),
-    "rbf_global": dict(path=MCMC / "02_02_global_rbf/chain-idf-0-rbf-global.hdf",
+    "rbf_global": dict(path=MCMC / "02_02_global_rbf/chain-idf-0-rbf-global-c33aba121315.hdf",
                        label="RBF global", color=style.RBF, ls=style.DASH),
     "cs_sector": dict(path=MCMC / "02_04_cs_sector/chain-idf-0-cs-observable-region-rho-1-a77902df73a5.hdf",
                       label="CS sector", color=style.CS, ls=style.DASH),
     "rbf_sector": dict(path=MCMC / "02_05_rbf_sector/chain-idf-0-rbf-observable-a873ae558cc9.hdf",
                        label="RBF sector", color=style.RBF, ls=style.DASH),
-    # Proposal 3: theta + Gamma-skewed nuisances on STAR v2(eta) 20-70% (skews from Tensor PCA of replicas).
+    # Proposal 4 (covmom): theta + Gamma-skewed nuisances on STAR v2(eta) 20-70% (skews from Tensor PCA of replicas).
     # focus=True: not used for the shared y limits of the 40-panel F05 pages.
     "nuis_global": dict(path=MCMC / "02_10_nongaussian_nuisance/chain-idf-0-nongauss-nuisance-6058bef13723.hdf",
                         label="skew nuisance (global norm.)", color=style.EXTRA, ls=style.DASHDOT, focus=True),
     "nuis_split": dict(path=MCMC / "02_11_nongaussian_nuisance_detector_split/chain-idf-0-nongauss-nuisance-detector-split.hdf",
                        label="skew nuisance (TPC/FTPC norm.)", color=style.OLIVE, ls=(0, (1, 1.5)), focus=True),
+    # Proposal 3 (covinf): PHOBOS dN/deta covariance learned from cross-detector data (fatia 2a); job 5079.
+    # focus=True keeps it out of the shared F05 y limits (it is not one of the proposal 1/2 models).
+    "learned_phobos": dict(path=MCMC / "02_14_learned_phobos_normalization/chain-idf-0-learned-phobos-7ec3735f96a8.hdf",
+                           label="learned PHOBOS cov. (data)", color=style.LEARNED, ls=style.DASH, focus=True),
 }
 
 PROPOSALS = {
     "global": ["baseline", "cs_global", "rbf_global"],
     "sector": ["baseline", "cs_sector", "rbf_sector"],
+    "covinf": ["baseline", "cs_sector", "learned_phobos"],
     "covmom": ["baseline", "cs_sector", "nuis_global", "nuis_split"],
 }
 
 SHORT = {"cs_global": "cs", "rbf_global": "rbf", "cs_sector": "cs", "rbf_sector": "rbf",
-         "nuis_global": "nuisglob", "nuis_split": "nuissplit"}
+         "nuis_global": "nuisglob", "nuis_split": "nuissplit", "learned_phobos": "learnphob"}
 
 
 def design():

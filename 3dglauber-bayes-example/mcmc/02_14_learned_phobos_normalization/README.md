@@ -19,3 +19,7 @@ Primeira cadeia em que a estrutura de correlação experimental é **aprendida d
 - **Código:** `experimental_learned_covariance.py`, `bayes_mcmc_learned_phobos.py`, `bayes_mcmc_learned_phobos_chain.py` (raiz do projeto).
 - **Rodar:** `cd mcmc/02_14_learned_phobos_normalization && mkdir -p logs && condor_submit condor_learned_phobos.sub`
 - **Saída:** `chain-idf-0-learned-phobos-<assinatura12>.hdf`.
+
+## Done (25/11/2026)
+- Job 5079: normal termination; chain 200 x 20 000 (+20 000 burn-in), 20 parameters.
+- Figures: `mcmc/04_paper_figures/run_5078_5079.sh` -> `mcmc/04_paper_figures/out/` -> journal `2026-11-23-JETSCAPE/img/3-Third_sensitivity_test_cov_inference/` (proposta 3, tag `covinf`).

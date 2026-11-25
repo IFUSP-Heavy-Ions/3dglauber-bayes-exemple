@@ -1,0 +1,243 @@
+{
+  "n_prod": 20000,
+  "thin": 50,
+  "credible_level": 0.9,
+  "seed": 12345,
+  "chains": {
+    "baseline": "mcmc/01_01_baseline_reproduction/chain-idf-0.hdf",
+    "learned_phobos": "mcmc/02_14_learned_phobos_normalization/chain-idf-0-learned-phobos-7ec3735f96a8.hdf"
+  },
+  "scripts": {
+    "._common.py": "ed65a3ce07f7e4f7",
+    "._emu.py": "bb0aeec4dbffc8a5",
+    "._fig_corner.py": "ed65a3ce07f7e4f7",
+    "._fig_corrmatrix.py": "bb0aeec4dbffc8a5",
+    "._fig_expcorr.py": "ed65a3ce07f7e4f7",
+    "._fig_observables.py": "ed65a3ce07f7e4f7",
+    "._fig_observables_focus.py": "ed65a3ce07f7e4f7",
+    "._fig_shift.py": "ed65a3ce07f7e4f7",
+    "._fig_varratio.py": "bb0aeec4dbffc8a5",
+    "._fig_viscosity.py": "ed65a3ce07f7e4f7",
+    "._style.py": "ed65a3ce07f7e4f7",
+    "common.py": "1c38cafc7455b3c3",
+    "emu.py": "1447558131e32be8",
+    "fig_corner.py": "2650eee9bf8b10e1",
+    "fig_corrmatrix.py": "1967268d672de4a5",
+    "fig_expcorr.py": "70d9f6082d13b40c",
+    "fig_observables.py": "bd2b42405f1583eb",
+    "fig_observables_focus.py": "74ab49c5ecbf6672",
+    "fig_shift.py": "6077f62e16c97730",
+    "fig_varratio.py": "00d3bb42d611274d",
+    "fig_viscosity.py": "8e09eba648a55707",
+    "style.py": "364ba4096bdad4d6"
+  },
+  "n_prediction_samples": 10000,
+  "model_available": true,
+  "ylim_models": "reused from ylims_ref_F05_global_cs.json",
+  "ylims": {
+    "Au-Au-200/dNdeta_eta_cen_00_03_PHOB": [
+      22.446029242808862,
+      814.3673477551386
+    ],
+    "Au-Au-200/dNdeta_eta_cen_03_06_PHOB": [
+      23.023632341978455,
+      717.9328972926261
+    ],
+    "Au-Au-200/dNdeta_eta_cen_06_10_PHOB": [
+      27.631746699570627,
+      630.0564195339615
+    ],
+    "Au-Au-200/dNdeta_eta_cen_10_15_PHOB": [
+      30.226844282332433,
+      534.4938467153366
+    ],
+    "Au-Au-200/dNdeta_eta_cen_15_20_PHOB": [
+      26.081649978452603,
+      446.9432398689504
+    ],
+    "Au-Au-200/dNdeta_eta_cen_20_25_PHOB": [
+      24.387641266629885,
+      373.5503249776739
+    ],
+    "Au-Au-200/dNdeta_eta_cen_25_30_PHOB": [
+      20.697032377205872,
+      310.99794007185477
+    ],
+    "Au-Au-200/dNdeta_eta_cen_30_35_PHOB": [
+      17.63196652820487,
+      256.7345706073059
+    ],
+    "Au-Au-200/dNdeta_eta_cen_35_40_PHOB": [
+      14.749858513604952,
+      210.98665708560023
+    ],
+    "Au-Au-200/dNdeta_eta_cen_40_45_PHOB": [
+      12.193526199516608,
+      170.84773185518463
+    ],
+    "Au-Au-200/dNdeta_eta_cen_45_50_PHOB": [
+      9.798493780763284,
+      136.5404996754732
+    ],
+    "d-Au-200/dNdeta_eta_cen_00_05_PHEN": [
+      8.634561730770574,
+      36.474203653817945
+    ],
+    "d-Au-200/dNdeta_eta_cen_05_10_PHEN": [
+      7.069946832494487,
+      30.83111651761576
+    ],
+    "d-Au-200/dNdeta_eta_cen_10_20_PHEN": [
+      6.467093301990483,
+      26.55104065819988
+    ],
+    "Au-Au-200/v22_eta_cen_20_70_STAR": [
+      0.019709200000000003,
+      0.0766188
+    ],
+    "Au-Au-200/v22_eta_cen_03_15_PHOB": [
+      0.0019276692914177082,
+      0.03850296810662165
+    ],
+    "Au-Au-200/v22_eta_cen_15_25_PHOB": [
+      -0.0008166008986455111,
+      0.0648865048046974
+    ],
+    "Au-Au-200/v22_eta_cen_25_50_PHOB": [
+      0.0006524951325961536,
+      0.07513167386086757
+    ],
+    "d-Au-200/v22_eta_cen_00_05_PHEN": [
+      0.011813400145693022,
+      0.05292698460458293
+    ],
+    "Au-Au-200/v22_pt_cen_00_10_PHEN": [
+      0.01265347159003401,
+      0.06745153953462642
+    ],
+    "Au-Au-200/v22_pt_cen_10_20_PHEN": [
+      0.023884701810057606,
+      0.11504574284690323
+    ],
+    "Au-Au-200/v22_pt_cen_20_30_PHEN": [
+      0.03420479498643024,
+      0.15136409403822945
+    ],
+    "Au-Au-200/v22_pt_cen_30_40_PHEN": [
+      0.03906092106450005,
+      0.17322716958247733
+    ],
+    "Au-Au-200/v22_pt_cen_40_50_PHEN": [
+      0.04099479752752452,
+      0.18773513725149152
+    ],
+    "Au-Au-200/v22_pt_cen_50_60_PHEN": [
+      0.04073627246223503,
+      0.1898160931116099
+    ],
+    "Au-Au-200/v22_pt_cen_00_05_STAR": [
+      0.010164560439507607,
+      0.05867552573533575
+    ],
+    "Au-Au-200/v22_pt_cen_05_10_STAR": [
+      0.015650747532283286,
+      0.0851943558519575
+    ],
+    "Au-Au-200/v22_pt_cen_10_20_STAR": [
+      0.02246391776210524,
+      0.12053122883813293
+    ],
+    "Au-Au-200/v22_pt_cen_20_30_STAR": [
+      0.028352032420936413,
+      0.15809444203052064
+    ],
+    "Au-Au-200/v22_pt_cen_30_40_STAR": [
+      0.031562605845389585,
+      0.18193686761276448
+    ],
+    "Au-Au-200/v22_pt_cen_40_50_STAR": [
+      0.03318364943073884,
+      0.1952628406696464
+    ],
+    "Au-Au-200/v22_pt_cen_50_60_STAR": [
+      0.03286306962648178,
+      0.19325599276456332
+    ],
+    "d-Au-200/v22_pt_cen_00_05_PHEN": [
+      0.04141372051420742,
+      0.12859402426596725
+    ],
+    "d-Au-200/v22_pt_cen_00_10_STAR": [
+      0.02095775236927868,
+      0.11357059883089761
+    ],
+    "Au-Au-200/v22_int_STAR": [
+      0.017770627814913197,
+      0.079328065342147
+    ],
+    "Au-Au-200/v32_int_STAR": [
+      0.010976244729937443,
+      0.020362409954479115
+    ],
+    "Au-Au-200/meanpT_pi_STAR": [
+      0.36376731665395406,
+      0.478886350266965
+    ],
+    "Au-Au-200/meanpT_k_STAR": [
+      0.5385986674840088,
+      0.8056381586912377
+    ],
+    "Au-Au-200/meanpT_k_PHEN": [
+      0.5393889731787765,
+      0.7600626075057807
+    ],
+    "Au-Au-200/meanpT_p_PHEN": [
+      0.7113147413128904,
+      1.2027510289865324
+    ]
+  },
+  "panels_where_model_band_exceeds_ylims": [],
+  "bands": "emulator mean only (no emulator or experimental noise draws), as in the paper",
+  "panel_order": [
+    "Au-Au-200/dNdeta_eta_cen_00_03_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_03_06_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_06_10_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_10_15_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_15_20_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_20_25_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_25_30_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_30_35_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_35_40_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_40_45_PHOB",
+    "Au-Au-200/dNdeta_eta_cen_45_50_PHOB",
+    "d-Au-200/dNdeta_eta_cen_00_05_PHEN",
+    "d-Au-200/dNdeta_eta_cen_05_10_PHEN",
+    "d-Au-200/dNdeta_eta_cen_10_20_PHEN",
+    "Au-Au-200/v22_eta_cen_20_70_STAR",
+    "Au-Au-200/v22_eta_cen_03_15_PHOB",
+    "Au-Au-200/v22_eta_cen_15_25_PHOB",
+    "Au-Au-200/v22_eta_cen_25_50_PHOB",
+    "d-Au-200/v22_eta_cen_00_05_PHEN",
+    "Au-Au-200/v22_pt_cen_00_10_PHEN",
+    "Au-Au-200/v22_pt_cen_10_20_PHEN",
+    "Au-Au-200/v22_pt_cen_20_30_PHEN",
+    "Au-Au-200/v22_pt_cen_30_40_PHEN",
+    "Au-Au-200/v22_pt_cen_40_50_PHEN",
+    "Au-Au-200/v22_pt_cen_50_60_PHEN",
+    "Au-Au-200/v22_pt_cen_00_05_STAR",
+    "Au-Au-200/v22_pt_cen_05_10_STAR",
+    "Au-Au-200/v22_pt_cen_10_20_STAR",
+    "Au-Au-200/v22_pt_cen_20_30_STAR",
+    "Au-Au-200/v22_pt_cen_30_40_STAR",
+    "Au-Au-200/v22_pt_cen_40_50_STAR",
+    "Au-Au-200/v22_pt_cen_50_60_STAR",
+    "d-Au-200/v22_pt_cen_00_05_PHEN",
+    "d-Au-200/v22_pt_cen_00_10_STAR",
+    "Au-Au-200/v22_int_STAR",
+    "Au-Au-200/v32_int_STAR",
+    "Au-Au-200/meanpT_pi_STAR",
+    "Au-Au-200/meanpT_k_STAR",
+    "Au-Au-200/meanpT_k_PHEN",
+    "Au-Au-200/meanpT_p_PHEN"
+  ]
+}

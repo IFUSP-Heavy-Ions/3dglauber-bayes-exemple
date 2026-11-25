@@ -42,6 +42,7 @@ AXES, bin_coordinates, load_acceptance = _G.AXES, _G.bin_coordinates, _G.load_ac
 SECTOR_NPZ = {"cs_sector": common.MCMC / "02_08_sector_input_correlations/cs_sector_input_matrices.npz",
               "rbf_sector": common.MCMC / "02_08_sector_input_correlations/rbf_sector_input_matrices.npz"}
 RBF_GLOBAL_LENGTHS = {"pt": 0.5, "eta": 1.0, "centrality": 10.0}  # as submitted (condor_rbf_global.sub)
+LEARNED_PHOBOS = {"u": 0.0148, "slope": 0.025}  # as submitted (condor_learned_phobos.sub)
 
 
 def groups(rows):
@@ -73,6 +74,23 @@ def correlation(model, rows):
         scaled = coords / np.array([RBF_GLOBAL_LENGTHS[k] for k in AXES])
         r = np.exp(-((scaled[:, None, :] - scaled[None, :, :]) ** 2).sum(-1))
         return r * (systems[:, None] == systems[None, :])
+    if model == "learned_phobos":
+        # Same construction as the 02_14 chain (experimental_learned_covariance.py, u and slope of the job),
+        # evaluated with the likelihood sigmas of bin_index.csv; Au-Au and d-Au uncorrelated.
+        import importlib.util
+        spec = importlib.util.spec_from_file_location(
+            "experimental_learned_covariance", common.PROJECT / "experimental_learned_covariance.py")
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        out = np.zeros((n, n))
+        for system in dict.fromkeys(systems):
+            idx = np.flatnonzero(systems == system)
+            start = idx[0]
+            slices = [(obs, slice(a - start, b - start)) for (s_, obs), a, b in groups(rows) if s_ == system]
+            std = np.array([float(rows[i]["likelihood_std"]) for i in idx])
+            cov = mod.learned_phobos_covariance(system, slices, std, **LEARNED_PHOBOS)
+            out[np.ix_(idx, idx)] = cov / np.outer(std, std)
+        return out
     raise ValueError(model)
 
 
@@ -126,12 +144,12 @@ def main():
         off = corr[m][~np.eye(len(rows), dtype=bool)]
         stats[m] = dict(mean_offdiag_correlation=float(off.mean()), frac_above_0p5=float((off > 0.5).mean()))
     fig.tight_layout()
-    stem = f"S2-expcov__{a.proposal}__baseline-cs-rbf"
+    stem = f"S2-expcov__{a.proposal}__{'-'.join(common.SHORT.get(m, m) for m in models)}"
     style.save(fig, a.outdir, stem)
     common.write_manifest(a.outdir, stem, dict(
         models=models, n_bins=len(rows), bin_index=str(emu.BIN_INDEX.relative_to(common.PROJECT)),
         sector_sources={k: str(v.relative_to(common.PROJECT)) for k, v in SECTOR_NPZ.items()},
-        rbf_global_lengths=RBF_GLOBAL_LENGTHS, covariance_log_range=[float(vmin), float(vmax)],
+        rbf_global_lengths=RBF_GLOBAL_LENGTHS, learned_phobos=LEARNED_PHOBOS, covariance_log_range=[float(vmin), float(vmax)],
         correlation_range=[0, 1], statistics=stats,
         observable_order=[f"{s}/{o}" for (s, o), _, _ in grp]))
 

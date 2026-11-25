@@ -11,6 +11,14 @@ Reference: Mankolli et al., PRC 114, 014905 (2026).
 | `fig_varratio.py` | F25-varratio (Fig. 25) | `mcmc/02_12_shift_vs_cov_ratio/bin_level.npz` |
 | `fig_corrmatrix.py` | F26-corrmatrix (Fig. 26) | emulator + `mcmc/02_08_sector_input_correlations/*.npz` |
 | `fig_shift.py` | S1-shift | chains + `bin_level.npz` |
+| `fig_expcorr.py` | S2-expcov | experimental covariance models |
+| `info_covariance.py` + `info_covariance_tex.py` | I1-covariance, proposal 3 (learned; article: illustration, numbers, LaTeX tables) | `study_nongaussian_systematics/` + covariance code |
+| `info_covariance_assumed.py` + `info_covariance_assumed_tex.py` | I1-covariance, proposals 1 and 2 (assumed CS/RBF; article) | chain attributes + covariance code |
+
+Information items (`I`): a short LaTeX article per proposal in `recipes/I1-covariance__<proposal>/` (data used,
+inference method, numerical covariance), copied with its PDF into `08_I1-covariance/`. Numbers come only from the
+manifest: `info_covariance.py` (server) -> `info_covariance_tex.py` (local, writes `tab/`) -> `latexmk -lualatex`.
+Format: DESIGN_SYSTEM 2.08.
 
 Shared modules: `style.py` (colours, fonts, output), `common.py` (chain registry, sample policy,
 provenance manifest), `emu.py` (emulator loading and cached predictions).
@@ -47,6 +55,7 @@ matplotlib 3.11, h5py, scipy (same versions as the 02_04/02_06 manifests).
 `emu.emulator_correlation` passes `extra_std` as an array: `emulator.py` uses
 `np.array(..., copy=False)`, which fails in numpy 2 with a scalar.
 
-Missing: RBF global chain (`mcmc/02_02_global_rbf/`), method in `img/RBF_GLOBAL_METHOD.md`. When it
-exists, set its path in `common.MODELS["rbf_global"]` and rerun the `global` commands plus every
-`fig_observables.py` command (the shared y-limits include every available model).
+RBF global chain (job 5078) and learned PHOBOS covariance chain (job 5079, proposal 3 `covinf`) registered on 25/11/2026; commands in `mcmc/04_paper_figures/run_5078_5079.sh`.
+`fig_observables.py --ylims-from <existing F05 manifest>` reuses the y limits of pages already made, so a new
+page is comparable without regenerating the old ones; panels where the new band exceeds them are listed in
+the manifest (`panels_where_model_band_exceeds_ylims`).

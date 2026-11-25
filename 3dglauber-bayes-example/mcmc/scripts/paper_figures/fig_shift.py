@@ -56,7 +56,7 @@ def main():
         rows[m] = dict(shift=s.tolist(), spearman=float(rho))
     axes[0].set_ylabel(r"|median shift| ($\sigma_{\mathrm{baseline}}$)")
     fig.tight_layout()
-    stem = f"S1-shift__{a.proposal}__baseline-cs-rbf"
+    stem = f"S1-shift__{a.proposal}__baseline-{'-'.join(common.SHORT[m] for m in models)}"
     style.save(fig, a.outdir, stem)
     names, _, _ = common.design()
     common.write_manifest(a.outdir, stem, dict(common.provenance(["baseline", *models]),

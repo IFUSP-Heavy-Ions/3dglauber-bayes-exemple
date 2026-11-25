@@ -13,6 +13,7 @@ CS = "#E41A1C"
 RBF = "#1F3FD8"
 EXTRA = "#7B2D8E"
 OLIVE = "#B5B83A"
+LEARNED = "#FF7F00"  # proposal 3 (covinf), learned PHOBOS covariance (next free Set1 colour)
 DASH = (0, (5, 3))
 DASHDOT = (0, (5, 2, 1, 2))
 HATCH = "++++"

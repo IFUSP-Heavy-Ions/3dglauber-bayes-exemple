@@ -1,0 +1,242 @@
+{
+  "n_prod": 20000,
+  "thin": 50,
+  "credible_level": 0.9,
+  "seed": 12345,
+  "chains": {
+    "baseline": "mcmc/01_01_baseline_reproduction/chain-idf-0.hdf",
+    "learned_phobos": "mcmc/02_14_learned_phobos_normalization/chain-idf-0-learned-phobos-7ec3735f96a8.hdf"
+  },
+  "scripts": {
+    "._common.py": "ed65a3ce07f7e4f7",
+    "._emu.py": "bb0aeec4dbffc8a5",
+    "._fig_corner.py": "ed65a3ce07f7e4f7",
+    "._fig_corrmatrix.py": "bb0aeec4dbffc8a5",
+    "._fig_expcorr.py": "ed65a3ce07f7e4f7",
+    "._fig_observables.py": "ed65a3ce07f7e4f7",
+    "._fig_observables_focus.py": "ed65a3ce07f7e4f7",
+    "._fig_shift.py": "ed65a3ce07f7e4f7",
+    "._fig_varratio.py": "bb0aeec4dbffc8a5",
+    "._fig_viscosity.py": "ed65a3ce07f7e4f7",
+    "._style.py": "ed65a3ce07f7e4f7",
+    "common.py": "1c38cafc7455b3c3",
+    "emu.py": "1447558131e32be8",
+    "fig_corner.py": "2650eee9bf8b10e1",
+    "fig_corrmatrix.py": "1967268d672de4a5",
+    "fig_expcorr.py": "70d9f6082d13b40c",
+    "fig_observables.py": "bd2b42405f1583eb",
+    "fig_observables_focus.py": "74ab49c5ecbf6672",
+    "fig_shift.py": "6077f62e16c97730",
+    "fig_varratio.py": "00d3bb42d611274d",
+    "fig_viscosity.py": "8e09eba648a55707",
+    "style.py": "364ba4096bdad4d6"
+  },
+  "bins": 40,
+  "smooth": 1.2,
+  "posterior": {
+    "baseline": {
+      "ylossParam4At2": {
+        "lo": 0.11954414471001465,
+        "median": 1.0196117941519893,
+        "hi": 1.755033183457193
+      },
+      "ylossParam4At4": {
+        "lo": 1.1658657397036927,
+        "median": 1.6763130341878898,
+        "hi": 2.130633973594689
+      },
+      "ylossParam4At6": {
+        "lo": 1.6837963383485417,
+        "median": 2.051018536192578,
+        "hi": 2.6357322869059194
+      },
+      "ylossParam4var": {
+        "lo": 0.09221101140217719,
+        "median": 0.615636577367904,
+        "hi": 0.9616539054459234
+      },
+      "remnant_energy_loss_fraction": {
+        "lo": 0.159390802424452,
+        "median": 0.47089725694319784,
+        "hi": 0.6301890807680045
+      },
+      "shadowing_factor": {
+        "lo": 0.006337358409466008,
+        "median": 0.06808464197555776,
+        "hi": 0.27781364821808924
+      },
+      "tau_form_mean": {
+        "lo": 0.2315158450251384,
+        "median": 0.5357128751788638,
+        "hi": 0.9598848179785194
+      },
+      "BG": {
+        "lo": 2.422654823888252,
+        "median": 7.200091885059479,
+        "hi": 22.141223725612505
+      },
+      "string_source_sigma_x": {
+        "lo": 0.10877153207861916,
+        "median": 0.20322688487973675,
+        "hi": 0.4674237018972263
+      },
+      "string_source_sigma_eta": {
+        "lo": 0.14643590149683994,
+        "median": 0.4787785661122604,
+        "hi": 0.7709213311741197
+      },
+      "stringTransverseShiftFrac": {
+        "lo": 0.04985372447935977,
+        "median": 0.5180921331031508,
+        "hi": 0.9523075772920073
+      },
+      "shear_viscosity_3_eta_over_s_T_kink_in_GeV": {
+        "lo": 0.14528819334490173,
+        "median": 0.21224452395750854,
+        "hi": 0.28489981690245414
+      },
+      "shear_viscosity_3_eta_over_s_low_T_slope_in_GeV": {
+        "lo": -1.893313070751813,
+        "median": -0.8138178430156563,
+        "hi": 0.7295943652360856
+      },
+      "shear_viscosity_3_eta_over_s_high_T_slope_in_GeV": {
+        "lo": -0.797242916190972,
+        "median": 0.731956560584847,
+        "hi": 1.9050045238393871
+      },
+      "shear_viscosity_3_eta_over_s_at_kink": {
+        "lo": 0.02778344508367578,
+        "median": 0.10589138110167368,
+        "hi": 0.18104369945552154
+      },
+      "bulk_viscosity_3_zeta_over_s_max": {
+        "lo": 0.0481009233058442,
+        "median": 0.08873719865670245,
+        "hi": 0.17697343118292577
+      },
+      "bulk_viscosity_3_zeta_over_s_T_peak_in_GeV": {
+        "lo": 0.12283090684805477,
+        "median": 0.16350844315368912,
+        "hi": 0.28276103395917607
+      },
+      "bulk_viscosity_3_zeta_over_s_width_in_GeV": {
+        "lo": 0.030405150478030194,
+        "median": 0.08571809940948573,
+        "hi": 0.14318792081774168
+      },
+      "bulk_viscosity_3_zeta_over_s_lambda_asymm": {
+        "lo": -0.7536199099036751,
+        "median": -0.2622499694687882,
+        "hi": 0.4753764228856158
+      },
+      "eps_switch": {
+        "lo": 0.4416274911975884,
+        "median": 0.5471993694860062,
+        "hi": 0.5954259178231739
+      }
+    },
+    "learned_phobos": {
+      "ylossParam4At2": {
+        "lo": 0.11433189044124174,
+        "median": 0.9638283667356384,
+        "hi": 1.7466038462415316
+      },
+      "ylossParam4At4": {
+        "lo": 1.1542783846503994,
+        "median": 1.7208175177192693,
+        "hi": 2.136277480291238
+      },
+      "ylossParam4At6": {
+        "lo": 1.7837529705537045,
+        "median": 2.1779108953226727,
+        "hi": 2.744935494108422
+      },
+      "ylossParam4var": {
+        "lo": 0.11441877340585274,
+        "median": 0.5681565890527944,
+        "hi": 0.9387976387792732
+      },
+      "remnant_energy_loss_fraction": {
+        "lo": 0.141640812522514,
+        "median": 0.46697442428682057,
+        "hi": 0.6154790257344002
+      },
+      "shadowing_factor": {
+        "lo": 0.014082476529010346,
+        "median": 0.16552276561471768,
+        "hi": 0.6486933472221005
+      },
+      "tau_form_mean": {
+        "lo": 0.25240202661011707,
+        "median": 0.5435264003504616,
+        "hi": 0.9233522069395043
+      },
+      "BG": {
+        "lo": 2.4514655071624647,
+        "median": 7.420263982278312,
+        "hi": 22.772087290244517
+      },
+      "string_source_sigma_x": {
+        "lo": 0.11271521702740625,
+        "median": 0.22211134274245112,
+        "hi": 0.46699290746276084
+      },
+      "string_source_sigma_eta": {
+        "lo": 0.1912123208434949,
+        "median": 0.5847581835527839,
+        "hi": 0.7821220901726188
+      },
+      "stringTransverseShiftFrac": {
+        "lo": 0.04626116106211791,
+        "median": 0.4678994189323054,
+        "hi": 0.9378197733742348
+      },
+      "shear_viscosity_3_eta_over_s_T_kink_in_GeV": {
+        "lo": 0.14185069335709985,
+        "median": 0.21573402250145873,
+        "hi": 0.2848076731630246
+      },
+      "shear_viscosity_3_eta_over_s_low_T_slope_in_GeV": {
+        "lo": -1.885939588868656,
+        "median": -0.8048809393776173,
+        "hi": 0.7541495707313242
+      },
+      "shear_viscosity_3_eta_over_s_high_T_slope_in_GeV": {
+        "lo": -0.8550011459326483,
+        "median": 0.5066139845952056,
+        "hi": 1.8549152042195418
+      },
+      "shear_viscosity_3_eta_over_s_at_kink": {
+        "lo": 0.019553641925174677,
+        "median": 0.08412471634626562,
+        "hi": 0.167114579454651
+      },
+      "bulk_viscosity_3_zeta_over_s_max": {
+        "lo": 0.03284766163494523,
+        "median": 0.06658801943034484,
+        "hi": 0.1534002351247816
+      },
+      "bulk_viscosity_3_zeta_over_s_T_peak_in_GeV": {
+        "lo": 0.12509954966335982,
+        "median": 0.19154401259958193,
+        "hi": 0.28857683462854006
+      },
+      "bulk_viscosity_3_zeta_over_s_width_in_GeV": {
+        "lo": 0.030874544217540635,
+        "median": 0.08480299025765056,
+        "hi": 0.1433545040722728
+      },
+      "bulk_viscosity_3_zeta_over_s_lambda_asymm": {
+        "lo": -0.7462878907046128,
+        "median": -0.20168164413061604,
+        "hi": 0.49018159776912423
+      },
+      "eps_switch": {
+        "lo": 0.44008786926387977,
+        "median": 0.5414022932785031,
+        "hi": 0.5945247872534573
+      }
+    }
+  }
+}

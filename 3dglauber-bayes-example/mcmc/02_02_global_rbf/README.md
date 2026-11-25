@@ -20,3 +20,7 @@ Method notes: journal `2026-11-23-JETSCAPE/img/RBF_GLOBAL_METHOD.md`.
   `bayes_exp.Y_exp_data`, and numpy versions differ. The chain's own attributes are authoritative.
 - When finished, set `common.MODELS["rbf_global"]["path"]` in `mcmc/scripts/paper_figures/common.py` and rerun the
   `global` figure commands (README there).
+
+## Done (25/11/2026)
+- Job 5078: normal termination; chain 200 x 20 000 (+20 000 burn-in), 20 parameters.
+- Figures: `mcmc/04_paper_figures/run_5078_5079.sh` -> `mcmc/04_paper_figures/out/` -> journal `2026-11-23-JETSCAPE/img/`.

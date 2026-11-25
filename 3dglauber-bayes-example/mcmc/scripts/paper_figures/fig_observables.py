@@ -8,6 +8,7 @@ pages of different proposals are directly comparable.
 Usage: python fig_observables.py --proposal sector --model cs_sector --outdir <...>/03_F05-observables
 """
 import argparse
+import json
 import re
 from pathlib import Path
 
@@ -74,12 +75,17 @@ def main():
     ap.add_argument("--proposal", choices=common.PROPOSALS, required=True)
     ap.add_argument("--model", required=True)
     ap.add_argument("--outdir", type=Path, required=True)
+    ap.add_argument("--ylims-from", type=Path, default=None,
+                    help="manifest (.json) of an existing F05 page: reuse its y limits, so a new page matches the "
+                         "pages already made without regenerating them")
     a = ap.parse_args()
     style.apply()
     rows = emu.bins()
+    fixed = json.loads(a.ylims_from.read_text())["ylims"] if a.ylims_from else None
+    clipped = []
     panels = order(rows)
     available = [m for m in common.MODELS if common.available(m) and not common.MODELS[m].get("focus")]
-    preds = {m: emu.predictions(m) for m in available}
+    preds = {m: emu.predictions(m) for m in dict.fromkeys(["baseline", *available, a.model])}
     spec = common.MODELS[a.model]
 
     fig = plt.figure(figsize=(18, 24))
@@ -98,6 +104,12 @@ def main():
         ymin, ymax = min(map(np.min, lo_all)), max(map(np.max, hi_all))
         pad = 0.05 * (ymax - ymin)
         ylims[f"{system}/{obs}"] = (ymin - pad, ymax + pad)
+        if fixed is not None:
+            ylims[f"{system}/{obs}"] = tuple(fixed[f"{system}/{obs}"])
+            lo_f, hi_f = ylims[f"{system}/{obs}"]
+            bm_ = bands(preds[a.model][system][obs])
+            if bm_[0].min() < lo_f or bm_[1].max() > hi_f:
+                clipped.append(f"{system}/{obs}")
 
         inner = outer[k // NCOLS, k % NCOLS].subgridspec(2, 1, height_ratios=[3, 1], hspace=0.05)
         ax, rx = fig.add_subplot(inner[0]), fig.add_subplot(inner[1])
@@ -135,7 +147,9 @@ def main():
     style.save(fig, a.outdir, stem)
     common.write_manifest(a.outdir, stem, dict(
         common.provenance(["baseline", a.model]), n_prediction_samples=emu.N_PRED,
-        model_available=a.model in preds, ylim_models=available, ylims=ylims,
+        model_available=a.model in preds,
+        ylim_models=available if fixed is None else f"reused from {a.ylims_from.name}",
+        ylims=ylims, panels_where_model_band_exceeds_ylims=clipped,
         bands="emulator mean only (no emulator or experimental noise draws), as in the paper",
         panel_order=[f"{s}/{o}" for s, o in panels]))
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""F05-observables (focus): only the observables touched by the proposal-3 nuisances.
+"""F05-observables (focus): only the observables touched by the proposal-4 nuisances.
 
-Proposal 3 (covmom) puts Gamma-skewed nuisances lambda_a on Au-Au STAR v2(eta) 20-70% only, so this
+Proposal 4 (covmom) puts Gamma-skewed nuisances lambda_a on Au-Au STAR v2(eta) 20-70% only, so this
 figure shows that one observable, in the Fig. 5 layout (main panel + theory/data ratio):
   (a) raw data, 90% bands of every model of the proposal (baseline filled, others as lines);
   (b) nuisance models vs the data corrected by their own posterior shift, y - sum_a lambda_a vhat_a
